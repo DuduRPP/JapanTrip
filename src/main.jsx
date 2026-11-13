@@ -3,23 +3,18 @@ import { createRoot } from 'react-dom/client';
 import trip from './data/trip.json';
 import photos from './data/photos.json';
 import { labels, languages } from './labels';
+import { Icon } from './Icons';
+import { Timeline, TodayLink, groupJourney, localDateKey } from './Timeline';
 import './style.css';
 
 const cities = Object.assign(Object.create(null), Object.fromEntries(trip.cities.map(city => [city.id, city])));
-const symbols = {
-  book: 'M12 5v15M3 4c4-1 7 0 9 2 2-2 5-3 9-2v14c-4-1-7 0-9 2-2-2-5-3-9-2z',
-  tower: 'M12 2v4M10 6h4l1 5 3 10M10 6l-1 5-3 10M8 13h8M7 17h10M5 21h14',
-  torii: 'M3 4c6 2 12 2 18 0M4 8h16M7 7v14M17 7v14M5 13h14M12 8v5',
-  train: 'M5 5a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2zM5 11h14M9 15h.01M15 15h.01M8 18l-2 4m10-4 2 4',
-  check: 'm5 12 4 4L19 6',
-  bed: 'M3 6v14m18-8v8M3 17h18M3 11h15a3 3 0 0 1 3 3v3M7 11v6',
-  bowl: 'M3 12h18a9 9 0 0 1-18 0ZM9 21h6M10 8l8-5m-4 5 7-2',
-};
-
-function Icon({ name }) {
-  return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.65"
-    strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={symbols[name] ?? symbols.book} /></svg>;
-}
+const timelineGroups = groupJourney(trip.journey);
+const coverPhotos = trip.coverPhotos ?? [trip.coverPhoto].filter(Boolean);
+const cityPages = [
+  { kind: 'cidade', label: 'overview', icon: 'book' },
+  { kind: 'hoteis', label: 'stays', icon: 'bed' },
+  { kind: 'sabores', label: 'food', icon: 'bowl' },
+];
 
 function readRoute() {
   const parts = window.location.hash.slice(1).split('/').filter(Boolean);
@@ -58,6 +53,7 @@ function ItemName({ name, translate, lang }) {
 
 function App() {
   const [route, setRoute] = useState(readRoute);
+  const [todayKey, setTodayKey] = useState(() => localDateKey());
   const main = useRef(null);
   const hasNavigated = useRef(false);
   const { lang, kind, id } = route;
@@ -76,15 +72,25 @@ function App() {
     style: 'currency', currency: 'JPY', currencyDisplay: 'narrowSymbol',
   }).format(value);
   const date = value => new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(value));
+  const shortDate = value => new Intl.DateTimeFormat(locale, {
+    month: 'short', day: 'numeric', timeZone: 'UTC',
+  }).format(new Date(value));
   const title = step => step.type === 'day' ? translate(step.title) : cityName(step.from) + ' → ' + cityName(step.to);
   const stepHref = step => href(lang, step.type === 'day' ? 'dia' : 'trajeto', step.id);
+  const cityHref = (page, cityId) => href(lang, page, cityId);
   const stepIndex = trip.journey.findIndex(step => step.id === id && (
     (kind === 'dia' && step.type === 'day') || (kind === 'trajeto' && step.type === 'transfer')
   ));
   const step = trip.journey[stepIndex];
-  const city = kind === 'sabores' ? cities[id] : step?.city ? cities[step.city] : undefined;
+  const cityPage = cityPages.find(page => page.kind === kind);
+  const city = cityPage ? cities[id] : cities[step?.city];
   const home = kind === 'inicio' && !id;
-  const heading = home ? t.title : step ? title(step) : city ? t.food + ' · ' + translate(city.name) : t.missing;
+  const today = trip.journey.find(item => item.type === 'day' && item.date === todayKey);
+  const cityDays = city ? trip.journey.filter(item => item.type === 'day' && item.city === city.id) : [];
+  let heading = t.missing;
+  if (home) heading = t.title;
+  else if (step) heading = title(step);
+  else if (city) heading = kind === 'cidade' ? translate(city.name) : t[cityPage.label] + ' · ' + translate(city.name);
 
   useEffect(() => {
     function onHashChange() {
@@ -93,6 +99,18 @@ function App() {
     }
     window.addEventListener('hashchange', onHashChange);
     return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
+
+  useEffect(() => {
+    const refresh = () => setTodayKey(localDateKey());
+    const interval = window.setInterval(refresh, 30_000);
+    window.addEventListener('focus', refresh);
+    document.addEventListener('visibilitychange', refresh);
+    return () => {
+      window.clearInterval(interval);
+      window.removeEventListener('focus', refresh);
+      document.removeEventListener('visibilitychange', refresh);
+    };
   }, []);
 
   useEffect(() => {
@@ -107,51 +125,65 @@ function App() {
   return <div className="site" style={{ '--accent': city?.accent }}>
     <a className="skip" href="#content" onClick={event => { event.preventDefault(); main.current?.focus(); }}>{t.skip}</a>
     <header className="site-header wrap">
-      <a className="brand" href={href(lang)}><Icon name="book" />{t.title}</a>
+      <a className="brand" href={href(lang)} aria-current={home ? 'page' : undefined}>
+        <span className="stamp"><Icon name="book" /></span>{t.title}
+      </a>
       <nav className="languages" aria-label={t.language}>
         {Object.entries(languages).map(([code, language]) => <a key={code}
           href={href(code, kind, id)} lang={language.tag} aria-label={language.name}
           aria-current={lang === code ? 'true' : undefined}>{language.label}</a>)}
       </nav>
     </header>
-    <nav className="index-nav wrap" aria-label={t.route}>
-      <a href={href(lang)} aria-current={home ? 'page' : undefined}>{t.overview}</a>
-      {trip.journey.map(item => <a key={item.id} href={stepHref(item)}
-        aria-current={item === step ? 'page' : undefined}>
-        <Icon name={item.type === 'day' ? cities[item.city].symbol : 'train'} />
-        {item.type === 'day' ? dayText(item.number) + ' · ' + cityName(item.city) : title(item)}
-      </a>)}
-    </nav>
-    <main id="content" className="wrap page" tabIndex={-1} ref={main}>
-      {trip.demo && <p className="sample">{t.sample}</p>}
+    <div className={'wrap ' + (home ? 'cover-shell' : 'journal-shell')}>
+    {!home && <Timeline groups={timelineGroups} cities={cities} t={t} translate={translate}
+      title={title} dayText={dayText} shortDate={shortDate} stepHref={stepHref} cityHref={cityHref}
+      selected={step} today={today} overviewCity={kind === 'cidade' ? id : undefined} />}
+    <main id="content" className={'page' + (home ? ' cover' : '')} tabIndex={-1} ref={main}>
+      {!home && trip.demo && <p className="sample">{t.sample}</p>}
       {step?.type === 'day' && <p className="chapter"><Icon name={city.symbol} />
         {dayText(step.number)} · {translate(city.name)} · <time dateTime={step.date}>{date(step.date)}</time>
       </p>}
       <h1>{heading}</h1>
+      {city && <nav className="city-nav" aria-label={t.cityPages}>
+        {cityPages.map(page => <a key={page.kind} href={cityHref(page.kind, city.id)}
+          aria-current={page.kind === kind ? 'page' : undefined}>
+          <Icon name={page.icon} /> {t[page.label]}
+        </a>)}
+      </nav>}
       {home && <>
         <p className="intro">{t.intro}</p>
-        <div className="spread spread-side">
-          <Photo key="cover" id={trip.coverPhoto} translate={translate} cover />
-          <section className="copy">
-            <h2>{t.route}</h2>
-            <ol className="route-list">{trip.journey.map(item => <li key={item.id}>
-              <Icon name={item.type === 'day' ? cities[item.city].symbol : 'train'} />
-              <a href={stepHref(item)}>{item.type === 'day' && dayText(item.number) + ' · '}{title(item)}</a>
-            </li>)}</ol>
-          </section>
+        <nav className="cover-cities" aria-label={t.cities}>
+          {trip.cities.map(item => <a key={item.id} href={cityHref('cidade', item.id)} style={{ '--accent': item.accent }}>
+            <span className="stamp"><Icon name={item.symbol} /></span>{translate(item.name)}<Icon name="chevron" />
+          </a>)}
+          <TodayLink step={today} stepHref={stepHref} label={t.goToday} />
+        </nav>
+        <div className="cover-photos">
+          {coverPhotos.map(photo => <Photo key={photo} id={photo} translate={translate} cover />)}
         </div>
-        <section className="stays">
-          <h2><Icon name="bed" /> {t.stays}</h2>
-          <div className="city-index">{trip.cities.map(item => <section key={item.id} style={{ '--city': item.accent }}>
-            <h3><Icon name={item.symbol} /> {translate(item.name)}</h3>
-            {item.stays.length ? <ul className="plain">{item.stays.map(stay => <li key={stay.name.pt}>
-              {stay.url ? <a href={stay.url}>{translate(stay.name)}</a> : translate(stay.name)}
-              <p className="meta">{t.from} {yen(stay.fromYen)} / {t.perNight}</p>
-            </li>)}</ul> : <p>{t.empty}</p>}
-            <a href={href(lang, 'sabores', item.id)}><Icon name="bowl" /> {t.food}</a>
-          </section>)}</div>
-        </section>
+        {trip.demo && <p className="sample">{t.sample}</p>}
       </>}
+      {kind === 'cidade' && city && <div className="spread spread-top city-overview">
+        <Photo key={city.id} id={city.photo ?? cityDays.find(item => item.photo)?.photo} translate={translate} cover />
+        <section className="copy">
+          {city.description && <p className="intro">{translate(city.description)}</p>}
+          <h2>{t.cityDays}</h2>
+          {cityDays.length ? <ol className="route-list">{cityDays.map(item => <li key={item.id}>
+            <time dateTime={item.date}>{shortDate(item.date)}</time>
+            <a href={stepHref(item)}>{dayText(item.number)} · {title(item)}</a>
+            {item === today && <strong className="today-tag">{t.today}</strong>}
+          </li>)}</ol> : <p>{t.empty}</p>}
+        </section>
+      </div>}
+      {kind === 'hoteis' && city && <section className="hotel-section">
+        {city.stays.length ? <ul className="plain hotel-list">{city.stays.map(stay => <li key={stay.id ?? stay.name.pt}>
+          <span className="stamp"><Icon name="bed" /></span>
+          <div>
+            {stay.url ? <a href={stay.url}>{translate(stay.name)}</a> : <ItemName name={stay.name} translate={translate} lang={lang} />}
+            <p className="meta">{t.from} {yen(stay.fromYen)} / {t.perNight}</p>
+          </div>
+        </li>)}</ul> : <p>{t.empty}</p>}
+      </section>}
       {step?.type === 'day' && <div className={'spread spread-' + step.layout}>
         <Photo key={step.id} id={step.photo} translate={translate} cover />
         <section className="copy">
@@ -165,7 +197,6 @@ function App() {
             </div>
             {stop.mapQuery && <a className="map" href={'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(stop.mapQuery)}>{t.map}</a>}
           </li>)}</ul> : <p>{t.empty}</p>}
-          <a className="food-link" href={href(lang, 'sabores', city.id)}><Icon name="bowl" /> {t.food} · {translate(city.name)}</a>
         </section>
       </div>}
       {step?.type === 'transfer' && <section>
@@ -197,8 +228,9 @@ function App() {
         {trip.journey[stepIndex - 1] && <a href={stepHref(trip.journey[stepIndex - 1])}>‹ {t.previous}</a>}
         {trip.journey[stepIndex + 1] && <a className="next" href={stepHref(trip.journey[stepIndex + 1])}>{t.next} ›</a>}
       </nav>}
-      {!home && !step && !city && <a href={href(lang)}>{t.overview}</a>}
+      {!home && !step && !city && <a href={href(lang)}>{t.title}</a>}
     </main>
+    </div>
   </div>;
 }
 

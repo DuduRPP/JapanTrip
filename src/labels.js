@@ -7,7 +7,9 @@ export const languages = {
 export const labels = {
   pt: {
     title: 'Diário do Japão', intro: 'Um diário de viagem entre ruas, trilhos e mesas.',
-    overview: 'Visão geral', route: 'Percurso', stays: 'Onde ficar', food: 'Sabores',
+    overview: 'Visão geral', route: 'Percurso', stays: 'Hotéis', food: 'Comidas',
+    cityPages: 'Páginas da cidade', cityDays: 'Dias nesta cidade', cities: 'Cidades da viagem',
+    today: 'Hoje', goToday: 'Ir para hoje',
     sample: 'Roteiro de exemplo. Datas, valores e progresso são ilustrativos.',
     day: 'Dia', stops: 'Paradas do dia', transfer: 'Entre cidades', transport: 'Opções de transporte',
     perNight: 'por noite', perPerson: 'por pessoa', from: 'A partir de', map: 'Mapa',
@@ -18,7 +20,9 @@ export const labels = {
   },
   ja: {
     title: '日本の旅日記', intro: '街を歩き、列車に乗り、土地の味に出会う旅。',
-    overview: '旅の概要', route: '旅程', stays: '宿泊', food: 'ご当地グルメ',
+    overview: '街の概要', route: '旅程', stays: 'ホテル', food: 'ご当地グルメ',
+    cityPages: '街のページ', cityDays: 'この街での日程', cities: '訪れる街',
+    today: '今日', goToday: '今日の予定へ',
     sample: 'サンプル旅程です。日付・料金・達成状況は例です。',
     day: '日目', stops: '今日の立ち寄り先', transfer: '都市間の移動', transport: '交通手段',
     perNight: '1泊あたり', perPerson: '1人あたり', from: '目安', map: '地図',
@@ -29,7 +33,9 @@ export const labels = {
   },
   en: {
     title: 'Japan Travel Journal', intro: 'A travel journal of streets, rails and meals.',
-    overview: 'Overview', route: 'Itinerary', stays: 'Where to stay', food: 'Local flavors',
+    overview: 'Overview', route: 'Itinerary', stays: 'Hotels', food: 'Local food',
+    cityPages: 'City pages', cityDays: 'Days in this city', cities: 'Cities on the trip',
+    today: 'Today', goToday: 'Go to today',
     sample: 'Sample itinerary. Dates, prices and progress are illustrative.',
     day: 'Day', stops: 'Stops for the day', transfer: 'Between cities', transport: 'Transport options',
     perNight: 'per night', perPerson: 'per person', from: 'From', map: 'Map',

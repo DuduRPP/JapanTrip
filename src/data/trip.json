@@ -1,6 +1,5 @@
 {
   "demo": true,
-  "coverPhoto": "fushimi",
   "cities": [
     {
       "id": "tokyo",
@@ -53,7 +52,13 @@
           "photo": "taiyaki",
           "done": false
         }
-      ]
+      ],
+      "description": {
+        "pt": "Dos templos de Asakusa às luzes de Shibuya, com tempo para parques, mercados e pequenas ruas.",
+        "ja": "浅草の寺から渋谷の夜景まで、公園や市場、路地を巡ります。",
+        "en": "From Asakusa’s temples to the lights of Shibuya, with time for parks, markets and side streets."
+      },
+      "photo": "shibuya"
     },
     {
       "id": "kyoto",
@@ -105,7 +110,13 @@
           },
           "done": false
         }
-      ]
+      ],
+      "description": {
+        "pt": "Santuários, ruas antigas e trilhas tranquilas, com tempo para provar os sabores da cidade.",
+        "ja": "神社や古い街並み、静かな小道を歩きながら、京都の味も楽しみます。",
+        "en": "Shrines, old streets and quiet paths, with time to taste the city’s specialties."
+      },
+      "photo": "kiyomizu"
     }
   ],
   "journey": [
@@ -161,6 +172,142 @@
       ]
     },
     {
+      "id": "ueno",
+      "type": "day",
+      "city": "tokyo",
+      "title": {
+        "pt": "Um dia no parque de Ueno",
+        "ja": "上野公園で過ごす一日",
+        "en": "A day in Ueno Park"
+      },
+      "layout": "top",
+      "stops": [
+        {
+          "id": "ueno-visit",
+          "name": {
+            "pt": "Parque de Ueno",
+            "ja": "上野恩賜公園",
+            "en": "Ueno Park"
+          },
+          "time": "09:00",
+          "minutes": 90,
+          "mapQuery": "上野恩賜公園 東京",
+          "done": false
+        }
+      ],
+      "number": 2,
+      "date": "2027-04-11"
+    },
+    {
+      "id": "shibuya",
+      "type": "day",
+      "city": "tokyo",
+      "title": {
+        "pt": "As luzes de Shibuya",
+        "ja": "渋谷の夜景",
+        "en": "The lights of Shibuya"
+      },
+      "layout": "top",
+      "photo": "shibuya",
+      "stops": [
+        {
+          "id": "shibuya-visit",
+          "name": {
+            "pt": "Cruzamento de Shibuya",
+            "ja": "渋谷スクランブル交差点",
+            "en": "Shibuya Crossing"
+          },
+          "time": "09:00",
+          "minutes": 40,
+          "mapQuery": "渋谷スクランブル交差点 東京",
+          "done": false
+        }
+      ],
+      "number": 3,
+      "date": "2027-04-12"
+    },
+    {
+      "id": "harajuku",
+      "type": "day",
+      "city": "tokyo",
+      "title": {
+        "pt": "Entre Harajuku e o santuário Meiji",
+        "ja": "原宿と明治神宮",
+        "en": "Harajuku and Meiji Shrine"
+      },
+      "layout": "top",
+      "stops": [
+        {
+          "id": "harajuku-visit",
+          "name": {
+            "pt": "Santuário Meiji",
+            "ja": "明治神宮",
+            "en": "Meiji Shrine"
+          },
+          "time": "09:00",
+          "minutes": 90,
+          "mapQuery": "明治神宮 東京",
+          "done": false
+        }
+      ],
+      "number": 4,
+      "date": "2027-04-13"
+    },
+    {
+      "id": "tsukiji",
+      "type": "day",
+      "city": "tokyo",
+      "title": {
+        "pt": "Manhã no mercado de Tsukiji",
+        "ja": "築地場外市場の朝",
+        "en": "Morning at Tsukiji Market"
+      },
+      "layout": "top",
+      "stops": [
+        {
+          "id": "tsukiji-visit",
+          "name": {
+            "pt": "Mercado externo de Tsukiji",
+            "ja": "築地場外市場",
+            "en": "Tsukiji Outer Market"
+          },
+          "time": "09:00",
+          "minutes": 90,
+          "mapQuery": "築地場外市場 東京",
+          "done": false
+        }
+      ],
+      "number": 5,
+      "date": "2027-04-14"
+    },
+    {
+      "id": "ginza",
+      "type": "day",
+      "city": "tokyo",
+      "title": {
+        "pt": "Uma caminhada por Ginza",
+        "ja": "銀座を散策",
+        "en": "A walk through Ginza"
+      },
+      "layout": "top",
+      "stops": [
+        {
+          "id": "ginza-visit",
+          "name": {
+            "pt": "Avenida Chūō-dōri",
+            "ja": "中央通り",
+            "en": "Chūō-dōri Avenue"
+          },
+          "time": "09:00",
+          "minutes": 60,
+          "mapQuery": "中央通り 東京",
+          "done": false
+        }
+      ],
+      "number": 6,
+      "date": "2027-04-15"
+    },
+    {
       "id": "tokyo-kyoto",
       "type": "transfer",
       "from": "tokyo",
@@ -192,14 +339,14 @@
     {
       "id": "fushimi",
       "type": "day",
-      "number": 2,
+      "number": 7,
       "city": "kyoto",
       "title": {
         "pt": "Entre os torii de Fushimi",
         "ja": "伏見の鳥居をくぐる",
         "en": "Through the torii of Fushimi"
       },
-      "date": "2027-04-11",
+      "date": "2027-04-16",
       "layout": "top",
       "photo": "fushimi",
       "stops": [
@@ -228,6 +375,146 @@
           "done": false
         }
       ]
+    },
+    {
+      "id": "higashiyama",
+      "type": "day",
+      "city": "kyoto",
+      "title": {
+        "pt": "As ladeiras de Higashiyama",
+        "ja": "東山の坂道",
+        "en": "The slopes of Higashiyama"
+      },
+      "layout": "top",
+      "photo": "kiyomizu",
+      "stops": [
+        {
+          "id": "higashiyama-visit",
+          "name": {
+            "pt": "Templo Kiyomizu-dera",
+            "ja": "清水寺",
+            "en": "Kiyomizu-dera Temple"
+          },
+          "time": "09:00",
+          "minutes": 90,
+          "mapQuery": "清水寺 京都",
+          "done": false
+        }
+      ],
+      "number": 8,
+      "date": "2027-04-17"
+    },
+    {
+      "id": "arashiyama",
+      "type": "day",
+      "city": "kyoto",
+      "title": {
+        "pt": "À beira do rio em Arashiyama",
+        "ja": "嵐山の川沿い",
+        "en": "Along the river in Arashiyama"
+      },
+      "layout": "top",
+      "stops": [
+        {
+          "id": "arashiyama-visit",
+          "name": {
+            "pt": "Ponte Togetsukyō",
+            "ja": "渡月橋",
+            "en": "Togetsukyō Bridge"
+          },
+          "time": "09:00",
+          "minutes": 60,
+          "mapQuery": "渡月橋 京都",
+          "done": false
+        }
+      ],
+      "number": 9,
+      "date": "2027-04-18"
+    },
+    {
+      "id": "nishiki",
+      "type": "day",
+      "city": "kyoto",
+      "title": {
+        "pt": "Sabores do mercado Nishiki",
+        "ja": "錦市場で食べ歩き",
+        "en": "A taste of Nishiki Market"
+      },
+      "layout": "top",
+      "stops": [
+        {
+          "id": "nishiki-visit",
+          "name": {
+            "pt": "Mercado Nishiki",
+            "ja": "錦市場",
+            "en": "Nishiki Market"
+          },
+          "time": "09:00",
+          "minutes": 90,
+          "mapQuery": "錦市場 京都",
+          "done": false
+        }
+      ],
+      "number": 10,
+      "date": "2027-04-19"
+    },
+    {
+      "id": "gion",
+      "type": "day",
+      "city": "kyoto",
+      "title": {
+        "pt": "Ruas antigas de Gion",
+        "ja": "祇園の古い町並み",
+        "en": "The old streets of Gion"
+      },
+      "layout": "top",
+      "stops": [
+        {
+          "id": "gion-visit",
+          "name": {
+            "pt": "Rua Hanamikoji",
+            "ja": "花見小路通",
+            "en": "Hanamikoji Street"
+          },
+          "time": "09:00",
+          "minutes": 60,
+          "mapQuery": "花見小路通 京都",
+          "done": false
+        }
+      ],
+      "number": 11,
+      "date": "2027-04-20"
+    },
+    {
+      "id": "kinkakuji",
+      "type": "day",
+      "city": "kyoto",
+      "title": {
+        "pt": "O Pavilhão Dourado",
+        "ja": "金閣寺を訪ねる",
+        "en": "The Golden Pavilion"
+      },
+      "layout": "top",
+      "stops": [
+        {
+          "id": "kinkakuji-visit",
+          "name": {
+            "pt": "Templo Kinkaku-ji",
+            "ja": "金閣寺",
+            "en": "Kinkaku-ji Temple"
+          },
+          "time": "09:00",
+          "minutes": 75,
+          "mapQuery": "金閣寺 京都",
+          "done": false
+        }
+      ],
+      "number": 12,
+      "date": "2027-04-21"
     }
+  ],
+  "coverPhotos": [
+    "kiyomizu",
+    "shibuya"
   ]
 }

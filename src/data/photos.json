@@ -34,5 +34,29 @@
       "ja": "断面からあんが見えるたい焼き",
       "en": "Taiyaki cut open to show the filling"
     }
+  },
+  "shibuya": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Shibuya_Crossing_at_night.jpg/960px-Shibuya_Crossing_at_night.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Shibuya_Crossing_at_night.jpg",
+    "author": "Douglas P. Perkins",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "alt": {
+      "pt": "Cruzamento de Shibuya à noite",
+      "ja": "夜の渋谷スクランブル交差点",
+      "en": "Shibuya Crossing at night"
+    }
+  },
+  "kiyomizu": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Kiyomizudera_autumn.jpg/960px-Kiyomizudera_autumn.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Kiyomizudera_autumn.jpg",
+    "author": "lumoplank",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": {
+      "pt": "Templo Kiyomizu-dera entre árvores de outono",
+      "ja": "紅葉に囲まれた清水寺",
+      "en": "Kiyomizu-dera surrounded by autumn foliage"
+    }
   }
 }
