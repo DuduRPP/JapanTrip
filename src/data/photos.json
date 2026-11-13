@@ -1,0 +1,38 @@
+{
+  "asakusa": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Sensoji_Kaminarimon.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Sensoji_Kaminarimon.jpg",
+    "author": "Toshihiro Oimatsu",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "alt": {
+      "pt": "Portal Kaminarimon do templo Sensō-ji",
+      "ja": "浅草寺の雷門",
+      "en": "Kaminarimon gate at Sensō-ji"
+    }
+  },
+  "fushimi": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/20181110_Fushimi_Inari_Torii_4.jpg/960px-20181110_Fushimi_Inari_Torii_4.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:20181110_Fushimi_Inari_Torii_4.jpg",
+    "author": "Balon Greyjoy",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": {
+      "pt": "Caminho de portais vermelhos em Fushimi Inari",
+      "ja": "伏見稲荷大社の鳥居が並ぶ参道",
+      "en": "Path lined with red torii gates at Fushimi Inari"
+    }
+  },
+  "taiyaki": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Taiyaki_-_cut_section.jpg/960px-Taiyaki_-_cut_section.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Taiyaki_-_cut_section.jpg",
+    "author": "毒島みるく",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": {
+      "pt": "Taiyaki aberto, com recheio à vista",
+      "ja": "断面からあんが見えるたい焼き",
+      "en": "Taiyaki cut open to show the filling"
+    }
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "demo": true,
+  "coverPhoto": "fushimi",
+  "cities": [
+    {
+      "id": "tokyo",
+      "name": {
+        "pt": "Tóquio",
+        "ja": "東京",
+        "en": "Tokyo"
+      },
+      "accent": "#913e50",
+      "symbol": "tower",
+      "stays": [
+        {
+          "name": {
+            "pt": "Hotel econômico em Asakusa",
+            "ja": "浅草のビジネスホテル",
+            "en": "Budget hotel in Asakusa"
+          },
+          "fromYen": 8500
+        }
+      ],
+      "foods": [
+        {
+          "id": "soba",
+          "kind": "savory",
+          "name": {
+            "pt": "Soba",
+            "ja": "そば",
+            "en": "Soba"
+          },
+          "description": {
+            "pt": "Macarrão de trigo sarraceno, servido quente ou frio.",
+            "ja": "温かくても冷たくても楽しめるそば粉の麺。",
+            "en": "Buckwheat noodles served hot or cold."
+          },
+          "done": false
+        },
+        {
+          "id": "taiyaki",
+          "kind": "sweet",
+          "name": {
+            "pt": "Taiyaki",
+            "ja": "たい焼き",
+            "en": "Taiyaki"
+          },
+          "description": {
+            "pt": "Bolinho em forma de peixe, geralmente com recheio de feijão doce.",
+            "ja": "あんこなどを詰めた鯛の形の焼き菓子。",
+            "en": "Fish-shaped cake often filled with sweet bean paste."
+          },
+          "photo": "taiyaki",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "kyoto",
+      "name": {
+        "pt": "Kyoto",
+        "ja": "京都",
+        "en": "Kyoto"
+      },
+      "accent": "#376451",
+      "symbol": "torii",
+      "stays": [
+        {
+          "name": {
+            "pt": "Hotel perto da estação de Kyoto",
+            "ja": "京都駅周辺のホテル",
+            "en": "Hotel near Kyoto Station"
+          },
+          "fromYen": 10000
+        }
+      ],
+      "foods": [
+        {
+          "id": "yudofu",
+          "kind": "savory",
+          "name": {
+            "pt": "Yudofu",
+            "ja": "湯豆腐",
+            "en": "Yudofu"
+          },
+          "description": {
+            "pt": "Tofu aquecido em caldo suave, servido com molho.",
+            "ja": "だしで温めた豆腐をたれにつけて食べる料理。",
+            "en": "Tofu warmed in broth and served with dipping sauce."
+          },
+          "done": false
+        },
+        {
+          "id": "yatsuhashi",
+          "kind": "sweet",
+          "name": {
+            "pt": "Nama yatsuhashi",
+            "ja": "生八つ橋",
+            "en": "Nama yatsuhashi"
+          },
+          "description": {
+            "pt": "Doce macio de arroz, muitas vezes recheado com anko.",
+            "ja": "あんこを包むこともある柔らかい米粉のお菓子。",
+            "en": "Soft rice confection often filled with sweet bean paste."
+          },
+          "done": false
+        }
+      ]
+    }
+  ],
+  "journey": [
+    {
+      "id": "asakusa",
+      "type": "day",
+      "number": 1,
+      "city": "tokyo",
+      "title": {
+        "pt": "Pelas ruas de Asakusa",
+        "ja": "浅草を歩く",
+        "en": "Through the streets of Asakusa"
+      },
+      "date": "2027-04-10",
+      "layout": "side",
+      "photo": "asakusa",
+      "stops": [
+        {
+          "id": "sensoji",
+          "name": {
+            "pt": "Templo Sensō-ji",
+            "ja": "浅草寺",
+            "en": "Sensō-ji Temple"
+          },
+          "time": "09:00",
+          "minutes": 90,
+          "mapQuery": "浅草寺 東京",
+          "done": true
+        },
+        {
+          "id": "nakamise",
+          "name": {
+            "pt": "Rua Nakamise",
+            "ja": "仲見世通り",
+            "en": "Nakamise Street"
+          },
+          "time": "10:45",
+          "minutes": 45,
+          "mapQuery": "仲見世通り 東京",
+          "done": false
+        },
+        {
+          "id": "sumida",
+          "name": {
+            "pt": "Caminhada à beira do rio Sumida",
+            "ja": "隅田川沿いを散歩",
+            "en": "Walk along the Sumida River"
+          },
+          "minutes": 60,
+          "mapQuery": "隅田公園 東京",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "tokyo-kyoto",
+      "type": "transfer",
+      "from": "tokyo",
+      "to": "kyoto",
+      "options": [
+        {
+          "id": "shinkansen",
+          "name": {
+            "pt": "Shinkansen",
+            "ja": "新幹線",
+            "en": "Shinkansen"
+          },
+          "minutes": 135,
+          "yen": 14000,
+          "url": "https://smart-ex.jp/en/"
+        },
+        {
+          "id": "bus",
+          "name": {
+            "pt": "Ônibus rodoviário",
+            "ja": "高速バス",
+            "en": "Highway bus"
+          },
+          "minutes": 480,
+          "yen": 5500
+        }
+      ]
+    },
+    {
+      "id": "fushimi",
+      "type": "day",
+      "number": 2,
+      "city": "kyoto",
+      "title": {
+        "pt": "Entre os torii de Fushimi",
+        "ja": "伏見の鳥居をくぐる",
+        "en": "Through the torii of Fushimi"
+      },
+      "date": "2027-04-11",
+      "layout": "top",
+      "photo": "fushimi",
+      "stops": [
+        {
+          "id": "fushimi-inari",
+          "name": {
+            "pt": "Santuário Fushimi Inari",
+            "ja": "伏見稲荷大社",
+            "en": "Fushimi Inari Shrine"
+          },
+          "time": "09:00",
+          "minutes": 120,
+          "mapQuery": "伏見稲荷大社 京都",
+          "done": false
+        },
+        {
+          "id": "tofukuji",
+          "name": {
+            "pt": "Templo Tōfuku-ji",
+            "ja": "東福寺",
+            "en": "Tōfuku-ji Temple"
+          },
+          "time": "12:00",
+          "minutes": 60,
+          "mapQuery": "東福寺 京都",
+          "done": false
+        }
+      ]
+    }
+  ]
+}
