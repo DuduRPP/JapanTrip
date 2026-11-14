@@ -105,7 +105,6 @@ function App() {
 
   useEffect(() => {
     document.documentElement.lang = locale;
-    document.title = home ? 'JapanTrip' : heading + ' · JapanTrip';
     const entry = main.current?.querySelector('.linked-entry');
     if (entry) {
       entry.scrollIntoView({ block: 'start' });
@@ -116,7 +115,7 @@ function App() {
       window.scrollTo(0, 0);
       main.current?.focus({ preventScroll: true });
     }
-  }, [locale, heading, home, kind, id, entryId]);
+  }, [locale, kind, id, entryId]);
 
   return <div className="site" style={{ '--accent': city?.accent }}>
     <a className="skip" href="#content" onClick={event => { event.preventDefault(); main.current?.focus(); }}>{t.skip}</a>
