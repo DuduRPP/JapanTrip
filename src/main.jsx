@@ -6,6 +6,7 @@ import { Icon } from './Icons';
 import { Timeline, TodayLink, groupJourney, localDateKey } from './Timeline';
 import { CityFood, DayContent, HotelList, Photo, ShoppingList, TransportList } from './TripContent';
 import { LanguagePicker } from './LanguagePicker';
+import { CityHeading, DayHeading } from './CityHeading';
 import { TripPrint } from './TripPrint';
 import { PwaControls } from './pwa';
 import './style.css';
@@ -104,7 +105,7 @@ function App() {
 
   useEffect(() => {
     document.documentElement.lang = locale;
-    document.title = home ? t.title : heading + ' · ' + t.title;
+    document.title = home ? 'JapanTrip' : heading + ' · JapanTrip';
     const entry = main.current?.querySelector('.linked-entry');
     if (entry) {
       entry.scrollIntoView({ block: 'start' });
@@ -115,7 +116,7 @@ function App() {
       window.scrollTo(0, 0);
       main.current?.focus({ preventScroll: true });
     }
-  }, [locale, heading, home, t.title, kind, id, entryId]);
+  }, [locale, heading, home, kind, id, entryId]);
 
   return <div className="site" style={{ '--accent': city?.accent }}>
     <a className="skip" href="#content" onClick={event => { event.preventDefault(); main.current?.focus(); }}>{t.skip}</a>
@@ -136,17 +137,10 @@ function App() {
     {printable ? <TripPrint trip={trip} coverPhoto={coverPhoto} cities={cities} display={display}
       title={title} dayText={dayText} date={date} back={href(lang)} /> : <>
       {!home && trip.demo && <p className="sample">{t.sample}</p>}
-      {city ? <header className="city-heading">
-        <div className="city-heading-copy">
-          <h1>{heading}</h1>
-          {step?.type === 'day' && <p className="chapter">
-            <a href={cityHref('cidade', city.id)}>{translate(city.name)}</a> · {dayText(step.number)} · <time dateTime={step.date}>{date(step.date)}</time>
-          </p>}
-        </div>
-        <span className="city-seal" aria-hidden="true">
-          <Icon name={city.symbol} /><span lang="ja">{city.name.ja}</span>
-        </span>
-      </header> : <h1>{heading}</h1>}
+      {step?.type === 'day' ? <DayHeading city={city} cityName={translate(city.name)}
+        cityHref={cityHref('cidade', city.id)} title={heading} day={dayText(step.number)}
+        date={step.date} formattedDate={date(step.date)} />
+        : city ? <CityHeading city={city} title={heading} /> : <h1>{heading}</h1>}
       {home && <>
         <div className="cover-actions">
           {trip.journey[0] && <a className="start-trip" href={stepHref(trip.journey[0])}>

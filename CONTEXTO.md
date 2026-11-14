@@ -49,6 +49,10 @@ Coloque as paradas em `stops` na ordem em que pretende visitá-las. A página nu
 
 ## PDF e uso offline
 
+O PDF usa os mesmos componentes de cabeçalho, selos e cores das páginas do site. Uma nova exportação acompanha as mudanças no roteiro e na decoração compartilhada.
+
+Em `stops`, use `optional: true` para exibir uma parada em “Passeios opcionais”, após as paradas principais. A numeração vale para as paradas principais. As opcionais também aparecem no PDF.
+
 O botão “Salvar em PDF” abre o roteiro completo. Na página de impressão, use “Salvar em PDF” e selecione a opção de PDF oferecida pelo navegador. O arquivo é uma cópia da versão exibida e pode ser compartilhado ou lido sem internet.
 
 Para usar como aplicativo, abra o site com internet e aguarde a indicação “Disponível offline” no rodapé. Use “Instalar diário” ou o menu do navegador. No iPhone, use o menu Compartilhar do Safari e selecione “Adicionar à Tela de Início”. O service worker guarda a versão do roteiro, fotos e fontes no aparelho. Mapas, operadoras e outros links externos dependem da conexão.

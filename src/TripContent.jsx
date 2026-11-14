@@ -111,8 +111,30 @@ export function CityFood({ city, display, eager = false, selectedId }) {
   </div>;
 }
 
-export function DayContent({ day, city, display, eager = false, foodHref, shopHref }) {
+function StopList({ stops, display, optional = false }) {
   const { t, translate, duration } = display;
+  return <ol className={optional ? 'plain stop-list optional-stops' : 'plain stop-list'} role="list">
+    {stops.map((stop, index) => {
+      const mapLabel = t.map + ' · ' + translate(stop.name);
+      return <li key={stop.id}>
+        {!optional && <span className="stop-order" aria-hidden="true">{index + 1}</span>}
+        <Status done={stop.done} complete={t.done} pending={t.pending} />
+        <div>
+          <ItemName name={stop.name} {...display} />
+          {stop.minutes != null && <span className="meta">≈ {duration(stop.minutes)}</span>}
+          {stop.addressJa && <span className="meta" lang="ja">{stop.addressJa}</span>}
+          {stop.description && <p className="stop-description">{translate(stop.description)}</p>}
+        </div>
+        {stop.mapQuery && <MapLink label={mapLabel} query={stop.mapQuery} />}
+      </li>;
+    })}
+  </ol>;
+}
+
+export function DayContent({ day, city, display, eager = false, foodHref, shopHref }) {
+  const { t, translate } = display;
+  const requiredStops = day.stops.filter(stop => !stop.optional);
+  const optionalStops = day.stops.filter(stop => stop.optional);
   const suggestions = (day.foodIds ?? []).map(id => city.foods.find(food => food.id === id)).filter(Boolean);
   const shops = (day.shopIds ?? []).map(id => city.shops?.find(shop => shop.id === id)).filter(Boolean);
   const Heading = eager ? 'h3' : 'h2';
@@ -124,20 +146,12 @@ export function DayContent({ day, city, display, eager = false, foodHref, shopHr
     <div className="copy">
       <section>
         <Heading>{t.stops}</Heading>
-        {day.stops.length ? <ol className="plain stop-list" role="list">{day.stops.map((stop, index) => {
-          const mapLabel = t.map + ' · ' + translate(stop.name);
-          return <li key={stop.id}>
-            <span className="stop-order" aria-hidden="true">{index + 1}</span>
-            <Status done={stop.done} complete={t.done} pending={t.pending} />
-            <div>
-              <ItemName name={stop.name} {...display} />
-              {stop.minutes != null && <span className="meta">≈ {duration(stop.minutes)}</span>}
-              {stop.addressJa && <span className="meta" lang="ja">{stop.addressJa}</span>}
-              {stop.description && <p className="stop-description">{translate(stop.description)}</p>}
-            </div>
-            {stop.mapQuery && <MapLink label={mapLabel} query={stop.mapQuery} />}
-          </li>;
-        })}</ol> : <p>{t.empty}</p>}
+        {requiredStops.length > 0 && <StopList stops={requiredStops} display={display} />}
+        {optionalStops.length > 0 && <section className="day-optional">
+          {eager ? <h4>{t.optionalStops}</h4> : <h3>{t.optionalStops}</h3>}
+          <StopList stops={optionalStops} display={display} optional />
+        </section>}
+        {day.stops.length === 0 && <p>{t.empty}</p>}
       </section>
       {suggestions.length > 0 && <section className="day-food">
         <Heading><Icon name="bowl" /> {t.dayFood}</Heading>

@@ -304,6 +304,7 @@
         },
         {
           "id": "sumida",
+          "optional": true,
           "name": {
             "pt": "Caminhada à beira do rio Sumida",
             "ja": "隅田川沿いを散歩",

@@ -68,7 +68,7 @@ svg { width: 1.2em; height: 1.2em; vertical-align: -.22em; flex-shrink: 0; }
 .cover-cities a:hover { background: color-mix(in srgb, var(--accent) 8%, var(--paper)); }
 .cover .sample { margin: 1.3rem 0 0; }
 .city-heading { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: clamp(.75rem, 3vw, 2rem); padding-bottom: .9rem; margin-bottom: 1.65rem; border-bottom: 2px solid var(--accent); }
-.city-heading h1 { margin: 0; color: var(--accent); text-wrap: pretty; }
+.city-heading :is(h1, h2) { margin: 0; color: var(--accent); text-wrap: pretty; }
 .city-heading .chapter { margin: .45rem 0 0; }
 .city-seal { display: grid; place-content: center; justify-items: center; align-self: center; gap: .18rem; width: clamp(3.4rem, 9vw, 6.25rem); aspect-ratio: 1; border: 1px solid currentColor; border-radius: 50%; background: color-mix(in srgb, var(--accent) 7%, var(--paper)); color: var(--accent); font-weight: 700; font-size: clamp(.76rem, 2vw, 1.2rem); }
 .city-seal svg { width: 2.2em; height: 2.2em; }
@@ -146,7 +146,11 @@ p { line-height: 1.55; }
 .hotel-list .stamp { color: var(--accent); }
 .stop-list li { display: grid; grid-template-columns: 1.35rem 1.25rem minmax(0, 1fr) 44px; align-items: start; gap: .5rem; }
 .stop-order { color: var(--accent); font-weight: 700; text-align: center; font-variant-numeric: tabular-nums; }
+.day-optional { margin-top: 1.25rem; }
+.day-optional :is(h3, h4) { margin: 0 0 .45rem; color: var(--muted); font-size: 1.1rem; }
+.day-optional .stop-description { color: var(--muted); }
 .stop-list li, .transport-list li, .food-list li { border-top: 1px solid var(--rule); padding-block: .85rem; }
+.optional-stops li { grid-template-columns: 1.25rem minmax(0, 1fr) 44px; border-top-style: dashed; }
 .transport-list { max-width: 46rem; }
 .meta, .item-name small { color: var(--muted); display: block; margin: .15rem 0 .4rem; }
 .item-name strong { font-weight: 700; }
@@ -216,22 +220,27 @@ p { line-height: 1.55; }
   .print-book h2 { font-size: 22pt; }
   .print-book h3 { font-size: 16pt; }
   .print-book h1, .print-book h2, .print-book h3, .print-book h4, .print-book .chapter { break-after: avoid; }
-  .print-book .photo, .print-book li, .print-book .print-entry { break-inside: avoid; }
+  .print-book .photo, .print-book li { break-inside: avoid; }
   .print-book .photo img { max-height: 53mm; aspect-ratio: 2; object-fit: cover; }
   .print-book .print-cover .photo img { max-height: 74mm; aspect-ratio: 2; }
   .print-book .print-entry { margin-top: 1.35rem; padding-top: .65rem; }
+  .print-book .print-city-entry { border-top: 0; }
+  .print-book .city-heading { break-inside: avoid; break-after: avoid; gap: 1rem; margin-bottom: .8rem; padding-bottom: .45rem; }
+  .print-book .city-seal { width: 14mm; font-size: 8pt; }
   .print-book .spread { display: block; margin-block: .8rem; }
   .print-book .spread .photo { margin-bottom: .7rem; }
   .print-book .spread-side:has(.photo) { display: block; }
   .print-book .day-food, .print-book .day-shops { margin-top: 1rem; }
   .print-book .day-gallery:has(.photo) { display: flex; gap: .55rem; align-items: flex-start; }
   .print-book .day-gallery .photo { flex: 1; }
+  .print-book .day-gallery .photo img { max-height: 43mm; }
   .print-book .food-list { display: block; }
   .print-book .food-list > li:has(> .photo) { display: grid; grid-template-columns: minmax(0, 1fr) 34mm; gap: .65rem; }
   .print-book .food-list .photo { margin: 0; }
   .print-book .food-list .photo img { max-height: 22mm; }
   .print-book .food-sections { display: block; }
   .print-book .stop-list li { grid-template-columns: 1.1rem 1.25rem minmax(0, 1fr); }
+  .print-book .optional-stops li { grid-template-columns: 1.25rem minmax(0, 1fr); }
   .print-book .stop-list li, .print-book .transport-list li, .print-book .food-list li, .print-book .hotel-list li { padding-block: .4rem; }
   .print-book .venue-row { display: block; padding-block: .25rem; }
   .print-book .venue-links { display: none; }

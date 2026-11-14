@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { Icon } from './Icons';
+import { CityHeading, DayHeading } from './CityHeading';
 import { CityFood, DayContent, HotelList, Photo, ShoppingList, TransportList } from './TripContent';
 
 export function TripPrint({ trip, coverPhoto, cities, display, title, dayText, date, back }) {
@@ -33,16 +34,16 @@ export function TripPrint({ trip, coverPhoto, cities, display, title, dayText, d
             <TransportList step={step} display={display} />
           </section>;
           const city = cities[step.city];
-          return <section className="print-entry" key={step.id}>
-            <h2>{dayText(step.number)} · {title(step)}</h2>
-            <p className="chapter">{translate(city.name)} · <time dateTime={step.date}>{date(step.date)}</time></p>
+          return <section className="print-entry print-city-entry" key={step.id} style={{ '--accent': city.accent }}>
+            <DayHeading city={city} cityName={translate(city.name)} title={title(step)}
+              day={dayText(step.number)} date={step.date} formattedDate={date(step.date)} level="h2" />
             <DayContent day={step} city={city} display={display} eager />
           </section>;
         })}
       </section>
       <section className="print-city-guide" aria-label={t.cities}>
-        {trip.cities.map(city => <section className="print-entry" key={city.id}>
-          <h2>{translate(city.name)}</h2>
+        {trip.cities.map(city => <section className="print-entry print-city-entry" key={city.id} style={{ '--accent': city.accent }}>
+          <CityHeading city={city} title={translate(city.name)} level="h2" />
           {city.description && <p>{translate(city.description)}</p>}
           <Photo id={city.photo} translate={translate} eager />
           <h3>{t.stays}</h3>
