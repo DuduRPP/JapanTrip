@@ -34,6 +34,7 @@ const drawings = {
   </>,
   check: <path d="m5 12 4 4L19 6"/>,
   chevron: <path d="m9 6 6 6-6 6"/>,
+  close: <path d="m6 6 12 12M18 6 6 18"/>,
   previous: <path d="M20 12H4m7-7-7 7 7 7"/>,
   next: <path d="M4 12h16m-7-7 7 7-7 7"/>,
   pin: <>

@@ -11,7 +11,7 @@ import './style.css';
 
 const cities = Object.assign(Object.create(null), Object.fromEntries(trip.cities.map(city => [city.id, city])));
 const timelineGroups = groupJourney(trip.journey);
-const coverPhotos = trip.coverPhotos ?? [trip.coverPhoto].filter(Boolean);
+const coverPhoto = trip.coverPhoto;
 const cityPages = [
   { kind: 'cidade', label: 'overview', icon: 'book' },
   { kind: 'hoteis', label: 'stays', icon: 'bed' },
@@ -33,7 +33,6 @@ function href(lang, kind = 'inicio', id) {
 function App() {
   const [route, setRoute] = useState(readRoute);
   const [todayKey, setTodayKey] = useState(() => localDateKey());
-  const [timelineOpen, setTimelineOpen] = useState(() => !window.matchMedia('(max-width: 58rem)').matches);
   const main = useRef(null);
   const hasNavigated = useRef(false);
   const { lang, kind, id } = route;
@@ -123,27 +122,45 @@ function App() {
     <div className={'wrap ' + (home || printable ? 'cover-shell' : 'journal-shell')}>
     {!home && !printable && <Timeline groups={timelineGroups} cities={cities} t={t} translate={translate}
       title={title} dayText={dayText} shortDate={shortDate} stepHref={stepHref} cityHref={cityHref}
-      selected={step} today={today} cityId={city?.id} cityPage={cityPage?.kind} cityPages={cityPages}
-      open={timelineOpen} setOpen={setTimelineOpen} />}
+      selected={step} today={today} cityId={city?.id} cityPage={cityPage?.kind} cityPages={cityPages} />}
     <main id="content" className={'page' + (home ? ' cover' : printable ? ' printable' : '')} tabIndex={-1} ref={main}>
-    {printable ? <TripPrint trip={trip} coverPhotos={coverPhotos} cities={cities} display={display}
+    {printable ? <TripPrint trip={trip} coverPhoto={coverPhoto} cities={cities} display={display}
       title={title} dayText={dayText} date={date} back={href(lang)} /> : <>
       {!home && trip.demo && <p className="sample">{t.sample}</p>}
-      {step?.type === 'day' && <p className="chapter"><Icon name={city.symbol} />
-        {dayText(step.number)} · {translate(city.name)} · <time dateTime={step.date}>{date(step.date)}</time>
-      </p>}
-      <h1>{heading}</h1>
+      {city ? <header className="city-heading">
+        <div className="city-heading-copy">
+          <h1>{heading}</h1>
+          {step?.type === 'day' && <p className="chapter">
+            <a href={cityHref('cidade', city.id)}>{translate(city.name)}</a> · {dayText(step.number)} · <time dateTime={step.date}>{date(step.date)}</time>
+          </p>}
+        </div>
+        <span className="city-seal" aria-hidden="true">
+          <Icon name={city.symbol} /><span lang="ja">{city.name.ja}</span>
+        </span>
+      </header> : <h1>{heading}</h1>}
       {home && <>
         <p className="intro">{t.intro}</p>
-        <nav className="cover-cities" aria-label={t.cities}>
-          {trip.cities.map(item => <a key={item.id} href={cityHref('cidade', item.id)} style={{ '--accent': item.accent }}>
-            <span className="stamp"><Icon name={item.symbol} /></span>{translate(item.name)}<Icon name="chevron" />
-          </a>)}
+        <div className="cover-actions">
+          {trip.journey[0] && <a className="start-trip" href={stepHref(trip.journey[0])}>
+            {t.startTrip} <Icon name="next" />
+          </a>}
           <TodayLink step={today} stepHref={stepHref} label={t.goToday} />
-        </nav>
-        <div className="cover-photos">
-          {coverPhotos.map(photo => <Photo key={photo} id={photo} translate={translate} eager />)}
         </div>
+        <div className="cover-photo"><Photo id={coverPhoto} translate={translate} eager /></div>
+        <section className="cover-destinations" aria-labelledby="cover-cities-title">
+          <h2 id="cover-cities-title">{t.cities}</h2>
+          <ul className="plain cover-cities">
+            {trip.cities.map(item => <li key={item.id} style={{ '--accent': item.accent }}>
+              <a href={cityHref('cidade', item.id)}>
+                <span className="stamp"><Icon name={item.symbol} /></span>
+                <span className="cover-city-name">{translate(item.name)}
+                  {lang !== 'ja' && <small lang="ja">{item.name.ja}</small>}
+                </span>
+                <Icon name="chevron" />
+              </a>
+            </li>)}
+          </ul>
+        </section>
         {trip.demo && <p className="sample">{t.sample}</p>}
       </>}
       {kind === 'cidade' && city && <div className="spread spread-top city-overview">

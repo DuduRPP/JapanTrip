@@ -1,5 +1,6 @@
 {
   "demo": true,
+  "coverPhoto": "miyajima",
   "cities": [
     {
       "id": "tokyo",
@@ -757,9 +758,5 @@
         "yudofu"
       ]
     }
-  ],
-  "coverPhotos": [
-    "kiyomizu",
-    "shibuya"
   ]
 }

@@ -1,4 +1,16 @@
 {
+  "miyajima": {
+    "url": "photos/miyajima.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Itsukushima-jinja_torii_at_sunset,_Miyajima,_Japan,_20240816_1839_4180.jpg",
+    "author": "Jakub Hałun",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "alt": {
+      "pt": "Torii de Itsukushima no mar ao pôr do sol, em Miyajima",
+      "ja": "夕暮れの宮島、海に立つ厳島神社の大鳥居",
+      "en": "Itsukushima’s floating torii at sunset in Miyajima"
+    }
+  },
   "asakusa": {
     "url": "photos/asakusa.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Sensoji_Kaminarimon.jpg",

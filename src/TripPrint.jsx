@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { Icon } from './Icons';
 import { CityFood, DayContent, HotelList, Photo, ShoppingList, TransportList } from './TripContent';
 
-export function TripPrint({ trip, coverPhotos, cities, display, title, dayText, date, back }) {
+export function TripPrint({ trip, coverPhoto, cities, display, title, dayText, date, back }) {
   const printable = useRef(null);
   const { t, translate } = display;
 
@@ -23,9 +23,7 @@ export function TripPrint({ trip, coverPhotos, cities, display, title, dayText, 
         <h1>{t.title}</h1>
         <p>{t.completeTrip} · {trip.cities.map(city => translate(city.name)).join(' → ')}</p>
         {trip.demo && <p className="sample">{t.sample}</p>}
-        <div className="print-cover-photos">
-          {coverPhotos.map(id => <Photo key={id} id={id} translate={translate} eager />)}
-        </div>
+        <Photo id={coverPhoto} translate={translate} eager />
       </header>
       <section className="print-itinerary" aria-label={t.route}>
         {trip.journey.map(step => {
