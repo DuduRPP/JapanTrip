@@ -144,7 +144,12 @@
           "time": "09:00",
           "minutes": 90,
           "mapQuery": "浅草寺 東京",
-          "done": true
+          "done": true,
+          "description": {
+            "pt": "Comece pelo portão Kaminarimon e siga até o salão principal do templo.",
+            "ja": "雷門から入り、本堂まで歩きます。",
+            "en": "Start at Kaminarimon gate and walk to the temple’s main hall."
+          }
         },
         {
           "id": "nakamise",
@@ -156,7 +161,12 @@
           "time": "10:45",
           "minutes": 45,
           "mapQuery": "仲見世通り 東京",
-          "done": false
+          "done": false,
+          "description": {
+            "pt": "Percorra a rua comercial que liga o portão ao templo, com barracas de doces e lembranças.",
+            "ja": "雷門と本堂をつなぐ商店街で、お菓子やお土産を見て歩きます。",
+            "en": "Browse the sweets and souvenir stalls on the street between the gate and the temple."
+          }
         },
         {
           "id": "sumida",
@@ -167,8 +177,17 @@
           },
           "minutes": 60,
           "mapQuery": "隅田公園 東京",
-          "done": false
+          "done": false,
+          "description": {
+            "pt": "Caminhada sem pressa junto ao rio, com vista para a Tokyo Skytree.",
+            "ja": "東京スカイツリーを眺めながら川沿いを散歩します。",
+            "en": "Take a leisurely riverside walk with views of Tokyo Skytree."
+          }
         }
+      ],
+      "foodIds": [
+        "soba",
+        "taiyaki"
       ]
     },
     {
@@ -192,11 +211,19 @@
           "time": "09:00",
           "minutes": 90,
           "mapQuery": "上野恩賜公園 東京",
-          "done": false
+          "done": false,
+          "description": {
+            "pt": "Passeie pelos caminhos do parque e pela região do lago Shinobazu.",
+            "ja": "公園の小道や不忍池の周辺を散策します。",
+            "en": "Follow the park paths and stroll around Shinobazu Pond."
+          }
         }
       ],
       "number": 2,
-      "date": "2027-04-11"
+      "date": "2027-04-11",
+      "foodIds": [
+        "taiyaki"
+      ]
     },
     {
       "id": "shibuya",
@@ -220,11 +247,19 @@
           "time": "09:00",
           "minutes": 40,
           "mapQuery": "渋谷スクランブル交差点 東京",
-          "done": false
+          "done": false,
+          "description": {
+            "pt": "Atravesse o cruzamento e explore os arredores da estação a pé.",
+            "ja": "スクランブル交差点を渡り、駅の周辺を歩きます。",
+            "en": "Cross the scramble and explore the streets around the station on foot."
+          }
         }
       ],
       "number": 3,
-      "date": "2027-04-12"
+      "date": "2027-04-12",
+      "foodIds": [
+        "soba"
+      ]
     },
     {
       "id": "harajuku",
@@ -247,11 +282,19 @@
           "time": "09:00",
           "minutes": 90,
           "mapQuery": "明治神宮 東京",
-          "done": false
+          "done": false,
+          "description": {
+            "pt": "Siga pela alameda arborizada até o santuário, a partir de Harajuku.",
+            "ja": "原宿から木立の参道を通って神宮へ向かいます。",
+            "en": "Walk the wooded approach to the shrine from Harajuku."
+          }
         }
       ],
       "number": 4,
-      "date": "2027-04-13"
+      "date": "2027-04-13",
+      "foodIds": [
+        "taiyaki"
+      ]
     },
     {
       "id": "tsukiji",
@@ -274,11 +317,19 @@
           "time": "09:00",
           "minutes": 90,
           "mapQuery": "築地場外市場 東京",
-          "done": false
+          "done": false,
+          "description": {
+            "pt": "Explore as bancas do mercado e reserve tempo para beliscar algo.",
+            "ja": "市場の店を見て回り、食べ歩きの時間も取ります。",
+            "en": "Browse the market stalls and leave time for a snack."
+          }
         }
       ],
       "number": 5,
-      "date": "2027-04-14"
+      "date": "2027-04-14",
+      "foodIds": [
+        "soba"
+      ]
     },
     {
       "id": "ginza",
@@ -301,11 +352,19 @@
           "time": "09:00",
           "minutes": 60,
           "mapQuery": "中央通り 東京",
-          "done": false
+          "done": false,
+          "description": {
+            "pt": "Caminhe pela avenida principal e observe as vitrines e fachadas.",
+            "ja": "大通りを歩きながら、店のショーウィンドウや建物を眺めます。",
+            "en": "Walk the main avenue and take in its shop windows and architecture."
+          }
         }
       ],
       "number": 6,
-      "date": "2027-04-15"
+      "date": "2027-04-15",
+      "foodIds": [
+        "taiyaki"
+      ]
     },
     {
       "id": "tokyo-kyoto",
@@ -360,7 +419,12 @@
           "time": "09:00",
           "minutes": 120,
           "mapQuery": "伏見稲荷大社 京都",
-          "done": false
+          "done": false,
+          "description": {
+            "pt": "Siga pelo caminho de portais vermelhos e escolha quanto da subida quer fazer.",
+            "ja": "鳥居が続く参道を歩き、体力に合わせて登ります。",
+            "en": "Follow the red torii gates and go as far up the trail as you like."
+          }
         },
         {
           "id": "tofukuji",
@@ -372,8 +436,16 @@
           "time": "12:00",
           "minutes": 60,
           "mapQuery": "東福寺 京都",
-          "done": false
+          "done": false,
+          "description": {
+            "pt": "Reserve tempo para o complexo do templo e a paisagem ao redor.",
+            "ja": "境内と周辺の景色をゆっくり楽しみます。",
+            "en": "Leave time to explore the temple grounds and surrounding scenery."
+          }
         }
+      ],
+      "foodIds": [
+        "yatsuhashi"
       ]
     },
     {
@@ -398,11 +470,20 @@
           "time": "09:00",
           "minutes": 90,
           "mapQuery": "清水寺 京都",
-          "done": false
+          "done": false,
+          "description": {
+            "pt": "Suba pelas ruas de Higashiyama até o templo e aproveite a vista da encosta.",
+            "ja": "東山の坂道を登ってお寺へ向かい、斜面からの眺めを楽しみます。",
+            "en": "Climb the streets of Higashiyama to the temple and enjoy the hillside view."
+          }
         }
       ],
       "number": 8,
-      "date": "2027-04-17"
+      "date": "2027-04-17",
+      "foodIds": [
+        "yudofu",
+        "yatsuhashi"
+      ]
     },
     {
       "id": "arashiyama",
@@ -425,11 +506,19 @@
           "time": "09:00",
           "minutes": 60,
           "mapQuery": "渡月橋 京都",
-          "done": false
+          "done": false,
+          "description": {
+            "pt": "Atravesse a ponte e aproveite a vista das montanhas a partir do rio.",
+            "ja": "橋を渡り、川辺から山の景色を眺めます。",
+            "en": "Cross the bridge and take in the mountains from the riverbank."
+          }
         }
       ],
       "number": 9,
-      "date": "2027-04-18"
+      "date": "2027-04-18",
+      "foodIds": [
+        "yudofu"
+      ]
     },
     {
       "id": "nishiki",
@@ -452,11 +541,19 @@
           "time": "09:00",
           "minutes": 90,
           "mapQuery": "錦市場 京都",
-          "done": false
+          "done": false,
+          "description": {
+            "pt": "Percorra as barracas do mercado para conhecer ingredientes e petiscos locais.",
+            "ja": "市場の店を巡り、地元の食材や軽食を見つけます。",
+            "en": "Browse the market stalls for local ingredients and snacks."
+          }
         }
       ],
       "number": 10,
-      "date": "2027-04-19"
+      "date": "2027-04-19",
+      "foodIds": [
+        "yatsuhashi"
+      ]
     },
     {
       "id": "gion",
@@ -479,11 +576,19 @@
           "time": "09:00",
           "minutes": 60,
           "mapQuery": "花見小路通 京都",
-          "done": false
+          "done": false,
+          "description": {
+            "pt": "Caminhe pela rua histórica e observe as fachadas das casas tradicionais.",
+            "ja": "歴史ある通りを歩き、伝統的な町家の外観を眺めます。",
+            "en": "Walk the historic street and look for traditional townhouse façades."
+          }
         }
       ],
       "number": 11,
-      "date": "2027-04-20"
+      "date": "2027-04-20",
+      "foodIds": [
+        "yatsuhashi"
+      ]
     },
     {
       "id": "kinkakuji",
@@ -506,11 +611,19 @@
           "time": "09:00",
           "minutes": 75,
           "mapQuery": "金閣寺 京都",
-          "done": false
+          "done": false,
+          "description": {
+            "pt": "Passeie pelos jardins e veja o pavilhão refletido no lago.",
+            "ja": "庭園を歩き、池に映る金閣を眺めます。",
+            "en": "Walk through the gardens and see the pavilion reflected in the pond."
+          }
         }
       ],
       "number": 12,
-      "date": "2027-04-21"
+      "date": "2027-04-21",
+      "foodIds": [
+        "yudofu"
+      ]
     }
   ],
   "coverPhotos": [

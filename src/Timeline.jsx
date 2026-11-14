@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { Icon } from './Icons';
 
 export function localDateKey(date = new Date()) {
@@ -28,8 +28,7 @@ export function TodayLink({ step, stepHref, label, onClick }) {
 }
 
 export function Timeline({ groups, cities, t, translate, title, dayText, shortDate, stepHref,
-  cityHref, selected, today, overviewCity }) {
-  const [open, setOpen] = useState(false);
+  cityHref, selected, today, overviewCity, open, setOpen }) {
   const toggle = useRef(null);
   const rail = useRef(null);
 
@@ -52,17 +51,20 @@ export function Timeline({ groups, cities, t, translate, title, dayText, shortDa
     }
   }
 
+  function closeOnMobile() {
+    if (window.matchMedia('(max-width: 58rem)').matches) setOpen(false);
+  }
+
   return <aside className="timeline" onKeyDown={closeFromKeyboard}>
     <div className="timeline-header">
-      <h2><Icon name="route" /> {t.route}</h2>
       <button type="button" ref={toggle} className="timeline-toggle" aria-expanded={open}
         aria-controls="timeline-steps" onClick={() => setOpen(value => !value)}>
         <Icon name="route" /> {t.route} <span className="toggle-arrow"><Icon name="chevron" /></span>
       </button>
-      <TodayLink step={today} stepHref={stepHref} label={t.goToday} onClick={() => setOpen(false)} />
+      <TodayLink step={today} stepHref={stepHref} label={t.goToday} onClick={closeOnMobile} />
     </div>
     <nav ref={rail} id="timeline-steps" aria-label={t.route} className={'timeline-steps' + (open ? ' is-open' : '')}
-      onClick={event => { if (event.target.closest('a')) setOpen(false); }}>
+      onClick={event => { if (event.target.closest('a')) closeOnMobile(); }}>
       <ol className="plain">
         {groups.map(group => {
           if (group.transfer) {

@@ -1,6 +1,6 @@
 {
   "asakusa": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Sensoji_Kaminarimon.jpg",
+    "url": "photos/asakusa.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Sensoji_Kaminarimon.jpg",
     "author": "Toshihiro Oimatsu",
     "license": "CC BY 2.0",
@@ -12,7 +12,7 @@
     }
   },
   "fushimi": {
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/20181110_Fushimi_Inari_Torii_4.jpg/960px-20181110_Fushimi_Inari_Torii_4.jpg",
+    "url": "photos/fushimi.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:20181110_Fushimi_Inari_Torii_4.jpg",
     "author": "Balon Greyjoy",
     "license": "CC0 1.0",
@@ -24,7 +24,7 @@
     }
   },
   "taiyaki": {
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Taiyaki_-_cut_section.jpg/960px-Taiyaki_-_cut_section.jpg",
+    "url": "photos/taiyaki.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Taiyaki_-_cut_section.jpg",
     "author": "毒島みるく",
     "license": "CC0 1.0",
@@ -36,7 +36,7 @@
     }
   },
   "shibuya": {
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Shibuya_Crossing_at_night.jpg/960px-Shibuya_Crossing_at_night.jpg",
+    "url": "photos/shibuya.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Shibuya_Crossing_at_night.jpg",
     "author": "Douglas P. Perkins",
     "license": "CC BY 3.0",
@@ -48,7 +48,7 @@
     }
   },
   "kiyomizu": {
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Kiyomizudera_autumn.jpg/960px-Kiyomizudera_autumn.jpg",
+    "url": "photos/kiyomizu.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Kiyomizudera_autumn.jpg",
     "author": "lumoplank",
     "license": "CC0 1.0",

@@ -34,6 +34,17 @@ const drawings = {
   </>,
   check: <path d="m5 12 4 4L19 6"/>,
   chevron: <path d="m9 6 6 6-6 6"/>,
+  previous: <path d="M20 12H4m7-7-7 7 7 7"/>,
+  next: <path d="M4 12h16m-7-7 7 7-7 7"/>,
+  pin: <>
+    <path className="icon-tint" d="M19 9a7 7 0 0 0-14 0c0 5 7 12 7 12s7-7 7-12Z"/>
+    <circle cx="12" cy="9" r="2.4"/>
+  </>,
+  print: <>
+    <path d="M7 8V3h10v5m0 9h3V8H4v9h3m0-4h10v8H7z"/>
+    <path d="M7 10.5h.5"/>
+  </>,
+  download: <path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/>,
 };
 
 export function Icon({ name }) {
