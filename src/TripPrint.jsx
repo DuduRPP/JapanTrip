@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { Icon } from './Icons';
-import { CityFood, DayContent, HotelList, Photo, TransportList } from './TripContent';
+import { CityFood, DayContent, HotelList, Photo, ShoppingList, TransportList } from './TripContent';
 
 export function TripPrint({ trip, coverPhotos, cities, display, title, dayText, date, back }) {
   const printable = useRef(null);
@@ -51,6 +51,10 @@ export function TripPrint({ trip, coverPhotos, cities, display, title, dayText, 
           <HotelList city={city} display={display} />
           <h3>{t.food}</h3>
           <CityFood city={city} display={display} eager />
+          {city.shops?.length > 0 && <>
+            <h3>{t.shopping}</h3>
+            <ShoppingList city={city} display={display} />
+          </>}
         </section>)}
       </section>
     </article>

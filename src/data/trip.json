@@ -34,7 +34,24 @@
             "ja": "温かくても冷たくても楽しめるそば粉の麺。",
             "en": "Buckwheat noodles served hot or cold."
           },
-          "done": false
+          "done": false,
+          "venues": [
+            {
+              "id": "maruka",
+              "name": {
+                "pt": "Kaminari-mon Maruka",
+                "ja": "雷門 満留賀",
+                "en": "Kaminari-mon Maruka"
+              },
+              "description": {
+                "pt": "Casa de soba perto da estação de Asakusa, com opções quentes e frias.",
+                "ja": "浅草駅近くのそば屋。温かいそばも冷たいそばも選べます。",
+                "en": "Soba restaurant near Asakusa Station with hot and cold options."
+              },
+              "addressJa": "東京都台東区浅草1-1-5",
+              "url": "https://www.maruka.net/"
+            }
+          ]
         },
         {
           "id": "taiyaki",
@@ -50,7 +67,24 @@
             "en": "Fish-shaped cake often filled with sweet bean paste."
           },
           "photo": "taiyaki",
-          "done": false
+          "done": false,
+          "venues": [
+            {
+              "id": "naniwaya",
+              "name": {
+                "pt": "Asakusa Naniwaya",
+                "ja": "浅草浪花家",
+                "en": "Asakusa Naniwaya"
+              },
+              "description": {
+                "pt": "Confeitaria de Asakusa que assa o taiyaki um por vez.",
+                "ja": "たい焼きを一匹ずつ焼く浅草の甘味処。",
+                "en": "Asakusa sweet shop that cooks its taiyaki one at a time."
+              },
+              "addressJa": "東京都台東区浅草2-12-4",
+              "url": "https://asakusa-shoren.jp/stores/683/"
+            }
+          ]
         }
       ],
       "description": {
@@ -58,7 +92,39 @@
         "ja": "浅草の寺から渋谷の夜景まで、公園や市場、路地を巡ります。",
         "en": "From Asakusa’s temples to the lights of Shibuya, with time for parks, markets and side streets."
       },
-      "photo": "shibuya"
+      "photo": "shibuya",
+      "shops": [
+        {
+          "id": "loft",
+          "name": {
+            "pt": "Shibuya Loft",
+            "ja": "渋谷ロフト",
+            "en": "Shibuya Loft"
+          },
+          "description": {
+            "pt": "Papelaria, cosméticos e artigos para casa a poucos quarteirões do cruzamento de Shibuya.",
+            "ja": "渋谷スクランブル交差点から歩ける、文具・コスメ・生活雑貨のお店。",
+            "en": "Stationery, cosmetics and home goods a short walk from Shibuya Crossing."
+          },
+          "addressJa": "東京都渋谷区宇田川町21-1",
+          "url": "https://www.loft.co.jp/shop_list/detail.php?shop_id=189"
+        },
+        {
+          "id": "itoya",
+          "name": {
+            "pt": "Ginza Itoya",
+            "ja": "銀座 伊東屋 本店",
+            "en": "Ginza Itoya"
+          },
+          "description": {
+            "pt": "Papelaria em Ginza para procurar canetas, cadernos e cartões.",
+            "ja": "ペン、ノート、カードを探せる銀座の文具店。",
+            "en": "Ginza stationery flagship for pens, notebooks and cards."
+          },
+          "addressJa": "東京都中央区銀座2-7-15",
+          "url": "https://www.ito-ya.co.jp/ext/store/ginza/ginza/index.html"
+        }
+      ]
     },
     {
       "id": "kyoto",
@@ -93,7 +159,24 @@
             "ja": "だしで温めた豆腐をたれにつけて食べる料理。",
             "en": "Tofu warmed in broth and served with dipping sauce."
           },
-          "done": false
+          "done": false,
+          "venues": [
+            {
+              "id": "okutan",
+              "name": {
+                "pt": "Okutan Kiyomizu",
+                "ja": "総本家ゆどうふ 奥丹清水",
+                "en": "Okutan Kiyomizu"
+              },
+              "description": {
+                "pt": "Restaurante de Higashiyama especializado em yudofu feito com tofu da casa.",
+                "ja": "自家製豆腐の湯豆腐を楽しめる東山のお店。",
+                "en": "Higashiyama restaurant specializing in yudofu made with house-made tofu."
+              },
+              "addressJa": "京都府京都市東山区清水3丁目340",
+              "url": "https://tofuokutan.info/access.html"
+            }
+          ]
         },
         {
           "id": "yatsuhashi",
@@ -108,7 +191,24 @@
             "ja": "あんこを包むこともある柔らかい米粉のお菓子。",
             "en": "Soft rice confection often filled with sweet bean paste."
           },
-          "done": false
+          "done": false,
+          "venues": [
+            {
+              "id": "nishio",
+              "name": {
+                "pt": "Honke Nishio Yatsuhashi · Kiyomizu",
+                "ja": "本家西尾八ッ橋 清水店",
+                "en": "Honke Nishio Yatsuhashi · Kiyomizu"
+              },
+              "description": {
+                "pt": "Loja de doces perto do templo Kiyomizu-dera, boa para escolher uma caixa de yatsuhashi.",
+                "ja": "清水寺の近くで、お土産用の八ッ橋を選べるお店。",
+                "en": "Sweet shop near Kiyomizu-dera, a good stop for a box of yatsuhashi."
+              },
+              "addressJa": "京都府京都市東山区清水1丁目277",
+              "url": "https://www.8284.co.jp/shop/kiyomizu.html"
+            }
+          ]
         }
       ],
       "description": {
@@ -116,7 +216,39 @@
         "ja": "神社や古い街並み、静かな小道を歩きながら、京都の味も楽しみます。",
         "en": "Shrines, old streets and quiet paths, with time to taste the city’s specialties."
       },
-      "photo": "kiyomizu"
+      "photo": "kiyomizu",
+      "shops": [
+        {
+          "id": "asahido",
+          "name": {
+            "pt": "Asahido · Loja principal",
+            "ja": "朝日堂 本店",
+            "en": "Asahido · Main store"
+          },
+          "description": {
+            "pt": "Cerâmicas de Kyoto, incluindo peças Kiyomizu-yaki, no caminho para o templo.",
+            "ja": "清水寺の参道にある京焼・清水焼の専門店。",
+            "en": "Kyoto ceramics, including Kiyomizu ware, on the approach to the temple."
+          },
+          "addressJa": "京都府京都市東山区清水1丁目280",
+          "url": "https://www.asahido.co.jp/shops/"
+        },
+        {
+          "id": "kyukyodo",
+          "name": {
+            "pt": "Kyoto Kyukyodo",
+            "ja": "京都鳩居堂 本店",
+            "en": "Kyoto Kyukyodo"
+          },
+          "description": {
+            "pt": "Loja na rua Teramachi para comprar incenso, cartões e artigos de papel washi.",
+            "ja": "寺町通にある、お香やはがき、和紙製品の専門店。",
+            "en": "Teramachi shop for incense, postcards and washi paper goods."
+          },
+          "addressJa": "京都府京都市中京区下本能寺前町521",
+          "url": "https://kyukyodo.co.jp/shop/"
+        }
+      ]
     }
   ],
   "journey": [

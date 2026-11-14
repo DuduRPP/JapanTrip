@@ -4,7 +4,7 @@ import trip from './data/trip.json';
 import { labels, languages } from './labels';
 import { Icon } from './Icons';
 import { Timeline, TodayLink, groupJourney, localDateKey } from './Timeline';
-import { CityFood, DayContent, HotelList, Photo, TransportList } from './TripContent';
+import { CityFood, DayContent, HotelList, Photo, ShoppingList, TransportList } from './TripContent';
 import { TripPrint } from './TripPrint';
 import { PwaControls } from './pwa';
 import './style.css';
@@ -16,6 +16,7 @@ const cityPages = [
   { kind: 'cidade', label: 'overview', icon: 'book' },
   { kind: 'hoteis', label: 'stays', icon: 'bed' },
   { kind: 'sabores', label: 'food', icon: 'bowl' },
+  { kind: 'compras', label: 'shopping', icon: 'bag' },
 ];
 
 function readRoute() {
@@ -32,7 +33,7 @@ function href(lang, kind = 'inicio', id) {
 function App() {
   const [route, setRoute] = useState(readRoute);
   const [todayKey, setTodayKey] = useState(() => localDateKey());
-  const [sidebarOpen, setSidebarOpen] = useState(() => !window.matchMedia('(max-width: 58rem)').matches);
+  const [timelineOpen, setTimelineOpen] = useState(() => !window.matchMedia('(max-width: 58rem)').matches);
   const main = useRef(null);
   const hasNavigated = useRef(false);
   const { lang, kind, id } = route;
@@ -119,11 +120,11 @@ function App() {
       </nav>
       </div>
     </header>
-    <div className={'wrap ' + (home || printable ? 'cover-shell' : 'journal-shell') + (!sidebarOpen ? ' rail-closed' : '')}>
+    <div className={'wrap ' + (home || printable ? 'cover-shell' : 'journal-shell')}>
     {!home && !printable && <Timeline groups={timelineGroups} cities={cities} t={t} translate={translate}
       title={title} dayText={dayText} shortDate={shortDate} stepHref={stepHref} cityHref={cityHref}
-      selected={step} today={today} overviewCity={kind === 'cidade' ? id : undefined}
-      open={sidebarOpen} setOpen={setSidebarOpen} />}
+      selected={step} today={today} cityId={city?.id} cityPage={cityPage?.kind} cityPages={cityPages}
+      open={timelineOpen} setOpen={setTimelineOpen} />}
     <main id="content" className={'page' + (home ? ' cover' : printable ? ' printable' : '')} tabIndex={-1} ref={main}>
     {printable ? <TripPrint trip={trip} coverPhotos={coverPhotos} cities={cities} display={display}
       title={title} dayText={dayText} date={date} back={href(lang)} /> : <>
@@ -165,6 +166,7 @@ function App() {
         <TransportList step={step} display={display} />
       </section>}
       {kind === 'sabores' && city && <CityFood city={city} display={display} />}
+      {kind === 'compras' && city && <ShoppingList city={city} display={display} />}
       {step && <nav className="page-turn" aria-label={t.route}>
         {[{ index: stepIndex - 1, icon: 'previous' }, { index: stepIndex + 1, icon: 'next' }].map(({ index, icon }) => {
           const neighbor = trip.journey[index];

@@ -26,6 +26,40 @@ function ItemName({ name, translate, lang }) {
   </span>;
 }
 
+function MapLink({ label, query }) {
+  return <a className="icon-link map" aria-label={label} title={label}
+    href={'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(query)}>
+    <Icon name="pin" />
+  </a>;
+}
+
+function VenueList({ venues, display }) {
+  const { t, translate } = display;
+  return <ul className="plain venue-list">{venues.map(venue => {
+    const name = translate(venue.name);
+    const mapLabel = t.map + ' · ' + name;
+    const detailsLabel = t.venueDetails + ' · ' + name;
+    return <li className="venue-row" key={venue.id}>
+      <div>
+        <ItemName name={venue.name} {...display} />
+        <p className="meta">{translate(venue.description)}</p>
+        <p className="meta venue-address" lang="ja">{venue.addressJa}</p>
+      </div>
+      <div className="venue-links">
+        <MapLink label={mapLabel} query={(venue.name.ja ?? name) + ' ' + venue.addressJa} />
+        {venue.url && <a className="icon-link" href={venue.url} aria-label={detailsLabel} title={detailsLabel}>
+          <Icon name="external" />
+        </a>}
+      </div>
+    </li>;
+  })}</ul>;
+}
+
+export function ShoppingList({ city, display }) {
+  if (!city.shops?.length) return <p>{display.t.empty}</p>;
+  return <div className="shopping-list"><VenueList venues={city.shops} display={display} /></div>;
+}
+
 export function HotelList({ city, display }) {
   const { t, yen, translate } = display;
   if (!city.stays.length) return <p>{t.empty}</p>;
@@ -48,6 +82,10 @@ function FoodList({ foods, display, eager }) {
       <div><ItemName name={food.name} {...display} />
         <p className="meta">{translate(food.description)}</p></div>
     </div>
+    {food.venues?.length > 0 && <div className="food-venues">
+      <strong>{t.whereToTry}</strong>
+      <VenueList venues={food.venues} display={display} />
+    </div>}
   </li>)}</ul>;
 }
 
@@ -80,10 +118,7 @@ export function DayContent({ day, city, display, eager = false }) {
               {stop.addressJa && <span className="meta" lang="ja">{stop.addressJa}</span>}
               {stop.description && <p className="stop-description">{translate(stop.description)}</p>}
             </div>
-            {stop.mapQuery && <a className="icon-link map" aria-label={mapLabel} title={mapLabel}
-              href={'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(stop.mapQuery)}>
-              <Icon name="pin" />
-            </a>}
+            {stop.mapQuery && <MapLink label={mapLabel} query={stop.mapQuery} />}
           </li>;
         })}</ul> : <p>{t.empty}</p>}
       </section>

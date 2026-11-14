@@ -45,6 +45,11 @@ const drawings = {
     <path d="M7 10.5h.5"/>
   </>,
   download: <path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/>,
+  bag: <>
+    <path className="icon-tint" d="M5 8h14l1 13H4z"/>
+    <path d="M9 10V6a3 3 0 1 1 6 0v4"/>
+  </>,
+  external: <path d="M13 4h7v7m0-7-9 9m7 0v7H4V6h7"/>,
 };
 
 export function Icon({ name }) {
