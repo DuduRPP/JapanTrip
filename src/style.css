@@ -37,9 +37,16 @@ svg { width: 1.2em; height: 1.2em; vertical-align: -.22em; flex-shrink: 0; }
 .brand { justify-self: start; font: 700 clamp(1.3rem, 3.5vw, 1.8rem)/1.05 var(--display); color: var(--ink); text-decoration: none; text-wrap: balance; }
 .header-actions, .pwa-controls { display: flex; align-items: center; gap: .45rem .75rem; }
 .pwa-controls { flex-wrap: wrap; }
-.language-control { display: inline-grid; grid-template-areas: "control"; align-items: center; color: var(--accent); }
-.language-control select { grid-area: control; appearance: none; width: 5.35rem; min-height: 44px; border: 1px solid var(--rule); border-radius: .35rem; padding: .3rem 1.35rem .3rem .5rem; color: var(--accent); background: var(--paper); font: inherit; font-weight: 700; cursor: pointer; }
-.language-control svg { grid-area: control; justify-self: end; margin-right: .42rem; width: .85rem; height: .85rem; transform: rotate(90deg); pointer-events: none; }
+.language-control { position: relative; color: var(--accent); }
+.language-control summary { display: flex; align-items: center; gap: .35rem; min-height: 44px; padding: .3rem .5rem; border: 1px solid var(--rule); border-radius: .35rem; list-style: none; font-weight: 700; cursor: pointer; }
+.language-control summary::-webkit-details-marker { display: none; }
+.language-control summary > svg:last-child { width: .85rem; height: .85rem; transform: rotate(90deg); }
+.language-control[open] summary > svg:last-child { transform: rotate(-90deg); }
+.language-flag { width: 1.35rem; height: .9rem; border-radius: 2px; box-shadow: 0 0 0 1px #222c3026; }
+.language-options { position: absolute; z-index: 2; inset: calc(100% + .35rem) 0 auto auto; min-width: 9rem; padding: .2rem; border: 1px solid var(--rule); border-radius: .35rem; background: var(--paper); }
+.language-options a { display: flex; align-items: center; gap: .55rem; min-height: 44px; padding: .3rem .55rem; text-decoration: none; }
+.language-options a:hover, .language-options a[aria-current] { background: color-mix(in srgb, var(--accent) 8%, var(--paper)); }
+.language-options a[aria-current] { font-weight: 700; }
 .city-nav a { display: inline-flex; gap: .4rem; align-items: center; min-height: 44px; padding-inline: .65rem; text-decoration: none; }
 .city-nav a[aria-current] { font-weight: 700; text-decoration: underline; text-underline-offset: .45em; }
 .city-nav a:hover { background: #e6ece9; }
@@ -67,7 +74,7 @@ svg { width: 1.2em; height: 1.2em; vertical-align: -.22em; flex-shrink: 0; }
 .stamp { display: inline-grid; place-items: center; flex: none; width: 2rem; height: 2rem; border-radius: .4rem; background: color-mix(in srgb, currentColor 10%, transparent); }
 .stamp svg { width: 1.35rem; height: 1.35rem; }
 .icon-tint { fill: currentColor; fill-opacity: .14; }
-.timeline { min-width: 0; padding-block: .35rem; border-bottom: 1px solid var(--rule); }
+.timeline { min-width: 0; margin-inline: clamp(1rem, 2.25vw, 2rem); padding-top: .45rem; }
 .timeline-header { display: flex; flex-wrap: wrap; align-items: center; gap: .2rem .65rem; }
 .today-link { display: inline-flex; gap: .35rem; align-items: center; color: #734112; font-weight: 700; min-height: 44px; }
 .today-link svg { width: 1.05rem; height: 1.05rem; }
@@ -146,7 +153,7 @@ p { line-height: 1.55; }
 .status-done .status-box { color: white; border-color: var(--accent); background: var(--accent); }
 .status-box svg { width: 1rem; height: 1rem; }
 .food-list .photo { margin-bottom: .8rem; }
-.food-list > .food-selected { scroll-margin-block-start: 1rem; border-top-color: var(--accent); background: color-mix(in srgb, var(--accent) 6%, var(--paper)); }
+.food-list > .linked-entry, .venue-list > .linked-entry { scroll-margin-block-start: 1rem; border-top-color: var(--accent); background: color-mix(in srgb, var(--accent) 6%, var(--paper)); }
 @media (min-width: 48rem) {
   .food-sections .food-list > li:has(> .photo) { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); align-items: start; gap: clamp(1.3rem, 4vw, 3rem); }
 }
@@ -186,7 +193,6 @@ p { line-height: 1.55; }
   .wrap { width: calc(100% - 2rem); }
   .site-header { min-height: 3.8rem; }
   .header-actions { gap: .35rem; }
-  .language-control select { width: 4.55rem; }
   .cover-photo .photo img { aspect-ratio: 4 / 3; }
   .city-heading h1 { font-size: clamp(2.2rem, 10vw, 2.7rem); overflow-wrap: anywhere; }
   .venue-list .venue-row { grid-template-columns: minmax(0, 1fr); }

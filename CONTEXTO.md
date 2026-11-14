@@ -43,7 +43,7 @@ Para registrar uma visita ou comida, altere `done` para `true` no item correspon
 
 Cada prato tem uma única marcação em `city.foods`. Todos os dias que apontam para o mesmo ID em `foodIds` exibem essa marcação e oferecem um link direto para o prato na página de comidas da cidade.
 
-Coloque as paradas em `stops` na ordem em que pretende visitá-las. A página numera essa sequência e exibe `minutes` como duração aproximada. Use `mapQuery` para o destino pesquisável no mapa, `addressJa` para o endereço em japonês e `description` para os textos da parada. `foodIds` lista os pratos sugeridos da cidade. `shopIds` lista lojas da cidade escolhidas para aquele dia por proximidade.
+Coloque as paradas em `stops` na ordem em que pretende visitá-las. A página numera essa sequência e exibe `minutes` como duração aproximada. Use `mapQuery` para o destino pesquisável no mapa, `addressJa` para o endereço em japonês e `description` para os textos da parada. `foodIds` lista os pratos sugeridos da cidade. `shopIds` lista lojas da cidade escolhidas para aquele dia por proximidade. O nome de cada loja abre a ficha correspondente na página Compras.
 
 ## PDF e uso offline
 

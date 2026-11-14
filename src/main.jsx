@@ -4,7 +4,8 @@ import trip from './data/trip.json';
 import { labels, languages } from './labels';
 import { Icon } from './Icons';
 import { Timeline, TodayLink, groupJourney, localDateKey } from './Timeline';
-import { CityFood, DayContent, foodEntryId, HotelList, Photo, ShoppingList, TransportList } from './TripContent';
+import { CityFood, DayContent, HotelList, Photo, ShoppingList, TransportList } from './TripContent';
+import { LanguagePicker } from './LanguagePicker';
 import { TripPrint } from './TripPrint';
 import { PwaControls } from './pwa';
 import './style.css';
@@ -18,19 +19,22 @@ const cityPages = [
   { kind: 'sabores', label: 'food', icon: 'bowl' },
   { kind: 'compras', label: 'shopping', icon: 'bag' },
 ];
+const entryQueryKeys = new Map([['sabores', 'prato'], ['compras', 'loja']]);
 
 function readRoute() {
   const [path, query] = window.location.hash.slice(1).split('?');
   const parts = path.split('/').filter(Boolean);
   const hasLanguage = Object.hasOwn(languages, parts[0]);
   const [kind = 'inicio', id] = hasLanguage ? parts.slice(1) : parts;
-  const foodId = kind === 'sabores' ? new URLSearchParams(query).get('prato') : null;
-  return { lang: hasLanguage ? parts[0] : 'pt', kind, id, foodId };
+  const entryKey = entryQueryKeys.get(kind);
+  const entryId = entryKey ? new URLSearchParams(query).get(entryKey) : null;
+  return { lang: hasLanguage ? parts[0] : 'pt', kind, id, entryId };
 }
 
-function href(lang, kind = 'inicio', id, foodId) {
+function href(lang, kind = 'inicio', id, entryId) {
   const path = '#/' + [lang, kind, id].filter(Boolean).join('/');
-  return foodId ? path + '?' + new URLSearchParams({ prato: foodId }) : path;
+  const entryKey = entryQueryKeys.get(kind);
+  return entryKey && entryId ? path + '?' + new URLSearchParams({ [entryKey]: entryId }) : path;
 }
 
 function App() {
@@ -38,7 +42,7 @@ function App() {
   const [todayKey, setTodayKey] = useState(() => localDateKey());
   const main = useRef(null);
   const hasNavigated = useRef(false);
-  const { lang, kind, id, foodId } = route;
+  const { lang, kind, id, entryId } = route;
   const t = labels[lang];
   const locale = languages[lang].tag;
   const translate = value => value[lang] ?? value.pt;
@@ -66,7 +70,6 @@ function App() {
   const step = trip.journey[stepIndex];
   const cityPage = cityPages.find(page => page.kind === kind);
   const city = cityPage ? cities[id] : cities[step?.city];
-  const selectedFood = city?.foods.find(food => food.id === foodId);
   const home = kind === 'inicio' && !id;
   const printable = kind === 'pdf' && !id;
   const display = { t, lang, translate, duration, yen };
@@ -102,7 +105,7 @@ function App() {
   useEffect(() => {
     document.documentElement.lang = locale;
     document.title = home ? t.title : heading + ' · ' + t.title;
-    const entry = selectedFood && document.getElementById(foodEntryId(selectedFood.id));
+    const entry = main.current?.querySelector('.linked-entry');
     if (entry) {
       entry.scrollIntoView({ block: 'start' });
       entry.focus({ preventScroll: true });
@@ -112,7 +115,7 @@ function App() {
       window.scrollTo(0, 0);
       main.current?.focus({ preventScroll: true });
     }
-  }, [locale, heading, home, t.title, kind, id, foodId, selectedFood]);
+  }, [locale, heading, home, t.title, kind, id, entryId]);
 
   return <div className="site" style={{ '--accent': city?.accent }}>
     <a className="skip" href="#content" onClick={event => { event.preventDefault(); main.current?.focus(); }}>{t.skip}</a>
@@ -122,20 +125,13 @@ function App() {
         {!printable && <a className="icon-link header-pdf" href={href(lang, 'pdf')} aria-label={t.pdf} title={t.pdf}>
           <Icon name="print" />
         </a>}
-        <label className="language-control">
-          <span className="sr-only">{t.language}</span>
-          <select value={lang} onChange={event => { window.location.hash = href(event.target.value, kind, id, foodId); }}>
-            {Object.entries(languages).map(([code, language]) => <option key={code} value={code}
-              lang={language.tag} label={language.label}>{language.name}</option>)}
-          </select>
-          <Icon name="chevron" />
-        </label>
+        <LanguagePicker lang={lang} label={t.language} languageHref={code => href(code, kind, id, entryId)} />
       </div>
     </header>
-    <div className={'wrap ' + (home || printable ? 'cover-shell' : 'journal-shell')}>
     {!home && !printable && <Timeline groups={timelineGroups} cities={cities} t={t} translate={translate}
       title={title} dayText={dayText} shortDate={shortDate} stepHref={stepHref} cityHref={cityHref}
       selected={step} today={today} cityId={city?.id} cityPage={cityPage?.kind} cityPages={cityPages} />}
+    <div className={'wrap ' + (home || printable ? 'cover-shell' : 'journal-shell')}>
     <main id="content" className={'page' + (home ? ' cover' : printable ? ' printable' : '')} tabIndex={-1} ref={main}>
     {printable ? <TripPrint trip={trip} coverPhoto={coverPhoto} cities={cities} display={display}
       title={title} dayText={dayText} date={date} back={href(lang)} /> : <>
@@ -189,14 +185,15 @@ function App() {
       </div>}
       {kind === 'hoteis' && city && <HotelList city={city} display={display} />}
       {step?.type === 'day' && <DayContent day={step} city={city} display={display}
-        foodHref={food => href(lang, 'sabores', city.id, food.id)} />}
+        foodHref={food => href(lang, 'sabores', city.id, food.id)}
+        shopHref={shop => href(lang, 'compras', city.id, shop.id)} />}
       {step?.type === 'transfer' && <section>
         <p className="chapter"><Icon name="train" /> {t.transfer}</p>
         <h2>{t.transport}</h2>
         <TransportList step={step} display={display} />
       </section>}
-      {kind === 'sabores' && city && <CityFood city={city} display={display} selectedFood={selectedFood} />}
-      {kind === 'compras' && city && <ShoppingList city={city} display={display} />}
+      {kind === 'sabores' && city && <CityFood city={city} display={display} selectedId={entryId} />}
+      {kind === 'compras' && city && <ShoppingList city={city} display={display} selectedId={entryId} />}
       {step && <nav className="page-turn" aria-label={t.route}>
         {[{ index: stepIndex - 1, icon: 'previous' }, { index: stepIndex + 1, icon: 'next' }].map(({ index, icon }) => {
           const neighbor = trip.journey[index];

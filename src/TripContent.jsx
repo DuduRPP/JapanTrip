@@ -34,15 +34,17 @@ function MapLink({ label, query }) {
   </a>;
 }
 
-function VenueList({ venues, display }) {
+function VenueList({ venues, display, venueHref, selectedId }) {
   const { t, translate } = display;
   return <ul className="plain venue-list">{venues.map(venue => {
     const name = translate(venue.name);
     const mapLabel = t.map + ' · ' + name;
     const detailsLabel = t.venueDetails + ' · ' + name;
-    return <li className="venue-row" key={venue.id}>
+    const selected = venue.id === selectedId;
+    return <li className={selected ? 'venue-row linked-entry' : 'venue-row'}
+      key={venue.id} tabIndex={selected ? -1 : undefined}>
       <div>
-        <ItemName name={venue.name} {...display} />
+        <ItemName name={venue.name} href={venueHref?.(venue)} {...display} />
         <p className="meta">{translate(venue.description)}</p>
         <p className="meta venue-address" lang="ja">{venue.addressJa}</p>
       </div>
@@ -56,9 +58,9 @@ function VenueList({ venues, display }) {
   })}</ul>;
 }
 
-export function ShoppingList({ city, display }) {
+export function ShoppingList({ city, display, selectedId }) {
   if (!city.shops?.length) return <p>{display.t.empty}</p>;
-  return <div className="shopping-list"><VenueList venues={city.shops} display={display} /></div>;
+  return <div className="shopping-list"><VenueList venues={city.shops} display={display} selectedId={selectedId} /></div>;
 }
 
 export function HotelList({ city, display }) {
@@ -73,17 +75,12 @@ export function HotelList({ city, display }) {
   </li>)}</ul>;
 }
 
-export function foodEntryId(id) {
-  return 'food-' + id;
-}
-
-function FoodList({ foods, display, eager, showPhotos = true, foodHref, anchorEntries, selectedFood }) {
+function FoodList({ foods, display, eager, showPhotos = true, foodHref, selectedId }) {
   const { t, translate } = display;
   if (!foods.length) return <p>{t.empty}</p>;
   return <ul className="plain food-list">{foods.map(food => <li key={food.id}
-    id={anchorEntries ? foodEntryId(food.id) : undefined}
-    tabIndex={food === selectedFood ? -1 : undefined}
-    className={food === selectedFood ? 'food-selected' : undefined}>
+    tabIndex={food.id === selectedId ? -1 : undefined}
+    className={food.id === selectedId ? 'linked-entry' : undefined}>
     <div className="food-copy">
       <div className="food-body">
         <Status done={food.done} complete={t.tasted} pending={t.untasted} />
@@ -99,17 +96,17 @@ function FoodList({ foods, display, eager, showPhotos = true, foodHref, anchorEn
   </li>)}</ul>;
 }
 
-export function CityFood({ city, display, eager = false, selectedFood }) {
+export function CityFood({ city, display, eager = false, selectedId }) {
   return <div className="food-sections">
     {['savory', 'sweet'].map(category => <section key={category}>
       {eager ? <h4>{display.t[category]}</h4> : <h2>{display.t[category]}</h2>}
       <FoodList foods={city.foods.filter(food => food.kind === category)} display={display} eager={eager}
-        anchorEntries={!eager} selectedFood={selectedFood} />
+        selectedId={selectedId} />
     </section>)}
   </div>;
 }
 
-export function DayContent({ day, city, display, eager = false, foodHref }) {
+export function DayContent({ day, city, display, eager = false, foodHref, shopHref }) {
   const { t, translate, duration } = display;
   const suggestions = (day.foodIds ?? []).map(id => city.foods.find(food => food.id === id)).filter(Boolean);
   const shops = (day.shopIds ?? []).map(id => city.shops?.find(shop => shop.id === id)).filter(Boolean);
@@ -143,7 +140,7 @@ export function DayContent({ day, city, display, eager = false, foodHref }) {
       </section>}
       {shops.length > 0 && <section className="day-shops">
         <Heading><Icon name="bag" /> {t.dayShops}</Heading>
-        <VenueList venues={shops} display={display} />
+        <VenueList venues={shops} display={display} venueHref={shopHref} />
       </section>}
     </div>
   </div>;
