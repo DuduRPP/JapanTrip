@@ -10,6 +10,7 @@ Criar um diário de viagem que misture um álbum de fotos com um livro ilustrado
 - GitHub Pages para hospedagem e GitHub Actions para reconstruir e publicar a cada atualização da branch de publicação.
 - Arquivos JSON como fonte do roteiro e das marcações. O site exibe o estado publicado, com acesso de escrita controlado pelo GitHub. A publicação pode demorar alguns minutos.
 - Interface e conteúdo em português e japonês, com inglês como opção adicional. Textos do roteiro usam chaves `pt`, `ja` e `en`. Português é a alternativa quando faltar uma tradução. Nomes e endereços japoneses podem aparecer junto da tradução.
+- Os títulos e as descrições têm tom de diário. Em japonês, Tóquio usa uma voz coloquial e Kyoto incorpora expressões de Kansai e de Kyoto. A interface acompanha a cidade ao abrir a página, inclusive na versão para PDF.
 - Cada cidade tem cor, ícone e nome próprios. O cabeçalho das páginas da cidade usa o acento no título e na divisória, com um selo do símbolo e do nome em japonês. No computador, texto e checklists ficam à esquerda, com as fotos à direita. No celular, o roteiro vira uma coluna e a galeria do dia aparece acima das paradas.
 - Fotografias reais para lugares e pratos, com autoria, fonte e licença registradas. Ícones desenhados em SVG identificam cidades e seções.
 - A capa tem uma foto central do torii de Itsukushima, um botão “Começar viagem” que leva à primeira etapa e uma seção de cidades abaixo da foto.
@@ -37,7 +38,7 @@ O esqueleto usa 12 dias entre Tóquio e Kyoto para exercitar a linha do tempo. D
 - `src/data/trip.json` reúne as cidades, suas estadias e comidas, além da sequência `journey`. Essa sequência intercala dias (`day`) e deslocamentos (`transfer`) na ordem da viagem.
 - Em `trip.json`, `coverPhoto` indica a foto da capa. Cada cidade pode definir `photo`, `description`, `accent` e `symbol`. As rotas de cidade usam os formatos `#/pt/cidade/tokyo`, `#/pt/hoteis/tokyo` e `#/pt/sabores/tokyo`.
 - `src/data/photos.json` associa identificadores de fotos a caminhos relativos, texto alternativo por idioma, autoria e licença. Coloque os arquivos em `public/photos/` para incluí-los no cache offline do site.
-- `src/labels.js` guarda os textos fixos da interface.
+- `src/labels.js` guarda os textos da interface. Para usar as expressões de Kyoto nos títulos e seções em japonês, a cidade define `"japaneseVoice": "kyoto"` em `trip.json`. As expressões nas descrições e nos títulos de cada dia ficam nos respectivos campos `ja` do roteiro.
 - Em `trip.json`, `city.shops` lista sugestões de compras e `food.venues` lista lugares onde provar um prato. Esses dados aparecem também no PDF. Guarde o endereço em `addressJa` e a fonte da loja em `url`.
 - Em `food.venues`, `price` guarda o valor em ienes, a unidade de cobrança e o link da fonte. Use `estimated: true` para uma estimativa por pessoa. Os preços iniciais foram consultados em 14/11/2026.
 
@@ -51,7 +52,7 @@ Coloque as paradas em `stops` na ordem em que pretende visitá-las. A página nu
 
 O PDF usa os mesmos componentes de cabeçalho, selos e cores das páginas do site. Uma nova exportação acompanha as mudanças no roteiro e na decoração compartilhada.
 
-Em `stops`, use `optional: true` para exibir uma parada em “Passeios opcionais”, após as paradas principais. A numeração vale para as paradas principais. As opcionais também aparecem no PDF.
+Em `stops`, use `optional: true` para exibir uma parada em “Se der tempo”, após as paradas principais. A numeração vale para as paradas principais. As opcionais também aparecem no PDF.
 
 O botão “Salvar em PDF” abre o roteiro completo. Na página de impressão, use “Salvar em PDF” e selecione a opção de PDF oferecida pelo navegador. O arquivo é uma cópia da versão exibida e pode ser compartilhado ou lido sem internet.
 

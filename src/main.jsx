@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import trip from './data/trip.json';
-import { labels, languages } from './labels';
+import { cityLabels, labels, languages } from './labels';
 import { Icon } from './Icons';
 import { Timeline, TodayLink, groupJourney, localDateKey } from './Timeline';
 import { CityFood, DayContent, HotelList, Photo, ShoppingList, TransportList } from './TripContent';
@@ -16,9 +16,9 @@ const timelineGroups = groupJourney(trip.journey);
 const coverPhoto = trip.coverPhoto;
 const cityPages = [
   { kind: 'cidade', label: 'overview', icon: 'book' },
-  { kind: 'hoteis', label: 'stays', icon: 'bed' },
-  { kind: 'sabores', label: 'food', icon: 'bowl' },
-  { kind: 'compras', label: 'shopping', icon: 'bag' },
+  { kind: 'hoteis', label: 'stays', title: 'staysTitle', icon: 'bed' },
+  { kind: 'sabores', label: 'food', title: 'foodTitle', icon: 'bowl' },
+  { kind: 'compras', label: 'shopping', title: 'shoppingTitle', icon: 'bag' },
 ];
 const entryQueryKeys = new Map([['sabores', 'prato'], ['compras', 'loja']]);
 
@@ -73,14 +73,17 @@ function App() {
   const city = cityPage ? cities[id] : cities[step?.city];
   const home = kind === 'inicio' && !id;
   const printable = kind === 'pdf' && !id;
-  const display = { t, lang, translate, duration, yen };
+  const display = { t: cityLabels(lang, city), lang, translate, duration, yen };
   const today = trip.journey.find(item => item.type === 'day' && item.date === todayKey);
   const cityDays = city ? trip.journey.filter(item => item.type === 'day' && item.city === city.id) : [];
   let heading = t.missing;
   if (home) heading = t.title;
   else if (printable) heading = t.completeTrip;
   else if (step) heading = title(step);
-  else if (city) heading = kind === 'cidade' ? translate(city.name) : t[cityPage.label] + ' · ' + translate(city.name);
+  else if (city) {
+    const name = translate(city.name);
+    heading = cityPage.title ? display.t[cityPage.title](name) : name;
+  }
 
   useEffect(() => {
     function onHashChange() {

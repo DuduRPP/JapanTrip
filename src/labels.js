@@ -8,6 +8,9 @@ export const labels = {
   pt: {
     title: 'Viagem ao Japão',
     overview: 'Visão geral', route: 'Roteiro', stays: 'Hotéis', food: 'Comidas',
+    staysTitle: city => `Onde dormir em ${city}`,
+    foodTitle: city => `À mesa em ${city}`,
+    shoppingTitle: city => `Achados em ${city}`,
     cityPages: 'Páginas da cidade', cityDays: 'Dias nesta cidade', cities: 'Cidades da viagem',
     today: 'Hoje', goToday: 'Ir para hoje',
     closeRoute: 'Fechar roteiro', startTrip: 'Começar viagem',
@@ -16,7 +19,7 @@ export const labels = {
     back: 'Voltar ao roteiro', install: 'Instalar diário', offline: 'Disponível offline',
     installHelp: 'No iPhone, abra o menu Compartilhar e toque em “Adicionar à Tela de Início”. Em outros navegadores, procure “Instalar” no menu.',
     offlineHelp: 'Abra o diário com internet e aguarde a indicação “Disponível offline”.',
-    dayFood: 'O que provar hoje', dayShops: 'Compras por perto', optionalStops: 'Passeios opcionais',
+    dayFood: 'O que provar hoje?', dayShops: 'Achados por perto', optionalStops: 'Se der tempo',
     sample: 'Roteiro de exemplo. Datas, valores e progresso são ilustrativos.',
     day: 'Dia', stops: 'Paradas do dia', transfer: 'Entre cidades', transport: 'Opções de transporte',
     perNight: 'por noite', perPerson: 'por pessoa', from: 'A partir de', map: 'Mapa',
@@ -29,6 +32,9 @@ export const labels = {
   ja: {
     title: '日本の旅日記',
     overview: '街の概要', route: '旅程', stays: 'ホテル', food: 'ご当地グルメ',
+    staysTitle: city => `${city}でひと休み`,
+    foodTitle: city => `${city}のおいしいもの巡り`,
+    shoppingTitle: city => `${city}で掘り出しもの探し`,
     cityPages: '街のページ', cityDays: 'この街での日程', cities: '訪れる街',
     today: '今日', goToday: '今日の予定へ',
     closeRoute: '旅程を閉じる', startTrip: '旅を始める',
@@ -37,12 +43,12 @@ export const labels = {
     back: '旅程に戻る', install: '旅日記をインストール', offline: 'オフラインで利用可能',
     installHelp: 'iPhoneでは共有メニューから「ホーム画面に追加」を選びます。他のブラウザーではメニューの「インストール」を探してください。',
     offlineHelp: 'インターネットに接続して旅日記を開き、「オフラインで利用可能」と表示されるまでお待ちください。',
-    dayFood: '今日食べたいもの', dayShops: '近くの買い物スポット', optionalStops: '時間があれば',
+    dayFood: '今日は何食べる？', dayShops: '近くでお買いもの', optionalStops: '時間があったら寄り道',
     sample: 'サンプル旅程です。日付・料金・達成状況は例です。',
-    day: '日目', stops: '今日の立ち寄り先', transfer: '都市間の移動', transport: '交通手段',
+    day: '日目', stops: '今日はどこへ行く？', transfer: '都市間の移動', transport: 'どうやって行く？',
     perNight: '1泊あたり', perPerson: '1人あたり', from: '目安', map: '地図',
     perPiece: '1個あたり', perBox: '10個入り1箱', priceSource: '掲載価格を確認',
-    savory: '食事', sweet: '甘いもの', done: '訪問済み', pending: '未訪問',
+    savory: 'まずは腹ごしらえ', sweet: '甘いものは別腹', done: '訪問済み', pending: '未訪問',
     tasted: '試食済み', untasted: '食べてみたい', operator: '運行会社のサイト',
     previous: '前のページ', next: '次のページ', language: '言語',
     skip: '本文へ移動', missing: 'ページが見つかりません', empty: 'まだ項目がありません。',
@@ -50,6 +56,9 @@ export const labels = {
   en: {
     title: 'Japan Travel Journal',
     overview: 'Overview', route: 'Itinerary', stays: 'Hotels', food: 'Local food',
+    staysTitle: city => `Where to stay in ${city}`,
+    foodTitle: city => `A taste of ${city}`,
+    shoppingTitle: city => `Good finds in ${city}`,
     cityPages: 'City pages', cityDays: 'Days in this city', cities: 'Cities on the trip',
     today: 'Today', goToday: 'Go to today',
     closeRoute: 'Close itinerary', startTrip: 'Start the trip',
@@ -58,7 +67,7 @@ export const labels = {
     back: 'Back to itinerary', install: 'Install journal', offline: 'Available offline',
     installHelp: 'On iPhone, use the Share menu and choose “Add to Home Screen”. In other browsers, look for “Install” in the browser menu.',
     offlineHelp: 'Open the journal online and wait until it says “Available offline”.',
-    dayFood: 'What to try today', dayShops: 'Shopping nearby', optionalStops: 'Optional stops',
+    dayFood: 'What’s good today?', dayShops: 'Finds nearby', optionalStops: 'If there’s time',
     sample: 'Sample itinerary. Dates, prices and progress are illustrative.',
     day: 'Day', stops: 'Stops for the day', transfer: 'Between cities', transport: 'Transport options',
     perNight: 'per night', perPerson: 'per person', from: 'From', map: 'Map',
@@ -69,3 +78,18 @@ export const labels = {
     skip: 'Skip to content', missing: 'Page not found', empty: 'No items here yet.',
   },
 };
+
+const kyotoJapanese = {
+  foodTitle: city => `${city}で食べ倒す！`,
+  shoppingTitle: city => `${city}でええもん探し`,
+  stops: '今日はどこ行こか？',
+  dayFood: '今日は何食べよか？',
+  dayShops: '近くでええもん探し',
+  optionalStops: '時間あったら寄ってこか',
+  sweet: '甘いもんは別腹やで',
+};
+
+export function cityLabels(lang, city) {
+  const base = labels[lang];
+  return lang === 'ja' && city?.japaneseVoice === 'kyoto' ? { ...base, ...kyotoJapanese } : base;
+}

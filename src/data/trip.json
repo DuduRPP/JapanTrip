@@ -31,9 +31,9 @@
             "en": "Soba"
           },
           "description": {
-            "pt": "Macarrão de trigo sarraceno, servido quente ou frio.",
-            "ja": "温かくても冷たくても楽しめるそば粉の麺。",
-            "en": "Buckwheat noodles served hot or cold."
+            "pt": "Macarrão de trigo sarraceno. Vai de quente ou de frio?",
+            "ja": "そば粉の麺。今日は温かいのにする？ それとも冷たいの？",
+            "en": "Buckwheat noodles. Hot or cold today?"
           },
           "done": false,
           "venues": [
@@ -64,9 +64,9 @@
             "en": "Taiyaki"
           },
           "description": {
-            "pt": "Bolinho em forma de peixe, geralmente com recheio de feijão doce.",
-            "ja": "あんこなどを詰めた鯛の形の焼き菓子。",
-            "en": "Fish-shaped cake often filled with sweet bean paste."
+            "pt": "Um peixinho de massa assada, geralmente recheado com feijão doce.",
+            "ja": "鯛の形をした焼き菓子。まずは定番のあんこから。",
+            "en": "A little fish-shaped cake, often filled with sweet bean paste."
           },
           "photo": "taiyaki",
           "done": false,
@@ -91,9 +91,9 @@
         }
       ],
       "description": {
-        "pt": "Dos templos de Asakusa às luzes de Shibuya, com tempo para parques, mercados e pequenas ruas.",
-        "ja": "浅草の寺から渋谷の夜景まで、公園や市場、路地を巡ります。",
-        "en": "From Asakusa’s temples to the lights of Shibuya, with time for parks, markets and side streets."
+        "pt": "Templo em Asakusa, luzes em Shibuya e tempo para se perder nas ruazinhas entre um passeio e outro.",
+        "ja": "浅草でお参り、渋谷で夜景。公園でひと息ついたら、市場や路地ものぞいてみよう。",
+        "en": "A temple in Asakusa, lights in Shibuya, and time to get a little lost in the side streets in between."
       },
       "photo": "shibuya",
       "shops": [
@@ -131,6 +131,7 @@
     },
     {
       "id": "kyoto",
+      "japaneseVoice": "kyoto",
       "name": {
         "pt": "Kyoto",
         "ja": "京都",
@@ -159,7 +160,7 @@
           },
           "description": {
             "pt": "Tofu aquecido em caldo suave, servido com molho.",
-            "ja": "だしで温めた豆腐をたれにつけて食べる料理。",
+            "ja": "おだしで温めたお豆腐を、たれにつけてひと口。ほっとする味やなぁ。",
             "en": "Tofu warmed in broth and served with dipping sauce."
           },
           "done": false,
@@ -192,7 +193,7 @@
           },
           "description": {
             "pt": "Doce macio de arroz, muitas vezes recheado com anko.",
-            "ja": "あんこを包むこともある柔らかい米粉のお菓子。",
+            "ja": "米粉の生地がやわらかい京のお菓子。あんこ入りもええなぁ。",
             "en": "Soft rice confection often filled with sweet bean paste."
           },
           "done": false,
@@ -217,9 +218,9 @@
         }
       ],
       "description": {
-        "pt": "Santuários, ruas antigas e trilhas tranquilas, com tempo para provar os sabores da cidade.",
-        "ja": "神社や古い街並み、静かな小道を歩きながら、京都の味も楽しみます。",
-        "en": "Shrines, old streets and quiet paths, with time to taste the city’s specialties."
+        "pt": "Entre torii e ruazinhas antigas, sempre cabe uma pausa para um doce.",
+        "ja": "京都へおこしやす。鳥居をくぐって、路地をのぞいて。お腹がすいたら、京の味も楽しもか。",
+        "en": "Through torii gates and old lanes, with plenty of time to stop for something sweet."
       },
       "photo": "kiyomizu",
       "shops": [
@@ -232,7 +233,7 @@
           },
           "description": {
             "pt": "Cerâmicas de Kyoto, incluindo peças Kiyomizu-yaki, no caminho para o templo.",
-            "ja": "清水寺の参道にある京焼・清水焼の専門店。",
+            "ja": "清水寺の参道で京焼・清水焼を眺めて、お気に入りの器を探そか。",
             "en": "Kyoto ceramics, including Kiyomizu ware, on the approach to the temple."
           },
           "addressJa": "京都府京都市東山区清水1丁目280",
@@ -263,9 +264,9 @@
       "number": 1,
       "city": "tokyo",
       "title": {
-        "pt": "Pelas ruas de Asakusa",
-        "ja": "浅草を歩く",
-        "en": "Through the streets of Asakusa"
+        "pt": "Asakusa, do portão aos docinhos",
+        "ja": "浅草さんぽ、雷門から甘いものまで",
+        "en": "Asakusa, from temple gates to sweet treats"
       },
       "date": "2027-04-10",
       "photo": "asakusa",
@@ -282,7 +283,7 @@
           "done": true,
           "description": {
             "pt": "Comece pelo portão Kaminarimon e siga até o salão principal do templo.",
-            "ja": "雷門から入り、本堂まで歩きます。",
+            "ja": "まずは雷門の大きな提灯の下をくぐって、本堂まで歩こう。",
             "en": "Start at Kaminarimon gate and walk to the temple’s main hall."
           }
         },
@@ -298,7 +299,7 @@
           "done": false,
           "description": {
             "pt": "Percorra a rua comercial que liga o portão ao templo, com barracas de doces e lembranças.",
-            "ja": "雷門と本堂をつなぐ商店街で、お菓子やお土産を見て歩きます。",
+            "ja": "雷門から本堂へ向かう途中、仲見世でお菓子とお土産をのぞいてみよう。",
             "en": "Browse the sweets and souvenir stalls on the street between the gate and the temple."
           }
         },
@@ -315,7 +316,7 @@
           "done": false,
           "description": {
             "pt": "Caminhada sem pressa junto ao rio, com vista para a Tokyo Skytree.",
-            "ja": "東京スカイツリーを眺めながら川沿いを散歩します。",
+            "ja": "もう少し歩きたくなったら、スカイツリーを眺めながら隅田川沿いへ。",
             "en": "Take a leisurely riverside walk with views of Tokyo Skytree."
           }
         }
@@ -330,9 +331,9 @@
       "type": "day",
       "city": "tokyo",
       "title": {
-        "pt": "Um dia no parque de Ueno",
-        "ja": "上野公園で過ごす一日",
-        "en": "A day in Ueno Park"
+        "pt": "Ueno sem pressa",
+        "ja": "上野公園でのんびり",
+        "en": "Taking it slow in Ueno Park"
       },
       "stops": [
         {
@@ -347,7 +348,7 @@
           "done": false,
           "description": {
             "pt": "Passeie pelos caminhos do parque e pela região do lago Shinobazu.",
-            "ja": "公園の小道や不忍池の周辺を散策します。",
+            "ja": "公園の小道をぶらぶら歩いて、不忍池のほとりでひと息。",
             "en": "Follow the park paths and stroll around Shinobazu Pond."
           }
         }
@@ -363,9 +364,9 @@
       "type": "day",
       "city": "tokyo",
       "title": {
-        "pt": "As luzes de Shibuya",
-        "ja": "渋谷の夜景",
-        "en": "The lights of Shibuya"
+        "pt": "Quando Shibuya acende",
+        "ja": "渋谷に灯りがともるころ",
+        "en": "When Shibuya lights up"
       },
       "photo": "shibuya",
       "stops": [
@@ -381,7 +382,7 @@
           "done": false,
           "description": {
             "pt": "Atravesse o cruzamento e explore os arredores da estação a pé.",
-            "ja": "スクランブル交差点を渡り、駅の周辺を歩きます。",
+            "ja": "青信号で人の波にまじって、スクランブル交差点の向こうへ。駅の周りもぶらっと歩こう。",
             "en": "Cross the scramble and explore the streets around the station on foot."
           }
         }
@@ -400,9 +401,9 @@
       "type": "day",
       "city": "tokyo",
       "title": {
-        "pt": "Entre Harajuku e o santuário Meiji",
-        "ja": "原宿と明治神宮",
-        "en": "Harajuku and Meiji Shrine"
+        "pt": "De Harajuku à sombra do santuário Meiji",
+        "ja": "原宿から、明治神宮の木陰へ",
+        "en": "From Harajuku into the shade of Meiji Shrine"
       },
       "stops": [
         {
@@ -417,7 +418,7 @@
           "done": false,
           "description": {
             "pt": "Siga pela alameda arborizada até o santuário, a partir de Harajuku.",
-            "ja": "原宿から木立の参道を通って神宮へ向かいます。",
+            "ja": "原宿のにぎわいを抜けたら、木陰の参道を通って明治神宮へ。",
             "en": "Walk the wooded approach to the shrine from Harajuku."
           }
         }
@@ -433,9 +434,9 @@
       "type": "day",
       "city": "tokyo",
       "title": {
-        "pt": "Manhã no mercado de Tsukiji",
-        "ja": "築地場外市場の朝",
-        "en": "Morning at Tsukiji Market"
+        "pt": "Uma manhã de beliscos em Tsukiji",
+        "ja": "朝からおいしい、築地場外市場",
+        "en": "A morning of bites at Tsukiji Market"
       },
       "stops": [
         {
@@ -450,7 +451,7 @@
           "done": false,
           "description": {
             "pt": "Explore as bancas do mercado e reserve tempo para beliscar algo.",
-            "ja": "市場の店を見て回り、食べ歩きの時間も取ります。",
+            "ja": "市場のお店をのぞいて、気になるものを見つけたらひと口。",
             "en": "Browse the market stalls and leave time for a snack."
           }
         }
@@ -466,9 +467,9 @@
       "type": "day",
       "city": "tokyo",
       "title": {
-        "pt": "Uma caminhada por Ginza",
-        "ja": "銀座を散策",
-        "en": "A walk through Ginza"
+        "pt": "Ginza de vitrine em vitrine",
+        "ja": "銀座でウィンドウショッピング",
+        "en": "Window-shopping in Ginza"
       },
       "stops": [
         {
@@ -483,7 +484,7 @@
           "done": false,
           "description": {
             "pt": "Caminhe pela avenida principal e observe as vitrines e fachadas.",
-            "ja": "大通りを歩きながら、店のショーウィンドウや建物を眺めます。",
+            "ja": "中央通りをぶらり。ショーウィンドウをのぞいたら、建物の上のほうにも目を向けてみよう。",
             "en": "Walk the main avenue and take in its shop windows and architecture."
           }
         }
@@ -532,9 +533,9 @@
       "number": 7,
       "city": "kyoto",
       "title": {
-        "pt": "Entre os torii de Fushimi",
-        "ja": "伏見の鳥居をくぐる",
-        "en": "Through the torii of Fushimi"
+        "pt": "Um torii atrás do outro em Fushimi",
+        "ja": "伏見で鳥居をくぐろか",
+        "en": "One torii after another in Fushimi"
       },
       "date": "2027-04-16",
       "photo": "fushimi",
@@ -551,7 +552,7 @@
           "done": false,
           "description": {
             "pt": "Siga pelo caminho de portais vermelhos e escolha quanto da subida quer fazer.",
-            "ja": "鳥居が続く参道を歩き、体力に合わせて登ります。",
+            "ja": "赤い鳥居をくぐって、行けるとこまで。無理せんと、ぼちぼち登ろか。",
             "en": "Follow the red torii gates and go as far up the trail as you like."
           }
         },
@@ -567,7 +568,7 @@
           "done": false,
           "description": {
             "pt": "Reserve tempo para o complexo do templo e a paisagem ao redor.",
-            "ja": "境内と周辺の景色をゆっくり楽しみます。",
+            "ja": "境内をぶらり。ええ景色を見つけたら、ちょっと足を止めてみよか。",
             "en": "Leave time to explore the temple grounds and surrounding scenery."
           }
         }
@@ -581,9 +582,9 @@
       "type": "day",
       "city": "kyoto",
       "title": {
-        "pt": "As ladeiras de Higashiyama",
-        "ja": "東山の坂道",
-        "en": "The slopes of Higashiyama"
+        "pt": "Ladeira acima em Higashiyama",
+        "ja": "東山の坂、ぼちぼち上ろか",
+        "en": "Uphill in Higashiyama"
       },
       "photo": "kiyomizu",
       "stops": [
@@ -599,7 +600,7 @@
           "done": false,
           "description": {
             "pt": "Suba pelas ruas de Higashiyama até o templo e aproveite a vista da encosta.",
-            "ja": "東山の坂道を登ってお寺へ向かい、斜面からの眺めを楽しみます。",
+            "ja": "東山の坂を上って清水寺へ。上まで来たら、景色を眺めてひと息つこか。",
             "en": "Climb the streets of Higashiyama to the temple and enjoy the hillside view."
           }
         }
@@ -619,9 +620,9 @@
       "type": "day",
       "city": "kyoto",
       "title": {
-        "pt": "À beira do rio em Arashiyama",
-        "ja": "嵐山の川沿い",
-        "en": "Along the river in Arashiyama"
+        "pt": "Arashiyama, da ponte à beira do rio",
+        "ja": "嵐山、橋を渡って川べりへ",
+        "en": "Arashiyama, from bridge to riverbank"
       },
       "stops": [
         {
@@ -636,7 +637,7 @@
           "done": false,
           "description": {
             "pt": "Atravesse a ponte e aproveite a vista das montanhas a partir do rio.",
-            "ja": "橋を渡り、川辺から山の景色を眺めます。",
+            "ja": "渡月橋を渡ったら、川べりでひと休み。ここから見る山もええなぁ。",
             "en": "Cross the bridge and take in the mountains from the riverbank."
           }
         }
@@ -652,9 +653,9 @@
       "type": "day",
       "city": "kyoto",
       "title": {
-        "pt": "Sabores do mercado Nishiki",
-        "ja": "錦市場で食べ歩き",
-        "en": "A taste of Nishiki Market"
+        "pt": "Nishiki de barriga vazia",
+        "ja": "お腹すかせて錦市場へ",
+        "en": "Come hungry to Nishiki Market"
       },
       "stops": [
         {
@@ -669,7 +670,7 @@
           "done": false,
           "description": {
             "pt": "Percorra as barracas do mercado para conhecer ingredientes e petiscos locais.",
-            "ja": "市場の店を巡り、地元の食材や軽食を見つけます。",
+            "ja": "錦のお店をのぞいて、京の食材やおやつを探そか。気になるもんがあったら、そこでひと口。",
             "en": "Browse the market stalls for local ingredients and snacks."
           }
         }
@@ -688,9 +689,9 @@
       "type": "day",
       "city": "kyoto",
       "title": {
-        "pt": "Ruas antigas de Gion",
-        "ja": "祇園の古い町並み",
-        "en": "The old streets of Gion"
+        "pt": "Um desvio pelas ruas de Gion",
+        "ja": "祇園の町並みをぶらり",
+        "en": "A wander through Gion"
       },
       "stops": [
         {
@@ -705,7 +706,7 @@
           "done": false,
           "description": {
             "pt": "Caminhe pela rua histórica e observe as fachadas das casas tradicionais.",
-            "ja": "歴史ある通りを歩き、伝統的な町家の外観を眺めます。",
+            "ja": "花見小路を歩きながら、町家の格子や軒先を眺めてみよか。",
             "en": "Walk the historic street and look for traditional townhouse façades."
           }
         }
@@ -721,9 +722,9 @@
       "type": "day",
       "city": "kyoto",
       "title": {
-        "pt": "O Pavilhão Dourado",
-        "ja": "金閣寺を訪ねる",
-        "en": "The Golden Pavilion"
+        "pt": "O Pavilhão Dourado em dobro",
+        "ja": "池にも金閣、見えるかな",
+        "en": "The Golden Pavilion, twice"
       },
       "stops": [
         {
@@ -738,7 +739,7 @@
           "done": false,
           "description": {
             "pt": "Passeie pelos jardins e veja o pavilhão refletido no lago.",
-            "ja": "庭園を歩き、池に映る金閣を眺めます。",
+            "ja": "庭をぐるっと歩いて、池のほうへ。水に映る金閣も、ええ眺めやなぁ。",
             "en": "Walk through the gardens and see the pavilion reflected in the pond."
           }
         }

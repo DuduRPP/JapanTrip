@@ -2,10 +2,11 @@ import { useRef } from 'react';
 import { Icon } from './Icons';
 import { CityHeading, DayHeading } from './CityHeading';
 import { CityFood, DayContent, HotelList, Photo, ShoppingList, TransportList } from './TripContent';
+import { cityLabels } from './labels';
 
 export function TripPrint({ trip, coverPhoto, cities, display, title, dayText, date, back }) {
   const printable = useRef(null);
-  const { t, translate } = display;
+  const { t, lang, translate } = display;
 
   async function print() {
     const images = [...printable.current.querySelectorAll('img')];
@@ -37,24 +38,29 @@ export function TripPrint({ trip, coverPhoto, cities, display, title, dayText, d
           return <section className="print-entry print-city-entry" key={step.id} style={{ '--accent': city.accent }}>
             <DayHeading city={city} cityName={translate(city.name)} title={title(step)}
               day={dayText(step.number)} date={step.date} formattedDate={date(step.date)} level="h2" />
-            <DayContent day={step} city={city} display={display} eager />
+            <DayContent day={step} city={city} display={{ ...display, t: cityLabels(lang, city) }} eager />
           </section>;
         })}
       </section>
       <section className="print-city-guide" aria-label={t.cities}>
-        {trip.cities.map(city => <section className="print-entry print-city-entry" key={city.id} style={{ '--accent': city.accent }}>
-          <CityHeading city={city} title={translate(city.name)} level="h2" />
-          {city.description && <p>{translate(city.description)}</p>}
-          <Photo id={city.photo} translate={translate} eager />
-          <h3>{t.stays}</h3>
-          <HotelList city={city} display={display} />
-          <h3>{t.food}</h3>
-          <CityFood city={city} display={display} eager />
-          {city.shops?.length > 0 && <>
-            <h3>{t.shopping}</h3>
-            <ShoppingList city={city} display={display} />
-          </>}
-        </section>)}
+        {trip.cities.map(city => {
+          const name = translate(city.name);
+          const local = cityLabels(lang, city);
+          const cityDisplay = { ...display, t: local };
+          return <section className="print-entry print-city-entry" key={city.id} style={{ '--accent': city.accent }}>
+            <CityHeading city={city} title={name} level="h2" />
+            {city.description && <p>{translate(city.description)}</p>}
+            <Photo id={city.photo} translate={translate} eager />
+            <h3>{local.staysTitle(name)}</h3>
+            <HotelList city={city} display={cityDisplay} />
+            <h3>{local.foodTitle(name)}</h3>
+            <CityFood city={city} display={cityDisplay} eager />
+            {city.shops?.length > 0 && <>
+              <h3>{local.shoppingTitle(name)}</h3>
+              <ShoppingList city={city} display={cityDisplay} />
+            </>}
+          </section>;
+        })}
       </section>
     </article>
   </>;
