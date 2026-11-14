@@ -48,6 +48,8 @@ A interface usa React 19, Vite 7, JavaScript com JSX e CSS. O projeto usa npm, c
 
 ## Dados do roteiro
 
+Para montar o roteiro a partir de documentos do viajante, consulte o [guia de pesquisa e preenchimento](docs/GUIA-PREENCHIMENTO.md). A cor e o símbolo de novas cidades podem ser escolhidos ao cadastrá-las. Um símbolo já registrado usa apenas `symbol` no JSON. Um desenho novo entra em `src/Icons.jsx` e recebe uma chave para uso nesse campo.
+
 ### `src/data/trip.json`
 
 - **Raiz.** `demo: true` mostra o aviso de demonstração. `coverPhoto` é um ID do catálogo de fotos. `cities` define as cidades na ordem em que aparecem na capa e no guia impresso. `journey` contém as etapas em ordem de visita.

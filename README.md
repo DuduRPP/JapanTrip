@@ -48,6 +48,8 @@ Abra o endereço exibido no terminal. Para conferir a versão de produção e o 
 
 Edite [`src/data/trip.json`](src/data/trip.json) para montar a viagem. O arquivo começa com `demo: true`, que exibe o aviso de demonstração. Use `demo: false` quando o roteiro estiver pronto para ser apresentado como o da viagem.
 
+Para transformar documentos e ideias de viagem em dados do site, use o [guia de pesquisa e preenchimento](docs/GUIA-PREENCHIMENTO.md). Ele inclui uma mensagem pronta para outro agente e orientações sobre fontes, traduções e identidade visual por cidade.
+
 | Quero cadastrar | Onde preencher |
 | --- | --- |
 | Capa e cidades | `coverPhoto` aponta para uma foto. Em `cities`, cada cidade tem `id`, `name`, `description`, `photo`, `accent` e `symbol`. |
