@@ -1,4 +1,4 @@
-# Diário do Japão
+# Japão em Capítulos
 
 Esqueleto de um diário ilustrado de viagem com React, Vite, CSS e conteúdo em JSON. Leia [CONTEXTO.md](CONTEXTO.md) para conhecer as decisões do projeto e saber como atualizar o roteiro durante a viagem.
 

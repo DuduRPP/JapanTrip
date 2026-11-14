@@ -33,13 +33,16 @@ a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 svg { width: 1.2em; height: 1.2em; vertical-align: -.22em; flex-shrink: 0; }
 .wrap { width: min(100% - 3rem, 84rem); margin-inline: auto; }
-.site-header { min-height: 4.5rem; display: flex; align-items: center; justify-content: space-between; gap: .5rem; flex-wrap: wrap; border-bottom: 1px solid var(--rule); }
-.brand { display: inline-flex; align-items: center; gap: .5rem; font: 700 clamp(1.15rem, 3vw, 1.55rem)/1 var(--display); color: var(--ink); text-decoration: none; }
-.header-actions, .pwa-controls { display: flex; align-items: center; flex-wrap: wrap; gap: .45rem .85rem; }
-.languages { display: flex; align-items: center; gap: .25rem; }
-.languages a, .city-nav a { display: inline-flex; gap: .4rem; align-items: center; min-height: 44px; padding-inline: .65rem; text-decoration: none; }
-.languages a[aria-current], .city-nav a[aria-current] { font-weight: 700; text-decoration: underline; text-underline-offset: .45em; }
-.languages a:hover, .city-nav a:hover { background: #e6ece9; }
+.site-header { min-height: 4.5rem; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: .6rem; border-bottom: 1px solid var(--rule); }
+.brand { justify-self: start; font: 700 clamp(1.3rem, 3.5vw, 1.8rem)/1.05 var(--display); color: var(--ink); text-decoration: none; text-wrap: balance; }
+.header-actions, .pwa-controls { display: flex; align-items: center; gap: .45rem .75rem; }
+.pwa-controls { flex-wrap: wrap; }
+.language-control { display: inline-grid; grid-template-areas: "control"; align-items: center; color: var(--accent); }
+.language-control select { grid-area: control; appearance: none; width: 5.35rem; min-height: 44px; border: 1px solid var(--rule); border-radius: .35rem; padding: .3rem 1.35rem .3rem .5rem; color: var(--accent); background: var(--paper); font: inherit; font-weight: 700; cursor: pointer; }
+.language-control svg { grid-area: control; justify-self: end; margin-right: .42rem; width: .85rem; height: .85rem; transform: rotate(90deg); pointer-events: none; }
+.city-nav a { display: inline-flex; gap: .4rem; align-items: center; min-height: 44px; padding-inline: .65rem; text-decoration: none; }
+.city-nav a[aria-current] { font-weight: 700; text-decoration: underline; text-underline-offset: .45em; }
+.city-nav a:hover { background: #e6ece9; }
 .page { min-width: 0; padding-block: 2rem 4rem; }
 .journal-shell .page { max-width: 64rem; margin-inline: auto; }
 .cover { max-width: 64rem; margin-inline: auto; padding-top: clamp(2rem, 4.5vw, 4.25rem); text-align: center; }
@@ -65,16 +68,14 @@ svg { width: 1.2em; height: 1.2em; vertical-align: -.22em; flex-shrink: 0; }
 .stamp { display: inline-grid; place-items: center; flex: none; width: 2rem; height: 2rem; border-radius: .4rem; background: color-mix(in srgb, currentColor 10%, transparent); }
 .stamp svg { width: 1.35rem; height: 1.35rem; }
 .icon-tint { fill: currentColor; fill-opacity: .14; }
-.brand .stamp { color: var(--accent); }
 .timeline { min-width: 0; padding-block: .35rem; border-bottom: 1px solid var(--rule); }
-.timeline-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: end; gap: .2rem .65rem; }
+.timeline-header { display: flex; flex-wrap: wrap; align-items: center; gap: .2rem .65rem; }
 .today-link { display: inline-flex; gap: .35rem; align-items: center; color: #734112; font-weight: 700; min-height: 44px; }
 .today-link svg { width: 1.05rem; height: 1.05rem; }
-.timeline-toggle { order: 1; }
-.timeline-panel { position: fixed; inset: 0 0 0 auto; margin: 0; padding: 0; border: 0; width: min(25rem, 92vw); max-width: none; height: 100%; max-height: none; overflow: hidden; color: var(--ink); background: var(--paper); box-shadow: -10px 0 35px #222c3026; transform: translateX(100%); transition: transform .24s ease-out, display .24s allow-discrete, overlay .24s allow-discrete; }
+.timeline-panel { position: fixed; inset: 0 auto 0 0; margin: 0; padding: 0; border: 0; width: min(25rem, 92vw); max-width: none; height: 100%; max-height: none; overflow: hidden; color: var(--ink); background: var(--paper); box-shadow: 10px 0 35px #222c3026; transform: translateX(-100%); transition: transform .24s ease-out, display .24s allow-discrete, overlay .24s allow-discrete; }
 .timeline-panel[open] { transform: none; }
 @starting-style {
-  .timeline-panel[open] { transform: translateX(100%); }
+  .timeline-panel[open] { transform: translateX(-100%); }
 }
 .timeline-panel::backdrop { background: #222c305e; }
 @media (prefers-reduced-motion: reduce) {
@@ -122,20 +123,22 @@ p { line-height: 1.55; }
 .photo { margin: 0; min-width: 0; align-self: start; }
 .photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 3px; background: #e0e5df; }
 .photo figcaption { margin-top: .3rem; font-size: .82rem; color: var(--muted); }
-.spread-top .photo img { aspect-ratio: 2.4; }
+.day-gallery { display: grid; gap: 1.25rem; align-content: start; min-width: 0; }
+.day-gallery:not(:has(.photo)) { display: none; }
 @media (min-width: 48rem) {
-  .spread-side:has(.photo) { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); align-items: start; }
-  .spread-side .photo { grid-column: 2; grid-row: 1; }
+  .spread-side:has(.photo) { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); align-items: start; }
+  .spread-side > .photo, .spread-side > .day-gallery { grid-column: 2; grid-row: 1; }
   .spread-side .copy { grid-column: 1; grid-row: 1; }
 }
 .plain, .route-list { margin: 0; padding: 0; list-style: none; }
 .route-list li { display: flex; gap: .8rem; align-items: baseline; border-top: 1px solid var(--rule); padding: .85rem 0; }
 .route-list time { min-width: 4rem; color: var(--muted); }
-.food-sections { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.25rem, 5vw, 3rem); }
+.food-sections { display: grid; gap: 1.5rem; }
 .hotel-list { max-width: 46rem; }
 .hotel-list li { display: flex; align-items: flex-start; gap: .7rem; border-top: 1px solid var(--rule); padding-block: .9rem; }
 .hotel-list .stamp { color: var(--accent); }
-.stop-list li { display: grid; grid-template-columns: auto 1fr auto; align-items: start; gap: .65rem; }
+.stop-list li { display: grid; grid-template-columns: 1.35rem 1.25rem minmax(0, 1fr) 44px; align-items: start; gap: .5rem; }
+.stop-order { color: var(--accent); font-weight: 700; text-align: center; font-variant-numeric: tabular-nums; }
 .stop-list li, .transport-list li, .food-list li { border-top: 1px solid var(--rule); padding-block: .85rem; }
 .transport-list { max-width: 46rem; }
 .meta, .item-name small { color: var(--muted); display: block; margin: .15rem 0 .4rem; }
@@ -144,6 +147,9 @@ p { line-height: 1.55; }
 .status-done .status-box { color: white; border-color: var(--accent); background: var(--accent); }
 .status-box svg { width: 1rem; height: 1rem; }
 .food-list .photo { margin-bottom: .8rem; }
+@media (min-width: 48rem) {
+  .food-sections .food-list > li:has(> .photo) { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); align-items: start; gap: clamp(1.3rem, 4vw, 3rem); }
+}
 .food-body { display: flex; gap: .65rem; }
 .food-venues { margin: .7rem 0 0; }
 .food-venues > strong { font-size: .88rem; }
@@ -153,9 +159,7 @@ p { line-height: 1.55; }
 .venue-address { overflow-wrap: anywhere; }
 .venue-links { display: flex; gap: .3rem; flex-wrap: wrap; }
 .shopping-list { max-width: 48rem; }
-.day-food { margin-top: 2rem; max-width: 52rem; }
-.day-food .food-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 0 1.25rem; }
-.day-food .photo img { aspect-ratio: 2; }
+.day-food, .day-shops { margin-top: 2rem; }
 .stop-description { margin: .45rem 0 0; max-width: 58ch; }
 .page-turn { display: flex; justify-content: space-between; gap: .5rem; margin-top: 2.4rem; }
 .page-turn .next { margin-inline-start: auto; }
@@ -181,12 +185,10 @@ p { line-height: 1.55; }
 @media (max-width: 34rem) {
   .wrap { width: calc(100% - 2rem); }
   .site-header { min-height: 3.8rem; }
-  .header-actions { width: 100%; justify-content: space-between; }
-  .header-actions:has(.languages:only-child) { justify-content: flex-end; }
-  .food-sections { grid-template-columns: 1fr; }
+  .header-actions { gap: .35rem; }
+  .language-control select { width: 4.55rem; }
   .cover-photo .photo img { aspect-ratio: 4 / 3; }
   .city-heading h1 { font-size: clamp(2.2rem, 10vw, 2.7rem); overflow-wrap: anywhere; }
-  .spread-top .photo img { aspect-ratio: 4 / 3; }
   .venue-list .venue-row { grid-template-columns: minmax(0, 1fr); }
 }
 
@@ -207,13 +209,15 @@ p { line-height: 1.55; }
   .print-book .spread { display: block; margin-block: .8rem; }
   .print-book .spread .photo { margin-bottom: .7rem; }
   .print-book .spread-side:has(.photo) { display: block; }
-  .print-book .day-food { margin-top: 1rem; }
+  .print-book .day-food, .print-book .day-shops { margin-top: 1rem; }
+  .print-book .day-gallery:has(.photo) { display: flex; gap: .55rem; align-items: flex-start; }
+  .print-book .day-gallery .photo { flex: 1; }
   .print-book .food-list { display: block; }
-  .print-book .food-list li:has(.photo) { display: grid; grid-template-columns: 34mm minmax(0, 1fr); gap: .65rem; }
+  .print-book .food-list > li:has(> .photo) { display: grid; grid-template-columns: minmax(0, 1fr) 34mm; gap: .65rem; }
   .print-book .food-list .photo { margin: 0; }
   .print-book .food-list .photo img { max-height: 22mm; }
   .print-book .food-sections { display: block; }
-  .print-book .stop-list li { grid-template-columns: auto 1fr; }
+  .print-book .stop-list li { grid-template-columns: 1.1rem 1.25rem minmax(0, 1fr); }
   .print-book .stop-list li, .print-book .transport-list li, .print-book .food-list li, .print-book .hotel-list li { padding-block: .4rem; }
   .print-book .venue-row { display: block; padding-block: .25rem; }
   .print-book .venue-links { display: none; }

@@ -107,16 +107,19 @@ function App() {
   return <div className="site" style={{ '--accent': city?.accent }}>
     <a className="skip" href="#content" onClick={event => { event.preventDefault(); main.current?.focus(); }}>{t.skip}</a>
     <header className="site-header wrap">
-      <a className="brand" href={href(lang)} aria-current={home ? 'page' : undefined}>
-        <span className="stamp"><Icon name="book" /></span>{t.title}
-      </a>
+      <a className="brand" href={href(lang)} aria-current={home ? 'page' : undefined}>{t.title}</a>
       <div className="header-actions">
-      {!printable && <a className="utility-button" href={href(lang, 'pdf')}><Icon name="print" /> {t.pdf}</a>}
-      <nav className="languages" aria-label={t.language}>
-        {Object.entries(languages).map(([code, language]) => <a key={code}
-          href={href(code, kind, id)} lang={language.tag} aria-label={language.name}
-          aria-current={lang === code ? 'true' : undefined}>{language.label}</a>)}
-      </nav>
+        {!printable && <a className="icon-link header-pdf" href={href(lang, 'pdf')} aria-label={t.pdf} title={t.pdf}>
+          <Icon name="print" />
+        </a>}
+        <label className="language-control">
+          <span className="sr-only">{t.language}</span>
+          <select value={lang} onChange={event => { window.location.hash = href(event.target.value, kind, id); }}>
+            {Object.entries(languages).map(([code, language]) => <option key={code} value={code}
+              lang={language.tag} label={language.label}>{language.name}</option>)}
+          </select>
+          <Icon name="chevron" />
+        </label>
       </div>
     </header>
     <div className={'wrap ' + (home || printable ? 'cover-shell' : 'journal-shell')}>
@@ -163,7 +166,7 @@ function App() {
         </section>
         {trip.demo && <p className="sample">{t.sample}</p>}
       </>}
-      {kind === 'cidade' && city && <div className="spread spread-top city-overview">
+      {kind === 'cidade' && city && <div className="spread spread-side city-overview">
         <Photo key={city.id} id={city.photo ?? cityDays.find(item => item.photo)?.photo} translate={translate} eager />
         <section className="copy">
           {city.description && <p className="intro">{translate(city.description)}</p>}

@@ -72,20 +72,22 @@ export function HotelList({ city, display }) {
   </li>)}</ul>;
 }
 
-function FoodList({ foods, display, eager }) {
+function FoodList({ foods, display, eager, showPhotos = true }) {
   const { t, translate } = display;
   if (!foods.length) return <p>{t.empty}</p>;
   return <ul className="plain food-list">{foods.map(food => <li key={food.id}>
-    <Photo id={food.photo} translate={translate} eager={eager} />
-    <div className="food-body">
-      <Status done={food.done} complete={t.tasted} pending={t.untasted} />
-      <div><ItemName name={food.name} {...display} />
-        <p className="meta">{translate(food.description)}</p></div>
+    <div className="food-copy">
+      <div className="food-body">
+        <Status done={food.done} complete={t.tasted} pending={t.untasted} />
+        <div><ItemName name={food.name} {...display} />
+          <p className="meta">{translate(food.description)}</p></div>
+      </div>
+      {food.venues?.length > 0 && <div className="food-venues">
+        <strong>{t.whereToTry}</strong>
+        <VenueList venues={food.venues} display={display} />
+      </div>}
     </div>
-    {food.venues?.length > 0 && <div className="food-venues">
-      <strong>{t.whereToTry}</strong>
-      <VenueList venues={food.venues} display={display} />
-    </div>}
+    {showPhotos && <Photo id={food.photo} translate={translate} eager={eager} />}
   </li>)}</ul>;
 }
 
@@ -100,34 +102,42 @@ export function CityFood({ city, display, eager = false }) {
 
 export function DayContent({ day, city, display, eager = false }) {
   const { t, translate, duration } = display;
-  const foodById = new Map(city.foods.map(food => [food.id, food]));
-  const suggestions = (day.foodIds ?? []).map(id => foodById.get(id)).filter(Boolean);
-  return <>
-    <div className={'spread spread-' + day.layout}>
-      <Photo key={day.id} id={day.photo} translate={translate} eager />
-      <section className="copy">
-        {eager ? <h3>{t.stops}</h3> : <h2>{t.stops}</h2>}
-        {day.stops.length ? <ul className="plain stop-list">{day.stops.map(stop => {
-          const schedule = [stop.time, stop.minutes != null && '≈ ' + duration(stop.minutes)].filter(Boolean).join(' · ');
+  const suggestions = (day.foodIds ?? []).map(id => city.foods.find(food => food.id === id)).filter(Boolean);
+  const shops = (day.shopIds ?? []).map(id => city.shops?.find(shop => shop.id === id)).filter(Boolean);
+  const Heading = eager ? 'h3' : 'h2';
+  const dayPhotos = [...new Set([day.photo, ...suggestions.map(food => food.photo)].filter(Boolean))];
+  return <div className="spread spread-side day-spread">
+    <div className="day-gallery">
+      {dayPhotos.map(id => <Photo key={id} id={id} translate={translate} eager={eager || id === day.photo} />)}
+    </div>
+    <div className="copy">
+      <section>
+        <Heading>{t.stops}</Heading>
+        {day.stops.length ? <ol className="plain stop-list" role="list">{day.stops.map((stop, index) => {
           const mapLabel = t.map + ' · ' + translate(stop.name);
           return <li key={stop.id}>
+            <span className="stop-order" aria-hidden="true">{index + 1}</span>
             <Status done={stop.done} complete={t.done} pending={t.pending} />
             <div>
               <ItemName name={stop.name} {...display} />
-              {schedule && <span className="meta">{schedule}</span>}
+              {stop.minutes != null && <span className="meta">≈ {duration(stop.minutes)}</span>}
               {stop.addressJa && <span className="meta" lang="ja">{stop.addressJa}</span>}
               {stop.description && <p className="stop-description">{translate(stop.description)}</p>}
             </div>
             {stop.mapQuery && <MapLink label={mapLabel} query={stop.mapQuery} />}
           </li>;
-        })}</ul> : <p>{t.empty}</p>}
+        })}</ol> : <p>{t.empty}</p>}
       </section>
+      {suggestions.length > 0 && <section className="day-food">
+        <Heading><Icon name="bowl" /> {t.dayFood}</Heading>
+        <FoodList foods={suggestions} display={display} eager={eager} showPhotos={false} />
+      </section>}
+      {shops.length > 0 && <section className="day-shops">
+        <Heading><Icon name="bag" /> {t.dayShops}</Heading>
+        <VenueList venues={shops} display={display} />
+      </section>}
     </div>
-    {suggestions.length > 0 && <section className="day-food">
-      {eager ? <h3>{t.dayFood}</h3> : <h2><Icon name="bowl" /> {t.dayFood}</h2>}
-      <FoodList foods={suggestions} display={display} eager={eager} />
-    </section>}
-  </>;
+  </div>;
 }
 
 export function TransportList({ step, display }) {
