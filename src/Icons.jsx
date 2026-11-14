@@ -37,6 +37,13 @@ const drawings = {
   close: <path d="m6 6 12 12M18 6 6 18"/>,
   previous: <path d="M20 12H4m7-7-7 7 7 7"/>,
   next: <path d="M4 12h16m-7-7 7 7-7 7"/>,
+  up: <path d="M12 20V4m-7 7 7-7 7 7"/>,
+  walk: <>
+    <circle cx="13" cy="4" r="1.6"/>
+    <path d="m7 11 4-3 3 1 2 4h3m-8-5-1 6 4 2 2 5m-6-7-2 4-4 3"/>
+  </>,
+  bus: <path d="M6 17h12V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2zm0-6h12M8 17v3m8-3v3m-7-6h.1m5.8 0h.1"/>,
+  car: <path d="m6 10 1.5-4h9l1.5 4M6 10h12a2 2 0 0 1 2 2v5H4v-5a2 2 0 0 1 2-2zm0 7v2m12-2v2M7 13.5h.1m9.8 0h.1"/>,
   pin: <>
     <path className="icon-tint" d="M19 9a7 7 0 0 0-14 0c0 5 7 12 7 12s7-7 7-12Z"/>
     <circle cx="12" cy="9" r="2.4"/>

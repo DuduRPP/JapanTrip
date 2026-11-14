@@ -38,10 +38,33 @@ function href(lang, kind = 'inicio', id, entryId) {
   return entryKey && entryId ? path + '?' + new URLSearchParams({ [entryKey]: entryId }) : path;
 }
 
+function BackToTop({ header, label }) {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      setVisible(entry.boundingClientRect.bottom <= 0);
+    });
+    observer.observe(header.current);
+    return () => observer.disconnect();
+  }, [header]);
+
+  if (!visible) return null;
+  return <button type="button" className="icon-link back-to-top" aria-label={label} title={label}
+    onClick={() => {
+      header.current.focus({ preventScroll: true });
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reducedMotion ? 'instant' : 'smooth' });
+    }}>
+    <Icon name="up" />
+  </button>;
+}
+
 function App() {
   const [route, setRoute] = useState(readRoute);
   const [todayKey, setTodayKey] = useState(() => localDateKey());
   const main = useRef(null);
+  const header = useRef(null);
   const hasNavigated = useRef(false);
   const { lang, kind, id, entryId } = route;
   const t = labels[lang];
@@ -122,7 +145,7 @@ function App() {
 
   return <div className="site" style={{ '--accent': city?.accent }}>
     <a className="skip" href="#content" onClick={event => { event.preventDefault(); main.current?.focus(); }}>{t.skip}</a>
-    <header className="site-header">
+    <header className="site-header" ref={header} tabIndex={-1}>
       <Timeline groups={timelineGroups} cities={cities} t={t} translate={translate}
         title={title} dayText={dayText} shortDate={shortDate} stepHref={stepHref} cityHref={cityHref}
         selected={step} today={today} cityId={city?.id} cityPage={cityPage?.kind} cityPages={cityPages} />
@@ -210,6 +233,7 @@ function App() {
     </>}
     </main>
     </div>
+    <BackToTop header={header} label={t.backToTop} />
     <footer className="site-footer wrap"><PwaControls t={t} /></footer>
   </div>;
 }

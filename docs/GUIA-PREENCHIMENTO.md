@@ -25,7 +25,7 @@ Priorize as páginas oficiais em japonês ou inglês de cada local, loja, hotel,
 | Área | O que verificar | Como usar no roteiro |
 | --- | --- | --- |
 | **Atrações e experiências** | Nome oficial em japonês, endereço, entrada correta, estação, horários na data planejada, dia de fechamento, ingresso, reserva, fila, condições sazonais e tempo razoável de visita. | Escreva o que fazer ou observar ali. Inclua uma condição prática quando ela mudar a visita, como reservar antes, chegar antes da última entrada ou acessar por uma saída específica. |
-| **Ordem e ritmo do dia** | Caminhadas, linhas de metrô ou ônibus, conexões, tempo de espera e deslocamento até o hotel. Veja se a sequência respeita os compromissos e deixa tempo para comer, descansar e se orientar. | Agrupe por região e organize na ordem de visita. Use `minutes` para a permanência estimada na parada. Considere o tempo de trajeto separadamente e mencione-o na descrição apenas se ajudar a navegar. |
+| **Ordem e ritmo do dia** | Caminhadas, linhas de metrô ou ônibus, conexões, tempo de espera e deslocamento até o hotel. Veja se a sequência respeita os compromissos e deixa tempo para comer, descansar e se orientar. | Agrupe as visitas por região. Use `minutes` para a permanência na parada e `travelFrom` na parada de destino para o deslocamento. |
 | **Hospedagem** | Reserva existente, estação e bairro, facilidade para a chegada e a saída, valor para as datas e ocupação da viagem, impostos e condições que afetem o preço. | Selecione opções adequadas ao roteiro e ao orçamento. Use `fromYen` como preço inicial por noite com base clara. Em caso de reserva existente, publique apenas as informações necessárias para o diário. |
 | **Transporte entre cidades** | Terminais ou estações reais, operador, tempo de viagem e conexões, tarifa por pessoa, classe ou assento, necessidade de reserva e condições para bagagem ou passes quando relevantes. | Compare as opções que o viajante realmente consideraria. Use a mesma base de tarifa e identifique a estação, a modalidade ou o serviço no nome da opção quando isso distinguir alternativas. |
 | **Comidas regionais** | Pratos salgados e doces ligados à cidade, especialidades que combinam com a época e os gostos do viajante, nome japonês e o que torna cada item interessante. | Cadastre cada prato uma vez na cidade. No dia, sugira os que têm opções realistas perto do passeio. Um mesmo prato pode aparecer em mais de um dia. |
@@ -47,6 +47,29 @@ Priorize as páginas oficiais em japonês ou inglês de cada local, loja, hotel,
 3. Escreva uma descrição de uma ou duas frases que ajude a decidir o que fazer naquele lugar. Use `mapQuery` para a entrada ou o ponto correto e `addressJa` quando for útil. Se o nome for ambíguo, combine nome japonês com cidade, bairro ou endereço na consulta.
 4. Relacione comidas e compras pelo trajeto e pelo tempo disponível. Dê prioridade a sugestões que façam sentido antes ou depois das paradas. Se um restaurante funciona só no almoço, leve isso em conta ao recomendar o prato para o dia.
 5. Inicialize `done: false` em novos passeios e pratos, salvo quando o viajante já tiver informado que concluiu o item. Para atualizar depois, edite a parada ou o prato canônico. O mesmo `done` do prato aparece em todos os dias que o referenciam.
+
+### Como indicar o caminho entre paradas
+
+Escolha o meio mais prático para aquele trecho, considerando a distância real a pé, acessos às estações, conexões, espera, bagagem e mobilidade. Estime `travelFrom.minutes` de porta a porta. Em `line`, indique a linha de metrô, trem ou ônibus quando houver. Use `note` para instruções curtas, como por onde sair, onde embarcar e desembarcar ou como fazer uma baldeação. Em trajetos mistos, registre o meio principal em `mode` e explique as outras etapas na nota. Os modos são `walk`, `metro`, `train`, `bus`, `taxi` e `other`.
+
+Na demonstração, a [parada Nakamise em Asakusa](https://dudurpp.github.io/JapanTrip/#/pt/dia/asakusa) recebe este trecho saindo do Sensō-ji. Os cinco minutos são uma estimativa para o trecho curto a partir do salão principal. [Guia de acessibilidade do Governo Metropolitano de Tóquio](https://www.sangyo-rodo1.metro.tokyo.lg.jp/tourism/accessible/en/course16_01.html)
+
+```json
+{
+  "stopId": "sensoji",
+  "mode": "walk",
+  "minutes": 5,
+  "note": {
+    "pt": "Do salão principal, volte pelo portão Hōzōmon e siga pela rua em direção ao Kaminarimon.",
+    "ja": "本堂から宝蔵門をくぐって、雷門の方へ仲見世通りを歩こう。",
+    "en": "From the main hall, head back through Hōzōmon Gate and follow the street toward Kaminarimon."
+  }
+}
+```
+
+Coloque esse objeto em `travelFrom` dentro da parada de destino. `stopId` identifica a parada anterior entre as principais do mesmo dia. Para um passeio opcional, indique de qual parada principal ou opcional anterior faz sentido sair. Quando mudar a ordem, revise as origens e durações. Deixe o campo ausente quando ainda faltar uma estimativa ou uma origem aplicável.
+
+Os outros trechos de demonstração usam estimativas a pé. O acesso à margem do Sumida sai pelo Kaminarimon e passa pela área da ponte Azumabashi. Em Kyoto, a estimativa de 15 minutos entre Fushimi Inari e Tōfuku-ji usa como referência o mesmo trecho no sentido inverso. [GO TOKYO](https://www.gotokyo.org/en/spot/506/index.html) · [Keihan Railway](https://www.keihan.co.jp/travel/en/sightseeing/itineraries/kyoto-on-keihan.html)
 
 ## 4. Escrever em português, japonês e inglês
 
@@ -73,7 +96,7 @@ A identidade pode ser escolhida ao preencher os dados. Cada cidade traz `accent`
 | Hotéis | `cities[].stays[]`, com `name`, `fromYen` e `url` quando disponível. |
 | Pratos | `cities[].foods[]`, com `id`, `kind` (`savory` ou `sweet`), `name`, `description`, `done` e, quando houver, `photo` e `venues`. |
 | Lugares para comer e lojas | `foods[].venues[]` ou `cities[].shops[]`, com `id`, `name`, `description`, `addressJa` e `url` quando houver. Acrescente `price` quando tiver valor e fonte para exibir. |
-| Dias e passeios | `journey[]` com `type: "day"`, `id`, `city`, `number`, `date`, `title`, `stops` e, se couber, `photo`, `foodIds` e `shopIds`. Em cada parada, use `id`, `name`, `done` e os campos de visita descritos acima. |
+| Dias e passeios | `journey[]` com `type: "day"`, `id`, `city`, `number`, `date`, `title`, `stops` e, se couber, `photo`, `foodIds` e `shopIds`. Em cada parada, use `id`, `name`, `done` e os campos de visita descritos acima. Preencha `travelFrom` nas paradas com trajeto cadastrado. |
 | Transferências | `journey[]` com `type: "transfer"`, `id`, `from`, `to` e `options[]`. Cada opção usa `id`, `name`, `minutes`, `yen` e, se disponível, `url` da operadora. |
 | Fotos | Arquivos em `public/photos/` e catálogo em `src/data/photos.json`. Use `url` relativa como `photos/kiyomizu.jpg`. `coverPhoto` e cada `photo` apontam para chaves desse catálogo. JPG, PNG e WebP são incluídos pelo build no cache offline. |
 

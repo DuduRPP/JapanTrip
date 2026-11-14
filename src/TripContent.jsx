@@ -111,21 +111,43 @@ export function CityFood({ city, display, eager = false, selectedId }) {
   </div>;
 }
 
-function StopList({ stops, display, optional = false }) {
+const travelIcons = { walk: 'walk', metro: 'train', train: 'train', bus: 'bus', taxi: 'car' };
+
+function StopTravel({ travel, origin, display }) {
+  const { t, translate, duration } = display;
+  return <div className="stop-travel">
+    <Icon name={travelIcons[travel.mode] ?? 'route'} />
+    <div>
+      {origin && <span className="stop-travel-from">{t.legFrom(translate(origin.name))}</span>}
+      <strong>{t.travelModes[travel.mode] ?? t.travelModes.other}</strong>
+      {travel.line && <> · {translate(travel.line)}</>}
+      {' · ≈ '}{duration(travel.minutes)}
+      {travel.note && <p>{translate(travel.note)}</p>}
+    </div>
+  </div>;
+}
+
+function StopList({ stops, stopsById, display, optional = false }) {
   const { t, translate, duration } = display;
   return <ol className={optional ? 'plain stop-list optional-stops' : 'plain stop-list'} role="list">
     {stops.map((stop, index) => {
       const mapLabel = t.map + ' · ' + translate(stop.name);
+      const travel = stop.travelFrom;
+      const origin = stopsById.get(travel?.stopId);
+      const showTravel = origin && (optional ? !origin.optional || stops.indexOf(origin) < index : origin === stops[index - 1]);
       return <li key={stop.id}>
-        {!optional && <span className="stop-order" aria-hidden="true">{index + 1}</span>}
-        <Status done={stop.done} complete={t.done} pending={t.pending} />
-        <div>
-          <ItemName name={stop.name} {...display} />
-          {stop.minutes != null && <span className="meta">≈ {duration(stop.minutes)}</span>}
-          {stop.addressJa && <span className="meta" lang="ja">{stop.addressJa}</span>}
-          {stop.description && <p className="stop-description">{translate(stop.description)}</p>}
+        {showTravel && <StopTravel travel={travel} origin={optional ? origin : null} display={display} />}
+        <div className="stop-details">
+          {!optional && <span className="stop-order" aria-hidden="true">{index + 1}</span>}
+          <Status done={stop.done} complete={t.done} pending={t.pending} />
+          <div>
+            <ItemName name={stop.name} {...display} />
+            {stop.minutes != null && <span className="meta">≈ {duration(stop.minutes)}</span>}
+            {stop.addressJa && <span className="meta" lang="ja">{stop.addressJa}</span>}
+            {stop.description && <p className="stop-description">{translate(stop.description)}</p>}
+          </div>
+          {stop.mapQuery && <MapLink label={mapLabel} query={stop.mapQuery} />}
         </div>
-        {stop.mapQuery && <MapLink label={mapLabel} query={stop.mapQuery} />}
       </li>;
     })}
   </ol>;
@@ -135,6 +157,7 @@ export function DayContent({ day, city, display, eager = false, foodHref, shopHr
   const { t, translate } = display;
   const requiredStops = day.stops.filter(stop => !stop.optional);
   const optionalStops = day.stops.filter(stop => stop.optional);
+  const stopsById = new Map(day.stops.map(stop => [stop.id, stop]));
   const suggestions = (day.foodIds ?? []).map(id => city.foods.find(food => food.id === id)).filter(Boolean);
   const shops = (day.shopIds ?? []).map(id => city.shops?.find(shop => shop.id === id)).filter(Boolean);
   const Heading = eager ? 'h3' : 'h2';
@@ -146,10 +169,10 @@ export function DayContent({ day, city, display, eager = false, foodHref, shopHr
     <div className="copy">
       <section>
         <Heading>{t.stops}</Heading>
-        {requiredStops.length > 0 && <StopList stops={requiredStops} display={display} />}
+        {requiredStops.length > 0 && <StopList stops={requiredStops} stopsById={stopsById} display={display} />}
         {optionalStops.length > 0 && <section className="day-optional">
           {eager ? <h4>{t.optionalStops}</h4> : <h3>{t.optionalStops}</h3>}
-          <StopList stops={optionalStops} display={display} optional />
+          <StopList stops={optionalStops} stopsById={stopsById} display={display} optional />
         </section>}
         {day.stops.length === 0 && <p>{t.empty}</p>}
       </section>

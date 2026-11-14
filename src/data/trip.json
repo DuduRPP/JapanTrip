@@ -289,6 +289,16 @@
         },
         {
           "id": "nakamise",
+          "travelFrom": {
+            "stopId": "sensoji",
+            "mode": "walk",
+            "minutes": 5,
+            "note": {
+              "pt": "Do salão principal, volte pelo portão Hōzōmon e siga pela rua em direção ao Kaminarimon.",
+              "ja": "本堂から宝蔵門をくぐって、雷門の方へ仲見世通りを歩こう。",
+              "en": "From the main hall, head back through Hōzōmon Gate and follow the street toward Kaminarimon."
+            }
+          },
           "name": {
             "pt": "Rua Nakamise",
             "ja": "仲見世通り",
@@ -306,6 +316,16 @@
         {
           "id": "sumida",
           "optional": true,
+          "travelFrom": {
+            "stopId": "nakamise",
+            "mode": "walk",
+            "minutes": 8,
+            "note": {
+              "pt": "Saia pelo Kaminarimon e siga até a margem do rio, perto da ponte Azumabashi.",
+              "ja": "雷門を出たら、吾妻橋そばの川沿いへ。",
+              "en": "Exit through Kaminarimon and head to the riverbank near Azumabashi Bridge."
+            }
+          },
           "name": {
             "pt": "Caminhada à beira do rio Sumida",
             "ja": "隅田川沿いを散歩",
@@ -558,6 +578,16 @@
         },
         {
           "id": "tofukuji",
+          "travelFrom": {
+            "stopId": "fushimi-inari",
+            "mode": "walk",
+            "minutes": 15,
+            "note": {
+              "pt": "Saia pela entrada principal do santuário e siga para o norte pelas ruas do bairro.",
+              "ja": "伏見稲荷大社の正面から出て、住宅街を北へ歩こか。",
+              "en": "Leave through the shrine’s main entrance and walk north through the neighborhood."
+            }
+          },
           "name": {
             "pt": "Templo Tōfuku-ji",
             "ja": "東福寺",

@@ -14,7 +14,8 @@ Diário ilustrado para acompanhar uma viagem pelo Japão no celular ou no comput
 ## Como funciona
 
 - **Roteiro** abre uma linha do tempo vertical em um painel lateral, com os dias agrupados por cidade, os deslocamentos e os atalhos para os guias. Quando a data do aparelho coincide com um dia do roteiro, o painel e a capa oferecem o atalho **Ir para hoje**.
-- **Cada dia** traz paradas em ordem, duração aproximada, descrição, mapas, passeios opcionais, comidas para provar e lojas próximas quando houver sugestões. Em telas largas as fotos ficam à direita do texto. No celular, a galeria vem primeiro.
+- **Cada dia** traz paradas em ordem, duração aproximada, descrição, mapas e o trajeto até a próxima parada quando cadastrado. Também reúne passeios opcionais, comidas para provar e lojas próximas. Em telas largas as fotos ficam à direita do texto. No celular, a galeria vem primeiro.
+- **Voltar ao topo** aparece no canto inferior direito depois que o cabeçalho sai da tela.
 - **Cada cidade** tem cor e selo próprios e páginas de visão geral, hotéis, comidas e compras. Os deslocamentos trazem opções de transporte, duração e valor por pessoa.
 - **Troca de idioma** conserva a página atual. Kyoto usa expressões de Kansai no japonês, como 「京都で食べ倒す！」 na página de comidas. O título da aba é **JapanTrip** em todas as páginas.
 - **Instalação e modo offline** estão disponíveis pelo navegador. Abra o diário conectado e espere o indicador **Disponível offline**. O roteiro, as fotos locais e as fontes ficam no cache. Links externos, como mapas e operadoras, dependem de conexão.
@@ -55,6 +56,7 @@ Para transformar documentos e ideias de viagem em dados do site, use o [guia de 
 | Capa e cidades | `coverPhoto` aponta para uma foto. Em `cities`, cada cidade tem `id`, `name`, `description`, `photo`, `accent` e `symbol`. |
 | Hotéis | Em `cities[].stays`, informe o nome, o preço inicial por noite em `fromYen` e o link em `url` quando houver. |
 | Dias e paradas | Em `journey`, uma etapa `day` tem `id`, `city`, `number`, `date` no formato `AAAA-MM-DD`, `title` e `stops`. A duração de cada parada é `minutes`. Use `optional: true` para colocá-la em **Se der tempo**. |
+| Trajetos entre paradas | Na parada de destino, use `travelFrom` com `stopId` da origem, `mode` e `minutes` estimados. `line` e `note` aceitam textos traduzidos. O trecho aparece no site e no PDF. |
 | Deslocamentos | Insira uma etapa `transfer` na posição desejada de `journey`. `from` e `to` são IDs de cidade. Cada entrada em `options` tem nome, duração em `minutes`, preço por pessoa em `yen` e `url` opcional. |
 | Pratos e restaurantes | Em `cities[].foods`, use `kind: "savory"` para salgado e `kind: "sweet"` para doce. `venues` lista os lugares onde provar, com `addressJa`, `url` e `price` quando disponíveis. |
 | Compras | Cadastre cada loja em `cities[].shops` com `id`, nome, descrição, endereço em `addressJa` e link em `url` quando houver. |

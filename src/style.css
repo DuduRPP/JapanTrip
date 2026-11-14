@@ -144,13 +144,18 @@ p { line-height: 1.55; }
 .hotel-list { max-width: 46rem; }
 .hotel-list li { display: flex; align-items: flex-start; gap: .7rem; border-top: 1px solid var(--rule); padding-block: .9rem; }
 .hotel-list .stamp { color: var(--accent); }
-.stop-list li { display: grid; grid-template-columns: 1.35rem 1.25rem minmax(0, 1fr) 44px; align-items: start; gap: .5rem; }
+.stop-details { display: grid; grid-template-columns: 1.35rem 1.25rem minmax(0, 1fr) 44px; align-items: start; gap: .5rem; }
 .stop-order { color: var(--accent); font-weight: 700; text-align: center; font-variant-numeric: tabular-nums; }
 .day-optional { margin-top: 1.25rem; }
 .day-optional :is(h3, h4) { margin: 0 0 .45rem; color: var(--muted); font-size: 1.1rem; }
 .day-optional .stop-description { color: var(--muted); }
-.stop-list li, .transport-list li, .food-list li { border-top: 1px solid var(--rule); padding-block: .85rem; }
-.optional-stops li { grid-template-columns: 1.25rem minmax(0, 1fr) 44px; border-top-style: dashed; }
+.stop-details, .transport-list li, .food-list li { border-top: 1px solid var(--rule); padding-block: .85rem; }
+.optional-stops .stop-details { grid-template-columns: 1.25rem minmax(0, 1fr) 44px; border-top-style: dashed; }
+.stop-travel { display: flex; align-items: baseline; gap: .55rem; padding: .45rem .65rem; margin-bottom: .5rem; background: color-mix(in srgb, var(--accent) 6%, var(--paper)); color: var(--muted); font-size: .92rem; border-radius: .25rem; }
+.stop-travel > svg { align-self: flex-start; margin-top: .18rem; color: var(--accent); }
+.stop-travel strong { color: var(--ink); }
+.stop-travel-from { display: block; }
+.stop-travel p { margin: .1rem 0 0; }
 .transport-list { max-width: 46rem; }
 .meta, .item-name small { color: var(--muted); display: block; margin: .15rem 0 .4rem; }
 .item-name strong { font-weight: 700; }
@@ -179,6 +184,14 @@ p { line-height: 1.55; }
 .icon-link, .utility-button { display: inline-flex; justify-content: center; align-items: center; gap: .4rem; min-height: 44px; min-width: 44px; border: 1px solid var(--rule); border-radius: .35rem; color: var(--accent); background: transparent; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; }
 .utility-button { padding: .3rem .65rem; }
 .icon-link:hover, .utility-button:hover { background: color-mix(in srgb, var(--accent) 8%, var(--paper)); }
+.back-to-top {
+  position: fixed;
+  inset: auto max(1rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom)) auto;
+  z-index: 1;
+  width: 44px;
+  padding: 0;
+  background: var(--paper);
+}
 .site-footer { border-top: 1px solid var(--rule); padding-block: .75rem 1.5rem; }
 .offline-status { color: #376451; font-size: .9rem; font-weight: 700; }
 .install-help { max-width: 65ch; margin-block: .6rem 0; }
@@ -239,9 +252,9 @@ p { line-height: 1.55; }
   .print-book .food-list .photo { margin: 0; }
   .print-book .food-list .photo img { max-height: 22mm; }
   .print-book .food-sections { display: block; }
-  .print-book .stop-list li { grid-template-columns: 1.1rem 1.25rem minmax(0, 1fr); }
-  .print-book .optional-stops li { grid-template-columns: 1.25rem minmax(0, 1fr); }
-  .print-book .stop-list li, .print-book .transport-list li, .print-book .food-list li, .print-book .hotel-list li { padding-block: .4rem; }
+  .print-book .stop-details { grid-template-columns: 1.1rem 1.25rem minmax(0, 1fr); }
+  .print-book .optional-stops .stop-details { grid-template-columns: 1.25rem minmax(0, 1fr); }
+  .print-book .stop-details, .print-book .transport-list li, .print-book .food-list li, .print-book .hotel-list li { padding-block: .4rem; }
   .print-book .venue-row { display: block; padding-block: .25rem; }
   .print-book .venue-links { display: none; }
 }
