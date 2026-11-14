@@ -71,18 +71,6 @@
       "en": "Kiyomizu-dera surrounded by autumn foliage"
     }
   },
-  "jimbocho": {
-    "url": "photos/jimbocho.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Kanda-Jimboucho_Book_Town.jpg",
-    "author": "KW~jawiki",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "alt": {
-      "pt": "Livraria de usados com pilhas de livros na calçada em Jimbōchō",
-      "ja": "神保町の歩道まで古本が並ぶ古書店",
-      "en": "A used bookstore with stacks of books in Jimbōchō"
-    }
-  },
   "momiji-manju": {
     "url": "photos/momiji-manju.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Momiji_Manju_-Nishikido.jpg",
@@ -93,30 +81,6 @@
       "pt": "Bolinhos momiji manjū no formato de folhas de bordo",
       "ja": "紅葉の形に焼いたもみじ饅頭",
       "en": "Maple-leaf-shaped momiji manjū cakes"
-    }
-  },
-  "akihabara": {
-    "url": "photos/akihabara.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Sotokanda,_Akihabara_Electric_Town_at_night_20231114.png",
-    "author": "Phineyes",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "alt": {
-      "pt": "Letreiros iluminados no bairro de Akihabara",
-      "ja": "秋葉原電気街の夜の看板",
-      "en": "Illuminated signs in Akihabara’s Electric Town"
-    }
-  },
-  "nakano": {
-    "url": "photos/nakano.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Nakano_broadway_entrance.JPG",
-    "author": "User:Kentin",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "alt": {
-      "pt": "Entrada da galeria de Nakano Broadway",
-      "ja": "中野ブロードウェイの入口",
-      "en": "Entrance to Nakano Broadway"
     }
   },
   "kamakura": {
@@ -345,6 +309,78 @@
       "pt": "A torre branca do Castelo de Himeji",
       "ja": "姫路城の白い天守",
       "en": "The white keep of Himeji Castle"
+    }
+  },
+  "ueno-toshogu": {
+    "url": "photos/ueno-toshogu.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Golden_gate_of_Ueno_T%C5%8Dsh%C5%8D-g%C5%AB_Shinto_shrine,_Tokyo,_Japan.jpg",
+    "author": "Basile Morin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Entrada ornamentada do santuário Tōshō-gū no Parque de Ueno",
+      "ja": "上野公園の上野東照宮の装飾された門",
+      "en": "Ornate gate of Ueno Tōshō-gū Shrine in Ueno Park"
+    }
+  },
+  "imperial-east": {
+    "url": "photos/imperial-east.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Imperial_Palace_East_Garden.jpg",
+    "author": "john w",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "alt": {
+      "pt": "Jardins Orientais do Palácio Imperial de Tóquio",
+      "ja": "東京の皇居東御苑",
+      "en": "East Gardens of Tokyo’s Imperial Palace"
+    }
+  },
+  "shinjuku-gyoen": {
+    "url": "photos/shinjuku-gyoen.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Shinjuku-Gyoen_Japan-garden.jpg",
+    "author": "MaedaAkihiko",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Jardim japonês do Shinjuku Gyoen",
+      "ja": "新宿御苑の日本庭園",
+      "en": "Japanese garden at Shinjuku Gyoen"
+    }
+  },
+  "hama-rikyu": {
+    "url": "photos/hama-rikyu.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Hama-rikyu_garden_in_Tokyo_1.jpg",
+    "author": "Dudva",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Jardim Hama-rikyū em Tóquio",
+      "ja": "東京の浜離宮恩賜庭園",
+      "en": "Hama-rikyū Gardens in Tokyo"
+    }
+  },
+  "miidera": {
+    "url": "photos/miidera.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Mii-dera_Onjo-ji_(Otsu_Shiga)_Temple_hdsr_S5_kd52.jpg",
+    "author": "Hyppolyte de Saint-Rambert",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "alt": {
+      "pt": "Estátua no templo Mii-dera, em Ōtsu",
+      "ja": "大津・三井寺の像",
+      "en": "Statue at Mii-dera Temple in Ōtsu"
+    }
+  },
+  "sapporo-beer": {
+    "url": "photos/sapporo-beer.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Sapporo_Beer_Museum.JPG",
+    "author": "The original uploader was K. Takeda at Japanese Wikipedia.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "alt": {
+      "pt": "Fachada de tijolos do Museu da Cerveja de Sapporo",
+      "ja": "サッポロビール博物館の赤レンガ外観",
+      "en": "Brick exterior of the Sapporo Beer Museum"
     }
   }
 }
