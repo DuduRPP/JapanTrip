@@ -6,11 +6,11 @@ export const languages = {
 
 export const labels = {
   pt: {
-    title: 'Japão em Capítulos', intro: 'Uma viagem entre ruas, trilhos e mesas.',
-    overview: 'Visão geral', route: 'Percurso', stays: 'Hotéis', food: 'Comidas',
+    title: 'Viagem ao Japão',
+    overview: 'Visão geral', route: 'Roteiro', stays: 'Hotéis', food: 'Comidas',
     cityPages: 'Páginas da cidade', cityDays: 'Dias nesta cidade', cities: 'Cidades da viagem',
     today: 'Hoje', goToday: 'Ir para hoje',
-    closeRoute: 'Fechar percurso', startTrip: 'Começar viagem',
+    closeRoute: 'Fechar roteiro', startTrip: 'Começar viagem',
     shopping: 'Compras', whereToTry: 'Onde provar', venueDetails: 'Informações da loja',
     pdf: 'Salvar em PDF', completeTrip: 'Roteiro completo', printHelp: 'Na janela de impressão, escolha “Salvar como PDF”.',
     back: 'Voltar ao roteiro', install: 'Instalar diário', offline: 'Disponível offline',
@@ -26,7 +26,7 @@ export const labels = {
     skip: 'Pular para o conteúdo', missing: 'Página não encontrada', empty: 'Ainda não há itens nesta seção.',
   },
   ja: {
-    title: '日本、旅の章', intro: '街を歩き、列車に乗り、土地の味に出会う旅。',
+    title: '日本の旅日記',
     overview: '街の概要', route: '旅程', stays: 'ホテル', food: 'ご当地グルメ',
     cityPages: '街のページ', cityDays: 'この街での日程', cities: '訪れる街',
     today: '今日', goToday: '今日の予定へ',
@@ -46,7 +46,7 @@ export const labels = {
     skip: '本文へ移動', missing: 'ページが見つかりません', empty: 'まだ項目がありません。',
   },
   en: {
-    title: 'Japan in Chapters', intro: 'A trip through streets, rails and meals.',
+    title: 'Japan Travel Journal',
     overview: 'Overview', route: 'Itinerary', stays: 'Hotels', food: 'Local food',
     cityPages: 'City pages', cityDays: 'Days in this city', cities: 'Cities on the trip',
     today: 'Today', goToday: 'Go to today',

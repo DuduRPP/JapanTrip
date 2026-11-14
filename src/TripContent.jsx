@@ -20,8 +20,9 @@ function Status({ done, complete, pending }) {
   </span>;
 }
 
-function ItemName({ name, translate, lang }) {
-  return <span className="item-name"><strong>{translate(name)}</strong>
+function ItemName({ name, translate, lang, href }) {
+  const title = translate(name);
+  return <span className="item-name"><strong>{href ? <a href={href}>{title}</a> : title}</strong>
     {lang !== 'ja' && name.ja && name.ja !== translate(name) && <small lang="ja">{name.ja}</small>}
   </span>;
 }
@@ -72,14 +73,21 @@ export function HotelList({ city, display }) {
   </li>)}</ul>;
 }
 
-function FoodList({ foods, display, eager, showPhotos = true }) {
+export function foodEntryId(id) {
+  return 'food-' + id;
+}
+
+function FoodList({ foods, display, eager, showPhotos = true, foodHref, anchorEntries, selectedFood }) {
   const { t, translate } = display;
   if (!foods.length) return <p>{t.empty}</p>;
-  return <ul className="plain food-list">{foods.map(food => <li key={food.id}>
+  return <ul className="plain food-list">{foods.map(food => <li key={food.id}
+    id={anchorEntries ? foodEntryId(food.id) : undefined}
+    tabIndex={food === selectedFood ? -1 : undefined}
+    className={food === selectedFood ? 'food-selected' : undefined}>
     <div className="food-copy">
       <div className="food-body">
         <Status done={food.done} complete={t.tasted} pending={t.untasted} />
-        <div><ItemName name={food.name} {...display} />
+        <div><ItemName name={food.name} href={foodHref?.(food)} {...display} />
           <p className="meta">{translate(food.description)}</p></div>
       </div>
       {food.venues?.length > 0 && <div className="food-venues">
@@ -91,16 +99,17 @@ function FoodList({ foods, display, eager, showPhotos = true }) {
   </li>)}</ul>;
 }
 
-export function CityFood({ city, display, eager = false }) {
+export function CityFood({ city, display, eager = false, selectedFood }) {
   return <div className="food-sections">
     {['savory', 'sweet'].map(category => <section key={category}>
       {eager ? <h4>{display.t[category]}</h4> : <h2>{display.t[category]}</h2>}
-      <FoodList foods={city.foods.filter(food => food.kind === category)} display={display} eager={eager} />
+      <FoodList foods={city.foods.filter(food => food.kind === category)} display={display} eager={eager}
+        anchorEntries={!eager} selectedFood={selectedFood} />
     </section>)}
   </div>;
 }
 
-export function DayContent({ day, city, display, eager = false }) {
+export function DayContent({ day, city, display, eager = false, foodHref }) {
   const { t, translate, duration } = display;
   const suggestions = (day.foodIds ?? []).map(id => city.foods.find(food => food.id === id)).filter(Boolean);
   const shops = (day.shopIds ?? []).map(id => city.shops?.find(shop => shop.id === id)).filter(Boolean);
@@ -130,7 +139,7 @@ export function DayContent({ day, city, display, eager = false }) {
       </section>
       {suggestions.length > 0 && <section className="day-food">
         <Heading><Icon name="bowl" /> {t.dayFood}</Heading>
-        <FoodList foods={suggestions} display={display} eager={eager} showPhotos={false} />
+        <FoodList foods={suggestions} display={display} eager={eager} showPhotos={false} foodHref={foodHref} />
       </section>}
       {shops.length > 0 && <section className="day-shops">
         <Heading><Icon name="bag" /> {t.dayShops}</Heading>

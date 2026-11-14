@@ -1,4 +1,4 @@
-# Contexto de Japão em Capítulos
+# Contexto de Viagem ao Japão
 
 ## Objetivo
 
@@ -13,7 +13,7 @@ Criar um diário de viagem que misture um álbum de fotos com um livro ilustrado
 - Cada cidade tem cor, ícone e nome próprios. O cabeçalho das páginas da cidade usa o acento no título e na divisória, com um selo do símbolo e do nome em japonês. No computador, texto e checklists ficam à esquerda, com as fotos à direita. No celular, o roteiro vira uma coluna e a galeria do dia aparece acima das paradas.
 - Fotografias reais para lugares e pratos, com autoria, fonte e licença registradas. Ícones desenhados em SVG identificam cidades e seções.
 - A capa tem uma foto central do torii de Itsukushima, um botão “Começar viagem” que leva à primeira etapa e uma seção de cidades abaixo da foto.
-- O botão “Percurso” abre um painel que desliza pela esquerda. A lista dentro dele vai de cima para baixo, com os deslocamentos entre as cidades e atalhos para visão geral, hotéis, comidas e compras.
+- O botão “Roteiro” abre um painel que desliza pela esquerda. A lista dentro dele vai de cima para baixo, com os deslocamentos entre as cidades e atalhos para visão geral, hotéis, comidas e compras.
 - Quando um dia tem a mesma data local do dispositivo, ele recebe a marca “Hoje”. O atalho “Ir para hoje” leva direto a ele. A página que está aberta tem seu próprio destaque, inclusive ao consultar outras datas.
 
 ## Páginas
@@ -40,6 +40,8 @@ O esqueleto usa 12 dias entre Tóquio e Kyoto para exercitar a linha do tempo. D
 - Em `trip.json`, `city.shops` lista sugestões de compras e `food.venues` lista lugares onde provar um prato. Esses dados aparecem também no PDF. Guarde o endereço em `addressJa` e a fonte da loja em `url`.
 
 Para registrar uma visita ou comida, altere `done` para `true` no item correspondente. Use `false` para desfazer a marcação. Mantenha os identificadores ao editar nomes ou durações, pois as URLs usam o ID da etapa. Em um pedido como “marca o taiyaki de Tóquio como experimentado”, o agente deve editar o item na cidade correta, validar com `npm run build` e enviar a alteração conforme as permissões do repositório.
+
+Cada prato tem uma única marcação em `city.foods`. Todos os dias que apontam para o mesmo ID em `foodIds` exibem essa marcação e oferecem um link direto para o prato na página de comidas da cidade.
 
 Coloque as paradas em `stops` na ordem em que pretende visitá-las. A página numera essa sequência e exibe `minutes` como duração aproximada. Use `mapQuery` para o destino pesquisável no mapa, `addressJa` para o endereço em japonês e `description` para os textos da parada. `foodIds` lista os pratos sugeridos da cidade. `shopIds` lista lojas da cidade escolhidas para aquele dia por proximidade.
 

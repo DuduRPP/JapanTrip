@@ -47,7 +47,6 @@ svg { width: 1.2em; height: 1.2em; vertical-align: -.22em; flex-shrink: 0; }
 .journal-shell .page { max-width: 64rem; margin-inline: auto; }
 .cover { max-width: 64rem; margin-inline: auto; padding-top: clamp(2rem, 4.5vw, 4.25rem); text-align: center; }
 .cover h1 { margin-bottom: .45rem; }
-.cover .intro { margin-bottom: 0; }
 .cover-actions { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: .65rem 1rem; margin: 1.35rem auto 1.65rem; }
 .start-trip { display: inline-flex; align-items: center; gap: .8rem; min-height: 48px; border-radius: .3rem; padding: .55rem 1.1rem; color: white; background: #873747; font-weight: 700; text-decoration: none; }
 .start-trip:hover { background: #692937; }
@@ -147,6 +146,7 @@ p { line-height: 1.55; }
 .status-done .status-box { color: white; border-color: var(--accent); background: var(--accent); }
 .status-box svg { width: 1rem; height: 1rem; }
 .food-list .photo { margin-bottom: .8rem; }
+.food-list > .food-selected { scroll-margin-block-start: 1rem; border-top-color: var(--accent); background: color-mix(in srgb, var(--accent) 6%, var(--paper)); }
 @media (min-width: 48rem) {
   .food-sections .food-list > li:has(> .photo) { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); align-items: start; gap: clamp(1.3rem, 4vw, 3rem); }
 }
