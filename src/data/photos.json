@@ -347,18 +347,6 @@
       "en": "Japanese garden at Shinjuku Gyoen"
     }
   },
-  "hama-rikyu": {
-    "url": "photos/hama-rikyu.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Hama-rikyu_garden_in_Tokyo_1.jpg",
-    "author": "Dudva",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "alt": {
-      "pt": "Jardim Hama-rikyū em Tóquio",
-      "ja": "東京の浜離宮恩賜庭園",
-      "en": "Hama-rikyū Gardens in Tokyo"
-    }
-  },
   "miidera": {
     "url": "photos/miidera.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Mii-dera_Onjo-ji_(Otsu_Shiga)_Temple_hdsr_S5_kd52.jpg",
@@ -381,6 +369,18 @@
       "pt": "Fachada de tijolos do Museu da Cerveja de Sapporo",
       "ja": "サッポロビール博物館の赤レンガ外観",
       "en": "Brick exterior of the Sapporo Beer Museum"
+    }
+  },
+  "ginza-wako": {
+    "url": "photos/ginza-wako.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:%E9%8A%80%E5%BA%A74%E4%B8%81%E7%9B%AE%E4%BA%A4%E5%B7%AE%E7%82%B9.jpg",
+    "author": "ノボホショコロトソ",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "alt": {
+      "pt": "Relógio da Wako e Mitsukoshi iluminados no cruzamento de Ginza",
+      "ja": "夜の銀座四丁目交差点、和光の時計塔と銀座三越",
+      "en": "Wako’s clock tower and Mitsukoshi lit up at the Ginza crossing"
     }
   }
 }

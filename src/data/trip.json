@@ -103,6 +103,21 @@
               },
               "addressJa": "東京都台東区上野6-9-16",
               "url": "https://www.uenoyabusobasouhonten.com/"
+            },
+            {
+              "id": "ginza-sanada-six",
+              "name": {
+                "pt": "Ginza Sanada SIX",
+                "ja": "銀座 真田 SIX",
+                "en": "Ginza Sanada SIX"
+              },
+              "description": {
+                "pt": "Soba de Shinshū no sexto andar do GINZA SIX. Fica no mesmo andar da livraria opcional.",
+                "ja": "GINZA SIXの6階で信州そば。書店と同じフロア。",
+                "en": "Shinshū soba on the sixth floor of GINZA SIX, the same level as the optional bookstore."
+              },
+              "addressJa": "東京都中央区銀座6-10-1 GINZA SIX 6F",
+              "url": "https://ginza-sanada.com/ginzasix"
             }
           ]
         },
@@ -338,21 +353,6 @@
               },
               "addressJa": "東京都渋谷区道玄坂2-29-11 第6セントラルビル1F",
               "url": "https://page.line.me/lbw7214z"
-            },
-            {
-              "id": "sushizanmai-tsukiji",
-              "name": {
-                "pt": "Sushizanmai Honten",
-                "ja": "すしざんまい 本店",
-                "en": "Sushizanmai Honten"
-              },
-              "description": {
-                "pt": "Matriz no mercado externo de Tsukiji. Compare o conjunto de nigiri com os preços das peças no balcão.",
-                "ja": "築地場外の本店。握りのセットと単品の値段を店頭で見比べよう。",
-                "en": "The flagship in Tsukiji Outer Market. Compare nigiri sets and individual pieces at the counter."
-              },
-              "addressJa": "東京都中央区築地4-11-9",
-              "url": "https://www.tsukiji.or.jp/shoplist/cat-d/cat-12/364/"
             }
           ]
         },
@@ -658,6 +658,96 @@
           },
           "addressJa": "東京都新宿区新宿3-17-7",
           "url": "https://store.kinokuniya.co.jp/store/shinjuku-main-store/"
+        },
+        {
+          "id": "matsuzakaya-ueno",
+          "name": {
+            "pt": "Matsuzakaya Ueno",
+            "ja": "松坂屋上野店",
+            "en": "Matsuzakaya Ueno"
+          },
+          "description": {
+            "pt": "Boa para adiantar os presentes se chegar cedo de Hokkaido. Procure wagashi no térreo e chá ou outros alimentos embalados no subsolo.",
+            "ja": "北海道から早めに着いたら、お土産を先に。1階の和菓子と地下の茶葉や食品を見てみよう。",
+            "en": "A chance to get a head start if you arrive early from Hokkaido. Look for wagashi on the ground floor and tea or packaged foods downstairs."
+          },
+          "addressJa": "東京都台東区上野3-29-5",
+          "url": "https://www.matsuzakaya.co.jp/ueno/floor/"
+        },
+        {
+          "id": "itoya-ginza",
+          "name": {
+            "pt": "Ginza Itoya",
+            "ja": "銀座 伊東屋 本店",
+            "en": "Ginza Itoya"
+          },
+          "description": {
+            "pt": "Comece pela G.Itoya. Canetas, cadernos, papel japonês e cartões dão boas lembranças e ocupam pouco espaço.",
+            "ja": "G.Itoyaから。ペン、ノート、和紙やカードならお土産にしやすく、荷物にも入れやすい。",
+            "en": "Start at G.Itoya. Pens, notebooks, Japanese paper and cards make compact gifts."
+          },
+          "addressJa": "東京都中央区銀座2-7-15",
+          "url": "https://store.ito-ya.co.jp/ext/store/ginza/ginza/index.html"
+        },
+        {
+          "id": "muji-ginza",
+          "name": {
+            "pt": "MUJI Ginza",
+            "ja": "無印良品 銀座",
+            "en": "MUJI Ginza"
+          },
+          "description": {
+            "pt": "Flagship para roupas básicas, itens de casa e organizadores de viagem. Às segundas, a abertura habitual é às 11h.",
+            "ja": "定番服、生活雑貨、旅行用の収納を見られる旗艦店。月曜の通常の開店は11時。",
+            "en": "The flagship for basics, home goods and travel organizers. Usual Monday opening is 11:00."
+          },
+          "addressJa": "東京都中央区銀座3-3-5",
+          "url": "https://www.muji.com/flagship/ginza/ja/"
+        },
+        {
+          "id": "mitsukoshi-ginza",
+          "name": {
+            "pt": "Ginza Mitsukoshi · doces e chá",
+            "ja": "銀座三越 ギンザフードガーデン",
+            "en": "Ginza Mitsukoshi · sweets and tea"
+          },
+          "description": {
+            "pt": "Na área de alimentos do subsolo, veja wagashi, senbei e chá em caixas. Compare validade e embalagem para presentear.",
+            "ja": "地下の食品売り場で和菓子、せんべい、お茶の詰め合わせを。日持ちと箱の大きさも見ておこう。",
+            "en": "Look for boxed wagashi, senbei and tea in the basement food hall. Compare shelf life and packaging for gifts."
+          },
+          "addressJa": "東京都中央区銀座4-6-16 本館B2F",
+          "url": "https://www.mistore.jp/store/ginza/shops/floorB2.html"
+        },
+        {
+          "id": "character-street",
+          "name": {
+            "pt": "Tokyo Character Street",
+            "ja": "東京キャラクターストリート",
+            "en": "Tokyo Character Street"
+          },
+          "description": {
+            "pt": "Lojas de personagens no subsolo de Yaesu, fora das catracas da JR. Escolha as séries que procura e deixe tempo para comparar.",
+            "ja": "八重洲地下のキャラクター店。JRの改札外。好きな作品の店を選び、見比べる時間を取ろう。",
+            "en": "Character shops in the Yaesu basement outside the JR gates. Pick the series you want and leave time to compare."
+          },
+          "addressJa": "東京都千代田区丸の内1-9-1 東京駅一番街B1F",
+          "url": "https://www.tokyoeki-1bangai.co.jp/shop/?area=area2&floor=b1f&anchor=1"
+        },
+        {
+          "id": "tsutaya-ginza",
+          "name": {
+            "pt": "Ginza Tsutaya Books",
+            "ja": "銀座 蔦屋書店",
+            "en": "Ginza Tsutaya Books"
+          },
+          "description": {
+            "pt": "Livros de arte, design e cultura japonesa. Vale como opção no mesmo bairro se preferir livros a mais uma loja de presentes.",
+            "ja": "アートやデザイン、日本文化の本。お土産売り場をもう一軒回るより本を見たいときに。",
+            "en": "Art, design and Japanese culture books. A same-neighborhood alternative if you would rather browse books than another gift shop."
+          },
+          "addressJa": "東京都中央区銀座6-10-1 GINZA SIX 6F",
+          "url": "https://ginza6.tokyo/shops/1230"
         }
       ]
     },
@@ -7591,9 +7681,9 @@
           "minutes": 100,
           "mapQuery": "上野駅",
           "description": {
-            "pt": "De Haneda, use Keikyu até Shinagawa e JR até Ueno; de Narita, use Keisei. Conte cerca de 55–95 min com espera e caminhada. Só descanse na chegada.",
-            "ja": "羽田なら京急で品川、JRで上野。成田なら京成。待ち時間と徒歩を入れて約55〜95分。今日は休もう。",
-            "en": "From Haneda take Keikyu to Shinagawa and JR to Ueno; from Narita take Keisei. Allow roughly 55–95 min including waits and the walk. Rest after arriving."
+            "pt": "De Haneda, use Keikyu até Shinagawa e JR até Ueno; de Narita, use Keisei. Reserve cerca de 55–95 min com espera e caminhada. Faça check-in e jante perto do hotel.",
+            "ja": "羽田なら京急で品川、JRで上野。成田なら京成。待ち時間と徒歩を入れて約55〜95分。チェックインして宿の近くで晩ご飯。",
+            "en": "From Haneda use Keikyu to Shinagawa and JR to Ueno; from Narita use Keisei. Allow about 55–95 min with waits and walking. Check in and eat near your hotel."
           },
           "travelFrom": {
             "stopId": "tokyo-airport-domestic",
@@ -7605,11 +7695,37 @@
               "en": "Keikyu and JR, or Keisei"
             }
           }
+        },
+        {
+          "id": "ueno-gifts",
+          "name": {
+            "pt": "Matsuzakaya Ueno",
+            "ja": "松坂屋上野店",
+            "en": "Matsuzakaya Ueno"
+          },
+          "done": false,
+          "minutes": 50,
+          "description": {
+            "pt": "Se chegar cedo, compre algumas caixas de doces ou chá perto do hotel. O piso de doces tem horário habitual até 20h; se o voo atrasar, deixe tudo para amanhã.",
+            "ja": "早く着いたら、宿の近くで箱入りのお菓子やお茶を。菓子売り場は通常20時まで。到着が遅れたら明日で大丈夫。",
+            "en": "If you arrive early, pick up boxed sweets or tea near your hotel. The sweets floor usually closes at 20:00; if the flight is late, shop tomorrow instead."
+          },
+          "mapQuery": "松坂屋上野店 ほっぺタウン",
+          "source": "https://www.matsuzakaya.co.jp/ueno/hours.html",
+          "travelFrom": {
+            "stopId": "last-checkin",
+            "mode": "walk",
+            "minutes": 13
+          },
+          "optional": true
         }
       ],
       "foodIds": [
         "soba-ueno",
         "shoyu-ramen"
+      ],
+      "shopIds": [
+        "matsuzakaya-ueno"
       ]
     },
     {
@@ -7619,71 +7735,98 @@
       "number": 32,
       "date": "2027-02-08",
       "title": {
-        "pt": "Tsukiji, Hama-rikyū e Ginza",
-        "ja": "築地・浜離宮・銀座",
-        "en": "Tsukiji, Hama-rikyū and Ginza"
+        "pt": "Compras em Ginza e Yaesu",
+        "ja": "銀座と八重洲で買い物",
+        "en": "Shopping in Ginza and Yaesu"
       },
       "stops": [
         {
-          "id": "tsukiji",
+          "id": "ginza-itoya",
           "name": {
-            "pt": "Mercado externo de Tsukiji",
-            "ja": "築地場外市場",
-            "en": "Tsukiji Outer Market"
+            "pt": "Papelaria na Itoya",
+            "ja": "伊東屋で文房具",
+            "en": "Stationery at Itoya"
           },
           "done": false,
-          "minutes": 95,
-          "mapQuery": "築地場外市場 ぷらっと築地",
+          "minutes": 75,
           "description": {
-            "pt": "Vá pela manhã para ver as bancas em funcionamento. Almoce cedo com nigiri ou uma tigela de peixe; confira a abertura da filial escolhida.",
-            "ja": "朝のうちに場外市場へ。握りや海鮮丼で早めの昼食。目当てのお店の営業は確認。",
-            "en": "Go in the morning while the stalls are active. Have an early lunch of nigiri or a seafood bowl; check the hours of the shop you choose."
+            "pt": "Comece pela papelaria da Ginza, que normalmente abre às 10h às segundas. Separe tempo para escolher presentes leves e algo para você.",
+            "ja": "月曜は通常10時からの銀座の文房具店へ。軽いお土産と自分用をゆっくり選ぼう。",
+            "en": "Start at the Ginza stationery shop, which usually opens at 10:00 on Mondays. Allow time for light gifts and something for yourself."
           },
-          "source": "https://www.tsukiji.or.jp/calendar/?date=2027-02"
+          "mapQuery": "銀座 伊東屋 G.Itoya 本店",
+          "source": "https://store.ito-ya.co.jp/ext/store/ginza/ginza/index.html"
         },
         {
-          "id": "hamarikyu",
+          "id": "ginza-muji",
           "name": {
-            "pt": "Jardim Hama-rikyū",
-            "ja": "浜離宮恩賜庭園",
-            "en": "Hama-rikyū Gardens"
+            "pt": "Roupas e utilidades na MUJI",
+            "ja": "無印良品で服と生活雑貨",
+            "en": "Clothes and everyday goods at MUJI"
           },
           "done": false,
-          "minutes": 80,
-          "mapQuery": "浜離宮恩賜庭園 大手門口",
+          "minutes": 70,
           "description": {
-            "pt": "Veja o lago de maré, as pontes e o contraste do jardim com os prédios de Shiodome. Entrada publicada de ¥300; a última entrada normal é às 16h30.",
-            "ja": "潮入りの池、橋、汐留のビルとの対比を楽しむ。一般300円、通常の最終入園は16:30。",
-            "en": "See the tidal pond, bridges and the contrast with Shiodome’s towers. Published admission is ¥300 and usual last entry is 16:30."
+            "pt": "Explore as seções de roupas e itens de casa sem pressa. Organizadores de viagem também são úteis para acomodar as compras.",
+            "ja": "服と生活雑貨をゆっくり。買った物をまとめる旅行用の収納も見られる。",
+            "en": "Take your time with clothes and home goods. Travel organizers can also help pack what you bought."
           },
+          "mapQuery": "無印良品 銀座",
+          "source": "https://www.muji.com/flagship/ginza/ja/",
           "travelFrom": {
-            "stopId": "tsukiji",
+            "stopId": "ginza-itoya",
             "mode": "walk",
-            "minutes": 17
-          },
-          "source": "https://www.tokyo-park.or.jp/park/hama-rikyu/"
+            "minutes": 9
+          }
         },
         {
-          "id": "ginza",
+          "id": "ginza-gifts",
           "name": {
-            "pt": "Ginza e uma pausa para chá",
-            "ja": "銀座で散歩とお茶",
-            "en": "Ginza and a tea break"
+            "pt": "Almoço e presentes no Mitsukoshi",
+            "ja": "三越でお土産と銀座で昼ご飯",
+            "en": "Lunch and gifts at Mitsukoshi"
           },
           "done": false,
-          "minutes": 85,
-          "mapQuery": "銀座四丁目交差点 和光",
+          "minutes": 120,
           "description": {
-            "pt": "Caminhe pela Chūō-dōri até o relógio da Wako. Pare para wagashi e chá ou veja o subsolo de uma loja de departamentos, sem estender as compras.",
-            "ja": "中央通りを和光の時計まで歩こう。和菓子とお茶、または百貨店の地下を短めに。",
-            "en": "Walk Chūō-dōri to the Wako clock. Stop for wagashi and tea, or make a quick pass through a department-store food hall."
+            "pt": "Faça uma pausa para soba ou chá. Reserve a segunda parte para o subsolo do Mitsukoshi: chá, yōkan e outros doces em caixas para levar.",
+            "ja": "そばかお茶でひと休み。後半は三越の地下で茶葉、羊羹、箱入りのお菓子を選ぼう。",
+            "en": "Pause for soba or tea. Use the rest of the stop for tea, yōkan and other boxed sweets in Mitsukoshi’s basement."
           },
+          "mapQuery": "銀座三越 本館 地下2階",
+          "source": "https://www.mistore.jp/store/ginza/shops/floorB2.html",
           "travelFrom": {
-            "stopId": "hamarikyu",
+            "stopId": "ginza-muji",
             "mode": "walk",
-            "minutes": 22
+            "minutes": 8
+          }
+        },
+        {
+          "id": "yaesu-shopping",
+          "name": {
+            "pt": "Achados em Tokyo Character Street",
+            "ja": "東京キャラクターストリートで買い物",
+            "en": "Tokyo Character Street finds"
           },
-          "source": "https://www.gotokyo.org/en/destinations/central-tokyo/ginza/index.html"
+          "done": false,
+          "minutes": 75,
+          "description": {
+            "pt": "Caminhe até a estação Tokyo e vá ao subsolo de Yaesu. Escolha lembranças ou itens das séries que você gosta. Se já tiver terminado as compras em Ginza, pode voltar direto ao hotel.",
+            "ja": "東京駅の八重洲地下へ。好きな作品のグッズやお土産を選ぼう。銀座で買い終わったら、そのまま宿に戻っても。",
+            "en": "Walk to Tokyo Station and go down to Yaesu. Pick gifts or merchandise from series you like. If you are done shopping in Ginza, head straight back to the hotel."
+          },
+          "mapQuery": "東京キャラクターストリート 東京駅一番街",
+          "source": "https://www.tokyoeki-1bangai.co.jp/shop/?area=area2&floor=b1f&anchor=1",
+          "travelFrom": {
+            "stopId": "ginza-gifts",
+            "mode": "walk",
+            "minutes": 24,
+            "note": {
+              "pt": "Siga para o lado de Yaesu e use a entrada subterrânea do Tokyo Station First Avenue, fora das catracas.",
+              "ja": "東京駅の八重洲側へ。改札外の東京駅一番街地下へ入ろう。",
+              "en": "Head to the Yaesu side and enter the Tokyo Station First Avenue basement outside the gates."
+            }
+          }
         },
         {
           "id": "last-night",
@@ -7696,50 +7839,62 @@
           "minutes": 110,
           "mapQuery": "上野駅",
           "description": {
-            "pt": "Volte no fim da tarde para organizar a mala e confirmar o terminal e o trem de Narita. Jante perto do hotel e guarde a noite para descansar.",
-            "ja": "夕方には宿へ戻り、荷造りと成田のターミナル・列車の確認。近くで夕食をとって休もう。",
-            "en": "Head back in the late afternoon to pack and confirm your Narita terminal and train. Have dinner near the hotel and get some rest."
+            "pt": "Volte no fim da tarde para separar os presentes, acertar o peso da mala e confirmar o trem e o terminal de Narita. Jante perto do hotel.",
+            "ja": "夕方には宿へ戻り、お土産を分けて荷物の重さを確認。成田行きの電車とターミナルを確認して、近くで晩ご飯。",
+            "en": "Return in the late afternoon to sort gifts, check suitcase weight, and confirm your Narita train and terminal. Have dinner near the hotel."
           },
           "travelFrom": {
-            "stopId": "ginza",
-            "mode": "metro",
-            "minutes": 35,
+            "stopId": "yaesu-shopping",
+            "mode": "train",
+            "minutes": 30,
             "line": {
-              "pt": "Linha Ginza até Ueno",
-              "ja": "銀座線で上野",
-              "en": "Ginza Line to Ueno"
+              "pt": "JR Tokyo → Ueno",
+              "ja": "JR東京→上野",
+              "en": "JR Tokyo → Ueno"
+            },
+            "note": {
+              "pt": "Entre nas catracas da JR só depois de concluir as compras. Siga para Ueno ou Okachimachi conforme o hotel.",
+              "ja": "買い物を終えてからJRの改札へ。宿に合わせて上野か御徒町で下車。",
+              "en": "Enter the JR gates after shopping. Get off at Ueno or Okachimachi depending on your hotel."
             }
           }
         },
         {
-          "id": "zojoji-tower",
+          "id": "ginza-bookshop",
           "name": {
-            "pt": "Zōjō-ji e Tokyo Tower",
-            "ja": "増上寺と東京タワー",
-            "en": "Zōjō-ji and Tokyo Tower"
+            "pt": "Ginza Tsutaya Books",
+            "ja": "銀座 蔦屋書店",
+            "en": "Ginza Tsutaya Books"
           },
           "done": false,
-          "minutes": 65,
-          "mapQuery": "増上寺 三解脱門 東京タワー",
+          "minutes": 45,
           "description": {
-            "pt": "Se preferir mais um ponto turístico, troque a caminhada em Ginza pelo pátio do templo e a vista da torre por fora. Passe antes de escurecer e volte cedo ao hotel.",
-            "ja": "もう一つ名所を選ぶなら、銀座の散歩を増上寺と東京タワーに替えよう。明るいうちに境内へ行き、早めに宿へ。",
-            "en": "For one more landmark, swap Ginza for the temple grounds and a view of the tower from outside. Go before dark and return to the hotel early."
+            "pt": "Se quiser um livro de arte ou design, passe no GINZA SIX depois do almoço. Se preferir, use esse tempo no lugar de parte das compras de Yaesu.",
+            "ja": "アートやデザインの本が欲しければ、昼食のあとGINZA SIXへ。八重洲の買い物を短くして、その時間を本に使っても。",
+            "en": "If you want an art or design book, stop at GINZA SIX after lunch. Shorten the Yaesu stop to make time if you prefer."
           },
+          "mapQuery": "銀座 蔦屋書店 GINZA SIX 6階",
+          "source": "https://ginza6.tokyo/shops/1230",
           "travelFrom": {
-            "stopId": "hamarikyu",
+            "stopId": "ginza-gifts",
             "mode": "walk",
-            "minutes": 30
+            "minutes": 9
           },
-          "source": "https://www.tokyotower.co.jp/",
           "optional": true
         }
       ],
       "foodIds": [
-        "sushi-avulso",
+        "soba-ueno",
         "yokan"
       ],
-      "photo": "hama-rikyu"
+      "photo": "ginza-wako",
+      "shopIds": [
+        "itoya-ginza",
+        "muji-ginza",
+        "mitsukoshi-ginza",
+        "character-street",
+        "tsutaya-ginza"
+      ]
     },
     {
       "id": "narita-volta-brasil",
