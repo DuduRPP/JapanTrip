@@ -23,7 +23,7 @@ export function TripPrint({ trip, coverPhoto, cities, display, title, dayText, d
     <article className="print-book" ref={printable}>
       <header className="print-cover">
         <h1>{t.title}</h1>
-        <p>{t.completeTrip} · {trip.cities.map(city => translate(city.name)).join(' → ')}</p>
+        <p>{t.completeTrip} · {trip.cities.map(city => translate(city.name)).join(' · ')}</p>
         {trip.demo && <p className="sample">{t.sample}</p>}
         <Photo id={coverPhoto} translate={translate} eager />
       </header>

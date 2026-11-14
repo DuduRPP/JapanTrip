@@ -70,5 +70,281 @@
       "ja": "紅葉に囲まれた清水寺",
       "en": "Kiyomizu-dera surrounded by autumn foliage"
     }
+  },
+  "jimbocho": {
+    "url": "photos/jimbocho.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Kanda-Jimboucho_Book_Town.jpg",
+    "author": "KW~jawiki",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "alt": {
+      "pt": "Livraria de usados com pilhas de livros na calçada em Jimbōchō",
+      "ja": "神保町の歩道まで古本が並ぶ古書店",
+      "en": "A used bookstore with stacks of books in Jimbōchō"
+    }
+  },
+  "momiji-manju": {
+    "url": "photos/momiji-manju.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Momiji_Manju_-Nishikido.jpg",
+    "author": "midorisyu",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "alt": {
+      "pt": "Bolinhos momiji manjū no formato de folhas de bordo",
+      "ja": "紅葉の形に焼いたもみじ饅頭",
+      "en": "Maple-leaf-shaped momiji manjū cakes"
+    }
+  },
+  "akihabara": {
+    "url": "photos/akihabara.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Sotokanda,_Akihabara_Electric_Town_at_night_20231114.png",
+    "author": "Phineyes",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "alt": {
+      "pt": "Letreiros iluminados no bairro de Akihabara",
+      "ja": "秋葉原電気街の夜の看板",
+      "en": "Illuminated signs in Akihabara’s Electric Town"
+    }
+  },
+  "nakano": {
+    "url": "photos/nakano.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Nakano_broadway_entrance.JPG",
+    "author": "User:Kentin",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "alt": {
+      "pt": "Entrada da galeria de Nakano Broadway",
+      "ja": "中野ブロードウェイの入口",
+      "en": "Entrance to Nakano Broadway"
+    }
+  },
+  "kamakura": {
+    "url": "photos/kamakura.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Great_Buddha_at_K%C5%8Dtoku-in_20190421_1.jpg",
+    "author": "DXR",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Grande Buda de bronze no templo Kōtoku-in em Kamakura",
+      "ja": "鎌倉・高徳院の青銅の大仏",
+      "en": "The bronze Great Buddha at Kōtoku-in in Kamakura"
+    }
+  },
+  "nikko": {
+    "url": "photos/nikko.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Yomeimon_Gate_-_Toshogu_Shrine_-_Nikko_-_Japan_-_01_(48042209711).jpg",
+    "author": "Adam Jones from Kelowna, BC, Canada",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "alt": {
+      "pt": "Portão entalhado Yōmeimon em Nikkō Tōshō-gū",
+      "ja": "日光東照宮の彫刻を施した陽明門",
+      "en": "The ornately carved Yōmeimon gate at Nikkō Tōshō-gū"
+    }
+  },
+  "hakone": {
+    "url": "photos/hakone.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lake_Ashi_%26_Mt_Fuji_%26_Hakone_Shrine.jpg",
+    "author": "Charlie fong",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Lago Ashi com o Monte Fuji e o torii do santuário de Hakone",
+      "ja": "芦ノ湖の向こうに富士山と箱根神社の鳥居",
+      "en": "Lake Ashi with Mount Fuji and the Hakone Shrine torii"
+    }
+  },
+  "nagoya": {
+    "url": "photos/nagoya.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tenshuhonmaru.jpg",
+    "author": "Bariston",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Torre do Castelo de Nagoya e Palácio Honmaru",
+      "ja": "名古屋城の天守と本丸御殿",
+      "en": "Nagoya Castle’s keep and Honmaru Palace"
+    }
+  },
+  "dotonbori": {
+    "url": "photos/dotonbori.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:D%C5%8Dtonbori_at_night,_Osaka_(19551420339).jpg",
+    "author": "Kristoffer Trolle from Copenhagen, Denmark",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "alt": {
+      "pt": "Canal de Dōtonbori iluminado à noite",
+      "ja": "道頓堀川沿いの夜の明かり",
+      "en": "The illuminated Dōtonbori canal at night"
+    }
+  },
+  "osaka-castle": {
+    "url": "photos/osaka-castle.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Main_Tower_of_Osaka_Castle_%E5%A4%A7%E5%9D%82%E5%9F%8E%E5%A4%A9%E5%AE%88%E9%96%A3_-_panoramio.jpg",
+    "author": "lienyuan lee",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "alt": {
+      "pt": "Torre principal do Castelo de Osaka",
+      "ja": "大阪城の天守閣",
+      "en": "The main tower of Osaka Castle"
+    }
+  },
+  "otsu": {
+    "url": "photos/otsu.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:%C5%8Cmi-jingu_01.jpg",
+    "author": "Higa4",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "alt": {
+      "pt": "Edifício e pátio do santuário Ōmi Jingū em Ōtsu",
+      "ja": "大津・近江神宮の社殿と境内",
+      "en": "Ōmi Jingū Shrine and its courtyard in Ōtsu"
+    }
+  },
+  "nara": {
+    "url": "photos/nara.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Todai-ji.jpg",
+    "author": "Felix Filnkössl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "alt": {
+      "pt": "Fachada do salão do Grande Buda no Tōdai-ji",
+      "ja": "東大寺大仏殿の正面",
+      "en": "The front of the Great Buddha Hall at Tōdai-ji"
+    }
+  },
+  "hiroshima": {
+    "url": "photos/hiroshima.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Hiroshima_Peace_Memorial_(Genbaku_Dome)_(15114280886).jpg",
+    "author": "Clay Gilliland",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "alt": {
+      "pt": "Cúpula da Bomba Atômica em Hiroshima",
+      "ja": "広島の原爆ドーム",
+      "en": "The Atomic Bomb Dome in Hiroshima"
+    }
+  },
+  "fukuoka": {
+    "url": "photos/fukuoka.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:%C5%8Chori_Park_The_E_view_of_Ukimid%C5%8D_%C5%8Chorik%C5%8Den_Ch%C5%AB%C5%8D-ku_Fukuoka_20260616_175713.jpg",
+    "author": "Hirho",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "alt": {
+      "pt": "Pavilhão Ukimidō sobre o lago do Parque Ōhori, em Fukuoka",
+      "ja": "福岡の大濠公園、池に張り出した浮見堂",
+      "en": "Ukimidō pavilion on the pond in Fukuoka’s Ōhori Park"
+    }
+  },
+  "beppu": {
+    "url": "photos/beppu.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Umi_Jigoku_(Sea_Hell)_in_Beppu.jpg",
+    "author": "Bpcon98",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "alt": {
+      "pt": "Água azul e vapor no Umi Jigoku em Beppu",
+      "ja": "別府・海地獄の青い湯と湯けむり",
+      "en": "Blue water and steam at Beppu’s Umi Jigoku"
+    }
+  },
+  "nagasaki": {
+    "url": "photos/nagasaki.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Glover_Garden_Nagasaki_Japan26s3.jpg",
+    "author": "663highland",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "alt": {
+      "pt": "Varanda da antiga residência Ringer no Jardim Glover",
+      "ja": "グラバー園の旧リンガー住宅のベランダ",
+      "en": "The veranda of the former Ringer House in Glover Garden"
+    }
+  },
+  "sapporo": {
+    "url": "photos/sapporo.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Odori_park_at_Sapporo_TV_tower.jpg",
+    "author": "LR0725",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Torre de TV de Sapporo no Parque Ōdōri",
+      "ja": "大通公園のさっぽろテレビ塔",
+      "en": "Sapporo TV Tower in Ōdōri Park"
+    }
+  },
+  "sapporo-clock": {
+    "url": "photos/sapporo-clock.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Sapporo_Clock_Tower_during_winter.jpg",
+    "author": "Tokoname3205",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Torre do Relógio de Sapporo no inverno",
+      "ja": "冬の札幌市時計台",
+      "en": "Sapporo Clock Tower in winter"
+    }
+  },
+  "otaru": {
+    "url": "photos/otaru.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Otaru_yukiakari_no_michi.jpg",
+    "author": "欅",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "alt": {
+      "pt": "Luzes de uma edição anterior do festival de inverno de Otaru",
+      "ja": "過去の小樽雪あかりの路の灯り",
+      "en": "Lights at a previous edition of Otaru’s winter festival"
+    }
+  },
+  "miso-katsu": {
+    "url": "photos/miso-katsu.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Yabaton%27s_misokatsu_%EF%BC%88Nagoya_soul_food%EF%BC%89.jpg",
+    "author": "Akahito Yamabe",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "alt": {
+      "pt": "Costeleta empanada com molho de missô no Yabaton",
+      "ja": "矢場とんの味噌かつ",
+      "en": "Breaded cutlet with miso sauce at Yabaton"
+    }
+  },
+  "hiroshima-okonomiyaki": {
+    "url": "photos/hiroshima-okonomiyaki.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Okonomiyaki_of_Hiroshima.jpg",
+    "author": "ノボホショコロトソ",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "alt": {
+      "pt": "Okonomiyaki em camadas no estilo de Hiroshima",
+      "ja": "具を重ねて焼いた広島のお好み焼き",
+      "en": "Layered Hiroshima-style okonomiyaki"
+    }
+  },
+  "hakata-ramen": {
+    "url": "photos/hakata-ramen.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Hakata_ramen_bowl_closeup.jpg",
+    "author": "Ominae",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Tigela de lámen de Hakata",
+      "ja": "博多ラーメンの丼",
+      "en": "A bowl of Hakata ramen"
+    }
+  },
+  "himeji": {
+    "url": "photos/himeji.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Himeji_Castle,_Japan,_20240819_1038_4728.jpg",
+    "author": "Jakub Hałun",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "alt": {
+      "pt": "A torre branca do Castelo de Himeji",
+      "ja": "姫路城の白い天守",
+      "en": "The white keep of Himeji Castle"
+    }
   }
 }

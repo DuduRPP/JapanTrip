@@ -3,7 +3,7 @@
 [![Publicação no GitHub Pages](https://github.com/DuduRPP/JapanTrip/actions/workflows/pages.yml/badge.svg?branch=main)](https://github.com/DuduRPP/JapanTrip/actions/workflows/pages.yml)
 [![Abrir o diário no GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-abrir%20o%20di%C3%A1rio-873747)](https://dudurpp.github.io/JapanTrip/)
 
-Diário ilustrado para acompanhar uma viagem pelo Japão no celular ou no computador. A primeira versão inclui um roteiro demonstrativo de 12 dias entre Tóquio e Kyoto em português, japonês e inglês. [Abrir o diário](https://dudurpp.github.io/JapanTrip/)
+Diário ilustrado para acompanhar uma viagem pelo Japão no celular ou no computador. O [roteiro de inverno de 2027](docs/ROTEIRO-INVERNO-2027.md) cobre 33 dias em português, japonês e inglês. A demonstração de 12 dias da primeira versão está preservada na branch [`example`](https://github.com/DuduRPP/JapanTrip/tree/example). [Abrir o diário](https://dudurpp.github.io/JapanTrip/)
 
 [![Capa do JapanTrip com o torii de Itsukushima e a lista de cidades](docs/screenshots/capa.jpg)](https://dudurpp.github.io/JapanTrip/)
 
@@ -28,7 +28,7 @@ Diário ilustrado para acompanhar uma viagem pelo Japão no celular ou no comput
 | Interface | React 19, JavaScript com JSX, CSS responsivo e ícones SVG |
 | Desenvolvimento e build | Vite 7, npm e Node.js 22 no GitHub Actions |
 | Dados e idiomas | JSON versionado no Git, textos de interface em JavaScript e API `Intl` para datas, durações e ienes |
-| Navegação | Rotas por fragmento de URL, como `#/ja/dia/fushimi`, servidas pelo mesmo `index.html` |
+| Navegação | Rotas por fragmento de URL, como `#/ja/dia/fushimi-nishiki`, servidas pelo mesmo `index.html` |
 | PWA e PDF | Web App Manifest, service worker com cache versionado e impressão do navegador com CSS próprio |
 | Hospedagem | GitHub Pages com publicação pelo GitHub Actions |
 

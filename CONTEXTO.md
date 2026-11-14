@@ -6,6 +6,8 @@ O JapanTrip acompanha uma viagem pelo Japão como diário ilustrado e álbum de 
 
 A primeira versão traz 12 dias demonstrativos entre Tóquio e Kyoto, de 10 a 21 de abril de 2027, com um deslocamento entre as duas cidades. A branch [`example`](https://github.com/DuduRPP/JapanTrip/tree/example) guarda essa referência, incluindo exemplos de passeios opcionais, preços por unidade e por pessoa, pratos vinculados aos dias e descrições em três idiomas. Datas, hospedagens, valores e marcações da demonstração são ilustrativos. Alguns estabelecimentos são reais e incluem links para as fontes.
 
+O roteiro de inverno vai de 8 de janeiro a 9 de fevereiro de 2027. As [notas de pesquisa](docs/ROTEIRO-INVERNO-2027.md) registram os pernoites, as escolhas que dependem de exatidão de horário, a base das estimativas e as fontes.
+
 ## Experiência e decisões de conteúdo
 
 - **Marca e capa.** A aba do navegador se chama **JapanTrip** em todas as rotas. O cabeçalho e a capa mostram **Viagem ao Japão**, **日本の旅日記** ou **Japan Travel Journal** conforme o idioma. A capa tem uma única foto grande e centralizada do torii de Itsukushima, o botão **Começar viagem** e a lista das cidades logo abaixo da foto.
@@ -28,8 +30,8 @@ Os exemplos usam português. Troque `pt` por `ja` ou `en` para abrir a mesma pá
 | Hotéis e valores iniciais por noite | `#/pt/hoteis/tokyo` |
 | Paradas, fotos, comidas e lojas do dia | `#/pt/dia/asakusa` |
 | Comidas da cidade, com link direto opcional para um prato | `#/pt/sabores/tokyo?prato=taiyaki` |
-| Compras da cidade, com link direto opcional para uma loja | `#/pt/compras/tokyo?loja=loft` |
-| Deslocamento entre cidades, com tempo, preço e operadora quando cadastrada | `#/pt/trajeto/tokyo-kyoto` |
+| Compras da cidade, com link direto opcional para uma loja | `#/pt/compras/tokyo?loja=at-wonder` |
+| Deslocamento entre cidades, com tempo, preço e operadora quando cadastrada | `#/pt/trajeto/tokyo-hakone` |
 | Roteiro completo para impressão | `#/pt/pdf` |
 
 ## Estrutura técnica
@@ -54,11 +56,11 @@ Para montar o roteiro a partir de documentos do viajante, consulte o [guia de pe
 
 - **Raiz.** `demo: true` mostra o aviso de demonstração. `coverPhoto` é um ID do catálogo de fotos. `cities` define as cidades na ordem em que aparecem na capa e no guia impresso. `journey` contém as etapas em ordem de visita.
 - **Cidade.** Use `id` estável, `name`, `accent` com uma cor CSS, `symbol` com um ícone de `src/Icons.jsx` e os arrays `stays` e `foods`. `description`, `photo` e `shops` completam o guia. A visão geral usa a primeira foto de um dia da cidade se ela estiver sem `photo`. `"japaneseVoice": "kyoto"` ativa os títulos e rótulos regionais em japonês. Títulos de dias e descrições regionais ficam no campo `ja` de cada item.
-- **Hospedagem.** Em `stays`, informe `name` e `fromYen`, que é o valor inicial por noite em ienes. `id` e `url` são opcionais.
+- **Hospedagem.** Em `stays`, informe `name` e `fromYen`, valor em ienes por noite. Use `estimated: true` para exibir uma meta ou referência de orçamento em vez de uma tarifa inicial. `id`, `url`, `description`, `priceSource` e `priceCheckedOn` são opcionais. Use a descrição para distinguir quarto de cama, refeições e condições da tarifa.
 - **Dia.** Uma etapa com `type: "day"` tem `id`, `city` com o ID da cidade, `number`, `date` em `AAAA-MM-DD`, `title` e o array `stops`. `photo`, `foodIds` e `shopIds` são opcionais. As referências de prato e loja são IDs da mesma cidade e aparecem na ordem cadastrada.
-- **Parada.** Use `id`, `name` e `done` (`true` para visitada). Acrescente `description`, `minutes`, `addressJa` e `mapQuery` conforme a informação disponível. `mapQuery` é a pesquisa usada pelo botão de mapa. `optional: true` move o item para a seção de opcionais, preservando sua ordem entre os opcionais.
+- **Parada.** Use `id`, `name` e `done` (`true` para visitada). Acrescente `description`, `minutes`, `addressJa`, `mapQuery` e `source` conforme a informação disponível. `mapQuery` é a pesquisa do botão de mapa; `source` aponta para informações práticas como horários e ingressos. `optional: true` move o item para a seção de opcionais, preservando sua ordem entre os opcionais.
 - **Trajeto até a parada.** Use `travelFrom` na parada de destino. `stopId` aponta para a parada anterior entre as principais do mesmo dia. Para um destino opcional, a origem pode ser uma parada principal ou uma opcional anterior e aparece pelo nome. Preencha `mode` com `walk`, `metro`, `train`, `bus`, `taxi` ou `other`, `minutes` com a estimativa do trajeto em minutos e, se fizer sentido, `line` e `note` em `pt`, `ja` e `en`. Revise as origens ao reordenar as paradas. O site e o PDF mostram os trechos cadastrados com uma origem válida.
-- **Deslocamento.** Uma etapa com `type: "transfer"` tem `id`, `from` e `to` com os IDs das cidades e o array `options`. Cada opção tem `id`, `name`, `minutes`, `yen` por pessoa e pode incluir `url` da operadora.
+- **Deslocamento.** Uma etapa com `type: "transfer"` tem `id`, `from` e `to` com os IDs das cidades e o array `options`. Cada opção tem `id`, `name`, `minutes` e `yen` por pessoa. Pode incluir `url` da operadora, `description` sobre as condições, `priceSource`, `priceCheckedOn` e `estimated: true` para valores variáveis ou metas de orçamento.
 - **Prato.** Em `foods`, informe `id`, `kind` (`savory` ou `sweet`), `name`, `description` e `done` (`true` para experimentado). Pode ter `photo` e `venues`. O prato é a fonte da marcação para a cidade, todos os dias que o sugerem e o PDF.
 - **Restaurante ou confeitaria.** Em `venues`, informe `id`, `name`, `description` e `addressJa`. `url` abre a ficha do estabelecimento. Quando houver preço, use `price.yen`, `price.unit` (`person` por pessoa, `piece` por unidade ou `box` por caixa de 10), `price.source` para o link do valor e `price.estimated: true` para exibir o sinal de aproximação. A demonstração inclui preços de estabelecimentos consultados em 14/11/2026.
 - **Loja de compras.** Em `shops`, informe `id`, `name`, `description`, `addressJa` e `url` quando houver. A pesquisa do mapa de lojas e restaurantes combina o nome em japonês com o endereço.

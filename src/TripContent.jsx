@@ -34,6 +34,10 @@ function MapLink({ label, query }) {
   </a>;
 }
 
+function PriceAmount({ amount, source, label }) {
+  return source ? <a href={source} title={label}>{amount}</a> : amount;
+}
+
 function VenueList({ venues, display, venueHref, selectedId }) {
   const { t, translate, yen } = display;
   const priceUnits = { person: t.perPerson, piece: t.perPiece, box: t.perBox };
@@ -75,7 +79,9 @@ export function HotelList({ city, display }) {
     <span className="stamp"><Icon name="bed" /></span>
     <div>
       {stay.url ? <a href={stay.url}>{translate(stay.name)}</a> : <ItemName name={stay.name} {...display} />}
-      <p className="meta">{t.from} {yen(stay.fromYen)} / {t.perNight}</p>
+      <p className="meta">{stay.estimated ? t.estimate : t.from} <PriceAmount amount={yen(stay.fromYen)}
+        source={stay.priceSource !== stay.url ? stay.priceSource : undefined} label={t.priceSource} /> / {t.perNight}</p>
+      {stay.description && <p className="meta">{translate(stay.description)}</p>}
     </div>
   </li>)}</ul>;
 }
@@ -131,7 +137,9 @@ function StopList({ stops, stopsById, display, optional = false }) {
   const { t, translate, duration } = display;
   return <ol className={optional ? 'plain stop-list optional-stops' : 'plain stop-list'} role="list">
     {stops.map((stop, index) => {
-      const mapLabel = t.map + ' · ' + translate(stop.name);
+      const name = translate(stop.name);
+      const mapLabel = t.map + ' · ' + name;
+      const sourceLabel = t.stopSource + ' · ' + name;
       const travel = stop.travelFrom;
       const origin = stopsById.get(travel?.stopId);
       const showTravel = origin && (optional ? !origin.optional || stops.indexOf(origin) < index : origin === stops[index - 1]);
@@ -146,7 +154,12 @@ function StopList({ stops, stopsById, display, optional = false }) {
             {stop.addressJa && <span className="meta" lang="ja">{stop.addressJa}</span>}
             {stop.description && <p className="stop-description">{translate(stop.description)}</p>}
           </div>
-          {stop.mapQuery && <MapLink label={mapLabel} query={stop.mapQuery} />}
+          {(stop.mapQuery || stop.source) && <div className="stop-actions">
+            {stop.mapQuery && <MapLink label={mapLabel} query={stop.mapQuery} />}
+            {stop.source && <a className="icon-link" href={stop.source} aria-label={sourceLabel} title={sourceLabel}>
+              <Icon name="external" />
+            </a>}
+          </div>}
         </div>
       </li>;
     })}
@@ -189,11 +202,14 @@ export function DayContent({ day, city, display, eager = false, foodHref, shopHr
 }
 
 export function TransportList({ step, display }) {
-  const { t, duration, yen } = display;
+  const { t, duration, yen, translate } = display;
   if (!step.options.length) return <p>{t.empty}</p>;
   return <ul className="plain transport-list">{step.options.map(option => <li key={option.id}>
     <ItemName name={option.name} {...display} />
-    <p className="meta">≈ {duration(option.minutes)} · {yen(option.yen)} / {t.perPerson}</p>
+    <p className="meta">≈ {duration(option.minutes)} · {option.estimated ? t.estimate + ' ' : ''}
+      <PriceAmount amount={yen(option.yen)} source={option.priceSource !== option.url ? option.priceSource : undefined}
+        label={t.priceSource} /> / {t.perPerson}</p>
+    {option.description && <p className="meta">{translate(option.description)}</p>}
     {option.url && <a href={option.url}>{t.operator}</a>}
   </li>)}</ul>;
 }
