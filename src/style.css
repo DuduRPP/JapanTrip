@@ -33,9 +33,10 @@ a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 svg { width: 1.2em; height: 1.2em; vertical-align: -.22em; flex-shrink: 0; }
 .wrap { width: min(100% - 3rem, 84rem); margin-inline: auto; }
-.site-header { min-height: 4.5rem; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: .6rem; border-bottom: 1px solid var(--rule); }
-.brand { justify-self: start; font: 700 clamp(1.3rem, 3.5vw, 1.8rem)/1.05 var(--display); color: var(--ink); text-decoration: none; text-wrap: balance; }
+.site-header { min-height: 4.5rem; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, max-content) minmax(0, 1fr); align-items: center; gap: .6rem; padding-inline: clamp(1rem, 2.25vw, 2rem); border-bottom: 1px solid var(--rule); }
+.brand { justify-self: center; text-align: center; font: 700 clamp(1.25rem, 3.5vw, 1.8rem)/1.05 var(--display); color: var(--ink); text-decoration: none; text-wrap: balance; }
 .header-actions, .pwa-controls { display: flex; align-items: center; gap: .45rem .75rem; }
+.header-actions { justify-self: end; }
 .pwa-controls { flex-wrap: wrap; }
 .language-control { position: relative; color: var(--accent); }
 .language-control summary { display: flex; align-items: center; gap: .35rem; min-height: 44px; padding: .3rem .5rem; border: 1px solid var(--rule); border-radius: .35rem; list-style: none; font-weight: 700; cursor: pointer; }
@@ -74,8 +75,8 @@ svg { width: 1.2em; height: 1.2em; vertical-align: -.22em; flex-shrink: 0; }
 .stamp { display: inline-grid; place-items: center; flex: none; width: 2rem; height: 2rem; border-radius: .4rem; background: color-mix(in srgb, currentColor 10%, transparent); }
 .stamp svg { width: 1.35rem; height: 1.35rem; }
 .icon-tint { fill: currentColor; fill-opacity: .14; }
-.timeline { min-width: 0; margin-inline: clamp(1rem, 2.25vw, 2rem); padding-top: .45rem; }
-.timeline-header { display: flex; flex-wrap: wrap; align-items: center; gap: .2rem .65rem; }
+.timeline { justify-self: start; }
+.timeline-today { padding-inline: 1rem; }
 .today-link { display: inline-flex; gap: .35rem; align-items: center; color: #734112; font-weight: 700; min-height: 44px; }
 .today-link svg { width: 1.05rem; height: 1.05rem; }
 .timeline-panel { position: fixed; inset: 0 auto 0 0; margin: 0; padding: 0; border: 0; width: min(25rem, 92vw); max-width: none; height: 100%; max-height: none; overflow: hidden; color: var(--ink); background: var(--paper); box-shadow: 10px 0 35px #222c3026; transform: translateX(-100%); transition: transform .24s ease-out, display .24s allow-discrete, overlay .24s allow-discrete; }
@@ -163,6 +164,7 @@ p { line-height: 1.55; }
 .venue-list { margin-top: .35rem; }
 .venue-list .venue-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .45rem; align-items: start; border-top: 1px solid var(--rule); padding: .65rem 0; }
 .venue-list .venue-row p { margin-bottom: 0; }
+.venue-price { margin: .3rem 0 0; font-weight: 700; font-variant-numeric: tabular-nums; }
 .venue-address { overflow-wrap: anywhere; }
 .venue-links { display: flex; gap: .3rem; flex-wrap: wrap; }
 .shopping-list { max-width: 48rem; }
@@ -189,10 +191,16 @@ p { line-height: 1.55; }
 .skip { position: absolute; top: 0; left: 1rem; padding: .5rem 1rem; background: var(--paper); transform: translateY(-150%); }
 .skip:focus { transform: none; }
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 40rem) {
+  .site-header { min-height: 3.8rem; grid-template-columns: 5.75rem minmax(0, 1fr) 5.75rem; gap: .3rem; padding-inline: .65rem; }
+  .brand { font-size: 1.15rem; }
+  .header-actions { gap: .25rem; }
+  .timeline-toggle span { display: none; }
+  .language-control summary { justify-content: center; width: 44px; font-size: 0; padding-inline: .25rem; }
+  .language-control summary > svg:last-child { display: none; }
+}
 @media (max-width: 34rem) {
   .wrap { width: calc(100% - 2rem); }
-  .site-header { min-height: 3.8rem; }
-  .header-actions { gap: .35rem; }
   .cover-photo .photo img { aspect-ratio: 4 / 3; }
   .city-heading h1 { font-size: clamp(2.2rem, 10vw, 2.7rem); overflow-wrap: anywhere; }
   .venue-list .venue-row { grid-template-columns: minmax(0, 1fr); }

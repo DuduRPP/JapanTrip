@@ -35,7 +35,8 @@ function MapLink({ label, query }) {
 }
 
 function VenueList({ venues, display, venueHref, selectedId }) {
-  const { t, translate } = display;
+  const { t, translate, yen } = display;
+  const priceUnits = { person: t.perPerson, piece: t.perPiece, box: t.perBox };
   return <ul className="plain venue-list">{venues.map(venue => {
     const name = translate(venue.name);
     const mapLabel = t.map + ' · ' + name;
@@ -46,6 +47,10 @@ function VenueList({ venues, display, venueHref, selectedId }) {
       <div>
         <ItemName name={venue.name} href={venueHref?.(venue)} {...display} />
         <p className="meta">{translate(venue.description)}</p>
+        {venue.price && <p className="venue-price">
+          <a href={venue.price.source} title={t.priceSource}>{venue.price.estimated ? '≈ ' : ''}{yen(venue.price.yen)}</a>
+          {' '}{priceUnits[venue.price.unit]}
+        </p>}
         <p className="meta venue-address" lang="ja">{venue.addressJa}</p>
       </div>
       <div className="venue-links">

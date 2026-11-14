@@ -50,6 +50,7 @@
                 "en": "Soba restaurant near Asakusa Station with hot and cold options."
               },
               "addressJa": "東京都台東区浅草1-1-5",
+              "price": { "yen": 1200, "unit": "person", "estimated": true, "source": "https://www.maruka.net/" },
               "url": "https://www.maruka.net/"
             }
           ]
@@ -83,6 +84,7 @@
                 "en": "Asakusa sweet shop that cooks its taiyaki one at a time."
               },
               "addressJa": "東京都台東区浅草2-12-4",
+              "price": { "yen": 230, "unit": "piece", "source": "https://a-naniwaya.com/menu/" },
               "url": "https://asakusa-shoren.jp/stores/683/"
             }
           ]
@@ -175,6 +177,7 @@
                 "en": "Higashiyama restaurant specializing in yudofu made with house-made tofu."
               },
               "addressJa": "京都府京都市東山区清水3丁目340",
+              "price": { "yen": 4950, "unit": "person", "estimated": true, "source": "https://www.tofuokutan.info/kakaku.pdf" },
               "url": "https://tofuokutan.info/access.html"
             }
           ]
@@ -207,6 +210,7 @@
                 "en": "Sweet shop near Kiyomizu-dera, a good stop for a box of yatsuhashi."
               },
               "addressJa": "京都府京都市東山区清水1丁目277",
+              "price": { "yen": 680, "unit": "box", "source": "https://www.8284.co.jp/products/detail/30000387" },
               "url": "https://www.8284.co.jp/shop/kiyomizu.html"
             }
           ]

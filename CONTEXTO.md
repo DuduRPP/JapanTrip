@@ -14,6 +14,7 @@ Criar um diário de viagem que misture um álbum de fotos com um livro ilustrado
 - Fotografias reais para lugares e pratos, com autoria, fonte e licença registradas. Ícones desenhados em SVG identificam cidades e seções.
 - A capa tem uma foto central do torii de Itsukushima, um botão “Começar viagem” que leva à primeira etapa e uma seção de cidades abaixo da foto.
 - O botão “Roteiro” abre um painel que desliza pela esquerda. A lista dentro dele vai de cima para baixo, com os deslocamentos entre as cidades e atalhos para visão geral, hotéis, comidas e compras.
+- A barra superior ocupa toda a largura. O Roteiro fica à esquerda, o título fica no centro e os controles de idioma e PDF ficam à direita.
 - Quando um dia tem a mesma data local do dispositivo, ele recebe a marca “Hoje”. O atalho “Ir para hoje” leva direto a ele. A página que está aberta tem seu próprio destaque, inclusive ao consultar outras datas.
 
 ## Páginas
@@ -38,6 +39,7 @@ O esqueleto usa 12 dias entre Tóquio e Kyoto para exercitar a linha do tempo. D
 - `src/data/photos.json` associa identificadores de fotos a caminhos relativos, texto alternativo por idioma, autoria e licença. Coloque os arquivos em `public/photos/` para incluí-los no cache offline do site.
 - `src/labels.js` guarda os textos fixos da interface.
 - Em `trip.json`, `city.shops` lista sugestões de compras e `food.venues` lista lugares onde provar um prato. Esses dados aparecem também no PDF. Guarde o endereço em `addressJa` e a fonte da loja em `url`.
+- Em `food.venues`, `price` guarda o valor em ienes, a unidade de cobrança e o link da fonte. Use `estimated: true` para uma estimativa por pessoa. Os preços iniciais foram consultados em 14/11/2026.
 
 Para registrar uma visita ou comida, altere `done` para `true` no item correspondente. Use `false` para desfazer a marcação. Mantenha os identificadores ao editar nomes ou durações, pois as URLs usam o ID da etapa. Em um pedido como “marca o taiyaki de Tóquio como experimentado”, o agente deve editar o item na cidade correta, validar com `npm run build` e enviar a alteração conforme as permissões do repositório.
 

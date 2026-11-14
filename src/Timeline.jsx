@@ -60,14 +60,11 @@ export function Timeline({ groups, cities, t, translate, title, dayText, shortDa
     }
   }
 
-  return <aside className="timeline">
-    <div className="timeline-header">
-      <button type="button" className="timeline-toggle utility-button" aria-haspopup="dialog"
-        aria-controls="timeline-panel" onClick={showTimeline}>
-        <Icon name="route" /> {t.route}
-      </button>
-      <TodayLink step={today} stepHref={stepHref} label={t.goToday} />
-    </div>
+  return <div className="timeline">
+    <button type="button" className="timeline-toggle utility-button" aria-haspopup="dialog"
+      aria-controls="timeline-panel" aria-label={t.route} title={t.route} onClick={showTimeline}>
+      <Icon name="route" /><span>{t.route}</span>
+    </button>
     <dialog className="timeline-panel" id="timeline-panel" ref={dialog} aria-labelledby="timeline-title"
       onClick={event => { if (event.target === event.currentTarget) dialog.current.close(); }}>
       <div className="timeline-panel-content">
@@ -76,6 +73,9 @@ export function Timeline({ groups, cities, t, translate, title, dayText, shortDa
           <button type="button" className="icon-link" aria-label={t.closeRoute} title={t.closeRoute}
             autoFocus onClick={() => dialog.current.close()}><Icon name="close" /></button>
         </header>
+        {today && <div className="timeline-today">
+          <TodayLink step={today} stepHref={stepHref} label={t.goToday} />
+        </div>}
         <nav ref={rail} aria-label={t.route} className="timeline-steps" onClick={closeOnLink}>
           <ol className="plain rail-groups">
             {groups.map(group => {
@@ -119,5 +119,5 @@ export function Timeline({ groups, cities, t, translate, title, dayText, shortDa
         </nav>
       </div>
     </dialog>
-  </aside>;
+  </div>;
 }

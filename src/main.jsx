@@ -119,7 +119,10 @@ function App() {
 
   return <div className="site" style={{ '--accent': city?.accent }}>
     <a className="skip" href="#content" onClick={event => { event.preventDefault(); main.current?.focus(); }}>{t.skip}</a>
-    <header className="site-header wrap">
+    <header className="site-header">
+      <Timeline groups={timelineGroups} cities={cities} t={t} translate={translate}
+        title={title} dayText={dayText} shortDate={shortDate} stepHref={stepHref} cityHref={cityHref}
+        selected={step} today={today} cityId={city?.id} cityPage={cityPage?.kind} cityPages={cityPages} />
       <a className="brand" href={href(lang)} aria-current={home ? 'page' : undefined}>{t.title}</a>
       <div className="header-actions">
         {!printable && <a className="icon-link header-pdf" href={href(lang, 'pdf')} aria-label={t.pdf} title={t.pdf}>
@@ -128,9 +131,6 @@ function App() {
         <LanguagePicker lang={lang} label={t.language} languageHref={code => href(code, kind, id, entryId)} />
       </div>
     </header>
-    {!home && !printable && <Timeline groups={timelineGroups} cities={cities} t={t} translate={translate}
-      title={title} dayText={dayText} shortDate={shortDate} stepHref={stepHref} cityHref={cityHref}
-      selected={step} today={today} cityId={city?.id} cityPage={cityPage?.kind} cityPages={cityPages} />}
     <div className={'wrap ' + (home || printable ? 'cover-shell' : 'journal-shell')}>
     <main id="content" className={'page' + (home ? ' cover' : printable ? ' printable' : '')} tabIndex={-1} ref={main}>
     {printable ? <TripPrint trip={trip} coverPhoto={coverPhoto} cities={cities} display={display}
