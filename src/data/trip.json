@@ -166,7 +166,8 @@
               "addressJa": "東京都新宿区新宿3-31-8",
               "url": "https://www.tunahachi.co.jp/store/1.html"
             }
-          ]
+          ],
+          "photo": "tendon"
         },
         {
           "id": "taiyaki",
@@ -269,7 +270,8 @@
               "addressJa": "東京都台東区上野1-10-10",
               "url": "https://www.taito-miyage.tokyo/shops/19"
             }
-          ]
+          ],
+          "photo": "dorayaki"
         },
         {
           "id": "bondy-curry",
@@ -454,7 +456,8 @@
               "addressJa": "東京都台東区上野6-11-15",
               "url": "https://www.unatoto.com/shop/ueno/"
             }
-          ]
+          ],
+          "photo": "unaju"
         },
         {
           "id": "tonkatsu",
@@ -550,7 +553,8 @@
               "addressJa": "東京都中央区銀座7-8-17 虎屋銀座ビル4F",
               "url": "https://www.toraya-group.co.jp/shops/shop-6"
             }
-          ]
+          ],
+          "photo": "yokan"
         }
       ],
       "shops": [
@@ -850,7 +854,8 @@
               "addressJa": "大阪府大阪市此花区島屋6-2-61 ユニバーサル・シティウォーク大阪4F",
               "url": "https://ucw.jp/restaurant/takopa/"
             }
-          ]
+          ],
+          "photo": "takoyaki"
         },
         {
           "id": "osaka-okonomiyaki",
@@ -946,7 +951,8 @@
               "addressJa": "大阪府大阪市浪速区恵美須東2-3-9",
               "url": "https://www.kushikatu-daruma.com/location/shinsekai"
             }
-          ]
+          ],
+          "photo": "kushikatsu"
         },
         {
           "id": "rikuro-cheesecake",
@@ -1093,7 +1099,8 @@
               "addressJa": "神奈川県藤沢市江の島1-6-7",
               "url": "https://tobiccho.com/shops/tobiccho"
             }
-          ]
+          ],
+          "photo": "shirasu-don"
         },
         {
           "id": "ice-monaka",
@@ -1491,7 +1498,8 @@
                 "checkedOn": "2026-11-14"
               }
             }
-          ]
+          ],
+          "photo": "hitsumabushi"
         }
       ],
       "shops": [
@@ -1783,7 +1791,8 @@
                 "checkedOn": "2026-11-14"
               }
             }
-          ]
+          ],
+          "photo": "yudofu"
         },
         {
           "id": "yatsuhashi",
@@ -1815,7 +1824,8 @@
               "addressJa": "京都府京都市東山区清水1-277",
               "url": "https://www.8284.co.jp/shop/kiyomizu.html"
             }
-          ]
+          ],
+          "photo": "nama-yatsuhashi"
         }
       ],
       "shops": [
@@ -1975,7 +1985,8 @@
                 "checkedOn": "2026-11-14"
               }
             }
-          ]
+          ],
+          "photo": "omi-beef"
         }
       ],
       "shops": []
@@ -2027,7 +2038,8 @@
               "addressJa": "奈良県奈良市東向中町5-2",
               "url": "https://www.kakinohasushi.co.jp/shop/nara/"
             }
-          ]
+          ],
+          "photo": "kakinoha-zushi"
         },
         {
           "id": "yomogi-mochi",
@@ -2490,7 +2502,8 @@
               "addressJa": "広島県廿日市市宮島町505-1",
               "url": "https://www.yakigaki-no-hayashi.co.jp/menu.html"
             }
-          ]
+          ],
+          "photo": "anago-meshi"
         }
       ],
       "shops": []
@@ -2729,7 +2742,8 @@
               "addressJa": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多B1F",
               "url": "https://www.motu-ooyama.com/shop/counterkittehakata/"
             }
-          ]
+          ],
+          "photo": "motsunabe"
         },
         {
           "id": "suzu-monaka",
@@ -2919,7 +2933,8 @@
               "addressJa": "長崎県長崎市松が枝町4-5",
               "url": "https://shikairou.com/information/info/"
             }
-          ]
+          ],
+          "photo": "champon"
         },
         {
           "id": "castella",
@@ -2957,7 +2972,8 @@
                 "checkedOn": "2026-11-14"
               }
             }
-          ]
+          ],
+          "photo": "castella"
         }
       ],
       "shops": []
@@ -3046,7 +3062,8 @@
               "addressJa": "北海道札幌市中央区南3条西3丁目9-2 ピクシスビル2F",
               "url": "https://sumireya.com/main/mainshop/index.shtml"
             }
-          ]
+          ],
+          "photo": "sapporo-miso-ramen"
         },
         {
           "id": "soup-curry",
@@ -3078,7 +3095,8 @@
               "addressJa": "北海道札幌市中央区南4条西5丁目 都志松ビル2F",
               "url": "https://suage.info/stores/suage-plus/"
             }
-          ]
+          ],
+          "photo": "soup-curry"
         },
         {
           "id": "hokkaido-soft",
@@ -3110,7 +3128,8 @@
               "addressJa": "北海道札幌市中央区大通西3丁目 北洋大通センター1F",
               "url": "https://www.kinotoya.com/shop_list/oodoori/"
             }
-          ]
+          ],
+          "photo": "hokkaido-soft"
         },
         {
           "id": "chocolate-cookie",
@@ -3181,7 +3200,8 @@
                 "estimated": true
               }
             }
-          ]
+          ],
+          "photo": "king-crab"
         },
         {
           "id": "jingisukan",
@@ -3213,7 +3233,8 @@
               "addressJa": "北海道札幌市東区北7条東9丁目2-10",
               "url": "https://sapporo-bier-garten.jp/shop/"
             }
-          ]
+          ],
+          "photo": "jingisukan"
         }
       ],
       "shops": []
@@ -4134,12 +4155,68 @@
               "en": "Enoden Hase → Enoshima"
             },
             "note": {
-              "pt": "De Enoshima Station caminhe até a ponte e atravesse; conte cerca de 20–25 min a pé até a entrada da ilha.",
-              "ja": "江ノ島駅を出て弁天橋を渡る。島の入口まで徒歩約20〜25分。",
-              "en": "Walk from Enoshima Station and cross the bridge; allow about 20–25 min to the island entrance."
+              "pt": "Se quiser ver o cruzamento de Slam Dunk, desça em Kamakurakōkō-mae no caminho; conte 30–40 min a mais com a espera pelo próximo trem. Da estação Enoshima até a entrada da ilha, são cerca de 20–25 min a pé.",
+              "ja": "スラムダンクの踏切に寄るなら途中の鎌倉高校前で下車。次の電車を待つ時間も含めて30〜40分ほど余分に。江ノ島駅から島の入口までは徒歩約20〜25分。",
+              "en": "For the Slam Dunk crossing, get off at Kamakurakōkō-mae along the way and allow an extra 30–40 min with the wait for the next train. The island entrance is a 20–25 min walk from Enoshima Station."
             }
           },
           "source": "https://enokama.jp/"
+        },
+        {
+          "id": "hasedera",
+          "name": {
+            "pt": "Templo Hase-dera",
+            "ja": "長谷寺",
+            "en": "Hase-dera Temple"
+          },
+          "done": false,
+          "minutes": 50,
+          "mapQuery": "鎌倉 長谷寺",
+          "description": {
+            "pt": "Acrescente após o Grande Buda se tiver chegado cedo. A vista da costa ajuda a escolher se vale estender até Enoshima.",
+            "ja": "早く着いたら大仏のあとに。海の眺めも楽しみつつ、江の島まで足を延ばすか決めよう。",
+            "en": "Add after the Great Buddha if you arrived early. Enjoy the coastal view and decide whether to extend to Enoshima."
+          },
+          "travelFrom": {
+            "stopId": "kotoku-in",
+            "mode": "walk",
+            "minutes": 11
+          },
+          "source": "https://www.hasedera.jp/guide/",
+          "optional": true
+        },
+        {
+          "id": "kamakurakokomae",
+          "name": {
+            "pt": "Kamakurakōkō-mae · cruzamento de Slam Dunk",
+            "ja": "鎌倉高校前・『SLAM DUNK』の踏切",
+            "en": "Kamakurakōkō-mae · the Slam Dunk crossing"
+          },
+          "done": false,
+          "minutes": 20,
+          "mapQuery": "腰越ラッコ公園 鎌倉市",
+          "description": {
+            "pt": "É o cruzamento à beira-mar da abertura de Slam Dunk. Para fotografar, siga as placas até o espaço indicado no parque Koshigoe Rakko. Se estiver lotado, siga para Enoshima.",
+            "ja": "『SLAM DUNK』のオープニングに出る海沿いの踏切。写真は案内に従って腰越ラッコ公園の撮影場所で。混んでいたらそのまま江ノ島へ。",
+            "en": "This is the seaside crossing in the Slam Dunk opening. Follow signs to the marked photo area in Koshigoe Rakko Park. If it is crowded, carry on to Enoshima."
+          },
+          "travelFrom": {
+            "stopId": "kotoku-in",
+            "mode": "train",
+            "minutes": 35,
+            "line": {
+              "pt": "Enoden Hase → Kamakurakōkō-mae",
+              "ja": "江ノ電 長谷→鎌倉高校前",
+              "en": "Enoden Hase → Kamakurakōkō-mae"
+            },
+            "note": {
+              "pt": "Volte a Hase e embarque sentido Fujisawa. Depois da parada, pegue a próxima Enoden no mesmo sentido até Enoshima.",
+              "ja": "長谷駅に戻り、藤沢方面の電車へ。撮影のあとは同じ方面の電車で江ノ島まで。",
+              "en": "Walk back to Hase and take a Fujisawa-bound train. After the stop, continue in the same direction to Enoshima."
+            }
+          },
+          "source": "https://www.city.kamakura.kanagawa.jp/kisya/data/2026/20260130.html",
+          "optional": true
         },
         {
           "id": "enoshima-lights",
@@ -4168,34 +4245,15 @@
           },
           "source": "https://enoshima-seacandle.com/information/post-4136/",
           "optional": true
-        },
-        {
-          "id": "hasedera",
-          "name": {
-            "pt": "Templo Hase-dera",
-            "ja": "長谷寺",
-            "en": "Hase-dera Temple"
-          },
-          "done": false,
-          "minutes": 50,
-          "mapQuery": "鎌倉 長谷寺",
-          "description": {
-            "pt": "Acrescente após o Grande Buda se tiver chegado cedo. A vista da costa ajuda a escolher se vale estender até Enoshima.",
-            "ja": "早く着いたら大仏のあとに。海の眺めも楽しみつつ、江の島まで足を延ばすか決めよう。",
-            "en": "Add after the Great Buddha if you arrived early. Enjoy the coastal view and decide whether to extend to Enoshima."
-          },
-          "travelFrom": {
-            "stopId": "kotoku-in",
-            "mode": "walk",
-            "minutes": 11
-          },
-          "source": "https://www.hasedera.jp/guide/",
-          "optional": true
         }
       ],
       "foodIds": [
         "shirasu-don",
         "ice-monaka"
+      ],
+      "extraPhotos": [
+        "enoden-kamakura",
+        "enoshima-fuji"
       ]
     },
     {
@@ -4266,9 +4324,9 @@
           "minutes": 85,
           "mapQuery": "神田明神 随神門",
           "description": {
-            "pt": "Passe por Ochanomizu, veja a ponte Hijiribashi e visite o santuário antes de escurecer. Jante na região ou volte para Ueno.",
-            "ja": "御茶ノ水で聖橋を眺めて、明るいうちに神田明神へ。近くで夕食か、上野へ戻ろう。",
-            "en": "Pass through Ochanomizu, see Hijiribashi Bridge and visit Kanda Myōjin before dark. Have dinner nearby or head back to Ueno."
+            "pt": "Passe por Ochanomizu, veja a ponte Hijiribashi e visite Kanda Myōjin antes de escurecer. O santuário aparece em Love Live! e Steins;Gate. Jante na região ou volte para Ueno.",
+            "ja": "御茶ノ水で聖橋を眺めて、明るいうちに神田明神へ。『ラブライブ！』や『STEINS;GATE』にも登場する神社だよ。近くで夕食か、上野へ戻ろう。",
+            "en": "See Hijiribashi Bridge in Ochanomizu and visit Kanda Myōjin before dark. The shrine appears in Love Live! and Steins;Gate. Have dinner nearby or head back to Ueno."
           },
           "travelFrom": {
             "stopId": "jimbocho-books",
@@ -4310,6 +4368,9 @@
         "sanseido",
         "radio-kaikan",
         "mandarake-akiba"
+      ],
+      "extraPhotos": [
+        "kanda-myojin"
       ]
     },
     {
@@ -5180,7 +5241,7 @@
         "ja": "大津とびわ湖",
         "en": "Ōtsu and Lake Biwa"
       },
-      "photo": "miidera",
+      "photo": "biwa-otsu",
       "stops": [
         {
           "id": "otsukyo-station",
@@ -5210,9 +5271,9 @@
           "addressJa": "滋賀県大津市神宮町1-1",
           "mapQuery": "近江神宮 楼門",
           "description": {
-            "pt": "Suba a escadaria e veja o portão vermelho e o pátio do santuário. O lugar tem ligação com o Hyakunin Isshu.",
-            "ja": "石段を上がり、朱色の楼門と境内へ。百人一首にもゆかりがある神社。",
-            "en": "Climb the stone steps for the red gate and shrine courtyard. The shrine has ties to Hyakunin Isshu."
+            "pt": "Suba a escadaria e veja o portão vermelho e o pátio. O santuário tem ligação com o Hyakunin Isshu e aparece no anime Chihayafuru.",
+            "ja": "石段を上がり、朱色の楼門と境内へ。百人一首にゆかりがあり、アニメ『ちはやふる』にも登場する神社。",
+            "en": "Climb the stone steps for the red gate and courtyard. The shrine has ties to Hyakunin Isshu and appears in the anime Chihayafuru."
           },
           "travelFrom": {
             "stopId": "otsukyo-station",
@@ -5345,6 +5406,9 @@
         "omi-beef",
         "miidera-soba",
         "chikara-mochi"
+      ],
+      "extraPhotos": [
+        "miidera"
       ]
     },
     {
@@ -6689,7 +6753,8 @@
       ],
       "shopIds": [
         "pokemon-fukuoka"
-      ]
+      ],
+      "photo": "nakasu-noite"
     },
     {
       "id": "beppu-kannawa",

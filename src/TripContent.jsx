@@ -174,7 +174,11 @@ export function DayContent({ day, city, display, eager = false, foodHref, shopHr
   const suggestions = (day.foodIds ?? []).map(id => city.foods.find(food => food.id === id)).filter(Boolean);
   const shops = (day.shopIds ?? []).map(id => city.shops?.find(shop => shop.id === id)).filter(Boolean);
   const Heading = eager ? 'h3' : 'h2';
-  const dayPhotos = [...new Set([day.photo, ...suggestions.map(food => food.photo)].filter(Boolean))];
+  const dayPhotos = [...new Set([
+    day.photo,
+    ...(day.extraPhotos ?? []),
+    ...suggestions.map(food => food.photo),
+  ].filter(Boolean))];
   return <div className="spread spread-side day-spread">
     <div className="day-gallery">
       {dayPhotos.map(id => <Photo key={id} id={id} translate={translate} eager={eager || id === day.photo} />)}

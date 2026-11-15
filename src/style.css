@@ -130,7 +130,9 @@ p { line-height: 1.55; }
 .photo { margin: 0; min-width: 0; align-self: start; }
 .photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 3px; background: #e0e5df; }
 .photo figcaption { margin-top: .3rem; font-size: .82rem; color: var(--muted); }
-.day-gallery { display: grid; gap: 1.25rem; align-content: start; min-width: 0; }
+.day-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(.7rem, 2vw, 1.25rem); align-content: start; min-width: 0; }
+.day-gallery > .photo:first-child { grid-column: 1 / -1; }
+.day-gallery figcaption { overflow-wrap: anywhere; }
 .day-gallery:not(:has(.photo)) { display: none; }
 @media (min-width: 48rem) {
   .spread-side:has(.photo) { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); align-items: start; }

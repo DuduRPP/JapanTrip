@@ -156,15 +156,15 @@
     }
   },
   "otsu": {
-    "url": "photos/otsu.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:%C5%8Cmi-jingu_01.jpg",
-    "author": "Higa4",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "photos/otsu.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Oumijingu_romon2.jpg",
+    "author": "KENPEI",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "alt": {
-      "pt": "Edifício e pátio do santuário Ōmi Jingū em Ōtsu",
-      "ja": "大津・近江神宮の社殿と境内",
-      "en": "Ōmi Jingū Shrine and its courtyard in Ōtsu"
+      "pt": "Portão vermelho do santuário Ōmi Jingū no alto da escadaria",
+      "ja": "石段の上に立つ近江神宮の朱色の楼門",
+      "en": "The red gate of Ōmi Jingū Shrine at the top of the stone steps"
     }
   },
   "nara": {
@@ -348,15 +348,15 @@
     }
   },
   "miidera": {
-    "url": "photos/miidera.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Mii-dera_Onjo-ji_(Otsu_Shiga)_Temple_hdsr_S5_kd52.jpg",
+    "url": "photos/miidera.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Mii-dera_Onjo-ji_(Otsu_Shiga)_Temple_hdsr_S5_ho01.jpg",
     "author": "Hyppolyte de Saint-Rambert",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "alt": {
-      "pt": "Estátua no templo Mii-dera, em Ōtsu",
-      "ja": "大津・三井寺の像",
-      "en": "Statue at Mii-dera Temple in Ōtsu"
+      "pt": "Salão principal Kondō do templo Mii-dera",
+      "ja": "三井寺の金堂",
+      "en": "Kondō main hall at Mii-dera Temple"
     }
   },
   "sapporo-beer": {
@@ -381,6 +381,318 @@
       "pt": "Relógio da Wako e Mitsukoshi iluminados no cruzamento de Ginza",
       "ja": "夜の銀座四丁目交差点、和光の時計塔と銀座三越",
       "en": "Wako’s clock tower and Mitsukoshi lit up at the Ginza crossing"
+    }
+  },
+  "biwa-otsu": {
+    "url": "photos/biwa-otsu.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Biwa_lake_panorama_(50156435803).jpg",
+    "author": "Raita Futo from Tokyo, Japan",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "alt": {
+      "pt": "Vista de Ōtsu sobre o lago Biwa e as montanhas Hira",
+      "ja": "大津から見た琵琶湖と比良山地",
+      "en": "Lake Biwa and the Hira Mountains viewed from Ōtsu"
+    }
+  },
+  "enoden-kamakura": {
+    "url": "photos/enoden-kamakura.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:%E9%8E%8C%E5%80%89%E9%AB%98%E6%A0%A1%E5%89%8D%E3%81%AE%E8%B8%8F%E5%88%87%E3%82%92%E8%B5%B0%E3%82%8B%E6%B1%9F%E3%83%8E%E9%9B%BB%E3%81%A8%E5%9B%BD%E9%81%93134%E5%8F%B7%E7%B7%9A.jpg",
+    "author": "Kirin7739",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Trem verde da Enoden no cruzamento de Kamakurakōkō-mae, junto ao mar",
+      "ja": "鎌倉高校前の海沿いの踏切を走る緑色の江ノ電",
+      "en": "A green Enoden train at the seaside Kamakurakōkō-mae crossing"
+    }
+  },
+  "enoshima-fuji": {
+    "url": "photos/enoshima-fuji.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Mt._Fuji_from_Enoshima_(5735409661).jpg",
+    "author": "KimonBerlin",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "alt": {
+      "pt": "Monte Fuji rosado do outro lado da água, visto de Enoshima",
+      "ja": "江の島から海越しに望む、淡いピンク色の富士山",
+      "en": "Pink-tinted Mount Fuji across the water, seen from Enoshima"
+    }
+  },
+  "kanda-myojin": {
+    "url": "photos/kanda-myojin.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:KandaMyojin_Zuishinmon_atNight.JPG",
+    "author": "Dennis Boller",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "alt": {
+      "pt": "Portão vermelho Zuishinmon de Kanda Myōjin iluminado à noite",
+      "ja": "夜にライトアップされた神田明神の赤い随神門",
+      "en": "The red Zuishinmon gate at Kanda Myōjin lit up at night"
+    }
+  },
+  "nakasu-noite": {
+    "url": "photos/nakasu-noite.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Night_view_of_Nakasu_and_Canal_City_Hakata_November_2011.jpg",
+    "author": "STA3816",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "alt": {
+      "pt": "Luzes de Nakasu refletidas no rio, com Canal City Hakata à distância",
+      "ja": "川面に映る中洲の夜景と奥のキャナルシティ博多",
+      "en": "The lights of Nakasu reflected in the river, with Canal City Hakata in the distance"
+    }
+  },
+  "tendon": {
+    "url": "photos/tendon.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Tendon_in_Tokyo.jpg",
+    "author": "Jimmy Yao",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "alt": {
+      "pt": "Tigela de arroz e tempurá de camarão e legumes",
+      "ja": "エビと野菜の天ぷらがのった天丼",
+      "en": "Rice bowl topped with shrimp and vegetable tempura"
+    }
+  },
+  "unaju": {
+    "url": "photos/unaju.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Unaju_of_%22Obana%22,_Unagi_restaurant_in_Minamisenju_-_Dec_22,_2013.jpg",
+    "author": "City Foodsters",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "alt": {
+      "pt": "Enguia grelhada com molho sobre arroz em uma caixa laqueada",
+      "ja": "漆器のお重に入った蒲焼きとご飯",
+      "en": "Grilled glazed eel over rice in a lacquered box"
+    }
+  },
+  "dorayaki": {
+    "url": "photos/dorayaki.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:2016-08-08_Dorayaki_on_a_porcelain_plate.jpg",
+    "author": "Tamaki Sono",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "alt": {
+      "pt": "Dorayaki dourado com recheio de azuki no prato branco",
+      "ja": "白い皿にのせた小豆あん入りのどら焼き",
+      "en": "Golden dorayaki with red bean filling on a white plate"
+    }
+  },
+  "yokan": {
+    "url": "photos/yokan.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Sweet_bean_jelly_-_%E7%BE%8A%E7%BE%B9_(77928937).jpg",
+    "author": "Kanko* from Nagasaki, Japan",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "alt": {
+      "pt": "Pedaços de yōkan de feijão sobre uma esteira",
+      "ja": "すだれに並べた小豆羊羹",
+      "en": "Pieces of red bean yōkan on a bamboo mat"
+    }
+  },
+  "shirasu-don": {
+    "url": "photos/shirasu-don.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Whitebait_Rice_Bowl_at_Enoshima.jpg",
+    "author": "Miyuki Meinaka",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Tigela azul de arroz com shirasu servida em Enoshima",
+      "ja": "江の島で出された青い器のしらす丼",
+      "en": "A blue bowl of whitebait rice served in Enoshima"
+    }
+  },
+  "hitsumabushi": {
+    "url": "photos/hitsumabushi.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Hitsumabushi_by_hirotomo_in_Nagoya.jpg",
+    "author": "hirotomo from Nagoya",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "alt": {
+      "pt": "Hitsumabushi de Nagoya com arroz, enguia, caldo e condimentos",
+      "ja": "名古屋のひつまぶしとだし、薬味",
+      "en": "Nagoya hitsumabushi with eel rice, broth and condiments"
+    }
+  },
+  "yudofu": {
+    "url": "photos/yudofu.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Yudofu_meal_set_in_Kyoto.jpg",
+    "author": "ZhengZhou",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Refeição de Quioto com panela de tofu e vários acompanhamentos",
+      "ja": "湯豆腐の鍋に小鉢が並ぶ京都の定食",
+      "en": "A Kyoto tofu hot pot meal with several side dishes"
+    }
+  },
+  "nama-yatsuhashi": {
+    "url": "photos/nama-yatsuhashi.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Yatsuhashi_002.jpg",
+    "author": "Ocdp",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "alt": {
+      "pt": "Dois triângulos de nama yatsuhashi recheado em um prato azul",
+      "ja": "青い皿に盛った三角形のあん入り生八つ橋二つ",
+      "en": "Two triangular filled nama yatsuhashi on a blue plate"
+    }
+  },
+  "omi-beef": {
+    "url": "photos/omi-beef.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:LE_POINT_DE_VUE07s4s4000.jpg",
+    "author": "663highland",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "alt": {
+      "pt": "Carne de Ōmi fatiada, servida com legumes e molho",
+      "ja": "野菜とソースを添えた近江牛のロースト",
+      "en": "Sliced Ōmi beef served with vegetables and sauce"
+    }
+  },
+  "takoyaki": {
+    "url": "photos/takoyaki.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:A_boat_of_%27KOUGARYU_Takoyaki%27_%E3%80%8C%E7%94%B2%E8%B3%80%E6%B5%81%E3%80%8D%E3%81%9F%E3%81%93%E7%84%BC%E3%81%8D%E3%80%8C%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%9E%E3%83%A8%E3%80%8D.jpg",
+    "author": "Thankei",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Bolinhos de polvo cobertos de flocos de bonito em uma bandeja em Osaka",
+      "ja": "大阪で舟皿に盛った、かつお節のせたこ焼き",
+      "en": "Octopus balls topped with bonito flakes in a tray in Osaka"
+    }
+  },
+  "kushikatsu": {
+    "url": "photos/kushikatsu.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Kushikatsu_-_Shinsekai_(28289215848).jpg",
+    "author": "Ajay Suresh from New York, NY, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "alt": {
+      "pt": "Espetinhos empanados com repolho e molho em Shinsekai",
+      "ja": "新世界の串カツ、キャベツとソース添え",
+      "en": "Breaded skewers with cabbage and dipping sauce in Shinsekai"
+    }
+  },
+  "kakinoha-zushi": {
+    "url": "photos/kakinoha-zushi.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Kakinoha_(persimmon_leaf)_sushi_in_Nara.jpg",
+    "author": "ZhengZhou",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Dois sushis de Nara sobre folhas de caqui abertas",
+      "ja": "柿の葉を開いて盛りつけた奈良の柿の葉寿司二つ",
+      "en": "Two pieces of Nara sushi on opened persimmon leaves"
+    }
+  },
+  "anago-meshi": {
+    "url": "photos/anago-meshi.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Anagomeshi_Hiroshima_Miyajima.JPG",
+    "author": "NY066",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "alt": {
+      "pt": "Congro grelhado sobre arroz em uma caixa, em Miyajima",
+      "ja": "宮島の穴子飯。焼き穴子を敷き詰めたお重",
+      "en": "A box of rice topped with grilled conger eel in Miyajima"
+    }
+  },
+  "motsunabe": {
+    "url": "photos/motsunabe.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Fukuoka-style_hot_pot_(3637375629).jpg",
+    "author": "pelican from Tokyo, Japan",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "alt": {
+      "pt": "Panela de motsunabe com nirá e repolho",
+      "ja": "ニラとキャベツをのせたもつ鍋",
+      "en": "A motsunabe hot pot topped with garlic chives and cabbage"
+    }
+  },
+  "champon": {
+    "url": "photos/champon.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Bowl_of_Nagasaki_champon,_August_2019.jpg",
+    "author": "NevinThompson",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Tigela de champon de Nagasaki com legumes e caldo claro",
+      "ja": "野菜がのった白いスープの長崎ちゃんぽん",
+      "en": "A bowl of Nagasaki champon with vegetables and pale broth"
+    }
+  },
+  "castella": {
+    "url": "photos/castella.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Castella_nagasaki.jpg",
+    "author": "©Nagasaki Prefecture",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Fatias de castella douradas servidas com chá",
+      "ja": "きつね色のカステラとお茶",
+      "en": "Golden slices of castella served with tea"
+    }
+  },
+  "hokkaido-soft": {
+    "url": "photos/hokkaido-soft.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Soft_serve_in_Misaka,_Hokkaido.jpg",
+    "author": "ノボホショコロトソ",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "alt": {
+      "pt": "Casquinha de sorvete de leite em Hokkaido",
+      "ja": "北海道のミルクソフトクリーム",
+      "en": "A milk soft serve cone in Hokkaido"
+    }
+  },
+  "king-crab": {
+    "url": "photos/king-crab.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Alaskan_King_Crab.jpg",
+    "author": "Frank Mayne",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "alt": {
+      "pt": "Patas alaranjadas de caranguejo-real com a casca aberta",
+      "ja": "殻を割ったオレンジ色のタラバガニの脚",
+      "en": "Bright orange king crab legs with their shells cracked open"
+    }
+  },
+  "sapporo-miso-ramen": {
+    "url": "photos/sapporo-miso-ramen.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Miso_corn_ramen_in_Sapporo_02.jpg",
+    "author": "ノボホショコロトソ",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "alt": {
+      "pt": "Lámen de missô de Sapporo com milho e ovo em uma tigela azul",
+      "ja": "青い丼の札幌味噌ラーメン、コーンと卵入り",
+      "en": "Sapporo miso ramen with corn and egg in a blue bowl"
+    }
+  },
+  "soup-curry": {
+    "url": "photos/soup-curry.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Curry_dish_at_Rojiura_Curry_SAMURAI_in_Sapporo,_Japan_(242).jpg",
+    "author": "Savannah Rivka",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Soup curry de Sapporo com legumes e arroz à parte",
+      "ja": "札幌の野菜入りスープカレーと別皿のご飯",
+      "en": "Sapporo soup curry with vegetables and a side of rice"
+    }
+  },
+  "jingisukan": {
+    "url": "photos/jingisukan.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Jingisukan_japanese_mutton_barbecue.jpg",
+    "author": "Jesper Rautell Balle",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "alt": {
+      "pt": "Carneiro e vegetais na chapa redonda de jingisukan",
+      "ja": "丸いジンギスカン鍋で焼く羊肉と野菜",
+      "en": "Mutton and vegetables cooking on a round jingisukan grill"
     }
   }
 }
