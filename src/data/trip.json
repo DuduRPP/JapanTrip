@@ -3511,12 +3511,29 @@
       "number": 2,
       "date": "2027-01-09",
       "title": {
-        "pt": "Asakusa e rio Sumida",
-        "ja": "浅草と隅田川",
-        "en": "Asakusa and the Sumida River"
+        "pt": "Ueno e Asakusa",
+        "ja": "上野と浅草",
+        "en": "Ueno and Asakusa"
       },
       "photo": "asakusa",
       "stops": [
+        {
+          "id": "ueno-park",
+          "name": {
+            "pt": "Parque de Ueno e lago Shinobazu",
+            "ja": "上野公園と不忍池",
+            "en": "Ueno Park and Shinobazu Pond"
+          },
+          "done": false,
+          "minutes": 100,
+          "mapQuery": "上野東照宮 上野恩賜公園",
+          "description": {
+            "pt": "Comece pela alameda do parque e veja o portão dourado do Tōshō-gū. Desça ao lago Shinobazu para ver o Bentendō antes de seguir a Asakusa.",
+            "ja": "朝は上野公園の並木道から、上野東照宮の金色の門へ。不忍池まで下りて弁天堂を見てから浅草へ行こう。",
+            "en": "Start on the park's main avenue and see the gilded gate at Tōshō-gū. Walk down to Shinobazu Pond and Bentendō before heading to Asakusa."
+          },
+          "source": "https://www.uenotoshogu.com/spot/"
+        },
         {
           "id": "sensoji",
           "name": {
@@ -3525,7 +3542,7 @@
             "en": "Sensō-ji Temple"
           },
           "done": false,
-          "minutes": 65,
+          "minutes": 70,
           "addressJa": "東京都台東区浅草2-3-1",
           "mapQuery": "浅草寺 雷門 浅草",
           "description": {
@@ -3533,44 +3550,58 @@
             "ja": "雷門から仲見世を抜けて浅草寺の本堂へ。境内で五重塔も眺めよう。",
             "en": "Walk from Kaminarimon through Nakamise to Sensō-ji’s main hall. Pause in the grounds for a view of the five-story pagoda."
           },
-          "source": "https://www.senso-ji.jp/"
+          "source": "https://www.senso-ji.jp/",
+          "travelFrom": {
+            "stopId": "ueno-park",
+            "mode": "metro",
+            "minutes": 25,
+            "line": {
+              "pt": "Linha Ginza",
+              "ja": "銀座線",
+              "en": "Ginza Line"
+            },
+            "note": {
+              "pt": "Do lago, caminhe até o metrô Ueno ou Ueno-hirokoji. Desça em Asakusa e siga as placas para Kaminarimon.",
+              "ja": "不忍池から地下鉄の上野駅か上野広小路駅へ。浅草で降りて雷門の案内へ。",
+              "en": "Walk from the pond to Ueno or Ueno-hirokoji metro station. At Asakusa, follow signs for Kaminarimon."
+            }
+          }
         },
         {
           "id": "nishi-sando",
           "name": {
-            "pt": "Asakusa: almoço e doces",
-            "ja": "浅草で昼ご飯と甘味",
+            "pt": "Almoço e doces em Asakusa",
+            "ja": "浅草でお昼と甘いもの",
             "en": "Lunch and sweets in Asakusa"
           },
           "done": false,
           "minutes": 70,
-          "mapQuery": "浅草西参道商店街",
+          "mapQuery": "浅草西参道 浅草寺",
           "description": {
-            "pt": "Almoce lámen shōyu ou tendon perto do templo. Depois, escolha taiyaki, zenzai quente ou um melonpan com sorvete.",
-            "ja": "お寺の近くで醤油ラーメンか天丼。おやつはたい焼き、温かいぜんざい、アイスめろんぱんから。",
-            "en": "Have shōyu ramen or tendon by the temple. Pick taiyaki, warm zenzai or ice cream melon pan for dessert."
+            "pt": "Almoce lámen shōyu ou tendon perto do Sensō-ji. Para a sobremesa, escolha taiyaki, zenzai quente ou melonpan com sorvete.",
+            "ja": "浅草寺の近くで醤油ラーメンか天丼。甘いものは、たい焼き、温かいぜんざい、アイスメロンパンの気分で。",
+            "en": "Have shōyu ramen or a tempura rice bowl near Sensō-ji. Try taiyaki, warm zenzai or ice cream in melonpan for dessert."
           },
           "travelFrom": {
             "stopId": "sensoji",
             "mode": "walk",
-            "minutes": 5
-          },
-          "source": "https://www.asakusaomatsuri.com/"
+            "minutes": 6
+          }
         },
         {
           "id": "sumida-river",
           "name": {
-            "pt": "Parque Sumida e a ponte",
-            "ja": "隅田公園と隅田川の橋",
-            "en": "Sumida Park and the river crossing"
+            "pt": "Orla do Sumida e ponte Azumabashi",
+            "ja": "隅田川沿いと吾妻橋",
+            "en": "Sumida waterfront and Azumabashi Bridge"
           },
           "done": false,
           "minutes": 55,
-          "mapQuery": "隅田公園 浅草 すみだリバーウォーク",
+          "mapQuery": "隅田公園 浅草 吾妻橋",
           "description": {
-            "pt": "Siga para a margem e atravesse pelo Sumida River Walk ou pela ponte Azumabashi. Veja a Skytree em perspectiva antes de chegar à torre.",
-            "ja": "川岸へ出て、すみだリバーウォークか吾妻橋を渡ろう。近づく前に川からスカイツリーを眺める。",
-            "en": "Head to the bank and cross via Sumida River Walk or Azumabashi Bridge. Look back at the Skytree from the river before heading to the tower."
+            "pt": "Caminhe pelo Parque Sumida e veja a Skytree da margem de Asakusa. A ponte Azumabashi dá outra perspectiva do rio. Se ventar, faça um trecho curto e volte para uma pausa em lugar fechado.",
+            "ja": "隅田公園の浅草側を歩き、川越しにスカイツリーを眺めよう。吾妻橋からも別の角度で。風が強ければ短めにして屋内でひと休み。",
+            "en": "Walk through Sumida Park on the Asakusa bank for a view of the Skytree. Azumabashi Bridge gives you another angle. In strong wind, shorten the walk and take a warm break indoors."
           },
           "travelFrom": {
             "stopId": "nishi-sando",
@@ -3580,47 +3611,71 @@
           "source": "https://www.gotokyo.org/en/spot/506/index.html"
         },
         {
-          "id": "skytree-town",
+          "id": "asakusa-evening",
           "name": {
-            "pt": "Tokyo Skytree e Solamachi",
-            "ja": "東京スカイツリーとソラマチ",
-            "en": "Tokyo Skytree and Solamachi"
+            "pt": "Asakusa ao anoitecer e jantar",
+            "ja": "夕暮れの浅草と晩ご飯",
+            "en": "Asakusa at dusk and dinner"
           },
           "done": false,
-          "minutes": 85,
-          "mapQuery": "東京ソラマチ 東京スカイツリー",
+          "minutes": 90,
+          "mapQuery": "浅草 雷門",
           "description": {
-            "pt": "Veja a base da torre e faça uma pausa dentro do Solamachi. O mirante vale se o céu estiver limpo e houver ingresso no horário; a subida é opcional.",
-            "ja": "足元から塔を見て、ソラマチでひと休み。空が澄んでいて時間に合うチケットがあれば展望台へ。",
-            "en": "See the tower from its base and warm up at Solamachi. Consider the paid deck if the sky is clear and tickets fit your schedule."
+            "pt": "Faça uma pausa e passe pelo Kaminarimon iluminado no começo da noite. Jante por ali ou volte para Ueno pela linha Ginza.",
+            "ja": "ひと息ついたら、日が暮れるころにライトアップされた雷門へ。近くで夕食か、銀座線で上野に戻ろう。",
+            "en": "Take a break, then see Kaminarimon lit up after dusk. Have dinner nearby or take the Ginza Line back to Ueno."
           },
           "travelFrom": {
             "stopId": "sumida-river",
             "mode": "walk",
-            "minutes": 19
-          },
-          "source": "https://www.tokyo-skytree.jp/en/"
+            "minutes": 12
+          }
         },
         {
-          "id": "asakusa-evening",
+          "id": "ueno-national-museum",
           "name": {
-            "pt": "Asakusa no começo da noite",
-            "ja": "夕暮れの浅草",
-            "en": "Asakusa in the early evening"
+            "pt": "Museu Nacional de Tóquio",
+            "ja": "東京国立博物館",
+            "en": "Tokyo National Museum"
           },
           "done": false,
-          "minutes": 70,
-          "mapQuery": "浅草 雷門 仲見世通り",
+          "minutes": 75,
+          "mapQuery": "東京国立博物館 本館",
           "description": {
-            "pt": "Volte pelo rio se o tempo ajudar e veja o Kaminarimon com as luzes acesas. Jante em Asakusa ou volte a Ueno por Tawaramachi.",
-            "ja": "天気がよければ川沿いで戻り、明かりのついた雷門を眺めよう。浅草で夕食、または田原町から上野へ。",
-            "en": "If the weather cooperates, walk back by the river and see Kaminarimon lit up. Have dinner in Asakusa or return to Ueno from Tawaramachi."
+            "pt": "Se começar cedo em Ueno, escolha uma galeria de arte japonesa no edifício Honkan. Conte com uma chegada mais tarde a Asakusa e deixe a Skytree para outro momento se ficar apertado.",
+            "ja": "上野で早く動けたら、本館で日本美術の展示をひとつ。浅草への到着が遅くなるので、時間が足りなければスカイツリーは別の機会に。",
+            "en": "With an early start in Ueno, pick one Japanese art gallery in the Honkan building. Asakusa will start later, so skip the Skytree if the day gets tight."
           },
           "travelFrom": {
-            "stopId": "skytree-town",
+            "stopId": "ueno-park",
             "mode": "walk",
-            "minutes": 26
-          }
+            "minutes": 16
+          },
+          "source": "https://www.tnm.jp/modules/r_free_page/index.php?id=113-0",
+          "optional": true
+        },
+        {
+          "id": "skytree-town",
+          "name": {
+            "pt": "Tokyo Skytree",
+            "ja": "東京スカイツリー",
+            "en": "Tokyo Skytree"
+          },
+          "done": false,
+          "minutes": 75,
+          "mapQuery": "東京スカイツリー 展望台",
+          "description": {
+            "pt": "Com céu limpo e tempo de sobra, atravesse pelo Sumida River Walk e veja a torre de perto. O mirante pago vale se houver boa visibilidade e vaga no horário.",
+            "ja": "晴れて時間があれば、すみだリバーウォークを渡って塔の足元へ。展望台は視界が良く、希望の時間に空きがあるときに。",
+            "en": "With clear skies and time to spare, take the Sumida River Walk across for a closer look. The paid observation deck is an option if visibility is good and a slot is available."
+          },
+          "travelFrom": {
+            "stopId": "sumida-river",
+            "mode": "walk",
+            "minutes": 22
+          },
+          "source": "https://www.tokyo-skytree.jp/en/",
+          "optional": true
         }
       ],
       "foodIds": [
@@ -3629,6 +3684,9 @@
         "taiyaki",
         "awa-zenzai",
         "ice-melonpan"
+      ],
+      "extraPhotos": [
+        "ueno-toshogu"
       ]
     },
     {
@@ -3638,11 +3696,11 @@
       "number": 3,
       "date": "2027-01-10",
       "title": {
-        "pt": "Meiji Jingū e Shibuya",
-        "ja": "明治神宮と渋谷",
-        "en": "Meiji Jingū and Shibuya"
+        "pt": "Palácio Imperial e Tokyo Tower",
+        "ja": "皇居東御苑と東京タワー",
+        "en": "Imperial Palace and Tokyo Tower"
       },
-      "photo": "shibuya",
+      "photo": "imperial-east",
       "stops": [
         {
           "id": "bag-drop",
@@ -3661,146 +3719,148 @@
           "source": "https://cloak.ecbo.io/en"
         },
         {
-          "id": "meiji-jingu",
+          "id": "palace-garden",
           "name": {
-            "pt": "Santuário Meiji Jingū",
-            "ja": "明治神宮",
-            "en": "Meiji Jingū Shrine"
+            "pt": "Jardins Orientais do Palácio Imperial",
+            "ja": "皇居東御苑",
+            "en": "Imperial Palace East Gardens"
           },
           "done": false,
-          "minutes": 80,
-          "mapQuery": "明治神宮 南参道 原宿口",
+          "minutes": 105,
+          "mapQuery": "皇居東御苑 大手門",
           "description": {
-            "pt": "Entre pelo torii do lado de Harajuku, caminhe pela floresta e veja o pátio principal. Em janeiro os portões fecham por volta das 16h20; esta é a visita da manhã.",
-            "ja": "原宿側の鳥居から森を通って本殿へ。1月は16:20ごろに閉門、朝のうちにお参り。",
-            "en": "Enter at the Harajuku torii, walk through the woods and see the main court. January gates close around 16:20, so go in the morning."
+            "pt": "Entre pelo portão Ōtemon para ver os fossos, as muralhas e o jardim Ninomaru. A entrada é gratuita. Se houver fechamento extraordinário, veja os fossos e a ponte Nijūbashi do lado de fora.",
+            "ja": "大手門から入り、堀や石垣、二の丸庭園へ。入園は無料。臨時休園なら、外から堀を眺めて皇居外苑の二重橋へ回ろう。",
+            "en": "Enter through Ōtemon for the moats, stone walls and Ninomaru Garden. Admission is free. If the gardens have an exceptional closure, see the moats and Nijūbashi from the outer grounds."
           },
           "travelFrom": {
             "stopId": "bag-drop",
             "mode": "train",
-            "minutes": 45,
+            "minutes": 30,
             "line": {
-              "pt": "JR Yamanote até Harajuku",
-              "ja": "JR山手線で原宿",
-              "en": "JR Yamanote to Harajuku"
+              "pt": "JR até Tokyo",
+              "ja": "JRで東京駅へ",
+              "en": "JR to Tokyo Station"
             },
             "note": {
-              "pt": "Da base em Tawaramachi, compare com o metrô até Meiji-jingūmae via Omotesandō.",
-              "ja": "田原町からなら表参道経由で地下鉄の明治神宮前も便利。",
-              "en": "From Tawaramachi, compare subway connections to Meiji-jingūmae via Omotesandō."
+              "pt": "De Ueno ou Okachimachi, vá de JR a Tokyo e saia pelo lado Marunouchi. De Tawaramachi, compare a linha Ginza até Nihombashi.",
+              "ja": "上野か御徒町からJRで東京駅へ。丸の内側から出よう。田原町からなら銀座線で日本橋経由も候補。",
+              "en": "From Ueno or Okachimachi, take JR to Tokyo Station and leave on the Marunouchi side. From Tawaramachi, compare the Ginza Line via Nihombashi."
             }
           },
-          "source": "https://www.meijijingu.or.jp/en/opening/"
+          "source": "https://www.kunaicho.go.jp/visit/higashigyoen/index.html"
         },
         {
-          "id": "harajuku",
+          "id": "yurakucho-lunch",
           "name": {
-            "pt": "Harajuku e Omotesandō",
-            "ja": "原宿と表参道",
-            "en": "Harajuku and Omotesandō"
-          },
-          "done": false,
-          "minutes": 75,
-          "mapQuery": "原宿 表参道 神宮前交差点",
-          "description": {
-            "pt": "Atravesse o bairro a pé. Veja o movimento da Takeshita-dōri se estiver suportável ou caminhe pela Omotesandō e pare para tonkatsu.",
-            "ja": "歩いて原宿へ。混みすぎていなければ竹下通りをのぞき、表参道でとんかつにしても。",
-            "en": "Walk through the district. Glance at Takeshita Street if crowds allow, or take Omotesandō and stop for tonkatsu."
-          },
-          "travelFrom": {
-            "stopId": "meiji-jingu",
-            "mode": "walk",
-            "minutes": 15
-          },
-          "source": "https://www.gotokyo.org/en/destinations/western-tokyo/harajuku/index.html"
-        },
-        {
-          "id": "shibuya-crossing",
-          "name": {
-            "pt": "Hachikō e cruzamento de Shibuya",
-            "ja": "ハチ公と渋谷スクランブル交差点",
-            "en": "Hachikō and Shibuya Crossing"
+            "pt": "Almoço em Yūrakuchō",
+            "ja": "有楽町でお昼",
+            "en": "Lunch in Yūrakuchō"
           },
           "done": false,
           "minutes": 65,
-          "mapQuery": "渋谷駅 ハチ公前広場",
+          "mapQuery": "有楽町駅 ガード下",
           "description": {
-            "pt": "Veja Hachikō e atravesse o cruzamento. Almoce em Shibuya ou antes, na região de Omotesandō. Guarde margem para o terminal.",
-            "ja": "ハチ公とスクランブル交差点へ。昼は渋谷か、その前に表参道で。バスまで余裕を取って。",
-            "en": "See Hachikō and cross the scramble. Have lunch in Shibuya or earlier around Omotesandō. Leave time to reach the coach terminal."
+            "pt": "Caminhe pelo lado de Marunouchi até Yūrakuchō. Pare para soba ou teishoku e veja as passagens sob os trilhos perto da estação.",
+            "ja": "丸の内側を歩いて有楽町へ。そばか定食でお昼にして、駅近くのガード下をのぞいてみよう。",
+            "en": "Walk through Marunouchi to Yūrakuchō. Stop for soba or a set meal and have a look at the old railway arches by the station."
           },
           "travelFrom": {
-            "stopId": "harajuku",
+            "stopId": "palace-garden",
             "mode": "walk",
-            "minutes": 18,
+            "minutes": 24
+          },
+          "source": "https://www.gotokyo.org/en/see-and-do/drinking-and-dining/index.html"
+        },
+        {
+          "id": "zojoji-shiba",
+          "name": {
+            "pt": "Templo Zōjō-ji e Parque Shiba",
+            "ja": "増上寺と芝公園",
+            "en": "Zōjō-ji Temple and Shiba Park"
+          },
+          "done": false,
+          "minutes": 60,
+          "mapQuery": "増上寺 大殿 芝公園",
+          "description": {
+            "pt": "Veja o pátio do templo e caminhe pelo parque para fotografar a torre atrás dos telhados. Chegue ainda com luz, de preferência no meio da tarde.",
+            "ja": "増上寺の境内から芝公園へ。屋根の向こうに見える東京タワーを撮ってみよう。できれば日がある午後の早めに。",
+            "en": "See the temple courtyard, then walk through Shiba Park for a photo of the tower behind the roofs. Aim for midafternoon light."
+          },
+          "travelFrom": {
+            "stopId": "yurakucho-lunch",
+            "mode": "train",
+            "minutes": 28,
+            "line": {
+              "pt": "JR até Hamamatsuchō",
+              "ja": "JRで浜松町",
+              "en": "JR to Hamamatsuchō"
+            },
             "note": {
-              "pt": "Siga pela Cat Street ou vá direto pela Meiji-dōri.",
-              "ja": "キャットストリートか明治通りで渋谷へ。",
-              "en": "Follow Cat Street or head straight down Meiji-dōri."
+              "pt": "Saia para o lado oeste de Hamamatsuchō e caminhe na direção de Daimon e Zōjō-ji.",
+              "ja": "浜松町駅の西側に出て、大門から増上寺の方向へ。",
+              "en": "Leave Hamamatsuchō on the west side and walk toward Daimon and Zōjō-ji."
             }
-          }
+          },
+          "source": "https://www.zojoji.or.jp/"
+        },
+        {
+          "id": "tokyo-tower",
+          "name": {
+            "pt": "Tokyo Tower",
+            "ja": "東京タワー",
+            "en": "Tokyo Tower"
+          },
+          "done": false,
+          "minutes": 45,
+          "mapQuery": "東京タワー 正面入口",
+          "description": {
+            "pt": "Veja a torre de perto a partir da base. Se o céu estiver aberto e ainda houver folga para o ônibus, some cerca de uma hora para o Main Deck e a fila.",
+            "ja": "麓から東京タワーを見上げよう。晴れていてバスまで余裕があれば、メインデッキと待ち時間に約1時間を追加。",
+            "en": "See the tower from its base. If skies are clear and there is plenty of time before the bus, allow about an extra hour for the Main Deck and line."
+          },
+          "travelFrom": {
+            "stopId": "zojoji-shiba",
+            "mode": "walk",
+            "minutes": 13
+          },
+          "source": "https://en.tokyotower.co.jp/fee/"
         },
         {
           "id": "tokyo-to-osaka-terminal",
           "name": {
-            "pt": "Jantar e terminal conforme a passagem",
-            "ja": "夕食とチケット指定の乗り場",
-            "en": "Dinner and the terminal on your ticket"
+            "pt": "Jantar em Yaesu e embarque",
+            "ja": "八重洲で晩ご飯と夜行バス",
+            "en": "Dinner in Yaesu and the overnight bus"
           },
           "done": false,
-          "minutes": 75,
+          "minutes": 120,
           "mapQuery": "バスターミナル東京八重洲",
           "description": {
-            "pt": "Faça uma pausa para jantar e conte com a margem de embarque da operadora. O terminal subterrâneo de Yaesu e o ponto JR de Yaesu Sul são distintos: confira o bilhete.",
-            "ja": "夕食をとり、指定された集合時刻に余裕を。八重洲の地下バスターミナルとJR八重洲南口の乗り場は別なので、切符を確認。",
-            "en": "Pause for dinner and allow the operator’s boarding buffer. The underground Yaesu terminal and JR Yaesu South are separate boarding points; check your ticket."
+            "pt": "Jante na região da estação Tokyo e faça uma pausa antes do ônibus. Mire chegar pelo menos 30 min antes da saída, respeitando a instrução da empresa. Confira o bilhete, pois o terminal subterrâneo de Yaesu e o ponto JR de Yaesu Sul são diferentes.",
+            "ja": "東京駅周辺で夕食をとってバスまで休憩。運行会社の案内に従い、目安は出発の30分前まで。八重洲地下バスターミナルとJR八重洲南口のりばは別なので、チケットを確認しよう。",
+            "en": "Have dinner near Tokyo Station and rest before boarding. Aim to arrive at least 30 minutes early and follow the operator's instructions. Check your ticket because the underground Yaesu terminal and the JR Yaesu South stop are separate."
           },
           "travelFrom": {
-            "stopId": "shibuya-crossing",
-            "mode": "metro",
-            "minutes": 43,
+            "stopId": "tokyo-tower",
+            "mode": "train",
+            "minutes": 40,
             "line": {
-              "pt": "Linha Ginza até Kyōbashi",
-              "ja": "銀座線で京橋",
-              "en": "Ginza Line to Kyōbashi"
+              "pt": "JR Hamamatsuchō → Tokyo",
+              "ja": "JR 浜松町→東京",
+              "en": "JR Hamamatsuchō → Tokyo"
             },
             "note": {
-              "pt": "De Kyōbashi, siga a pé ao terminal indicado. Para um ônibus saindo de Shinjuku, vá direto de JR ao Busta Shinjuku.",
-              "ja": "京橋から指定の乗り場へ。新宿発ならJRでバスタ新宿へ直行。",
-              "en": "Walk from Kyōbashi to the terminal on your ticket. For a Shinjuku departure, use JR straight to Busta Shinjuku."
+              "pt": "Caminhe até Hamamatsuchō, pegue o JR e siga a sinalização para Yaesu ao chegar a Tokyo.",
+              "ja": "浜松町まで歩き、JRで東京へ。着いたら八重洲の案内に従おう。",
+              "en": "Walk to Hamamatsuchō, take JR to Tokyo and follow signs for Yaesu."
             }
           },
           "source": "https://bt-tokyoyaesu.com/faq/"
-        },
-        {
-          "id": "shibuya-parco",
-          "name": {
-            "pt": "Shibuya PARCO · jogos e personagens",
-            "ja": "渋谷PARCO ゲームとキャラクター",
-            "en": "Shibuya PARCO games and characters"
-          },
-          "done": false,
-          "minutes": 35,
-          "mapQuery": "渋谷PARCO Nintendo TOKYO",
-          "description": {
-            "pt": "Se ainda estiver cedo, confira uma loja de jogos ou personagens no sexto andar. Corte a parada se houver fila.",
-            "ja": "時間が余れば6階でゲームかキャラクターのお店を一軒。列が長ければ省こう。",
-            "en": "If you have time, try one game or character shop on the sixth floor. Skip it if the queue is long."
-          },
-          "travelFrom": {
-            "stopId": "shibuya-crossing",
-            "mode": "walk",
-            "minutes": 10
-          },
-          "optional": true
         }
       ],
       "foodIds": [
-        "tonkatsu",
-        "sushi-avulso"
-      ],
-      "shopIds": [
-        "nintendo-shibuya"
+        "soba-ueno"
       ]
     },
     {
@@ -3945,9 +4005,9 @@
       "number": 5,
       "date": "2027-01-12",
       "title": {
-        "pt": "Parque de Ueno e Ameyoko",
-        "ja": "上野公園とアメ横",
-        "en": "Ueno Park and Ameyoko"
+        "pt": "Ameyoko e uma tarde tranquila",
+        "ja": "アメ横とゆっくり過ごす午後",
+        "en": "Ameyoko and an easy afternoon"
       },
       "stops": [
         {
@@ -3961,69 +4021,47 @@
           "minutes": 85,
           "mapQuery": "上野駅",
           "description": {
-            "pt": "Depois do ônibus, tome café e recupere a mala no ponto combinado. Se tiver dormido em Osaka, comece o passeio pelo parque à tarde e encurte a caminhada.",
-            "ja": "バスのあと朝食をとり、預けた荷物を受け取る。大阪に泊まったら午後に上野公園から始めて短めに。",
-            "en": "After the coach, get breakfast and pick up your stored bag. If you spent the night in Osaka, start at Ueno Park in the afternoon and take a shorter walk."
+            "pt": "Depois do ônibus, tome café, recupere a mala e pergunte se pode deixá-la antes do check-in. Se voltar de trem de Osaka, comece pelo almoço na hora em que chegar.",
+            "ja": "夜行バスのあとは朝ご飯と荷物の受け取り。チェックイン前に宿へ預けられるか聞こう。大阪から新幹線で帰るなら、着いた時間に合わせてお昼から。",
+            "en": "After the bus, have breakfast, collect your luggage and ask if the hotel can hold it before check-in. If returning by train from Osaka, start with lunch whenever you arrive."
           }
-        },
-        {
-          "id": "ueno-park",
-          "name": {
-            "pt": "Parque de Ueno, Tōshō-gū e lago Shinobazu",
-            "ja": "上野公園・東照宮と不忍池",
-            "en": "Ueno Park, Tōshō-gū and Shinobazu Pond"
-          },
-          "done": false,
-          "minutes": 105,
-          "mapQuery": "上野東照宮 上野恩賜公園",
-          "description": {
-            "pt": "Veja a alameda, o santuário dourado e a pagoda; desça até o lago e o Bentendō. Na terça após o feriado, confira o calendário antes de planejar museus.",
-            "ja": "参道と金色の社殿、五重塔を見てから不忍池と弁天堂へ。祝日明けの火曜なので、博物館は開館日を確認。",
-            "en": "See the avenue, gilded shrine and pagoda, then walk down to the pond and Bentendō. It is the Tuesday after a holiday, so check museum calendars before counting on one."
-          },
-          "travelFrom": {
-            "stopId": "bag-recovery",
-            "mode": "walk",
-            "minutes": 13
-          },
-          "source": "https://www.uenotoshogu.com/spot/"
         },
         {
           "id": "ueno-ameyoko",
           "name": {
-            "pt": "Ameyoko e almoço em Ueno",
-            "ja": "アメ横と上野の昼ご飯",
-            "en": "Ameyoko and lunch in Ueno"
+            "pt": "Passeio por Ameyoko e almoço",
+            "ja": "アメ横を歩いてお昼ご飯",
+            "en": "Ameyoko stroll and lunch"
           },
           "done": false,
           "minutes": 95,
           "mapQuery": "アメ横 上野駅 不忍口",
           "description": {
-            "pt": "Siga a pé para Ameyoko. É um bom dia para provar unagi no Izuē perto do lago ou no Unatoto; soba e lámen são alternativas.",
-            "ja": "アメ横へ歩こう。池そばの伊豆榮や宇奈ととで鰻を味わう日。そばやラーメンでも。",
-            "en": "Walk to Ameyoko. This is a good day for unagi at Izuē by the pond or at Unatoto; soba and ramen are alternatives."
+            "pt": "Passe pela rua de mercado entre Ueno e Okachimachi e almoce unagi, soba ou lámen. Se quiser um doce, guarde espaço para dorayaki.",
+            "ja": "上野から御徒町へ、アメ横の市場通りをひと歩き。お昼はうなぎ、そば、ラーメンの気分で。甘いものならどら焼きも。",
+            "en": "Walk through the market street between Ueno and Okachimachi, then have unagi, soba or ramen for lunch. Save room for dorayaki if you want a sweet."
           },
           "travelFrom": {
-            "stopId": "ueno-park",
+            "stopId": "bag-recovery",
             "mode": "walk",
-            "minutes": 14
+            "minutes": 12
           },
           "source": "https://www.ameyoko.net/"
         },
         {
           "id": "ueno-evening",
           "name": {
-            "pt": "Pausa no hotel e jantar em Okachimachi",
-            "ja": "宿でひと休み、御徒町で夕食",
-            "en": "Hotel break and dinner in Okachimachi"
+            "pt": "Check-in, descanso e jantar no bairro",
+            "ja": "チェックイン、休憩と近所で晩ご飯",
+            "en": "Check-in, rest and dinner in the neighborhood"
           },
           "done": false,
-          "minutes": 115,
+          "minutes": 120,
           "mapQuery": "御徒町駅 上野広小路",
           "description": {
-            "pt": "Volte no horário do check-in, descanse e, se estiver disposto, saia para uma volta curta e jantar. Se o almoço foi tarde, a pausa já basta.",
-            "ja": "チェックインしたら少し休もう。元気があれば御徒町でひと回りと夕食。お昼が遅ければ休むだけでも。",
-            "en": "Check in and rest, then take a short walk and have dinner if you feel up for it. If lunch was late, the rest can be enough."
+            "pt": "Volte quando o quarto estiver pronto para tomar banho e descansar. À noite, escolha algo simples a pé do hotel, conforme a energia depois da viagem.",
+            "ja": "部屋に入れる時間になったら宿に戻って、シャワーと休憩。夜は旅の疲れ具合に合わせて、宿から歩けるところで軽く。",
+            "en": "Return when your room is ready for a shower and a rest. Keep dinner within walking distance of the hotel, depending on how you feel after the trip."
           },
           "travelFrom": {
             "stopId": "ueno-ameyoko",
@@ -4034,29 +4072,29 @@
         {
           "id": "yanaka",
           "name": {
-            "pt": "Yanaka Ginza",
-            "ja": "谷中銀座",
-            "en": "Yanaka Ginza"
+            "pt": "Uma volta por Yanaka",
+            "ja": "谷中をひと歩き",
+            "en": "A short walk in Yanaka"
           },
           "done": false,
-          "minutes": 55,
+          "minutes": 50,
           "mapQuery": "谷中銀座 夕やけだんだん",
           "description": {
-            "pt": "Se estiver bem depois de almoçar, vá a Yanaka antes do check-in. Caminhe pela rua comercial ainda com luz e volte cedo.",
-            "ja": "昼食後に元気があればチェックイン前に谷中へ。明るいうちに商店街を歩いて早めに帰ろう。",
-            "en": "If you feel good after lunch, go to Yanaka before checking in. Walk the shopping street in daylight and return early."
+            "pt": "Se chegar cedo e quiser caminhar mais, vá a Yanaka antes do check-in. Saia de Nippori para a escadaria Yūyake Dandan, explore as ruelas ainda com luz e volte quando cansar.",
+            "ja": "早く着いてまだ歩けそうなら、チェックイン前に谷中へ。日暮里から夕やけだんだんへ出て、明るいうちに路地を歩こう。",
+            "en": "If you arrive early and feel like walking a little more, go to Yanaka before check-in. From Nippori, head to the Yūyake Dandan steps and wander the lanes while it is still light."
           },
           "travelFrom": {
             "stopId": "ueno-ameyoko",
             "mode": "train",
-            "minutes": 28,
+            "minutes": 27,
             "line": {
-              "pt": "JR Yamanote até Nippori",
-              "ja": "JR山手線で日暮里",
-              "en": "JR Yamanote to Nippori"
+              "pt": "JR até Nippori",
+              "ja": "JRで日暮里",
+              "en": "JR to Nippori"
             }
           },
-          "source": "https://www.yanakaginza.com/",
+          "source": "https://www.gotokyo.org/en/story/walks-and-tours/yanaka-and-nezu/index.html",
           "optional": true
         }
       ],
@@ -4065,8 +4103,7 @@
         "soba-ueno",
         "shoyu-ramen",
         "dorayaki"
-      ],
-      "photo": "ueno-toshogu"
+      ]
     },
     {
       "id": "kamakura-enoshima",
@@ -4263,55 +4300,28 @@
       "number": 7,
       "date": "2027-01-14",
       "title": {
-        "pt": "Palácio Imperial e Kanda",
-        "ja": "皇居東御苑と神田",
-        "en": "Imperial Palace gardens and Kanda"
+        "pt": "Jimbōchō, Kanda e Akihabara",
+        "ja": "神保町・神田・秋葉原",
+        "en": "Jimbōchō, Kanda and Akihabara"
       },
-      "photo": "imperial-east",
+      "photo": "kanda-myojin",
       "stops": [
-        {
-          "id": "palace-garden",
-          "name": {
-            "pt": "Jardins Orientais do Palácio Imperial",
-            "ja": "皇居東御苑",
-            "en": "Imperial Palace East Gardens"
-          },
-          "done": false,
-          "minutes": 110,
-          "mapQuery": "皇居東御苑 大手門",
-          "description": {
-            "pt": "Entre pelo Portão Ōtemon e veja os fossos, as muralhas e o jardim Ninomaru no antigo Castelo de Edo. Entrada gratuita; em janeiro normalmente fecha às 16h.",
-            "ja": "大手門から旧江戸城の堀、石垣と二の丸庭園へ。入園無料、1月は通常16時閉園。",
-            "en": "Enter at Ōtemon for the moats, walls and Ninomaru Garden of former Edo Castle. Admission is free; usual January closing is 16:00."
-          },
-          "source": "https://www.kunaicho.go.jp/visit/higashigyoen/index.html"
-        },
         {
           "id": "jimbocho-books",
           "name": {
-            "pt": "Jimbōchō: almoço e livros",
-            "ja": "神保町で昼ご飯と本",
-            "en": "Jimbōchō: lunch and books"
+            "pt": "Jimbōchō: curry e livrarias",
+            "ja": "神保町でカレーと本屋めぐり",
+            "en": "Jimbōchō: curry and bookshops"
           },
           "done": false,
-          "minutes": 110,
-          "mapQuery": "神保町古書店街 神田古書センター",
+          "minutes": 115,
+          "mapQuery": "神保町交差点 靖国通り",
           "description": {
-            "pt": "Almoce curry e dedique cerca de uma hora aos livros: @Wonder para mistério e Yumeno para mangá antigo, ou Sanseidō para lançamentos.",
-            "ja": "カレーでお昼。本は1時間ほどで、ミステリなら＠ワンダー、昔のマンガは夢野書店、新刊なら三省堂。",
-            "en": "Have curry for lunch and spend about an hour on books: @Wonder for mysteries, Yumeno for vintage manga, or Sanseidō for new titles."
+            "pt": "Comece no fim da manhã pela Yasukuni-dōri. Reserve cerca de uma hora para ver livros e mangás e almoce curry. As sugestões de livrarias ficam na seção de lojas do dia.",
+            "ja": "午前の遅めに靖国通りから。古本や漫画を見て回るのに1時間ほど取り、お昼はカレー。書店の候補は今日の買い物欄へ。",
+            "en": "Start on Yasukuni-dōri in the late morning. Give yourself about an hour for books and manga, then have curry for lunch. Bookshop suggestions are in the day's shopping section."
           },
-          "travelFrom": {
-            "stopId": "palace-garden",
-            "mode": "walk",
-            "minutes": 23,
-            "note": {
-              "pt": "Use a saída norte Kitahanebashi-mon, se aberta, e siga via Hitotsubashi.",
-              "ja": "開いていれば北桔橋門から一ツ橋を通って神保町へ。",
-              "en": "If open, leave by Kitahanebashi Gate and walk via Hitotsubashi."
-            }
-          },
-          "source": "https://www.gotokyo.org/jp/new-and-now/new-and-trending/261109/topics.html"
+          "source": "https://www.gotokyo.org/en/destinations/central-tokyo/kanda-and-jimbocho/index.html"
         },
         {
           "id": "kanda-myojin",
@@ -4324,9 +4334,9 @@
           "minutes": 85,
           "mapQuery": "神田明神 随神門",
           "description": {
-            "pt": "Passe por Ochanomizu, veja a ponte Hijiribashi e visite Kanda Myōjin antes de escurecer. O santuário aparece em Love Live! e Steins;Gate. Jante na região ou volte para Ueno.",
-            "ja": "御茶ノ水で聖橋を眺めて、明るいうちに神田明神へ。『ラブライブ！』や『STEINS;GATE』にも登場する神社だよ。近くで夕食か、上野へ戻ろう。",
-            "en": "See Hijiribashi Bridge in Ochanomizu and visit Kanda Myōjin before dark. The shrine appears in Love Live! and Steins;Gate. Have dinner nearby or head back to Ueno."
+            "pt": "Caminhe até Ochanomizu para ver a ponte Hijiribashi e o rio Kanda. Depois visite Kanda Myōjin, santuário que aparece em Love Live! e Steins;Gate.",
+            "ja": "御茶ノ水まで歩いて聖橋と神田川を眺め、そのあと神田明神へ。『ラブライブ！』や『STEINS;GATE』にも登場する神社だよ。",
+            "en": "Walk to Ochanomizu for Hijiribashi Bridge and the Kanda River, then visit Kanda Myōjin, the shrine that appears in Love Live! and Steins;Gate."
           },
           "travelFrom": {
             "stopId": "jimbocho-books",
@@ -4338,39 +4348,58 @@
         {
           "id": "akihabara",
           "name": {
-            "pt": "Akihabara",
-            "ja": "秋葉原電気街",
-            "en": "Akihabara Electric Town"
+            "pt": "Akihabara e Electric Town",
+            "ja": "秋葉原の電気街",
+            "en": "Akihabara and Electric Town"
           },
           "done": false,
-          "minutes": 50,
-          "mapQuery": "秋葉原ラジオ会館 電気街口",
+          "minutes": 110,
+          "mapQuery": "秋葉原電気街 中央通り",
           "description": {
-            "pt": "Depois de Kanda Myōjin, dê uma volta pelos letreiros e escolha uma loja: Radio Kaikan perto da estação ou Mandarake para usados.",
-            "ja": "神田明神のあと、電気街をひと回り。駅前のラジオ会館か、中古のまんだらけを一軒だけ。",
-            "en": "After Kanda Myōjin, walk past the neon and pick one shop: Radio Kaikan by the station or Mandarake for secondhand goods."
+            "pt": "Desça a pé do santuário para a Chūō-dōri, passe pelas ruelas da Electric Town e veja os letreiros acenderem. Se quiser procurar anime, jogos ou mangá, escolha uma ou duas lojas da lista.",
+            "ja": "神田明神から中央通りへ下って、電気街の裏通りを歩こう。夕方は看板にも明かりがつく。アニメやゲーム、漫画を探すなら買い物欄から一、二軒。",
+            "en": "Walk down from the shrine to Chūō-dōri, explore Electric Town's side streets and see the signs come on. For anime, games or manga, pick one or two shops from the list."
           },
           "travelFrom": {
             "stopId": "kanda-myojin",
             "mode": "walk",
+            "minutes": 13
+          },
+          "source": "https://www.gotokyo.org/en/spot/55/index.html"
+        },
+        {
+          "id": "manseibashi-dinner",
+          "name": {
+            "pt": "Ponte Manseibashi e jantar",
+            "ja": "万世橋と晩ご飯",
+            "en": "Manseibashi Bridge and dinner"
+          },
+          "done": false,
+          "minutes": 75,
+          "mapQuery": "万世橋 神田川 旧万世橋駅",
+          "description": {
+            "pt": "Vá à ponte para ver o rio e os arcos de tijolo da antiga estação. Depois jante em Akihabara ou em Kanda antes de voltar de JR.",
+            "ja": "万世橋から川と旧駅のレンガのアーチを眺めよう。そのあと秋葉原か神田で夕食をとって、JRで戻る。",
+            "en": "See the river and the former station's brick arches from Manseibashi Bridge. Have dinner in Akihabara or Kanda before taking JR back."
+          },
+          "travelFrom": {
+            "stopId": "akihabara",
+            "mode": "walk",
             "minutes": 12
           },
-          "source": "https://www.gotokyo.org/en/destinations/central-tokyo/akihabara/index.html",
-          "optional": true
+          "source": "https://www.gotokyo.org/en/spot/275/index.html"
         }
       ],
       "foodIds": [
-        "bondy-curry"
+        "bondy-curry",
+        "shoyu-ramen"
       ],
       "shopIds": [
         "at-wonder",
-        "yumeno",
         "sanseido",
+        "yumeno",
         "radio-kaikan",
         "mandarake-akiba"
-      ],
-      "extraPhotos": [
-        "kanda-myojin"
       ]
     },
     {
@@ -4542,11 +4571,11 @@
       "number": 9,
       "date": "2027-01-16",
       "title": {
-        "pt": "Shinjuku",
-        "ja": "新宿",
-        "en": "Shinjuku"
+        "pt": "Shibuya e Shinjuku",
+        "ja": "渋谷と新宿",
+        "en": "Shibuya and Shinjuku"
       },
-      "photo": "shinjuku-gyoen",
+      "photo": "shibuya",
       "stops": [
         {
           "id": "forward-bag",
@@ -4566,6 +4595,77 @@
           "source": "https://faq-en.kuronekoyamato.co.jp/app/answers/detail/a_id/6074/"
         },
         {
+          "id": "meiji-jingu",
+          "name": {
+            "pt": "Santuário Meiji Jingū",
+            "ja": "明治神宮",
+            "en": "Meiji Jingū Shrine"
+          },
+          "done": false,
+          "minutes": 70,
+          "mapQuery": "明治神宮 南参道 原宿口",
+          "description": {
+            "pt": "Comece pelo torii do lado de Harajuku e caminhe pela floresta até o pátio do santuário. Fazer a visita pela manhã deixa a tarde para o jardim em Shinjuku.",
+            "ja": "原宿側の鳥居から入り、森の参道を通って拝殿へ。午前に参拝して、新宿の庭園に行く午後の時間を残そう。",
+            "en": "Enter at the Harajuku torii and walk through the forest to the shrine courtyard. A morning visit leaves the afternoon for Shinjuku's garden."
+          },
+          "travelFrom": {
+            "stopId": "forward-bag",
+            "mode": "train",
+            "minutes": 45,
+            "line": {
+              "pt": "JR Yamanote até Harajuku",
+              "ja": "JR山手線で原宿",
+              "en": "JR Yamanote Line to Harajuku"
+            }
+          },
+          "source": "https://www.meijijingu.or.jp/en/opening/"
+        },
+        {
+          "id": "harajuku",
+          "name": {
+            "pt": "Harajuku e Omotesandō",
+            "ja": "原宿と表参道",
+            "en": "Harajuku and Omotesandō"
+          },
+          "done": false,
+          "minutes": 70,
+          "mapQuery": "原宿 表参道 神宮前交差点",
+          "description": {
+            "pt": "Siga pela Omotesandō e almoce tonkatsu ou um teishoku. Se a Takeshita-dōri estiver tranquila, atravesse a rua antes de seguir a pé para Shibuya.",
+            "ja": "表参道を歩いて、とんかつか定食でお昼。竹下通りが空いていれば少し寄ってから、渋谷まで歩こう。",
+            "en": "Walk along Omotesandō and stop for tonkatsu or a set lunch. If Takeshita-dōri is quiet, walk through it before continuing to Shibuya."
+          },
+          "travelFrom": {
+            "stopId": "meiji-jingu",
+            "mode": "walk",
+            "minutes": 15
+          },
+          "source": "https://www.gotokyo.org/en/destinations/western-tokyo/harajuku/index.html"
+        },
+        {
+          "id": "shibuya-crossing",
+          "name": {
+            "pt": "Hachikō e cruzamento de Shibuya",
+            "ja": "ハチ公と渋谷スクランブル交差点",
+            "en": "Hachikō and Shibuya Crossing"
+          },
+          "done": false,
+          "minutes": 60,
+          "mapQuery": "渋谷駅 ハチ公前広場",
+          "description": {
+            "pt": "Veja Hachikō, atravesse o cruzamento e dê uma volta pela Center Gai. Siga para Shinjuku no começo da tarde para aproveitar a luz no Gyoen.",
+            "ja": "ハチ公とスクランブル交差点を見て、センター街をひと回り。御苑を明るいうちに歩けるよう、午後の早めに新宿へ。",
+            "en": "See Hachikō, cross the scramble and take a short look around Center Gai. Head to Shinjuku in the early afternoon for daylight in Gyoen."
+          },
+          "travelFrom": {
+            "stopId": "harajuku",
+            "mode": "walk",
+            "minutes": 18
+          },
+          "source": "https://www.gotokyo.org/en/story/walks-and-tours/shibuya/index.html"
+        },
+        {
           "id": "shinjuku-gyoen",
           "name": {
             "pt": "Jardim Shinjuku Gyoen",
@@ -4573,50 +4673,29 @@
             "en": "Shinjuku Gyoen National Garden"
           },
           "done": false,
-          "minutes": 105,
+          "minutes": 80,
           "mapQuery": "新宿御苑 新宿門",
           "description": {
-            "pt": "Comece pelos jardins japoneses e pelo lago, com a estufa como opção se fizer frio. Em janeiro, a entrada regular é até 16h e o parque fecha às 16h30.",
-            "ja": "日本庭園と池から。寒ければ温室へ。1月は通常16時まで入園、16:30閉園。",
-            "en": "Start with the Japanese garden and pond; use the greenhouse if it is cold. In January, regular last admission is 16:00 and the park closes at 16:30."
+            "pt": "Mire entrar até 15h para caminhar com calma pelo jardim japonês e pelos lagos. Em janeiro, a última entrada habitual é às 16h e o parque fecha às 16h30. Se chegar tarde, siga para o mirante.",
+            "ja": "15時ごろまでに入り、日本庭園と池をゆっくり。1月の通常は最終入園16時、閉園16時30分。遅くなったら展望室へ直行。",
+            "en": "Aim to enter by 15:00 for a relaxed walk around the Japanese garden and ponds. In January, last entry is normally 16:00 and the park closes at 16:30. If there is a delay, go straight to the observatory."
           },
           "travelFrom": {
-            "stopId": "forward-bag",
-            "mode": "train",
-            "minutes": 45,
+            "stopId": "shibuya-crossing",
+            "mode": "metro",
+            "minutes": 30,
             "line": {
-              "pt": "JR Yamanote até Shinjuku",
-              "ja": "JR山手線で新宿",
-              "en": "JR Yamanote to Shinjuku"
+              "pt": "Linha Fukutoshin",
+              "ja": "副都心線",
+              "en": "Fukutoshin Line"
             },
             "note": {
-              "pt": "Da estação JR Shinjuku siga pela saída sudeste até o portão Shinjuku.",
-              "ja": "JR新宿駅東南口から新宿門まで歩こう。",
-              "en": "Use JR Shinjuku’s Southeast Exit and walk to Shinjuku Gate."
+              "pt": "Pegue o metrô de Shibuya a Shinjuku-sanchōme e caminhe até o portão Shinjuku do Gyoen.",
+              "ja": "渋谷から新宿三丁目まで地下鉄で。そこから御苑の新宿門へ歩こう。",
+              "en": "Take the metro from Shibuya to Shinjuku-sanchōme, then walk to Gyoen's Shinjuku Gate."
             }
           },
           "source": "https://policies.env.go.jp/national-garden/shinjukugyoen/guide/information/"
-        },
-        {
-          "id": "shinjuku-lunch",
-          "name": {
-            "pt": "Almoço em Shinjuku-sanchōme",
-            "ja": "新宿三丁目で昼ご飯",
-            "en": "Lunch in Shinjuku-sanchōme"
-          },
-          "done": false,
-          "minutes": 75,
-          "mapQuery": "新宿三丁目 伊勢丹新宿店",
-          "description": {
-            "pt": "Saia pelo portão Shinjuku e pare para um teishoku ou tempurá. Se quiser, aproveite para descansar antes de cruzar para o lado oeste.",
-            "ja": "新宿門を出て定食か天ぷら。西口へ渡る前にひと息つこう。",
-            "en": "Leave through Shinjuku Gate for a set meal or tempura. Take a break before crossing to the west side."
-          },
-          "travelFrom": {
-            "stopId": "shinjuku-gyoen",
-            "mode": "walk",
-            "minutes": 13
-          }
         },
         {
           "id": "tocho-view",
@@ -4626,69 +4705,41 @@
             "en": "Tokyo Metropolitan Government observatory"
           },
           "done": false,
-          "minutes": 80,
+          "minutes": 65,
           "mapQuery": "東京都庁 第一庁舎 展望室",
           "description": {
-            "pt": "Suba ao mirante gratuito se houver visibilidade. Confira qual torre está aberta e conte com fila no sábado; em dia fechado, fique pelo Central Park ou faça uma pausa coberta.",
-            "ja": "晴れていれば無料展望室へ。開室する棟と土曜の列を確認。視界が悪ければ中央公園か屋内でひと休み。",
-            "en": "Use the free observation deck if visibility is good. Check which tower is open and allow for Saturday queues; otherwise try Central Park or an indoor break."
+            "pt": "Experimente o mirante gratuito para ver a cidade no fim da tarde. Confira qual torre está aberta. Se a fila estiver longa, use o tempo para descansar perto da estação.",
+            "ja": "夕方の街を見に無料展望室へ。開いている展望室を確認して、列が長ければ駅の近くでひと休み。",
+            "en": "Try the free observatory for late-afternoon city views. Check which tower is open. If the line is long, take a break near the station."
           },
           "travelFrom": {
-            "stopId": "shinjuku-lunch",
+            "stopId": "shinjuku-gyoen",
             "mode": "walk",
-            "minutes": 28,
-            "note": {
-              "pt": "Use a passagem leste–oeste na estação para sair no lado Nishi-Shinjuku.",
-              "ja": "駅の東西自由通路で西新宿側へ。",
-              "en": "Use the station’s east–west passage to reach Nishi-Shinjuku."
-            }
+            "minutes": 28
           },
           "source": "https://www.zaimu.metro.tokyo.lg.jp/tochousha/goannai/tenbou/"
         },
         {
           "id": "shinjuku-night",
           "name": {
-            "pt": "Omoide Yokocho e Shinjuku à noite",
-            "ja": "思い出横丁と夜の新宿",
-            "en": "Omoide Yokocho and Shinjuku at night"
+            "pt": "Omoide Yokocho, Kabukichō e jantar",
+            "ja": "思い出横丁・歌舞伎町と晩ご飯",
+            "en": "Omoide Yokocho, Kabukichō and dinner"
           },
           "done": false,
-          "minutes": 90,
-          "mapQuery": "新宿西口 思い出横丁",
+          "minutes": 95,
+          "mapQuery": "新宿西口 思い出横丁 歌舞伎町",
           "description": {
-            "pt": "Volte para a área da estação no começo da noite. Caminhe por Omoide Yokocho, veja as luzes da Yasukuni-dōri e escolha ali o jantar, ou coma perto do hotel.",
-            "ja": "夕方に駅周辺へ。思い出横丁と靖国通りの灯りを歩いて、近くか宿のそばで晩ご飯。",
-            "en": "Return around the station in the early evening. Walk through Omoide Yokocho, see the lights along Yasukuni-dōri and have dinner nearby or by your hotel."
+            "pt": "Volte pelo lado oeste da estação e passe pelas vielas de Omoide Yokocho. Do lado leste, veja o letreiro de Kabukichō e o Godzilla da rua. Jante na região ou volte mais cedo ao hotel.",
+            "ja": "駅の西側から思い出横丁の路地へ。東側では歌舞伎町のゲートと、通りから見えるゴジラを見てみよう。近くで夕食か、早めに宿へ。",
+            "en": "Return via the west side of the station to the Omoide Yokocho lanes. On the east side, see the Kabukichō gate and Godzilla from the street. Eat locally or head back to the hotel early."
           },
           "travelFrom": {
             "stopId": "tocho-view",
             "mode": "walk",
             "minutes": 21
-          }
-        },
-        {
-          "id": "kinokuniya-shinjuku",
-          "name": {
-            "pt": "Kinokuniya Shinjuku",
-            "ja": "紀伊國屋書店 新宿本店",
-            "en": "Kinokuniya Shinjuku flagship"
           },
-          "done": false,
-          "minutes": 35,
-          "addressJa": "東京都新宿区新宿3-17-7",
-          "mapQuery": "紀伊國屋書店 新宿本店",
-          "description": {
-            "pt": "Se quiser uma livraria depois do almoço, escolha um andar da Kinokuniya e siga para o mirante.",
-            "ja": "昼食後に本屋に寄りたければ、紀伊國屋で1フロアだけ見て展望室へ。",
-            "en": "If you want a bookshop after lunch, browse one floor of Kinokuniya before heading to the observatory."
-          },
-          "travelFrom": {
-            "stopId": "shinjuku-lunch",
-            "mode": "walk",
-            "minutes": 7
-          },
-          "source": "https://store.kinokuniya.co.jp/store/shinjuku-main-store/",
-          "optional": true
+          "source": "https://www.gotokyo.org/en/story/walks-and-tours/shinjuku/index.html"
         },
         {
           "id": "sumo-ryogoku",
@@ -4701,29 +4752,40 @@
           "minutes": 200,
           "mapQuery": "両国国技館",
           "description": {
-            "pt": "Com ingresso para 16/1, pode trocar o mirante e a caminhada da tarde pelo torneio em Ryōgoku. A venda geral começa em 5/12/2026.",
-            "ja": "1/16の切符が取れたら、午後の展望室と散歩を両国の大相撲に変更できる。一般発売は2026年12月5日。",
-            "en": "With a Jan 16 ticket, you can swap the observatory and afternoon walk for the tournament in Ryōgoku. General sale starts Dec 5, 2026."
+            "pt": "Com ingresso para 16/1, troque a tarde em Shinjuku pelo torneio em Ryōgoku. A venda geral começa em 5/12/2026. Dá para jantar em Shinjuku depois, se ainda tiver energia.",
+            "ja": "1月16日のチケットが取れたら、午後は新宿の代わりに両国へ。一般発売は2026年12月5日。元気があれば夜に新宿でご飯を。",
+            "en": "With a ticket for January 16, trade the Shinjuku afternoon for the tournament in Ryōgoku. General sales start on December 5, 2026. You can still have dinner in Shinjuku if you feel like it."
           },
           "travelFrom": {
-            "stopId": "shinjuku-lunch",
+            "stopId": "shibuya-crossing",
             "mode": "train",
-            "minutes": 45,
+            "minutes": 50,
             "line": {
-              "pt": "JR Chūō–Sōbu local até Ryōgoku",
-              "ja": "JR中央・総武線各駅停車で両国",
-              "en": "JR Chūō–Sōbu local to Ryōgoku"
+              "pt": "JR via Yoyogi",
+              "ja": "JRで代々木経由",
+              "en": "JR via Yoyogi"
+            },
+            "note": {
+              "pt": "Vá de Yamanote a Yoyogi, troque para a Chūō–Sōbu local e desça em Ryōgoku.",
+              "ja": "山手線で代々木へ。中央・総武線各駅停車に乗り換えて両国で下車。",
+              "en": "Take the Yamanote Line to Yoyogi and change to the local Chūō–Sōbu Line for Ryōgoku."
             }
           },
-          "source": "https://sumo-lot.pia.jp/sumo01.jsp",
+          "source": "https://www.sumo.or.jp/EnTicket/year_schedule/",
           "optional": true
         }
       ],
       "foodIds": [
+        "tonkatsu",
+        "sushi-avulso",
         "tendon"
       ],
       "shopIds": [
+        "nintendo-shibuya",
         "kinokuniya"
+      ],
+      "extraPhotos": [
+        "shinjuku-gyoen"
       ]
     },
     {
@@ -7716,8 +7778,8 @@
       "date": "2027-02-07",
       "title": {
         "pt": "De volta a Tóquio com folga",
-        "ja": "余裕を持って東京へ戻る",
-        "en": "Back to Tokyo with time to spare"
+        "ja": "東京に戻ってひと息",
+        "en": "Back in Tokyo with time to spare"
       },
       "stops": [
         {
@@ -7738,17 +7800,17 @@
         {
           "id": "last-checkin",
           "name": {
-            "pt": "Último check-in e jantar no bairro",
-            "ja": "最後のチェックインと近所で夕食",
-            "en": "Final check-in and a neighborhood dinner"
+            "pt": "Último check-in em Ueno",
+            "ja": "上野の宿にチェックイン",
+            "en": "Last check-in in Ueno"
           },
           "done": false,
           "minutes": 100,
           "mapQuery": "上野駅",
           "description": {
-            "pt": "De Haneda, use Keikyu até Shinagawa e JR até Ueno; de Narita, use Keisei. Reserve cerca de 55–95 min com espera e caminhada. Faça check-in e jante perto do hotel.",
-            "ja": "羽田なら京急で品川、JRで上野。成田なら京成。待ち時間と徒歩を入れて約55〜95分。チェックインして宿の近くで晩ご飯。",
-            "en": "From Haneda use Keikyu to Shinagawa and JR to Ueno; from Narita use Keisei. Allow about 55–95 min with waits and walking. Check in and eat near your hotel."
+            "pt": "De Haneda, use Keikyu até Shinagawa e JR até Ueno. De Narita, use Keisei. Conte 55–95 min com esperas e caminhada. Depois de deixar a mala, faça uma pausa e escolha onde jantar a pé do hotel.",
+            "ja": "羽田なら京急で品川、JRで上野。成田なら京成。待ち時間と徒歩を入れて55〜95分。荷物を置いて休んだら、宿から歩けるところで夕食を。",
+            "en": "From Haneda take Keikyu to Shinagawa and JR to Ueno. From Narita take Keisei. Allow 55–95 min with waits and walking. Drop your luggage, take a break and pick a dinner spot near the hotel."
           },
           "travelFrom": {
             "stopId": "tokyo-airport-domestic",
@@ -7762,26 +7824,26 @@
           }
         },
         {
-          "id": "ueno-gifts",
+          "id": "yushima-tenjin",
           "name": {
-            "pt": "Matsuzakaya Ueno",
-            "ja": "松坂屋上野店",
-            "en": "Matsuzakaya Ueno"
+            "pt": "Santuário Yushima Tenjin",
+            "ja": "湯島天神",
+            "en": "Yushima Tenjin Shrine"
           },
           "done": false,
-          "minutes": 50,
+          "minutes": 35,
+          "mapQuery": "湯島天満宮 表鳥居",
           "description": {
-            "pt": "Se chegar cedo, compre algumas caixas de doces ou chá perto do hotel. O piso de doces tem horário habitual até 20h; se o voo atrasar, deixe tudo para amanhã.",
-            "ja": "早く着いたら、宿の近くで箱入りのお菓子やお茶を。菓子売り場は通常20時まで。到着が遅れたら明日で大丈夫。",
-            "en": "If you arrive early, pick up boxed sweets or tea near your hotel. The sweets floor usually closes at 20:00; if the flight is late, shop tomorrow instead."
+            "pt": "Se chegar cedo e ainda houver luz, faça uma volta curta pelo santuário antes de jantar. Fica do lado de Okachimachi, a uma caminhada da hospedagem em Ueno.",
+            "ja": "早く着いてまだ明るければ、晩ご飯の前に湯島天神へひと歩き。御徒町側にあり、上野の宿から歩いて行ける。",
+            "en": "If you arrive early enough for daylight, take a short walk through the shrine before dinner. It is near Okachimachi and within walking distance of a hotel in Ueno."
           },
-          "mapQuery": "松坂屋上野店 ほっぺタウン",
-          "source": "https://www.matsuzakaya.co.jp/ueno/hours.html",
           "travelFrom": {
             "stopId": "last-checkin",
             "mode": "walk",
-            "minutes": 13
+            "minutes": 17
           },
+          "source": "https://www.yushimatenjin.or.jp/access/",
           "optional": true
         }
       ],
@@ -7800,98 +7862,75 @@
       "number": 32,
       "date": "2027-02-08",
       "title": {
-        "pt": "Compras em Ginza e Yaesu",
-        "ja": "銀座と八重洲で買い物",
-        "en": "Shopping in Ginza and Yaesu"
+        "pt": "Ginza e Marunouchi sem pressa",
+        "ja": "銀座と丸の内をのんびり",
+        "en": "An easy day in Ginza and Marunouchi"
       },
       "stops": [
         {
-          "id": "ginza-itoya",
+          "id": "ginza-landmarks",
           "name": {
-            "pt": "Papelaria na Itoya",
-            "ja": "伊東屋で文房具",
-            "en": "Stationery at Itoya"
+            "pt": "Kabukiza e cruzamento de Ginza",
+            "ja": "歌舞伎座と銀座四丁目交差点",
+            "en": "Kabukiza and the Ginza crossing"
           },
           "done": false,
-          "minutes": 75,
+          "minutes": 40,
+          "mapQuery": "歌舞伎座 正面入口 東銀座",
           "description": {
-            "pt": "Comece pela papelaria da Ginza, que normalmente abre às 10h às segundas. Separe tempo para escolher presentes leves e algo para você.",
-            "ja": "月曜は通常10時からの銀座の文房具店へ。軽いお土産と自分用をゆっくり選ぼう。",
-            "en": "Start at the Ginza stationery shop, which usually opens at 10:00 on Mondays. Allow time for light gifts and something for yourself."
+            "pt": "Veja a fachada do teatro Kabukiza em Higashi-ginza e caminhe pela Harumi-dōri até o relógio no cruzamento de Ginza 4-chōme.",
+            "ja": "東銀座で歌舞伎座の外観を見て、晴海通りを銀座四丁目の時計塔まで歩こう。",
+            "en": "See the Kabukiza theater facade in Higashi-ginza and walk along Harumi-dōri to the clock tower at the Ginza 4-chōme crossing."
           },
-          "mapQuery": "銀座 伊東屋 G.Itoya 本店",
-          "source": "https://store.ito-ya.co.jp/ext/store/ginza/ginza/index.html"
+          "source": "https://www.gotokyo.org/en/spot/29/index.html"
         },
         {
-          "id": "ginza-muji",
+          "id": "ginza-free-time",
           "name": {
-            "pt": "Roupas e utilidades na MUJI",
-            "ja": "無印良品で服と生活雑貨",
-            "en": "Clothes and everyday goods at MUJI"
+            "pt": "Almoço e tempo livre em Ginza",
+            "ja": "銀座でお昼と自由時間",
+            "en": "Lunch and free time in Ginza"
           },
           "done": false,
-          "minutes": 70,
+          "minutes": 150,
+          "mapQuery": "銀座四丁目 交差点",
           "description": {
-            "pt": "Explore as seções de roupas e itens de casa sem pressa. Organizadores de viagem também são úteis para acomodar as compras.",
-            "ja": "服と生活雑貨をゆっくり。買った物をまとめる旅行用の収納も見られる。",
-            "en": "Take your time with clothes and home goods. Travel organizers can also help pack what you bought."
+            "pt": "Almoce sem pressa e use o tempo livre para presentes e compras para você. A seção de lojas reúne as opções por perto. Se terminar cedo, sente para tomar chá ou siga direto para Marunouchi.",
+            "ja": "ゆっくりお昼にして、近くでお土産や自分の買い物を。候補は買い物欄から。早く済んだらお茶か、そのまま丸の内へ。",
+            "en": "Take your time over lunch and use the open block for gifts and personal shopping. See the shopping section for nearby options. If you finish early, stop for tea or continue to Marunouchi."
           },
-          "mapQuery": "無印良品 銀座",
-          "source": "https://www.muji.com/flagship/ginza/ja/",
           "travelFrom": {
-            "stopId": "ginza-itoya",
+            "stopId": "ginza-landmarks",
             "mode": "walk",
-            "minutes": 9
+            "minutes": 5
           }
         },
         {
-          "id": "ginza-gifts",
+          "id": "forum-marunouchi",
           "name": {
-            "pt": "Almoço e presentes no Mitsukoshi",
-            "ja": "三越でお土産と銀座で昼ご飯",
-            "en": "Lunch and gifts at Mitsukoshi"
+            "pt": "Fórum Internacional e Estação de Tóquio",
+            "ja": "東京国際フォーラムと東京駅",
+            "en": "Tokyo International Forum and Tokyo Station"
           },
           "done": false,
-          "minutes": 120,
+          "minutes": 105,
+          "mapQuery": "東京国際フォーラム ガラス棟",
           "description": {
-            "pt": "Faça uma pausa para soba ou chá. Reserve a segunda parte para o subsolo do Mitsukoshi: chá, yōkan e outros doces em caixas para levar.",
-            "ja": "そばかお茶でひと休み。後半は三越の地下で茶葉、羊羹、箱入りのお菓子を選ぼう。",
-            "en": "Pause for soba or tea. Use the rest of the stop for tea, yōkan and other boxed sweets in Mitsukoshi’s basement."
+            "pt": "No caminho, veja o átrio de vidro do Fórum e a fachada de tijolos na praça de Marunouchi. São duas visitas curtas. Se quiser continuar as compras, atravesse para Yaesu pelo corredor norte antes de voltar ao hotel.",
+            "ja": "途中で東京国際フォーラムのガラス棟と、丸の内駅前広場の赤レンガ駅舎をさっと見る。買い物を続けたければ北自由通路から八重洲へ回って、それから宿へ。",
+            "en": "On the way, see the Forum's glass atrium and the brick station facade from Marunouchi Plaza. Both are quick visits. For more shopping, take the north passage to Yaesu before heading back to the hotel."
           },
-          "mapQuery": "銀座三越 本館 地下2階",
-          "source": "https://www.mistore.jp/store/ginza/shops/floorB2.html",
           "travelFrom": {
-            "stopId": "ginza-muji",
+            "stopId": "ginza-free-time",
             "mode": "walk",
-            "minutes": 8
-          }
-        },
-        {
-          "id": "yaesu-shopping",
-          "name": {
-            "pt": "Achados em Tokyo Character Street",
-            "ja": "東京キャラクターストリートで買い物",
-            "en": "Tokyo Character Street finds"
-          },
-          "done": false,
-          "minutes": 75,
-          "description": {
-            "pt": "Caminhe até a estação Tokyo e vá ao subsolo de Yaesu. Escolha lembranças ou itens das séries que você gosta. Se já tiver terminado as compras em Ginza, pode voltar direto ao hotel.",
-            "ja": "東京駅の八重洲地下へ。好きな作品のグッズやお土産を選ぼう。銀座で買い終わったら、そのまま宿に戻っても。",
-            "en": "Walk to Tokyo Station and go down to Yaesu. Pick gifts or merchandise from series you like. If you are done shopping in Ginza, head straight back to the hotel."
-          },
-          "mapQuery": "東京キャラクターストリート 東京駅一番街",
-          "source": "https://www.tokyoeki-1bangai.co.jp/shop/?area=area2&floor=b1f&anchor=1",
-          "travelFrom": {
-            "stopId": "ginza-gifts",
-            "mode": "walk",
-            "minutes": 24,
+            "minutes": 18,
             "note": {
-              "pt": "Siga para o lado de Yaesu e use a entrada subterrânea do Tokyo Station First Avenue, fora das catracas.",
-              "ja": "東京駅の八重洲側へ。改札外の東京駅一番街地下へ入ろう。",
-              "en": "Head to the Yaesu side and enter the Tokyo Station First Avenue basement outside the gates."
+              "pt": "Do Fórum à fachada de Marunouchi são mais cerca de dez minutos a pé.",
+              "ja": "フォーラムから丸の内の駅舎までは徒歩約10分。",
+              "en": "Allow about another ten minutes on foot from the Forum to the Marunouchi facade."
             }
-          }
+          },
+          "source": "https://www.gotokyo.org/en/spot/440/index.html"
         },
         {
           "id": "last-night",
@@ -7901,7 +7940,7 @@
             "en": "Back to the hotel for the last night"
           },
           "done": false,
-          "minutes": 110,
+          "minutes": 105,
           "mapQuery": "上野駅",
           "description": {
             "pt": "Volte no fim da tarde para separar os presentes, acertar o peso da mala e confirmar o trem e o terminal de Narita. Jante perto do hotel.",
@@ -7909,43 +7948,20 @@
             "en": "Return in the late afternoon to sort gifts, check suitcase weight, and confirm your Narita train and terminal. Have dinner near the hotel."
           },
           "travelFrom": {
-            "stopId": "yaesu-shopping",
+            "stopId": "forum-marunouchi",
             "mode": "train",
             "minutes": 30,
             "line": {
               "pt": "JR Tokyo → Ueno",
-              "ja": "JR東京→上野",
+              "ja": "JR 東京→上野",
               "en": "JR Tokyo → Ueno"
             },
             "note": {
-              "pt": "Entre nas catracas da JR só depois de concluir as compras. Siga para Ueno ou Okachimachi conforme o hotel.",
-              "ja": "買い物を終えてからJRの改札へ。宿に合わせて上野か御徒町で下車。",
-              "en": "Enter the JR gates after shopping. Get off at Ueno or Okachimachi depending on your hotel."
+              "pt": "Use a estação Tokyo depois do passeio. Desça em Ueno ou Okachimachi conforme o hotel.",
+              "ja": "散歩のあと東京駅からJRへ。宿に合わせて上野か御徒町で下車。",
+              "en": "Take JR from Tokyo Station after the walk. Get off at Ueno or Okachimachi depending on your hotel."
             }
           }
-        },
-        {
-          "id": "ginza-bookshop",
-          "name": {
-            "pt": "Ginza Tsutaya Books",
-            "ja": "銀座 蔦屋書店",
-            "en": "Ginza Tsutaya Books"
-          },
-          "done": false,
-          "minutes": 45,
-          "description": {
-            "pt": "Se quiser um livro de arte ou design, passe no GINZA SIX depois do almoço. Se preferir, use esse tempo no lugar de parte das compras de Yaesu.",
-            "ja": "アートやデザインの本が欲しければ、昼食のあとGINZA SIXへ。八重洲の買い物を短くして、その時間を本に使っても。",
-            "en": "If you want an art or design book, stop at GINZA SIX after lunch. Shorten the Yaesu stop to make time if you prefer."
-          },
-          "mapQuery": "銀座 蔦屋書店 GINZA SIX 6階",
-          "source": "https://ginza6.tokyo/shops/1230",
-          "travelFrom": {
-            "stopId": "ginza-gifts",
-            "mode": "walk",
-            "minutes": 9
-          },
-          "optional": true
         }
       ],
       "foodIds": [
@@ -7957,8 +7973,8 @@
         "itoya-ginza",
         "muji-ginza",
         "mitsukoshi-ginza",
-        "character-street",
-        "tsutaya-ginza"
+        "tsutaya-ginza",
+        "character-street"
       ]
     },
     {
