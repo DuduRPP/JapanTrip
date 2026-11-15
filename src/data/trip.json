@@ -765,9 +765,9 @@
       "accent": "#983f35",
       "symbol": "castle",
       "description": {
-        "pt": "O encontro de 11/1 é uma ida separada. De 22 a 27/1, use Namba como base para Namba Yasaka, Shinsekai e Dōtonbori. Reserve uma manhã para os darumas do Katsuo-ji e siga ao Castelo de Osaka à tarde.",
-        "ja": "1月11日は友だちに会いに別で大阪へ。22〜27日は難波を拠点に、八阪神社や新世界、道頓堀を回ろう。勝尾寺のだるまには朝の時間を取り、午後は大阪城へ。",
-        "en": "January 11 is a separate trip to meet friends. From January 22 to 27, use Namba as your base for Namba Yasaka, Shinsekai and Dōtonbori. Spend one morning with the daruma at Katsuo-ji, then visit Osaka Castle in the afternoon."
+        "pt": "O rolê de 11/1 é uma ida separada. De 22 a 27/1, use Namba como base para Namba Yasaka, Shinsekai e Dōtonbori. Reserve um dia para o castelo, Nakanoshima e Umeda. Os darumas do Katsuo-ji são uma opção de manhã.",
+        "ja": "1月11日は大阪で友だちとぶらぶら。22〜27日は難波を拠点に、八阪神社や新世界、道頓堀へ。大阪城と中之島、梅田も一日で回れるし、朝を勝尾寺のだるまに使うのもあり。",
+        "en": "January 11 is a separate day to hang out in Osaka. From January 22 to 27, use Namba as your base for Namba Yasaka, Shinsekai and Dōtonbori. Spend a day exploring the castle, Nakanoshima and Umeda. Katsuo-ji's daruma dolls are an optional morning trip."
       },
       "photo": "dotonbori",
       "stays": [
@@ -3935,9 +3935,9 @@
       "number": 4,
       "date": "2027-01-11",
       "title": {
-        "pt": "Dia de encontrar amigos em Osaka",
-        "ja": "大阪で友だちに会う日",
-        "en": "Meeting friends in Osaka"
+        "pt": "Rolê em Osaka",
+        "ja": "大阪でぶらぶら",
+        "en": "Hanging out in Osaka"
       },
       "stops": [
         {
@@ -3951,24 +3951,24 @@
           "minutes": 65,
           "mapQuery": "大阪駅 梅田",
           "description": {
-            "pt": "Use o ponto real da passagem. Tome café, organize a mochila e siga para o encontro. Dia 11 é feriado: deixe folga para movimento e trânsito.",
-            "ja": "降車地はチケットで確認。朝ご飯と身支度のあと集合へ。11日は祝日なので、人出と渋滞を見込んで。",
-            "en": "Use the stop shown on your ticket. Get breakfast and freshen up before meeting up. Jan 11 is a holiday, so allow for crowds and traffic."
+            "pt": "Confira o ponto de desembarque no bilhete. Tome café e organize a mochila antes de sair para o rolê. Dia 11 é feriado, então deixe folga para o trânsito.",
+            "ja": "チケットで降車場所を確認。朝ご飯を食べて荷物を整えたら出かけよう。11日は祝日なので、移動には余裕を。",
+            "en": "Check your arrival stop on the ticket. Have breakfast and sort out your daypack before heading out. January 11 is a holiday, so allow extra time in traffic."
           },
           "source": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html"
         },
         {
           "id": "encontro-osaka",
           "name": {
-            "pt": "Encontro com amigos",
-            "ja": "友だちと合流",
-            "en": "Meet up with friends"
+            "pt": "Rolê com a galera",
+            "ja": "友だちとぶらぶら",
+            "en": "Hang out with friends"
           },
           "done": false,
           "description": {
-            "pt": "Dia reservado para o encontro. Combine endereço e hora de fim antes de comprar a volta. Planeje a saída com margem suficiente para chegar ao terminal.",
-            "ja": "一日は友だちと。帰りの切符を買う前に集合場所と解散時間を確認して、乗り場までの余裕を取ろう。",
-            "en": "Keep the day for friends. Confirm the venue and end time before buying the return ticket; allow plenty of time to reach the terminal."
+            "pt": "Dia livre para curtir o rolê. Combine onde começar e até que horas dá para ficar antes de comprar a passagem de volta. Deixe uma folga para chegar ao terminal.",
+            "ja": "今日は友だちと気楽に。集まる場所と何時までいられるかを決めてから、帰りのバスを取ろう。バスターミナルまでは余裕を見て。",
+            "en": "Take the day to hang out. Agree where to start and how late you can stay before buying the return ticket. Leave some time to get to the terminal."
           }
         },
         {
@@ -3982,7 +3982,7 @@
           "minutes": 35,
           "mapQuery": "WILLERバスターミナル大阪梅田",
           "description": {
-            "pt": "O WK286 das 23h é uma opção consultada, sujeita a disponibilidade. Para esse serviço, mire chegar à WILLER Osaka Umeda por volta de 22h30. Se o encontro não permitir, durma em Osaka e volte na manhã do dia 12.",
+            "pt": "O WK286 das 23h é uma opção consultada, sujeita a disponibilidade. Para esse serviço, mire chegar à WILLER Osaka Umeda por volta de 22h30. Se o rolê for até tarde, durma em Osaka e volte na manhã do dia 12.",
             "ja": "23:00のWK286は空席次第の候補。この便なら22:30ごろまでにWILLER大阪梅田へ。間に合わないなら大阪に泊まり、12日朝に戻ろう。",
             "en": "The 23:00 WK286 is a possible service subject to availability. For that coach aim for WILLER Osaka Umeda by about 22:30. If the meetup runs late, stay in Osaka and return on Jan 12."
           },
@@ -4026,7 +4026,7 @@
           "yen": 13870,
           "url": "https://smart-ex.jp/en/",
           "description": {
-            "pt": "Se o encontro acabar tarde, durma em Osaka e use o trem na manhã do dia 12. Tarifa de assento livre referência; reserve hospedagem e reorganize a guarda da mala.",
+            "pt": "Se o rolê for até tarde, durma em Osaka e use o trem na manhã do dia 12. Tarifa de referência de assento livre. Reserve hospedagem e reorganize a guarda da mala.",
             "ja": "解散が遅ければ大阪で一泊、12日朝に新幹線。自由席の参考額。宿と荷物預かりを調整しよう。",
             "en": "If the meetup runs late, stay in Osaka and take the train on Jan 12. Unreserved fare reference; add the hotel and adjust bag storage."
           },
@@ -5996,62 +5996,12 @@
       "number": 16,
       "date": "2027-01-23",
       "title": {
-        "pt": "Katsuo-ji e Castelo de Osaka",
-        "ja": "勝尾寺と大阪城",
-        "en": "Katsuo-ji and Osaka Castle"
+        "pt": "Castelo de Osaka e Umeda",
+        "ja": "大阪城と梅田",
+        "en": "Osaka Castle and Umeda"
       },
-      "photo": "katsuoji-daruma",
+      "photo": "osaka-castle",
       "stops": [
-        {
-          "id": "katsuoji",
-          "name": {
-            "pt": "Katsuo-ji · templo dos darumas",
-            "ja": "勝尾寺・だるまのお寺",
-            "en": "Katsuo-ji · the daruma temple"
-          },
-          "done": false,
-          "minutes": 105,
-          "addressJa": "大阪府箕面市粟生間谷2914-1",
-          "mapQuery": "勝尾寺 入山口 箕面市",
-          "description": {
-            "pt": "Saia cedo de Namba pela Midōsuji num trem com destino Minoh-Kayano. No ponto 8, pegue o ônibus Hankyu para Katsuo-ji. Conte 75–100 min desde Namba e leve cartão IC carregado para o ônibus (¥800 por trecho). No templo, procure os darumas vermelhos entre o lago, as pedras e as escadarias. A entrada adulta publicada é ¥500.",
-            "ja": "朝早めになんばから御堂筋線の箕面萱野行きへ。駅前8番から阪急バスで勝尾寺へ向かおう。なんばから75〜100分、バスは片道800円なのでICカードに先にチャージを。池や石段に並ぶ赤いだるまを探してみよう。大人の拝観料は案内で500円。",
-            "en": "Leave Namba early on a Midōsuji train bound for Minoh-Kayano. Take the Hankyu bus to Katsuo-ji from stand 8. Allow 75–100 minutes from Namba and load your IC card beforehand for the ¥800 bus fare each way. Look for the red daruma around the pond, rocks and steps. Published adult admission is ¥500."
-          },
-          "source": "https://osaka-info.jp/en/spot/katsuoji/"
-        },
-        {
-          "id": "umeda-lunch",
-          "name": {
-            "pt": "Volta a Osaka e almoço em Umeda",
-            "ja": "大阪に戻って梅田で昼ご飯",
-            "en": "Back in Osaka and lunch in Umeda"
-          },
-          "done": false,
-          "minutes": 70,
-          "mapQuery": "梅田駅 大阪駅",
-          "description": {
-            "pt": "Faça uma pausa em Umeda para um kitsune udon ou outro almoço quente. Se atrasar por causa do ônibus, prefira uma refeição rápida para chegar ao castelo ainda à tarde.",
-            "ja": "梅田でひと息ついて、きつねうどんなど温かい昼ご飯を。バスで遅れたら、午後の大阪城に間に合うよう手早く食べよう。",
-            "en": "Take a break in Umeda for kitsune udon or another warm lunch. If the bus runs late, choose a quick meal to reach the castle in the afternoon."
-          },
-          "travelFrom": {
-            "stopId": "katsuoji",
-            "mode": "metro",
-            "minutes": 80,
-            "line": {
-              "pt": "Hankyu Bus + Midōsuji",
-              "ja": "阪急バス＋御堂筋線",
-              "en": "Hankyu bus + Midōsuji Line"
-            },
-            "note": {
-              "pt": "Confira a saída da volta antes de começar a visita. Volte de ônibus a Minoh-Kayano e pegue o trem rumo a Umeda.",
-              "ja": "参拝の前に帰りのバスを確認。箕面萱野駅へ戻り、御堂筋線で梅田へ。",
-              "en": "Check the return bus time before visiting. Take it back to Minoh-Kayano and ride the train to Umeda."
-            }
-          },
-          "source": "https://www.hankyubus.co.jp/news/2026101.html"
-        },
         {
           "id": "osaka-castle-park",
           "name": {
@@ -6063,73 +6013,26 @@
           "minutes": 120,
           "mapQuery": "大阪城 天守閣 大手門",
           "description": {
-            "pt": "Entre pelo lado do portão Ōtemon e veja os fossos, as muralhas e a torre. Se quiser o museu e a vista de cima, conte ¥1.200 e confira a fila. A última entrada publicada é às 17h30, mas a fila pode encerrar antes.",
-            "ja": "大手門側から堀、石垣、天守閣へ。中の展示と眺めも見たいなら大人1,200円。最終入館は17時30分やけど、混雑で列が早く締まることもある。",
-            "en": "Approach via Ōtemon for the moats, walls and main tower. Allow ¥1,200 if you want the museum and the view. Posted last admission is 17:30, but the ticket queue can close earlier."
-          },
-          "travelFrom": {
-            "stopId": "umeda-lunch",
-            "mode": "metro",
-            "minutes": 35,
-            "line": {
-              "pt": "Linha Tanimachi",
-              "ja": "谷町線",
-              "en": "Tanimachi Line"
-            },
-            "note": {
-              "pt": "Caminhe até Higashi-Umeda, desça em Tanimachi 4-chōme e siga a pé para o portão Ōtemon.",
-              "ja": "東梅田から谷町四丁目へ。大手門まで歩こう。",
-              "en": "Walk to Higashi-Umeda, get off at Tanimachi 4-chōme and walk to Ōtemon."
-            }
+            "pt": "Comece pelo castelo de manhã. De Namba, vá pela Midōsuji até Hommachi, troque para a Chūō e desça em Tanimachi 4-chōme. Entre pelo portão Ōtemon para ver fossos e muralhas. O museu e a vista da torre custam ¥1.200. A última entrada publicada é às 17h30 e a fila pode encerrar antes.",
+            "ja": "朝は大阪城から。なんばから御堂筋線で本町、中央線に乗り換えて谷町四丁目へ。大手門から堀と石垣を見よう。天守閣の展示と展望は大人1,200円。最終入館は17時30分やけど、混んでいると早めに列が締まることも。",
+            "en": "Start at Osaka Castle in the morning. From Namba take the Midōsuji Line to Hommachi, then the Chūō Line to Tanimachi 4-chōme. Enter at Ōtemon for the moats and walls. The museum and tower view cost ¥1,200. Posted last admission is 17:30 and the queue may close earlier."
           },
           "source": "https://www.osakacastle.net/guide/?lang=ja"
         },
         {
-          "id": "umeda-sky-evening",
-          "name": {
-            "pt": "Umeda Sky Building e jantar",
-            "ja": "梅田スカイビルと晩ご飯",
-            "en": "Umeda Sky Building and dinner"
-          },
-          "done": false,
-          "minutes": 115,
-          "mapQuery": "梅田スカイビル 空中庭園展望台",
-          "description": {
-            "pt": "Veja as duas torres e, se o céu abrir, suba ao mirante Kuchū Teien para as luzes da cidade. A entrada adulta publicada é ¥2.000. Jante em Umeda ou volte de Midōsuji para Namba.",
-            "ja": "梅田スカイビルのツインタワーへ。晴れていたら空中庭園展望台から夜景を。大人料金は案内で2,000円。梅田で晩ご飯か、御堂筋線で難波へ戻ろう。",
-            "en": "See the twin towers and, if the skies are clear, visit the Kuchū Teien observatory for the city lights. Published adult admission is ¥2,000. Eat in Umeda or return to Namba on the Midōsuji Line."
-          },
-          "travelFrom": {
-            "stopId": "osaka-castle-park",
-            "mode": "train",
-            "minutes": 45,
-            "line": {
-              "pt": "JR Osaka Loop Line",
-              "ja": "JR大阪環状線",
-              "en": "JR Osaka Loop Line"
-            },
-            "note": {
-              "pt": "Saia do parque por Osakajōkōen. Vá de JR no sentido Kyōbashi/Osaka e siga a sinalização para o Sky Building na região de Umekita.",
-              "ja": "公園から大阪城公園駅へ。JRで京橋・大阪方面に乗り、大阪駅からうめきた側のスカイビルへ。",
-              "en": "Leave the park at Osakajōkōen and take JR toward Kyōbashi and Osaka. Follow signs on the Umekita side for the Sky Building."
-            }
-          },
-          "source": "https://www.skybldg.co.jp/en/"
-        },
-        {
           "id": "nakanoshima-evening",
           "name": {
-            "pt": "Nakanoshima · alternativa para o fim do dia",
-            "ja": "夕方の別案・中之島",
-            "en": "Nakanoshima · an alternative for the evening"
+            "pt": "Nakanoshima e a orla",
+            "ja": "中之島と川沿い",
+            "en": "Nakanoshima and the riverfront"
           },
           "done": false,
-          "minutes": 105,
+          "minutes": 60,
           "mapQuery": "大阪市中央公会堂 中之島",
           "description": {
-            "pt": "Se preferir terminar junto ao rio, troque o mirante por Nakanoshima. Veja a fachada de tijolos do Salão Público Central e caminhe pela margem antes de jantar em Kitahama ou Namba.",
-            "ja": "川のそばで一日を締めたければ、展望台の代わりに中之島へ。中央公会堂の赤レンガを見て川沿いを歩き、北浜か難波で晩ご飯。",
-            "en": "If you prefer a riverside evening, take in Nakanoshima in place of the observatory. See the red-brick Central Public Hall, stroll by the river and have dinner in Kitahama or Namba."
+            "pt": "Veja a fachada de tijolos do Salão Público Central e caminhe pela margem do rio. Se estiver frio, faça um trecho curto antes de seguir para o almoço.",
+            "ja": "中央公会堂の赤レンガを見て川沿いを歩こう。寒ければ散歩は短めにして、昼ご飯へ。",
+            "en": "See the red-brick Central Public Hall and take a walk along the river. If it is cold, keep the stroll short before lunch."
           },
           "travelFrom": {
             "stopId": "osaka-castle-park",
@@ -6146,7 +6049,74 @@
               "en": "Walk to Temmabashi and take a train bound for Nakanoshima. Get off at Naniwabashi."
             }
           },
-          "source": "https://osaka-info.jp/en/spot/osaka-central-public-hall/",
+          "source": "https://osaka-info.jp/en/spot/osaka-central-public-hall/"
+        },
+        {
+          "id": "umeda-lunch",
+          "name": {
+            "pt": "Almoço em Umeda",
+            "ja": "梅田で昼ご飯",
+            "en": "Lunch in Umeda"
+          },
+          "done": false,
+          "minutes": 70,
+          "mapQuery": "梅田駅 大阪駅",
+          "description": {
+            "pt": "Faça uma pausa para kitsune udon ou outro almoço quente perto da estação. Depois, passe pela região de Umekita antes de subir ao mirante.",
+            "ja": "駅の近くできつねうどんなど温かい昼ご飯を。食べたあとは展望台へ行く前にうめきたを歩こう。",
+            "en": "Take a break for kitsune udon or another warm lunch near the station. Explore Umekita before heading to the observatory."
+          },
+          "travelFrom": {
+            "stopId": "nakanoshima-evening",
+            "mode": "walk",
+            "minutes": 25,
+            "note": {
+              "pt": "Siga a pé em direção à estação Osaka. Se quiser poupar caminhada, pegue a Midōsuji de Yodoyabashi a Umeda.",
+              "ja": "大阪駅の方向へ歩こう。歩く距離を短くしたければ、淀屋橋から御堂筋線で梅田まで。",
+              "en": "Walk toward Osaka Station. For a shorter walk, take the Midōsuji Line from Yodoyabashi to Umeda."
+            }
+          },
+          "source": "https://www.d-imai.com/shops/hankyuumeda/"
+        },
+        {
+          "id": "umeda-sky-evening",
+          "name": {
+            "pt": "Umeda Sky Building e jantar",
+            "ja": "梅田スカイビルと晩ご飯",
+            "en": "Umeda Sky Building and dinner"
+          },
+          "done": false,
+          "minutes": 155,
+          "mapQuery": "梅田スカイビル 空中庭園展望台",
+          "description": {
+            "pt": "Caminhe pela região de Umekita e faça uma pausa antes das luzes da cidade. Se o céu abrir, suba ao mirante Kuchū Teien no fim da tarde. A entrada adulta publicada é ¥2.000. Jante em Umeda ou volte de Midōsuji para Namba.",
+            "ja": "うめきたを歩いてひと休み。空が晴れていたら、夕方に空中庭園展望台へ。大人料金は案内で2,000円。梅田で晩ご飯か、御堂筋線で難波へ戻ろう。",
+            "en": "Walk around Umekita and take a break before the city lights come on. If the skies are clear, visit the Kuchū Teien observatory near dusk. Published adult admission is ¥2,000. Eat in Umeda or take the Midōsuji Line back to Namba."
+          },
+          "travelFrom": {
+            "stopId": "umeda-lunch",
+            "mode": "walk",
+            "minutes": 18
+          },
+          "source": "https://www.skybldg.co.jp/en/"
+        },
+        {
+          "id": "katsuoji",
+          "name": {
+            "pt": "Katsuo-ji · alternativa para a manhã",
+            "ja": "午前の別案・勝尾寺のだるま",
+            "en": "Katsuo-ji · an alternative for the morning"
+          },
+          "done": false,
+          "minutes": 105,
+          "addressJa": "大阪府箕面市粟生間谷2914-1",
+          "mapQuery": "勝尾寺 入山口 箕面市",
+          "description": {
+            "pt": "Se quiser dedicar a manhã aos darumas, saia cedo de Namba num trem da Midōsuji para Minoh-Kayano. Pegue o Hankyu no ponto 8. Conte 75–100 min por sentido, leve cartão IC carregado (¥800 por trecho) e confira a volta antes de entrar. A entrada adulta é ¥500. Se fizer esse passeio, almoce em Umeda na volta e visite o castelo à tarde no lugar de Nakanoshima.",
+            "ja": "午前をだるまに使うなら、早めになんばから御堂筋線の箕面萱野行きに乗り、駅前8番から阪急バスへ。片道75〜100分が目安。バスは片道800円で、ICカードに先にチャージし、入る前に帰りの便を確認しよう。大人の拝観料は500円。戻って梅田で昼ご飯にし、中之島の代わりに午後は大阪城へ。",
+            "en": "If you'd like to spend the morning with the daruma, leave Namba early on a Midōsuji train to Minoh-Kayano. Take the Hankyu bus from stand 8. Allow 75–100 minutes each way, load your IC card for the ¥800 fare each way and check the return time before entering. Adult admission is ¥500. On this route, have lunch in Umeda and visit the castle in place of Nakanoshima in the afternoon."
+          },
+          "source": "https://osaka-info.jp/en/spot/katsuoji/",
           "optional": true
         }
       ],
@@ -6155,7 +6125,7 @@
         "butaman"
       ],
       "extraPhotos": [
-        "osaka-castle"
+        "katsuoji-daruma"
       ]
     },
     {
