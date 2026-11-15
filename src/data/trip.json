@@ -1545,9 +1545,9 @@
       "accent": "#376451",
       "symbol": "torii",
       "description": {
-        "pt": "Quatro noites em Quioto. Higashiyama a pé, Fushimi e o centro em outro dia, e uma saída para os templos e o lago de Shiga.",
-        "ja": "京都で4泊。東山は歩いて、別の日に伏見と街なかへ。滋賀の社寺とびわ湖にも行こか。",
-        "en": "Four nights in Kyoto. Walk through Higashiyama, visit Fushimi and the city center on another day, and take a day trip to Shiga’s temples and lake."
+        "pt": "Quatro noites em Quioto. Fushimi Inari, Kiyomizu-dera e Gion no primeiro dia, templos e lago em Shiga no seguinte, e Kinkaku-ji com o centro de Quioto no último dia inteiro.",
+        "ja": "京都に四泊。初日は伏見稲荷から清水寺と祇園へ。次の日は滋賀のお寺と琵琶湖、最後の丸一日は金閣寺と街なかを回ろか。",
+        "en": "Four nights in Kyoto. Follow Fushimi Inari with Kiyomizu-dera and Gion on the first day, see Shiga's temples and lake on the next, and spend the last full day at Kinkaku-ji and in central Kyoto."
       },
       "photo": "kiyomizu",
       "stays": [
@@ -5193,12 +5193,30 @@
       "number": 12,
       "date": "2027-01-19",
       "title": {
-        "pt": "Higashiyama e Gion",
-        "ja": "東山と祇園",
-        "en": "Higashiyama and Gion"
+        "pt": "Fushimi Inari, Kiyomizu e Gion",
+        "ja": "伏見稲荷・清水寺・祇園",
+        "en": "Fushimi Inari, Kiyomizu-dera and Gion"
       },
-      "photo": "kiyomizu",
+      "photo": "fushimi",
       "stops": [
+        {
+          "id": "fushimi-inari",
+          "name": {
+            "pt": "Fushimi Inari e os portais vermelhos",
+            "ja": "伏見稲荷大社と千本鳥居",
+            "en": "Fushimi Inari and the red torii gates"
+          },
+          "done": false,
+          "minutes": 85,
+          "addressJa": "京都府京都市伏見区深草薮之内町68",
+          "mapQuery": "伏見稲荷大社 表参道",
+          "description": {
+            "pt": "Mire chegar por volta das 8h. Da estação de Quioto, pegue um JR local da linha Nara até Inari. Atravesse os Senbon Torii até o santuário interno Okusha e volte dali para chegar ao Kiyomizu ainda de manhã.",
+            "ja": "8時ごろ着くつもりで、京都駅からJR奈良線の普通で稲荷へ。千本鳥居を通って奥社奉拝所まで行ったら折り返し、午前のうちに清水寺へ向かおか。",
+            "en": "Aim to arrive around 8:00. From Kyoto Station, take a local JR Nara Line train to Inari. Go through Senbon Torii to the Okusha inner shrine, then turn back to reach Kiyomizu-dera in the morning."
+          },
+          "source": "https://inari.jp/trip/map01/"
+        },
         {
           "id": "higashiyama-visit",
           "name": {
@@ -5211,9 +5229,24 @@
           "addressJa": "京都府京都市東山区清水1-294",
           "mapQuery": "清水寺 仁王門",
           "description": {
-            "pt": "Vá de manhã para subir com menos gente. Veja a varanda e a paisagem da encosta; em janeiro, conte com o horário normal até 18h.",
-            "ja": "人が少ない午前中に坂を上ろか。舞台と東山の景色へ。1月は通常18時まで。",
-            "en": "Go in the morning for a quieter uphill walk. See the veranda and hillside views; January’s usual closing time is 18:00."
+            "pt": "Chegue no fim da manhã para ver o portão Niōmon, a varanda de madeira e a encosta. Se a fila estiver curta, desça até a fonte Otowa na saída.",
+            "ja": "午前のうちに仁王門をくぐって、清水の舞台から山の景色を見よか。列が短ければ、帰りに音羽の滝にも寄ってみて。",
+            "en": "Arrive in the late morning to see the Niōmon gate, the wooden terrace and the hillside. If the line is short, visit Otowa Waterfall on the way out."
+          },
+          "travelFrom": {
+            "stopId": "fushimi-inari",
+            "mode": "train",
+            "minutes": 50,
+            "line": {
+              "pt": "Keihan local ou subexpresso",
+              "ja": "京阪の普通か準急",
+              "en": "Keihan local or sub-express"
+            },
+            "note": {
+              "pt": "Caminhe do santuário à estação Keihan Fushimi-inari. Desça em Kiyomizu-Gojō e conte cerca de 25 min a pé, com subida no fim.",
+              "ja": "お稲荷さんから京阪の伏見稲荷駅まで歩こう。清水五条で降りて徒歩約25分、最後は坂道やで。",
+              "en": "Walk from the shrine to Keihan Fushimi-inari Station. Get off at Kiyomizu-Gojō and allow about 25 minutes on foot, uphill toward the end."
+            }
           },
           "source": "https://www.kiyomizudera.or.jp/access/index.html"
         },
@@ -5221,68 +5254,71 @@
           "id": "ninenzaka",
           "name": {
             "pt": "Sannenzaka, Ninenzaka e almoço",
-            "ja": "産寧坂・二寧坂と昼ご飯",
+            "ja": "産寧坂・二寧坂とお昼",
             "en": "Sannenzaka, Ninenzaka and lunch"
           },
           "done": false,
           "minutes": 105,
-          "mapQuery": "産寧坂 三年坂",
+          "mapQuery": "産寧坂 二寧坂 八坂の塔",
           "description": {
-            "pt": "Desça pelas ladeiras e faça a pausa do almoço. Experimente yudōfu na região ou continue até Gion para nishin soba.",
-            "ja": "坂を下ってお昼にしよか。この辺りで湯豆腐、祇園まで歩くならにしんそばもええね。",
-            "en": "Walk down the old lanes and pause for lunch. Try yudōfu here or continue to Gion for herring soba."
+            "pt": "Desça pelas ladeiras históricas e veja o pagode de Yasaka do lado de fora. Pare para yudōfu ou soba e escolha um doce para a pausa.",
+            "ja": "産寧坂と二寧坂を下って、通りから八坂の塔を見よか。湯豆腐かそばでお昼にして、甘いもんでひと休み。",
+            "en": "Follow the historic lanes downhill and see Yasaka Pagoda from the street. Stop for yudōfu or soba and take a break over a sweet."
           },
           "travelFrom": {
             "stopId": "higashiyama-visit",
             "mode": "walk",
             "minutes": 12
-          }
+          },
+          "source": "https://kyoto.travel/en/itineraries/higashiyama-at-dawn/"
         },
         {
           "id": "yasaka-gion",
           "name": {
-            "pt": "Santuário Yasaka e ruas de Gion",
-            "ja": "八坂神社と祇園の通り",
-            "en": "Yasaka Shrine and Gion"
+            "pt": "Santuário Yasaka e Parque Maruyama",
+            "ja": "八坂神社と円山公園",
+            "en": "Yasaka Shrine and Maruyama Park"
           },
           "done": false,
-          "minutes": 90,
-          "mapQuery": "八坂神社 西楼門",
+          "minutes": 70,
+          "mapQuery": "八坂神社 円山公園",
           "description": {
-            "pt": "Passe por Yasaka e caminhe pelas ruas públicas de Gion. Pare para um doce; entre no Kennin-ji apenas se couber antes da última entrada.",
-            "ja": "八坂さんに寄って祇園の通りへ。甘いもんでひと息、時間があれば受付までに建仁寺へ。",
-            "en": "Visit Yasaka and walk Gion’s public lanes. Stop for a sweet; only add Kennin-ji if you can make last entry."
+            "pt": "Siga pela Nene-no-Michi até o Parque Maruyama. Atravesse o parque e veja o pátio e as lanternas do santuário Yasaka antes de descer para Gion.",
+            "ja": "ねねの道を通って円山公園へ。公園を抜けたら八坂神社の境内と提灯を見て、祇園へ下りよか。",
+            "en": "Follow Nene-no-Michi to Maruyama Park. Cross the park to see the courtyard and lanterns of Yasaka Shrine before heading down to Gion."
           },
           "travelFrom": {
             "stopId": "ninenzaka",
             "mode": "walk",
-            "minutes": 18
+            "minutes": 20
           },
           "source": "https://www.yasaka-jinja.or.jp/"
         },
         {
           "id": "gion-evening",
           "name": {
-            "pt": "Gion-Shijō e jantar",
-            "ja": "祇園四条で晩ご飯",
-            "en": "Gion-Shijō and dinner"
+            "pt": "Gion, canal Shirakawa e jantar",
+            "ja": "祇園白川と晩ご飯",
+            "en": "Gion, Shirakawa Canal and dinner"
           },
           "done": false,
-          "minutes": 85,
-          "mapQuery": "祇園四条駅 南座",
+          "minutes": 95,
+          "mapQuery": "祇園白川 巽橋",
           "description": {
-            "pt": "No fim da tarde, veja o Minamiza iluminado e a ponte Shijō. Jante perto de Gion-Shijō ou volte cedo à hospedagem.",
-            "ja": "夕方は南座の明かりと四条大橋へ。祇園四条で晩ご飯にするか、早めに宿へ戻ろか。",
-            "en": "In the early evening see Minamiza lit up and cross Shijō Bridge. Have dinner by Gion-Shijō or turn in early."
+            "pt": "No fim da tarde, caminhe pelas ruas públicas de Gion até o canal Shirakawa. Passe pelo teatro Minamiza e pela ponte Shijō antes de jantar perto do rio.",
+            "ja": "夕方は祇園の通れる道を白川までひと歩き。南座と四条大橋を通って、川の近くで晩ご飯にしよか。",
+            "en": "Late in the afternoon, follow Gion's public streets to Shirakawa Canal. See Minamiza Theatre and Shijō Bridge before dinner by the river."
           },
           "travelFrom": {
             "stopId": "yasaka-gion",
             "mode": "walk",
-            "minutes": 14
-          }
+            "minutes": 15
+          },
+          "source": "https://kyoto.travel/en/areas/gion-kiyomizu/"
         }
       ],
       "foodIds": [
+        "inarizushi",
         "yudofu",
         "nishin-soba",
         "yatsuhashi",
@@ -5290,6 +5326,9 @@
       ],
       "shopIds": [
         "asahido"
+      ],
+      "extraPhotos": [
+        "kiyomizu"
       ]
     },
     {
@@ -5480,148 +5519,172 @@
       "number": 14,
       "date": "2027-01-21",
       "title": {
-        "pt": "Fushimi Inari e centro de Quioto",
-        "ja": "伏見稲荷と京都の中心部",
-        "en": "Fushimi Inari and central Kyoto"
+        "pt": "Kinkaku-ji e centro de Quioto",
+        "ja": "金閣寺から京都の街なかへ",
+        "en": "Kinkaku-ji and central Kyoto"
       },
-      "photo": "fushimi",
+      "photo": "kinkakuji",
       "stops": [
         {
-          "id": "fushimi-inari",
+          "id": "kinkakuji",
           "name": {
-            "pt": "Fushimi Inari · circuito curto",
-            "ja": "伏見稲荷大社・千本鳥居",
-            "en": "Fushimi Inari: short route"
+            "pt": "Kinkaku-ji · Pavilhão Dourado",
+            "ja": "金閣寺・金閣",
+            "en": "Kinkaku-ji · Golden Pavilion"
           },
           "done": false,
-          "minutes": 95,
-          "addressJa": "京都府京都市伏見区深草薮之内町68",
-          "mapQuery": "伏見稲荷大社 楼門",
+          "minutes": 75,
+          "addressJa": "京都府京都市北区金閣寺町1",
+          "mapQuery": "金閣寺 拝観入口",
           "description": {
-            "pt": "Pegue a JR Nara Line local até Inari ou a Keihan até Fushimi-inari. Caminhe pelos primeiros portais e volte cedo; não precisa chegar ao topo.",
-            "ja": "JR奈良線の普通で稲荷駅か、京阪の伏見稲荷駅へ。千本鳥居を歩いて、頂上までは行かんでもええよ。",
-            "en": "Take the local JR Nara Line to Inari or Keihan to Fushimi-inari. Walk the first tunnel of gates and turn back early; the summit is optional."
+            "pt": "Prioridade do dia. Chegue para a abertura às 9h e faça o circuito do lago e do jardim. Da estação de Quioto, use o metrô Karasuma até Kitaōji e o ônibus 204 ou 205 até Kinkakuji-michi. Conte 35–50 min desde a estação.",
+            "ja": "この日の目当ては金閣寺。9時の開門に合わせて池と庭を回ろか。京都駅から地下鉄烏丸線で北大路へ。市バス204か205で金閣寺道下車、京都駅から35〜50分が目安。",
+            "en": "Make this the first visit of the day. Arrive for the 9:00 opening and follow the pond and garden circuit. From Kyoto Station take the Karasuma subway to Kitaōji, then bus 204 or 205 to Kinkakuji-michi. Allow 35–50 minutes from Kyoto Station."
           },
-          "source": "https://inari.jp/"
+          "source": "https://www.shokoku-ji.jp/en/kinkakuji/access/"
         },
         {
-          "id": "nishiki",
+          "id": "ryoanji",
           "name": {
-            "pt": "Mercado Nishiki · almoço sem pressa",
-            "ja": "錦市場で昼ご飯",
-            "en": "Nishiki Market and lunch"
+            "pt": "Ryōan-ji e jardim de pedras",
+            "ja": "龍安寺と石庭",
+            "en": "Ryōan-ji and its rock garden"
           },
           "done": false,
-          "minutes": 95,
-          "mapQuery": "京都 錦市場 寺町入口",
+          "minutes": 60,
+          "addressJa": "京都府京都市右京区龍安寺御陵下町13",
+          "mapQuery": "龍安寺 石庭 入口",
           "description": {
-            "pt": "Faça uma refeição simples e escolha um ou dois petiscos do mercado. A galeria é estreita; coma no local indicado.",
-            "ja": "手頃なお昼に、おやつは市場で一つか二つ。通路が狭いから、お店が指定した場所で食べよか。",
-            "en": "Have a simple lunch and choose one or two market snacks. The arcade is narrow; eat where the shop directs you."
+            "pt": "Caminhe pela Kinukake-no-michi até o Ryōan-ji. Veja o jardim de pedras e dê uma volta pelo lago se estiver agradável.",
+            "ja": "きぬかけの路を歩いて龍安寺へ。石庭を眺めて、気持ちのええ日なら池の周りも少し歩こか。",
+            "en": "Take Kinukake-no-michi to Ryōan-ji. See the rock garden and walk around the pond if the weather is pleasant."
           },
           "travelFrom": {
-            "stopId": "fushimi-inari",
-            "mode": "train",
-            "minutes": 40,
-            "line": {
-              "pt": "Keihan Main Line",
-              "ja": "京阪本線",
-              "en": "Keihan Main Line"
-            },
-            "note": {
-              "pt": "Pegue em Fushimi-inari sentido norte, desça em Gion-Shijō e atravesse a ponte Shijō a pé.",
-              "ja": "伏見稲荷駅から北行き、祇園四条で下りて四条大橋を渡ろ。",
-              "en": "Take a northbound train from Fushimi-inari to Gion-Shijō; walk across Shijō Bridge."
-            }
+            "stopId": "kinkakuji",
+            "mode": "walk",
+            "minutes": 24
           },
-          "source": "https://www.kyoto-nishiki.or.jp/"
+          "source": "https://kyoto.travel/en/destinations/ryoanji-temple"
         },
         {
           "id": "nijo",
           "name": {
-            "pt": "Castelo Nijō",
-            "ja": "二条城",
-            "en": "Nijō Castle"
+            "pt": "Almoço e Castelo Nijō",
+            "ja": "お昼と二条城",
+            "en": "Lunch and Nijō Castle"
           },
           "done": false,
-          "minutes": 110,
+          "minutes": 145,
           "mapQuery": "二条城 東大手門",
           "description": {
-            "pt": "Visite o jardim e o Palácio Ninomaru. Comece no início da tarde, pois o palácio para de receber visitantes antes do fechamento do castelo.",
-            "ja": "午後の早めに二条城へ。庭と二の丸御殿を見よか。御殿の受付は閉城より早く終わるで。",
-            "en": "Visit the garden and Ninomaru Palace. Go early in the afternoon; palace admission closes before the castle grounds."
+            "pt": "Almoce na região e mire entrar no castelo por volta das 13h. Priorize o Palácio Ninomaru e o jardim. A entrada do castelo vai até 16h, e o último acesso ao Ninomaru é às 16h10.",
+            "ja": "近くでお昼にして、13時ごろ二条城へ。二の丸御殿と庭園を先に見よか。城の最終入城は16時、二の丸御殿の最終受付は16時10分。",
+            "en": "Have lunch nearby and aim to enter the castle around 13:00. Prioritize Ninomaru Palace and its garden. Last castle admission is at 16:00 and last entry to Ninomaru is at 16:10."
           },
           "travelFrom": {
-            "stopId": "nishiki",
-            "mode": "metro",
-            "minutes": 35,
+            "stopId": "ryoanji",
+            "mode": "bus",
+            "minutes": 50,
             "line": {
-              "pt": "Linha Tōzai até Nijōjō-mae",
-              "ja": "東西線で二条城前",
-              "en": "Tōzai Line to Nijōjō-mae"
+              "pt": "Ônibus municipal 50",
+              "ja": "市バス50系統",
+              "en": "Kyoto City Bus 50"
             },
             "note": {
-              "pt": "Caminhe até Karasuma-Oike e use a Tōzai no sentido oeste até Nijōjō-mae.",
-              "ja": "烏丸御池まで歩き、東西線の西行きで二条城前。",
-              "en": "Walk to Karasuma-Oike and take the westbound Tōzai Line to Nijōjō-mae."
+              "pt": "Caminhe até o ponto Ritsumeikan Daigaku-mae. Pegue o 50 no sentido da estação de Quioto e desça em Nijōjō-mae.",
+              "ja": "立命館大学前まで歩き、京都駅行きの50系統で二条城前へ。",
+              "en": "Walk to Ritsumeikan Daigaku-mae. Take bus 50 toward Kyoto Station and get off at Nijōjō-mae."
             }
           },
-          "source": "https://nijo-jocastle.city.kyoto.lg.jp/guide/annai/"
+          "source": "https://nijo-jocastle.city.kyoto.lg.jp/guide/annai/?lang=en"
+        },
+        {
+          "id": "nishiki",
+          "name": {
+            "pt": "Mercado Nishiki",
+            "ja": "錦市場",
+            "en": "Nishiki Market"
+          },
+          "done": false,
+          "minutes": 65,
+          "mapQuery": "錦市場 高倉通 西入口",
+          "description": {
+            "pt": "Mire chegar até 15h30 para encontrar mais bancas abertas. Prove um ou dois petiscos, como dashimaki. Cada banca tem seu horário, então deixe o jantar para perto do rio.",
+            "ja": "15時半ごろまでに着けたら、まだ開いてる店をのぞいて、だし巻きなんかを少し。店によって閉まる時間が違うさかい、晩ご飯は川の近くで。",
+            "en": "Aim to arrive by 15:30 for more stalls to choose from. Try a snack or two, such as dashimaki. Stalls keep their own hours, so plan on dinner by the river."
+          },
+          "travelFrom": {
+            "stopId": "nijo",
+            "mode": "walk",
+            "minutes": 28,
+            "note": {
+              "pt": "Siga pela Oike-dōri e desça em direção à entrada oeste do mercado. Se estiver frio, use o metrô Tōzai por uma estação até Karasuma-Oike e complete a pé.",
+              "ja": "御池通を東へ進み、錦市場の西入口へ南下。寒ければ地下鉄東西線で烏丸御池まで一駅、そこから歩こう。",
+              "en": "Walk east on Oike-dōri, then turn south for the market's west entrance. In cold weather, take the Tōzai subway one stop to Karasuma-Oike and walk from there."
+            }
+          },
+          "source": "https://www.kyoto-nishiki.or.jp/en/contact/"
         },
         {
           "id": "pontocho",
           "name": {
             "pt": "Rio Kamo, Pontochō e jantar",
-            "ja": "鴨川と先斗町で晩ご飯",
+            "ja": "鴨川・先斗町と晩ご飯",
             "en": "Kamo River, Pontochō and dinner"
           },
           "done": false,
           "minutes": 95,
-          "mapQuery": "先斗町 三条大橋",
+          "mapQuery": "先斗町 四条大橋",
           "description": {
-            "pt": "Volte ao centro para o fim da tarde. Caminhe entre Sanjō e Shijō pela margem do Kamo ou pelas lanternas de Pontochō, e jante por ali.",
-            "ja": "夕方は街なかへ。三条から四条まで鴨川沿いか先斗町を歩いて、この辺りで晩ご飯にしよか。",
-            "en": "Return downtown in the late afternoon. Walk from Sanjō to Shijō along the Kamo River or through Pontochō and have dinner nearby."
+            "pt": "Vá ao rio no fim da tarde e caminhe entre Shijō e Sanjō. Jante em Pontochō ou perto de Kawaramachi e volte cedo se quiser descansar antes de Osaka.",
+            "ja": "夕方は鴨川へ。四条から三条まで歩いて、先斗町か河原町の近くで晩ご飯にしよか。大阪へ行く前に休みたければ早めに宿へ。",
+            "en": "Head to the river in the late afternoon and walk between Shijō and Sanjō. Have dinner in Pontochō or around Kawaramachi, then head back early if you want to rest before Osaka."
           },
           "travelFrom": {
-            "stopId": "nijo",
-            "mode": "metro",
-            "minutes": 29,
-            "line": {
-              "pt": "Linha Tōzai até Sanjō Keihan",
-              "ja": "東西線で三条京阪",
-              "en": "Tōzai Line to Sanjō Keihan"
-            }
-          }
+            "stopId": "nishiki",
+            "mode": "walk",
+            "minutes": 13
+          },
+          "source": "https://kyoto.travel/en/travel-inspiration/kyoto-nightlife-local-bars-and-nighttime-strolls-to-enjoy/"
         },
         {
-          "id": "maruzen",
+          "id": "arashiyama-alternative",
           "name": {
-            "pt": "Maruzen · Kyoto BAL",
-            "ja": "丸善 京都本店",
-            "en": "Maruzen at Kyoto BAL"
+            "pt": "Arashiyama · alternativa à tarde no centro",
+            "ja": "午後の別案・嵐山",
+            "en": "Arashiyama · an alternative to the afternoon downtown"
           },
           "done": false,
-          "minutes": 35,
-          "mapQuery": "丸善 京都本店 京都BAL",
+          "minutes": 150,
+          "mapQuery": "嵐山 渡月橋 竹林の小径",
           "description": {
-            "pt": "Se sobrar tempo antes do jantar, passe rapidamente pela seção que quiser da livraria.",
-            "ja": "晩ご飯まで余裕があれば、お目当ての棚だけさっと見よか。",
-            "en": "If there is time before dinner, browse the section you came for."
+            "pt": "Se quiser trocar a tarde no centro, vá de Ryōan-ji a Arashiyama e deixe Nijō e Nishiki de fora. Almoce, caminhe pela ponte Togetsukyō e veja um trecho do bosque de bambu. Volte de JR por Saga-Arashiyama para jantar perto do hotel.",
+            "ja": "街なかの午後を変えたくなったら、龍安寺のあと二条城と錦市場の代わりに嵐山へ。お昼を食べて渡月橋と竹林を少し歩き、JR嵯峨嵐山から戻って宿の近くで晩ご飯。",
+            "en": "If you would rather spend the afternoon in Arashiyama, go there after Ryōan-ji in place of Nijō and Nishiki. Have lunch, walk along Togetsukyō Bridge and see a short stretch of the bamboo grove. Return by JR from Saga-Arashiyama for dinner near the hotel."
           },
           "travelFrom": {
-            "stopId": "pontocho",
-            "mode": "walk",
-            "minutes": 8
+            "stopId": "ryoanji",
+            "mode": "train",
+            "minutes": 45,
+            "line": {
+              "pt": "Randen via Katabiranotsuji",
+              "ja": "嵐電で帷子ノ辻経由",
+              "en": "Randen via Katabiranotsuji"
+            },
+            "note": {
+              "pt": "Vá a pé à estação Randen Ryōanji. Troque em Katabiranotsuji para a linha de Arashiyama.",
+              "ja": "龍安寺駅まで歩いて嵐電へ。帷子ノ辻で嵐山方面に乗り換えよう。",
+              "en": "Walk to Randen Ryōanji Station. Change at Katabiranotsuji for the Arashiyama branch."
+            }
           },
-          "source": "https://honto.jp/store/detail_1570144.html",
+          "source": "https://kyoto.travel/en/areas/saga-arashiyama/",
           "optional": true
         }
       ],
       "foodIds": [
-        "inarizushi",
         "dashimaki",
-        "botamochi"
+        "botamochi",
+        "nishin-soba"
       ],
       "shopIds": [
         "maruzen-kyoto"

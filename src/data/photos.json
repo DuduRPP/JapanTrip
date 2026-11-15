@@ -694,5 +694,17 @@
       "ja": "丸いジンギスカン鍋で焼く羊肉と野菜",
       "en": "Mutton and vegetables cooking on a round jingisukan grill"
     }
+  },
+  "kinkakuji": {
+    "url": "photos/kinkakuji.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Water_reflection_of_Kinkaku-ji_Temple_with_a_tree_on_a_rock_in_the_pond,_Kyoto,_Japan.jpg",
+    "author": "Basile Morin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Pavilhão Dourado do Kinkaku-ji refletido no lago, com um pinheiro à frente",
+      "ja": "池に映る金閣寺の金閣と手前の松",
+      "en": "Kinkaku-ji's Golden Pavilion reflected in the pond, with a pine tree in the foreground"
+    }
   }
 }
