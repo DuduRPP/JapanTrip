@@ -765,9 +765,9 @@
       "accent": "#983f35",
       "symbol": "castle",
       "description": {
-        "pt": "O encontro de 11/1 é uma ida separada. Na estadia de 22 a 27/1, Namba facilita Dōtonbori, Den Den Town e o trem de Nara; para Himeji e Hiroshima, calcule a conexão com a JR.",
-        "ja": "1/11は友人に会う日帰りの用事。1/22〜27はなんばが便利。道頓堀、でんでんタウン、奈良へ出やすく、姫路・広島へはJRへの乗り継ぎを見ておこう。",
-        "en": "Jan 11 is a separate visit to meet friends. For Jan 22–27, Namba is handy for Dōtonbori, Den Den Town and Nara; allow time to connect to JR for Himeji and Hiroshima."
+        "pt": "O encontro de 11/1 é uma ida separada. De 22 a 27/1, use Namba como base para Namba Yasaka, Shinsekai e Dōtonbori. Reserve uma manhã para os darumas do Katsuo-ji e siga ao Castelo de Osaka à tarde.",
+        "ja": "1月11日は友だちに会いに別で大阪へ。22〜27日は難波を拠点に、八阪神社や新世界、道頓堀を回ろう。勝尾寺のだるまには朝の時間を取り、午後は大阪城へ。",
+        "en": "January 11 is a separate trip to meet friends. From January 22 to 27, use Namba as your base for Namba Yasaka, Shinsekai and Dōtonbori. Spend one morning with the daruma at Katsuo-ji, then visit Osaka Castle in the afternoon."
       },
       "photo": "dotonbori",
       "stays": [
@@ -1015,6 +1015,44 @@
               },
               "addressJa": "大阪府大阪市中央区難波1-2-10",
               "url": "https://store.srsholdings.com/detail/0662116455/"
+            }
+          ]
+        },
+        {
+          "id": "kitsune-udon",
+          "kind": "savory",
+          "name": {
+            "pt": "Kitsune udon",
+            "ja": "きつねうどん",
+            "en": "Kitsune udon"
+          },
+          "description": {
+            "pt": "Udon em caldo claro de dashi, com tofu frito adocicado. É um clássico de Osaka e uma boa pausa de almoço em Umeda.",
+            "ja": "澄んだだしにうどん、甘く炊いたお揚げ。大阪らしい一杯で、梅田の昼ご飯にちょうどええ。",
+            "en": "Udon in clear dashi with sweet simmered fried tofu. An Osaka classic that makes a good lunch break in Umeda."
+          },
+          "done": false,
+          "venues": [
+            {
+              "id": "imai-hankyu-umeda",
+              "name": {
+                "pt": "Dōtonbori Imai · Hankyu Umeda",
+                "ja": "道頓堀今井 阪急うめだ店",
+                "en": "Dōtonbori Imai · Hankyu Umeda"
+              },
+              "description": {
+                "pt": "Restaurante no 12º andar da Hankyu, perto das estações de Umeda. Peça o kitsune udon da casa.",
+                "ja": "梅田の駅から近い阪急百貨店の12階。定番のきつねうどんをどうぞ。",
+                "en": "A restaurant on Hankyu's 12th floor, near the Umeda stations. Try its signature kitsune udon."
+              },
+              "addressJa": "大阪府大阪市北区角田町8-7 阪急うめだ本店 レストラン街12階",
+              "url": "https://www.d-imai.com/shops/hankyuumeda/",
+              "price": {
+                "yen": 930,
+                "unit": "person",
+                "source": "https://www.d-imai.com/shops/hankyuumeda/",
+                "estimated": true
+              }
             }
           ]
         }
@@ -4742,6 +4780,40 @@
           "source": "https://www.gotokyo.org/en/story/walks-and-tours/shinjuku/index.html"
         },
         {
+          "id": "gotokuji",
+          "name": {
+            "pt": "Gōtokuji · alternativa para a manhã",
+            "ja": "午前の別案・招き猫の豪徳寺",
+            "en": "Gōtokuji · an alternative for the morning"
+          },
+          "done": false,
+          "minutes": 60,
+          "addressJa": "東京都世田谷区豪徳寺2-24-7",
+          "mapQuery": "豪徳寺 招福殿 世田谷",
+          "description": {
+            "pt": "Se quiser ver os maneki-neko, troque Meiji Jingū e Harajuku por Gōtokuji depois de despachar a mala. Veja os gatos de cerâmica e a pagoda. Na saída, caminhe até Miyanosaka, pegue a linha Setagaya e troque em Sangenjaya para Shibuya. Conte 35–45 min para esse trecho e almoce em Shibuya.",
+            "ja": "招き猫を見たいなら、荷物を送ったあと明治神宮と原宿の代わりに豪徳寺へ。奉納された猫たちと三重塔を見よう。帰りは宮の坂から世田谷線、三軒茶屋で田園都市線に乗り換えて渋谷へ。移動は35〜45分ほど、渋谷でお昼に。",
+            "en": "To see the maneki-neko, visit Gōtokuji after forwarding your luggage in place of Meiji Jingū and Harajuku. See the ceramic cats and pagoda. Walk to Miyanosaka, take the Setagaya Line and change at Sangenjaya for Shibuya. Allow 35–45 minutes and have lunch in Shibuya."
+          },
+          "travelFrom": {
+            "stopId": "forward-bag",
+            "mode": "train",
+            "minutes": 65,
+            "line": {
+              "pt": "JR até Shinjuku + Odakyū local",
+              "ja": "JRで新宿、小田急の各駅停車",
+              "en": "JR to Shinjuku + local Odakyū"
+            },
+            "note": {
+              "pt": "Em Shinjuku, pegue um trem local da Odakyū e desça em Gōtokuji. Da estação são cerca de 15 minutos a pé até o templo.",
+              "ja": "新宿で小田急の各駅停車に乗って豪徳寺へ。駅からお寺までは徒歩15分ほど。",
+              "en": "At Shinjuku take an Odakyū local train and get off at Gōtokuji. The temple is about 15 minutes away on foot."
+            }
+          },
+          "source": "https://www.gotokuji.jp/en/manekineko/",
+          "optional": true
+        },
+        {
           "id": "sumo-ryogoku",
           "name": {
             "pt": "Alternativa: torneio de sumô em Ryōgoku",
@@ -4785,7 +4857,8 @@
         "kinokuniya"
       ],
       "extraPhotos": [
-        "shinjuku-gyoen"
+        "shinjuku-gyoen",
+        "gotokuji-cats"
       ]
     },
     {
@@ -5741,11 +5814,11 @@
       "number": 15,
       "date": "2027-01-22",
       "title": {
-        "pt": "Namba e Dōtonbori",
-        "ja": "なんばと道頓堀",
-        "en": "Namba and Dōtonbori"
+        "pt": "Namba, Shinsekai e Dōtonbori",
+        "ja": "難波・新世界・道頓堀",
+        "en": "Namba, Shinsekai and Dōtonbori"
       },
-      "photo": "dotonbori",
+      "photo": "namba-yasaka-lion",
       "stops": [
         {
           "id": "namba-bags",
@@ -5766,24 +5839,91 @@
         {
           "id": "namba-yasaka",
           "name": {
-            "pt": "Santuário Namba Yasaka",
-            "ja": "難波八阪神社",
-            "en": "Namba Yasaka Shrine"
+            "pt": "Namba Yasaka e a cabeça de leão",
+            "ja": "難波八阪神社と獅子殿",
+            "en": "Namba Yasaka Shrine and its lion head"
           },
           "done": false,
-          "minutes": 40,
+          "minutes": 35,
+          "addressJa": "大阪府大阪市浪速区元町2-9-19",
           "mapQuery": "難波八阪神社 獅子殿",
           "description": {
-            "pt": "Veja o pavilhão em forma de cabeça de leão ainda com luz. Vá direto a Hōzenji se chegar depois de o santuário fechar.",
-            "ja": "明るいうちに獅子殿へ。閉門後に着いたら法善寺へ直接向かおう。",
-            "en": "See the lion-head pavilion in daylight. If you arrive after closing, head straight to Hōzenji."
+            "pt": "Vá primeiro ao pátio para ver o Shishiden, o palco em forma de cabeça de leão de 12 metros. O portão costuma fechar às 17h.",
+            "ja": "まず境内で、高さ12メートルの獅子殿を見よう。門が閉まるのは通常17時。",
+            "en": "Visit the courtyard first to see Shishiden, the 12-metre lion-head stage. The gate usually closes at 17:00."
           },
           "travelFrom": {
             "stopId": "namba-bags",
             "mode": "walk",
             "minutes": 15
           },
-          "source": "https://osaka-info.jp/spot/nanbayasakajinja/"
+          "source": "https://osaka-info.jp/en/spot/nanbayasakajinja/"
+        },
+        {
+          "id": "kuromon",
+          "name": {
+            "pt": "Mercado Kuromon e almoço",
+            "ja": "黒門市場と昼ご飯",
+            "en": "Kuromon Market and lunch"
+          },
+          "done": false,
+          "minutes": 65,
+          "mapQuery": "黒門市場 日本橋",
+          "description": {
+            "pt": "Caminhe pela galeria do mercado e escolha um almoço simples. Compare os preços das porções e conte com os arredores de Nipponbashi se preferir um teishoku.",
+            "ja": "黒門市場のアーケードを歩いて昼ご飯を選ぼう。食べ歩きの値段を見比べて、定食なら日本橋の周りも候補に。",
+            "en": "Walk the covered market and pick a simple lunch. Compare the price of small portions or look around Nipponbashi for a set meal."
+          },
+          "travelFrom": {
+            "stopId": "namba-yasaka",
+            "mode": "walk",
+            "minutes": 20
+          },
+          "source": "https://kuromon.com/"
+        },
+        {
+          "id": "shitennoji",
+          "name": {
+            "pt": "Templo Shitennō-ji",
+            "ja": "四天王寺",
+            "en": "Shitennō-ji Temple"
+          },
+          "done": false,
+          "minutes": 60,
+          "mapQuery": "四天王寺 中心伽藍",
+          "description": {
+            "pt": "Veja a pagoda de cinco andares. Mire chegar até 15h para visitar o recinto central, que no inverno costuma fechar às 16h. Se chegar mais tarde, dá para ver o templo por fora antes de seguir a Shinsekai.",
+            "ja": "五重塔を見よう。冬は中心伽藍が通常16時までなので、15時ごろまでに着くとゆっくり回れる。遅くなったら外から眺めて新世界へ。",
+            "en": "See the five-storey pagoda. Aim to arrive by 15:00 for time inside the central precinct, which normally closes at 16:00 in winter. If you arrive later, see the temple from outside before continuing to Shinsekai."
+          },
+          "travelFrom": {
+            "stopId": "kuromon",
+            "mode": "walk",
+            "minutes": 27
+          },
+          "source": "https://www.shitennoji.or.jp/admission.html"
+        },
+        {
+          "id": "shinsekai",
+          "name": {
+            "pt": "Shinsekai e Torre Tsūtenkaku",
+            "ja": "新世界と通天閣",
+            "en": "Shinsekai and Tsūtenkaku Tower"
+          },
+          "done": false,
+          "minutes": 85,
+          "mapQuery": "通天閣 ジャンジャン横丁 新世界",
+          "description": {
+            "pt": "Caminhe pelas ruas da torre e pela Janjan Yokocho. Se quiser, faça uma pausa para kushikatsu. Decida pela subida à torre conforme a fila e a visibilidade.",
+            "ja": "通天閣の周りとジャンジャン横丁を歩こう。小腹がすいたら串カツを。展望台は列と空模様を見て決めよう。",
+            "en": "Explore the streets around the tower and Janjan Yokocho. Stop for kushikatsu if you feel like a snack. Decide whether to go up the tower based on the queue and visibility."
+          },
+          "travelFrom": {
+            "stopId": "shitennoji",
+            "mode": "walk",
+            "minutes": 20
+          },
+          "source": "https://www.osaka-info.jp/en/spot/shinsekai/"
         },
         {
           "id": "hozenji",
@@ -5793,33 +5933,38 @@
             "en": "Hōzen-ji and Hōzenji Yokocho"
           },
           "done": false,
-          "minutes": 35,
-          "mapQuery": "法善寺横丁",
+          "minutes": 25,
+          "mapQuery": "法善寺 法善寺横丁",
           "description": {
-            "pt": "Passe pelo pequeno templo e pela rua de pedra antes do movimento maior do fim da tarde.",
-            "ja": "夕方に人が増える前に、小さなお寺と石畳の横丁へ。",
-            "en": "See the small temple and stone alley before the late afternoon crowds."
+            "pt": "Volte a Namba no fim da tarde. Se precisar fazer check-in, pare no hotel e passe depois pelo pequeno templo e pela viela de pedra.",
+            "ja": "夕方に難波へ戻ろう。チェックインがまだなら先に宿へ寄ってから、小さな法善寺と石畳の横丁へ。",
+            "en": "Return to Namba in the late afternoon. Check in if you still need to, then see the small temple and its stone alley."
           },
           "travelFrom": {
-            "stopId": "namba-yasaka",
+            "stopId": "shinsekai",
             "mode": "walk",
-            "minutes": 18
+            "minutes": 30,
+            "note": {
+              "pt": "Se preferir poupar as pernas, use a Midōsuji de Dōbutsuen-mae até Namba e termine a pé.",
+              "ja": "足を休めたければ、動物園前から御堂筋線でなんばへ。駅からは歩いてすぐ。",
+              "en": "To save your legs, take the Midōsuji Line from Dōbutsuen-mae to Namba and walk the final stretch."
+            }
           }
         },
         {
           "id": "dotonbori",
           "name": {
-            "pt": "Dōtonbori · canal e jantar",
-            "ja": "道頓堀・川沿いと晩ご飯",
-            "en": "Dōtonbori canal and dinner"
+            "pt": "Dōtonbori à noite e jantar",
+            "ja": "夜の道頓堀と晩ご飯",
+            "en": "Dōtonbori after dark and dinner"
           },
           "done": false,
-          "minutes": 120,
+          "minutes": 115,
           "mapQuery": "道頓堀 戎橋",
           "description": {
-            "pt": "Caminhe até a ponte Ebisubashi. Prove takoyaki ou escolha um okonomiyaki de jantar; deixe a segunda especialidade para outro dia se estiver sem fome.",
-            "ja": "戎橋まで歩こう。たこ焼きかお好み焼きを晩ご飯に。お腹がいっぱいなら残りは別の日。",
-            "en": "Walk to Ebisubashi Bridge. Try takoyaki or have okonomiyaki for dinner; save the other dish if you are full."
+            "pt": "Passe pela ponte Ebisubashi e veja os letreiros e o canal iluminados. Jante okonomiyaki ou prove takoyaki e faça uma pausa para zenzai perto de Hōzen-ji.",
+            "ja": "戎橋で看板と川沿いの明かりを見よう。晩はお好み焼きにするか、たこ焼きをつまんで法善寺の近くでぜんざいを。",
+            "en": "See the illuminated signs and canal from Ebisubashi. Have okonomiyaki for dinner or try takoyaki and stop for zenzai near Hōzen-ji."
           },
           "travelFrom": {
             "stopId": "hozenji",
@@ -5831,9 +5976,17 @@
       ],
       "foodIds": [
         "takoyaki",
+        "kushikatsu",
         "osaka-okonomiyaki",
         "meoto-zenzai",
         "rikuro-cheesecake"
+      ],
+      "extraPhotos": [
+        "dotonbori"
+      ],
+      "shopIds": [
+        "surugaya-otaroad",
+        "mandarake-osaka"
       ]
     },
     {
@@ -5843,113 +5996,166 @@
       "number": 16,
       "date": "2027-01-23",
       "title": {
-        "pt": "Castelo de Osaka e Shinsekai",
-        "ja": "大阪城と新世界",
-        "en": "Osaka Castle and Shinsekai"
+        "pt": "Katsuo-ji e Castelo de Osaka",
+        "ja": "勝尾寺と大阪城",
+        "en": "Katsuo-ji and Osaka Castle"
       },
-      "photo": "osaka-castle",
+      "photo": "katsuoji-daruma",
       "stops": [
+        {
+          "id": "katsuoji",
+          "name": {
+            "pt": "Katsuo-ji · templo dos darumas",
+            "ja": "勝尾寺・だるまのお寺",
+            "en": "Katsuo-ji · the daruma temple"
+          },
+          "done": false,
+          "minutes": 105,
+          "addressJa": "大阪府箕面市粟生間谷2914-1",
+          "mapQuery": "勝尾寺 入山口 箕面市",
+          "description": {
+            "pt": "Saia cedo de Namba pela Midōsuji num trem com destino Minoh-Kayano. No ponto 8, pegue o ônibus Hankyu para Katsuo-ji. Conte 75–100 min desde Namba e leve cartão IC carregado para o ônibus (¥800 por trecho). No templo, procure os darumas vermelhos entre o lago, as pedras e as escadarias. A entrada adulta publicada é ¥500.",
+            "ja": "朝早めになんばから御堂筋線の箕面萱野行きへ。駅前8番から阪急バスで勝尾寺へ向かおう。なんばから75〜100分、バスは片道800円なのでICカードに先にチャージを。池や石段に並ぶ赤いだるまを探してみよう。大人の拝観料は案内で500円。",
+            "en": "Leave Namba early on a Midōsuji train bound for Minoh-Kayano. Take the Hankyu bus to Katsuo-ji from stand 8. Allow 75–100 minutes from Namba and load your IC card beforehand for the ¥800 bus fare each way. Look for the red daruma around the pond, rocks and steps. Published adult admission is ¥500."
+          },
+          "source": "https://osaka-info.jp/en/spot/katsuoji/"
+        },
+        {
+          "id": "umeda-lunch",
+          "name": {
+            "pt": "Volta a Osaka e almoço em Umeda",
+            "ja": "大阪に戻って梅田で昼ご飯",
+            "en": "Back in Osaka and lunch in Umeda"
+          },
+          "done": false,
+          "minutes": 70,
+          "mapQuery": "梅田駅 大阪駅",
+          "description": {
+            "pt": "Faça uma pausa em Umeda para um kitsune udon ou outro almoço quente. Se atrasar por causa do ônibus, prefira uma refeição rápida para chegar ao castelo ainda à tarde.",
+            "ja": "梅田でひと息ついて、きつねうどんなど温かい昼ご飯を。バスで遅れたら、午後の大阪城に間に合うよう手早く食べよう。",
+            "en": "Take a break in Umeda for kitsune udon or another warm lunch. If the bus runs late, choose a quick meal to reach the castle in the afternoon."
+          },
+          "travelFrom": {
+            "stopId": "katsuoji",
+            "mode": "metro",
+            "minutes": 80,
+            "line": {
+              "pt": "Hankyu Bus + Midōsuji",
+              "ja": "阪急バス＋御堂筋線",
+              "en": "Hankyu bus + Midōsuji Line"
+            },
+            "note": {
+              "pt": "Confira a saída da volta antes de começar a visita. Volte de ônibus a Minoh-Kayano e pegue o trem rumo a Umeda.",
+              "ja": "参拝の前に帰りのバスを確認。箕面萱野駅へ戻り、御堂筋線で梅田へ。",
+              "en": "Check the return bus time before visiting. Take it back to Minoh-Kayano and ride the train to Umeda."
+            }
+          },
+          "source": "https://www.hankyubus.co.jp/news/2026101.html"
+        },
         {
           "id": "osaka-castle-park",
           "name": {
-            "pt": "Parque do Castelo de Osaka",
-            "ja": "大阪城公園",
-            "en": "Osaka Castle Park"
+            "pt": "Castelo de Osaka e parque",
+            "ja": "大阪城と大阪城公園",
+            "en": "Osaka Castle and park"
           },
           "done": false,
           "minutes": 120,
-          "mapQuery": "大阪城公園 大手門",
+          "mapQuery": "大阪城 天守閣 大手門",
           "description": {
-            "pt": "Caminhe pelos fossos e muralhas. Se quiser o museu e a vista do castelo, entre de manhã; com fila, faça o parque e siga para Kuromon.",
-            "ja": "堀と石垣を散歩。天守の展示と眺めを見たければ午前のうちに。長い列なら公園を回って黒門へ。",
-            "en": "Walk the moats and walls. Go in the morning if you want the castle museum and view; if the queue is long, enjoy the park then continue to Kuromon."
+            "pt": "Entre pelo lado do portão Ōtemon e veja os fossos, as muralhas e a torre. Se quiser o museu e a vista de cima, conte ¥1.200 e confira a fila. A última entrada publicada é às 17h30, mas a fila pode encerrar antes.",
+            "ja": "大手門側から堀、石垣、天守閣へ。中の展示と眺めも見たいなら大人1,200円。最終入館は17時30分やけど、混雑で列が早く締まることもある。",
+            "en": "Approach via Ōtemon for the moats, walls and main tower. Allow ¥1,200 if you want the museum and the view. Posted last admission is 17:30, but the ticket queue can close earlier."
+          },
+          "travelFrom": {
+            "stopId": "umeda-lunch",
+            "mode": "metro",
+            "minutes": 35,
+            "line": {
+              "pt": "Linha Tanimachi",
+              "ja": "谷町線",
+              "en": "Tanimachi Line"
+            },
+            "note": {
+              "pt": "Caminhe até Higashi-Umeda, desça em Tanimachi 4-chōme e siga a pé para o portão Ōtemon.",
+              "ja": "東梅田から谷町四丁目へ。大手門まで歩こう。",
+              "en": "Walk to Higashi-Umeda, get off at Tanimachi 4-chōme and walk to Ōtemon."
+            }
           },
           "source": "https://www.osakacastle.net/guide/?lang=ja"
         },
         {
-          "id": "kuromon",
+          "id": "umeda-sky-evening",
           "name": {
-            "pt": "Kuromon · pausa para almoço",
-            "ja": "黒門市場でお昼",
-            "en": "Kuromon lunch break"
+            "pt": "Umeda Sky Building e jantar",
+            "ja": "梅田スカイビルと晩ご飯",
+            "en": "Umeda Sky Building and dinner"
           },
           "done": false,
-          "minutes": 65,
-          "mapQuery": "黒門市場 日本橋",
+          "minutes": 115,
+          "mapQuery": "梅田スカイビル 空中庭園展望台",
           "description": {
-            "pt": "Olhe o preço antes de comprar. Um teishoku nos arredores pode sair menos que vários petiscos no mercado.",
-            "ja": "値札を見てから買おう。市場でいくつもつまむより、近くの定食が手頃なことも。",
-            "en": "Check the price first. A set meal outside the market can cost less than several market snacks."
+            "pt": "Veja as duas torres e, se o céu abrir, suba ao mirante Kuchū Teien para as luzes da cidade. A entrada adulta publicada é ¥2.000. Jante em Umeda ou volte de Midōsuji para Namba.",
+            "ja": "梅田スカイビルのツインタワーへ。晴れていたら空中庭園展望台から夜景を。大人料金は案内で2,000円。梅田で晩ご飯か、御堂筋線で難波へ戻ろう。",
+            "en": "See the twin towers and, if the skies are clear, visit the Kuchū Teien observatory for the city lights. Published adult admission is ¥2,000. Eat in Umeda or return to Namba on the Midōsuji Line."
           },
           "travelFrom": {
             "stopId": "osaka-castle-park",
-            "mode": "metro",
-            "minutes": 42,
+            "mode": "train",
+            "minutes": 45,
             "line": {
-              "pt": "Tanimachi + Sennichimae",
-              "ja": "谷町線＋千日前線",
-              "en": "Tanimachi and Sennichimae"
+              "pt": "JR Osaka Loop Line",
+              "ja": "JR大阪環状線",
+              "en": "JR Osaka Loop Line"
             },
             "note": {
-              "pt": "Do Portão Ōtemon, caminhe até Tanimachi 4-chōme. Troque em Tanimachi 9-chōme para Nippombashi.",
-              "ja": "大手門から谷町四丁目へ。谷町九丁目で千日前線に乗り、日本橋へ。",
-              "en": "Walk from Ōtemon to Tanimachi 4-chōme. Change at Tanimachi 9-chōme for Nippombashi."
+              "pt": "Saia do parque por Osakajōkōen. Vá de JR no sentido Kyōbashi/Osaka e siga a sinalização para o Sky Building na região de Umekita.",
+              "ja": "公園から大阪城公園駅へ。JRで京橋・大阪方面に乗り、大阪駅からうめきた側のスカイビルへ。",
+              "en": "Leave the park at Osakajōkōen and take JR toward Kyōbashi and Osaka. Follow signs on the Umekita side for the Sky Building."
             }
           },
-          "source": "https://kuromon.com/"
+          "source": "https://www.skybldg.co.jp/en/"
         },
         {
-          "id": "shinsekai",
+          "id": "nakanoshima-evening",
           "name": {
-            "pt": "Shinsekai, Tsūtenkaku e jantar",
-            "ja": "新世界・通天閣と晩ご飯",
-            "en": "Shinsekai, Tsūtenkaku and dinner"
+            "pt": "Nakanoshima · alternativa para o fim do dia",
+            "ja": "夕方の別案・中之島",
+            "en": "Nakanoshima · an alternative for the evening"
           },
           "done": false,
-          "minutes": 120,
-          "mapQuery": "新世界 通天閣",
+          "minutes": 105,
+          "mapQuery": "大阪市中央公会堂 中之島",
           "description": {
-            "pt": "Chegue no meio da tarde para passear pelo bairro da torre. Se quiser subir, confira a fila; ao anoitecer, jante kushikatsu nas ruas iluminadas.",
-            "ja": "午後半ばに通天閣の界隈へ。上りたければ列を見て、夕方は灯りのついた通りで串かつを。",
-            "en": "Arrive mid-afternoon to walk around the tower district. Check the queue if visiting the deck and have kushikatsu among the lit streets at night."
+            "pt": "Se preferir terminar junto ao rio, troque o mirante por Nakanoshima. Veja a fachada de tijolos do Salão Público Central e caminhe pela margem antes de jantar em Kitahama ou Namba.",
+            "ja": "川のそばで一日を締めたければ、展望台の代わりに中之島へ。中央公会堂の赤レンガを見て川沿いを歩き、北浜か難波で晩ご飯。",
+            "en": "If you prefer a riverside evening, take in Nakanoshima in place of the observatory. See the red-brick Central Public Hall, stroll by the river and have dinner in Kitahama or Namba."
           },
           "travelFrom": {
-            "stopId": "kuromon",
-            "mode": "walk",
-            "minutes": 24
-          }
-        },
-        {
-          "id": "denden",
-          "name": {
-            "pt": "Den Den Town",
-            "ja": "でんでんタウン・オタロード",
-            "en": "Den Den Town"
+            "stopId": "osaka-castle-park",
+            "mode": "train",
+            "minutes": 42,
+            "line": {
+              "pt": "Keihan Nakanoshima",
+              "ja": "京阪中之島線",
+              "en": "Keihan Nakanoshima Line"
+            },
+            "note": {
+              "pt": "Caminhe até Temmabashi e pegue um trem com destino a Nakanoshima. Desça em Naniwabashi.",
+              "ja": "天満橋まで歩き、中之島行きの電車に乗ってなにわ橋で下車。",
+              "en": "Walk to Temmabashi and take a train bound for Nakanoshima. Get off at Naniwabashi."
+            }
           },
-          "done": false,
-          "minutes": 40,
-          "mapQuery": "日本橋 オタロード なんば",
-          "description": {
-            "pt": "Passe rapidamente por uma loja de usados a caminho de Shinsekai. Se não estiver procurando algo específico, siga para a torre.",
-            "ja": "新世界へ向かう途中に中古店を一軒だけ。探し物がなければ通天閣へ。",
-            "en": "Browse one secondhand shop on the way to Shinsekai. If you are not looking for anything in particular, continue to the tower."
-          },
-          "travelFrom": {
-            "stopId": "kuromon",
-            "mode": "walk",
-            "minutes": 14
-          },
-          "source": "https://www.nippombashi.jp/shoplist.php",
+          "source": "https://osaka-info.jp/en/spot/osaka-central-public-hall/",
           "optional": true
         }
       ],
       "foodIds": [
-        "butaman",
-        "kushikatsu"
+        "kitsune-udon",
+        "butaman"
       ],
-      "shopIds": [
-        "mandarake-osaka",
-        "surugaya-otaroad"
+      "extraPhotos": [
+        "osaka-castle"
       ]
     },
     {

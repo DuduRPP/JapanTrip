@@ -706,5 +706,41 @@
       "ja": "池に映る金閣寺の金閣と手前の松",
       "en": "Kinkaku-ji's Golden Pavilion reflected in the pond, with a pine tree in the foreground"
     }
+  },
+  "gotokuji-cats": {
+    "url": "photos/gotokuji-cats.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:G%C5%8Dtoku-ji_Maneki-neko_cats.jpg",
+    "author": "Nacaru",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": {
+      "pt": "Estatuetas brancas e vermelhas de maneki-neko em prateleiras no Gōtokuji",
+      "ja": "豪徳寺の棚に並ぶ白と赤の招き猫",
+      "en": "White and red maneki-neko figures on shelves at Gōtokuji"
+    }
+  },
+  "namba-yasaka-lion": {
+    "url": "photos/namba-yasaka-lion.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Namba-yasaka-jinja_shishibutai.jpg",
+    "author": "KENPEI",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "alt": {
+      "pt": "Palco Shishiden em forma de cabeça de leão no santuário Namba Yasaka",
+      "ja": "難波八阪神社の大きな獅子の顔をかたどった獅子殿",
+      "en": "The giant lion-head Shishiden stage at Namba Yasaka Shrine"
+    }
+  },
+  "katsuoji-daruma": {
+    "url": "photos/katsuoji-daruma.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Katsu%C5%8D-ji_(Minoh_Osaka)_Temple_hdsr_S5_da12.jpg",
+    "author": "Hyppolyte de Saint-Rambert",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "alt": {
+      "pt": "Pequenos darumas vermelhos reunidos sobre uma pedra no templo Katsuo-ji",
+      "ja": "勝尾寺の岩の上に並ぶ小さな赤いだるま",
+      "en": "Small red daruma dolls grouped on a rock at Katsuo-ji"
+    }
   }
 }
