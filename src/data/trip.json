@@ -3932,6 +3932,7 @@
       "id": "osaka-amigos",
       "type": "day",
       "city": "osaka",
+      "base": null,
       "number": 4,
       "date": "2027-01-11",
       "title": {
@@ -4147,6 +4148,7 @@
       "id": "kamakura-enoshima",
       "type": "day",
       "city": "kamakura",
+      "base": "tokyo",
       "number": 6,
       "date": "2027-01-13",
       "title": {
@@ -4444,6 +4446,7 @@
       "id": "nikko-templos",
       "type": "day",
       "city": "nikko",
+      "base": "tokyo",
       "number": 8,
       "date": "2027-01-15",
       "title": {
@@ -5076,6 +5079,7 @@
       "id": "nagoya-castelo-livraria",
       "type": "day",
       "city": "nagoya",
+      "base": null,
       "number": 11,
       "date": "2027-01-18",
       "title": {
@@ -5408,6 +5412,7 @@
       "id": "otsu-karuta-biwa",
       "type": "day",
       "city": "otsu",
+      "base": "kyoto",
       "number": 13,
       "date": "2027-01-20",
       "title": {
@@ -6132,6 +6137,7 @@
       "id": "nara-daibutsu",
       "type": "day",
       "city": "nara",
+      "base": "osaka",
       "number": 17,
       "date": "2027-01-24",
       "title": {
@@ -6372,6 +6378,7 @@
       "id": "himeji-kobe",
       "type": "day",
       "city": "himeji-kobe",
+      "base": "osaka",
       "number": 19,
       "date": "2027-01-26",
       "title": {
@@ -6715,6 +6722,7 @@
       "id": "miyajima-itsukushima",
       "type": "day",
       "city": "miyajima",
+      "base": "hiroshima",
       "number": 21,
       "date": "2027-01-28",
       "title": {
@@ -7061,6 +7069,7 @@
       "id": "beppu-kannawa",
       "type": "day",
       "city": "beppu",
+      "base": "fukuoka",
       "number": 23,
       "date": "2027-01-30",
       "title": {
@@ -7283,6 +7292,7 @@
       "id": "nagasaki-dejima-glover",
       "type": "day",
       "city": "nagasaki",
+      "base": "fukuoka",
       "number": 25,
       "date": "2027-02-01",
       "title": {
@@ -7850,6 +7860,7 @@
       "id": "otaru-yukiakari",
       "type": "day",
       "city": "otaru",
+      "base": "sapporo",
       "number": 30,
       "date": "2027-02-06",
       "title": {
