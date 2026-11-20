@@ -65,7 +65,7 @@ Para montar o roteiro a partir de documentos do viajante, consulte o [guia de pe
 - **Restaurante ou confeitaria.** Em `venues`, informe `id`, `name`, `description` e `addressJa`. `url` abre a ficha do estabelecimento. Quando houver preço, use `price.yen`, `price.unit` (`person` por pessoa, `piece` por unidade ou `box` por caixa de 10), `price.source` para o link do valor e `price.estimated: true` para exibir o sinal de aproximação. A demonstração inclui preços de estabelecimentos consultados em 14/11/2026.
 - **Loja de compras.** Em `shops`, informe `id`, `name`, `description`, `addressJa` e `url` quando houver. A pesquisa do mapa de lojas e restaurantes combina o nome em japonês com o endereço.
 
-Nomes, títulos, descrições e textos alternativos são objetos com chaves `pt`, `ja` e `en`. Português é o fallback quando faltar uma tradução. Preserve IDs em edições de conteúdo, pois as URLs e referências entre listas dependem deles. Todos os preços usam ienes. Ao atualizar preços, guarde a fonte, a unidade de cobrança e a data de consulta. Use dados adequados ao site público.
+Nomes, títulos, descrições e textos alternativos são objetos com chaves `pt`, `ja` e `en`. Português é o fallback quando faltar uma tradução. Preserve IDs em edições de conteúdo, pois as URLs e referências entre listas dependem deles. Ao juntar dois dias, registre o ID anterior em `aliases` no dia que recebe o passeio para manter os links antigos do diário. Todos os preços usam ienes. Ao atualizar preços, guarde a fonte, a unidade de cobrança e a data de consulta. Use dados adequados ao site público.
 
 ### `src/data/photos.json`
 

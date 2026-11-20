@@ -88,7 +88,7 @@ function App() {
   const title = step => step.type === 'day' ? translate(step.title) : cityName(step.from) + ' → ' + cityName(step.to);
   const stepHref = step => href(lang, step.type === 'day' ? 'dia' : 'trajeto', step.id);
   const cityHref = (page, cityId) => href(lang, page, cityId);
-  const stepIndex = trip.journey.findIndex(step => step.id === id && (
+  const stepIndex = trip.journey.findIndex(step => (step.id === id || step.aliases?.includes(id)) && (
     (kind === 'dia' && step.type === 'day') || (kind === 'trajeto' && step.type === 'transfer')
   ));
   const step = trip.journey[stepIndex];

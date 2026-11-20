@@ -742,5 +742,17 @@
       "ja": "勝尾寺の岩の上に並ぶ小さな赤いだるま",
       "en": "Small red daruma dolls grouped on a rock at Katsuo-ji"
     }
+  },
+  "dazaifu-shinji": {
+    "url": "photos/dazaifu-shinji.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Shinjiike_Pond_and_Taikobashi_Bridge_in_Dazaifu_Temman_Shrine_2.jpg",
+    "author": "そらみみ",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "alt": {
+      "pt": "Ponte vermelha sobre o lago Shinji entre as árvores do Dazaifu Tenmangū",
+      "ja": "太宰府天満宮の木々の間に見える心字池と赤い太鼓橋",
+      "en": "A red bridge over Shinji Pond among the trees at Dazaifu Tenmangu"
+    }
   }
 }

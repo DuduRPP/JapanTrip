@@ -2556,9 +2556,9 @@
       "accent": "#325878",
       "symbol": "bowl",
       "description": {
-        "pt": "Hakata é a base para Beppu e Nagasaki. Na cidade, passeie pelos templos de Hakata, pelo lago Ōhori, pelas ruínas do castelo e pelos yatai de Tenjin.",
-        "ja": "博多を拠点に別府と長崎へ。福岡では博多のお寺、大濠公園、城跡、天神の屋台を巡ろう。",
-        "en": "Hakata is the base for Beppu and Nagasaki. In town, visit Hakata’s temples, Ōhori Park, the castle ruins and Tenjin’s yatai."
+        "pt": "Cinco noites em Hakata dão tempo para Beppu, Nagasaki e uma manhã em Dazaifu. Na cidade, caminhe pelos templos de Hakata e pelo lago Ōhori antes de escolher um yatai em Tenjin.",
+        "ja": "博多に5泊。別府と長崎へ日帰りして、太宰府には半日ほど。福岡市内では博多のお寺や大濠公園を歩いて、夜は天神の屋台へ。",
+        "en": "Five nights in Hakata leave time for Beppu, Nagasaki and a morning in Dazaifu. In Fukuoka, explore Hakata’s temples and Ōhori Park, then pick a yatai in Tenjin."
       },
       "photo": "fukuoka",
       "stays": [
@@ -2572,9 +2572,9 @@
           "fromYen": 10000,
           "url": "https://www.toyoko-inn.com/search/detail/00043/",
           "description": {
-            "pt": "Referência para quarto individual com café perto da saída Hakata. Confira as quatro noites, inclusive sábado, e o imposto local.",
-            "ja": "博多口近くの朝食付きシングルの目安。土曜を含む4泊の総額と宿泊税を確認。",
-            "en": "Single-room target with breakfast near the Hakata exit. Check the four-night total including Saturday and the local tax."
+            "pt": "Referência para quarto individual com café perto da saída Hakata. Confira o total de 29/1 a 3/2, incluindo sábado e o imposto local.",
+            "ja": "博多口近くの朝食付きシングルの目安。1月29日から2月3日まで、土曜を含む5泊分の料金と宿泊税を確認しよう。",
+            "en": "Single-room budget with breakfast near the Hakata exit. Check the total for Jan 29 to Feb 3, including Saturday night and local tax."
           },
           "priceSource": "https://www.jalan.net/yad312316/plan/plan01552895/",
           "priceCheckedOn": "2026-11-14",
@@ -2814,6 +2814,44 @@
               "url": "https://www.suzukake.co.jp/shops/honten"
             }
           ]
+        },
+        {
+          "id": "umegae-mochi",
+          "kind": "sweet",
+          "name": {
+            "pt": "Umegae mochi",
+            "ja": "梅ヶ枝餅",
+            "en": "Umegae mochi"
+          },
+          "description": {
+            "pt": "Bolinho de arroz recheado de azuki, prensado na chapa com a marca de uma flor de ameixeira. Prove um ainda quente em Dazaifu.",
+            "ja": "梅の花をかたどった焼き型で、あん入りの餅を香ばしく焼く太宰府名物。参道で焼きたてをひとつ。",
+            "en": "A Dazaifu rice cake filled with sweet red beans and griddled with a plum-blossom stamp. Try one while it’s warm."
+          },
+          "done": false,
+          "venues": [
+            {
+              "id": "kasanoya-dazaifu",
+              "name": {
+                "pt": "Kasanoya",
+                "ja": "かさの家",
+                "en": "Kasanoya"
+              },
+              "description": {
+                "pt": "Na rua entre o santuário e a estação de Dazaifu. Dá para comprar uma unidade no balcão.",
+                "ja": "天満宮から太宰府駅に戻る参道沿い。店先でひとつから買える。",
+                "en": "On the approach between the shrine and Dazaifu Station. The counter sells cakes individually."
+              },
+              "addressJa": "福岡県太宰府市宰府2-7-24",
+              "url": "https://dazaifu.org/introduce/shop346/",
+              "price": {
+                "yen": 180,
+                "unit": "piece",
+                "source": "https://dazaifu.org/introduce/shop346/",
+                "checkedOn": "2026-11-20"
+              }
+            }
+          ]
         }
       ],
       "shops": [
@@ -3026,9 +3064,9 @@
       "accent": "#324c7c",
       "symbol": "snowflake",
       "description": {
-        "pt": "Cinco noites com a abertura do Festival de Neve em 4/2. Entre as esculturas, o centro oferece passagens aquecidas, lámen de missô e frutos do mar.",
-        "ja": "札幌で5泊、雪まつりは2/4開幕。雪像の合間は地下で温まって、味噌ラーメンや海の幸を。",
-        "en": "Five nights around the Snow Festival opening on Feb 4. Warm up in underground walkways between sculptures and try miso ramen and seafood."
+        "pt": "Quatro noites em Sapporo, de 3 a 7/2. O Festival de Neve abre em Ōdōri e Susukino no dia 4. No sábado, pegue o trem para ver as velas no canal de Otaru.",
+        "ja": "2月3日から札幌に4泊。4日開幕の雪まつりで大通の雪像とすすきのの氷像を巡り、土曜は電車で小樽運河のろうそくを見に行こう。",
+        "en": "Four nights in Sapporo, Feb 3–7. The Snow Festival opens at Ōdōri and Susukino on the 4th. On Saturday, take the train to see the candles along Otaru Canal."
       },
       "photo": "sapporo-clock",
       "stays": [
@@ -3042,9 +3080,9 @@
           "fromYen": 14000,
           "url": "https://www.toyoko-inn.com/search/detail/00059/",
           "description": {
-            "pt": "Meta para quarto individual com café durante o festival; a referência regular da associação é menor. Compare o total cancelável de 2 a 7/2 antes de fechar o voo.",
-            "ja": "雪まつり期間の朝食付きシングル予算目安。組合掲載の通常参考額とは別。航空券購入前に2/2〜7のキャンセル可能な総額を比較。",
-            "en": "Festival budget target for a single room with breakfast. The association’s regular reference is lower. Compare cancellable Feb 2–7 totals before booking flights."
+            "pt": "Meta para quarto individual com café durante o festival. A referência da associação vale para o período regular. Confira o total cancelável das quatro noites, com entrada em 3/2 e saída em 7/2.",
+            "ja": "雪まつり期間の朝食付きシングルの予算目安。組合の掲載額は通常期の参考額。2月3日チェックイン、7日チェックアウトの4泊でキャンセル可能な総額を確認しよう。",
+            "en": "Festival budget for a single room with breakfast. The association lists a regular-season rate. Check the refundable four-night total for a Feb 3 check-in and Feb 7 check-out."
           },
           "priceSource": "https://s-ryokumi.com/member/yoyoko-minami",
           "priceCheckedOn": "2026-11-14",
@@ -3256,6 +3294,21 @@
           },
           "done": false,
           "venues": [
+            {
+              "id": "daruma-honten",
+              "name": {
+                "pt": "Daruma Honten, em Susukino",
+                "ja": "成吉思汗だるま 本店",
+                "en": "Daruma Honten in Susukino"
+              },
+              "description": {
+                "pt": "Balcão de jingisukan em Susukino, perto das esculturas de gelo. Dá para ver o cordeiro grelhar na chapa logo à sua frente.",
+                "ja": "すすきのの氷像から歩いて寄れるカウンターのお店。目の前の鍋で羊肉を焼いて食べよう。",
+                "en": "A jingisukan counter within walking distance of the ice sculptures. Grill the meat on the domed pan in front of you."
+              },
+              "addressJa": "北海道札幌市中央区南五条西4丁目 クリスタルビル1F",
+              "url": "https://sapporo-jingisukan.info/main"
+            },
             {
               "id": "sapporo-beer-garden",
               "name": {
@@ -7408,30 +7461,137 @@
       ]
     },
     {
+      "id": "fukuoka-dazaifu",
+      "type": "day",
+      "city": "fukuoka",
+      "number": 26,
+      "date": "2027-02-02",
+      "title": {
+        "pt": "Uma manhã em Dazaifu e tarde livre em Hakata",
+        "ja": "太宰府へお参り、午後は博多でのんびり",
+        "en": "A morning in Dazaifu and a free afternoon in Hakata"
+      },
+      "photo": "dazaifu-shinji",
+      "stops": [
+        {
+          "id": "hakata-tabito",
+          "name": {
+            "pt": "Hakata Bus Terminal",
+            "ja": "博多バスターミナル",
+            "en": "Hakata Bus Terminal"
+          },
+          "done": false,
+          "minutes": 15,
+          "mapQuery": "博多バスターミナル 太宰府ライナーバス 旅人",
+          "description": {
+            "pt": "Pegue o Tabito direto para Dazaifu. Confira os horários de volta antes de embarcar.",
+            "ja": "太宰府行きの直行バス「旅人」へ。乗る前に帰りの便も見ておこう。",
+            "en": "Take the direct Tabito bus to Dazaifu. Check the return departures before boarding."
+          },
+          "source": "https://nishitetsu.jp/bus/rosen/dazaihu_liner/"
+        },
+        {
+          "id": "dazaifu-tenmangu",
+          "name": {
+            "pt": "Dazaifu Tenmangū",
+            "ja": "太宰府天満宮",
+            "en": "Dazaifu Tenmangu Shrine"
+          },
+          "done": false,
+          "minutes": 75,
+          "mapQuery": "太宰府天満宮 福岡県太宰府市宰府4-7-1",
+          "description": {
+            "pt": "Atravesse as pontes vermelhas do lago Shinji até o santuário dedicado aos estudos. Procure os primeiros botões nas ameixeiras do pátio.",
+            "ja": "心字池の赤い橋を渡って、学問の神様にお参りしよう。境内の梅につぼみがついているかも。",
+            "en": "Cross the red bridges over Shinji Pond to the shrine dedicated to learning. Look for early buds on the plum trees in the grounds."
+          },
+          "travelFrom": {
+            "stopId": "hakata-tabito",
+            "mode": "bus",
+            "minutes": 60,
+            "line": {
+              "pt": "Ônibus direto Tabito",
+              "ja": "太宰府ライナーバス「旅人」",
+              "en": "Direct Tabito bus"
+            },
+            "note": {
+              "pt": "São cerca de 40–45 min no ônibus. Do ponto junto à estação de Dazaifu, siga a pé pela rua dos torii.",
+              "ja": "バスで約40〜45分。太宰府駅前で降りたら、鳥居のある参道を歩こう。",
+              "en": "Allow about 40–45 minutes on the bus, then walk up the approach from the stop by Dazaifu Station."
+            }
+          },
+          "source": "https://www.dazaifutenmangu.or.jp/en/discover-dazaifu-tenmangu/shrine-grounds/"
+        },
+        {
+          "id": "dazaifu-sando",
+          "name": {
+            "pt": "Rua do santuário e umegae mochi",
+            "ja": "参道で焼きたての梅ヶ枝餅",
+            "en": "Umegae mochi on the shrine approach"
+          },
+          "done": false,
+          "minutes": 45,
+          "mapQuery": "かさの家 太宰府 宰府2-7-24",
+          "description": {
+            "pt": "Volte pelas lojinhas da rua principal e pare na Kasanoya para comer um mochi quente com recheio de azuki.",
+            "ja": "参道のお店をのぞきながら駅の方へ。かさの家で、あんの入った熱々の梅ヶ枝餅を食べよう。",
+            "en": "Browse the shops on the way back to the station and stop at Kasanoya for a warm red-bean rice cake."
+          },
+          "travelFrom": {
+            "stopId": "dazaifu-tenmangu",
+            "mode": "walk",
+            "minutes": 8
+          },
+          "source": "https://dazaifu.org/introduce/shop346/"
+        },
+        {
+          "id": "hakata-antes-do-voo",
+          "name": {
+            "pt": "Tarde livre em Hakata",
+            "ja": "午後は博多でひと休み",
+            "en": "An easy afternoon in Hakata"
+          },
+          "done": false,
+          "minutes": 75,
+          "mapQuery": "博多駅 博多口",
+          "description": {
+            "pt": "Almoce perto da estação e deixe a tarde livre. À noite, dá para jantar motsunabe no KITTE Hakata e voltar a pé para arrumar a mala.",
+            "ja": "駅の近くでお昼を食べたら、午後は自由時間。夜はKITTE博多のもつ鍋に寄って、歩いて宿に戻って荷造りしよう。",
+            "en": "Have lunch by the station and keep the afternoon free. For dinner, try motsunabe at KITTE Hakata, then walk back to pack."
+          },
+          "travelFrom": {
+            "stopId": "dazaifu-sando",
+            "mode": "bus",
+            "minutes": 65,
+            "line": {
+              "pt": "Ônibus direto Tabito",
+              "ja": "太宰府ライナーバス「旅人」",
+              "en": "Direct Tabito bus"
+            },
+            "note": {
+              "pt": "Embarque junto à estação de Dazaifu para voltar ao terminal de Hakata. A estimativa inclui caminhada e espera.",
+              "ja": "太宰府駅前から博多バスターミナルへ。徒歩と待ち時間を含む目安。",
+              "en": "Board by Dazaifu Station for Hakata Bus Terminal. The estimate includes the walk and waiting time."
+            }
+          },
+          "source": "https://nishitetsu.jp/bus/rosen/dazaihu_liner/"
+        }
+      ],
+      "foodIds": [
+        "umegae-mochi",
+        "goboten-udon",
+        "motsunabe"
+      ],
+      "shopIds": [
+        "pokemon-fukuoka"
+      ]
+    },
+    {
       "id": "fukuoka-sapporo",
       "type": "transfer",
       "from": "fukuoka",
       "to": "sapporo",
       "options": [
-        {
-          "id": "skymark-fuk-cts",
-          "name": {
-            "pt": "Skymark direto · Fukuoka (FUK) → New Chitose (CTS)",
-            "ja": "スカイマーク直行 福岡→新千歳",
-            "en": "Direct Skymark · Fukuoka (FUK) → New Chitose (CTS)"
-          },
-          "minutes": 155,
-          "yen": 18000,
-          "url": "https://www.skymark.co.jp/ja/timetabeleandfares/",
-          "description": {
-            "pt": "Meta de passagem por pessoa, sem cotação para 2/2; a política normal inclui até 20 kg despachados. Some acesso ao terminal doméstico de Fukuoka, espera e trem em Hokkaido.",
-            "ja": "2/2の実売額ではなく航空券の予算目安。通常は預け荷物20kgまで込み。福岡国内線までの移動、新千歳からのJRと待ち時間は別。",
-            "en": "Airfare target, not a Feb 2 quote. Standard policy includes up to 20 kg checked. Add Fukuoka domestic terminal access, waiting time and the Hokkaido train."
-          },
-          "priceSource": "https://www.skymark.co.jp/ja/timetabeleandfares/",
-          "priceCheckedOn": "2026-11-14",
-          "estimated": true
-        },
         {
           "id": "peach-fuk-cts",
           "name": {
@@ -7439,15 +7599,34 @@
             "ja": "Peach直行 福岡→新千歳",
             "en": "Direct Peach · Fukuoka (FUK) → New Chitose (CTS)"
           },
-          "minutes": 155,
+          "minutes": 140,
           "yen": 13500,
-          "url": "https://www.flypeach.com/en/lm/st/w_schedule",
+          "url": "https://www.flypeach.com/application/files/4817/9245/8562/20261021_W26_20261025-20270327_dom_JP.pdf",
           "description": {
-            "pt": "Meta para tarifa básica, sem extras. Compare o total com bagagem e assento antes de escolher; verifique o voo no calendário de inverno.",
-            "ja": "基本運賃の予算目安、追加料金は別。手荷物と座席込みの総額と冬ダイヤで比較。",
-            "en": "Base fare target, extras separate. Compare the total with bags and seating; check the winter schedule."
+            "pt": "Minha sugestão para 3/2 é o MM455, das 11h10 às 13h30. Chegar de dia deixa a tarde livre para o trem e o hotel. O valor é uma meta para a tarifa básica. Some mala e assento ao comparar.",
+            "ja": "2月3日は福岡11:10発、新千歳13:30着のMM455がおすすめ。明るいうちに着いて、午後はJR移動とチェックインに使える。金額は基本運賃の目安。預け手荷物と座席指定を足して比べよう。",
+            "en": "For Feb 3, I’d take MM455 from 11:10 to 13:30. Arriving by day leaves the afternoon for the train and hotel. The budget is for the base fare. Add bags and seat selection when comparing."
           },
-          "priceSource": "https://www.flypeach.com/en/lm/st/w_schedule",
+          "priceSource": "https://www.flypeach.com/lm/fares/fare_type",
+          "priceCheckedOn": "2026-11-14",
+          "estimated": true
+        },
+        {
+          "id": "skymark-fuk-cts",
+          "name": {
+            "pt": "Skymark direto · Fukuoka (FUK) → New Chitose (CTS)",
+            "ja": "スカイマーク直行 福岡→新千歳",
+            "en": "Direct Skymark · Fukuoka (FUK) → New Chitose (CTS)"
+          },
+          "minutes": 135,
+          "yen": 18000,
+          "url": "https://www.skymark.co.jp/ja/campaign/hokkaido_hajimete/",
+          "description": {
+            "pt": "Em 3/2, o SKY777 sai de Fukuoka às 18h05 e pousa às 20h20. O voo serve para passar a tarde em Hakata. Confira o jantar e o check-in tardio. A meta inclui a franquia normal de até 20 kg despachados.",
+            "ja": "2月3日のSKY777は福岡18:05発、新千歳20:20着。午後を博多で過ごせる便。夕食と遅いチェックインを確認しよう。予算は通常の預け手荷物20kg込みの目安。",
+            "en": "On Feb 3, SKY777 leaves Fukuoka at 18:05 and lands at 20:20, leaving the afternoon free in Hakata. Plan dinner and check late arrival with the hotel. The budget includes the usual 20 kg checked allowance."
+          },
+          "priceSource": "https://www.skymark.co.jp/ja/timetabeleandfares/",
           "priceCheckedOn": "2026-11-14",
           "estimated": true
         }
@@ -7457,8 +7636,8 @@
       "id": "sapporo-chegada",
       "type": "day",
       "city": "sapporo",
-      "number": 26,
-      "date": "2027-02-02",
+      "number": 27,
+      "date": "2027-02-03",
       "title": {
         "pt": "Chegada à neve de Sapporo",
         "ja": "雪の札幌に到着",
@@ -7493,9 +7672,9 @@
           "minutes": 100,
           "mapQuery": "JR札幌駅 南口",
           "description": {
-            "pt": "Escolha jantar perto da hospedagem. Use as passagens subterrâneas quando possível e deixe passeios para amanhã.",
-            "ja": "宿の近くで晩ご飯。地下通路を活用して、観光は明日に。",
-            "en": "Eat near your hotel, use the underground passages where possible and save sightseeing for tomorrow."
+            "pt": "Deixe a mala e procure uma tigela de lámen de missô perto do hotel. Se vier no voo da noite, vale jantar antes de embarcar e ir direto descansar.",
+            "ja": "荷物を置いたら、宿の近くで味噌ラーメンを一杯。夜の便なら、福岡で夕食を済ませて宿に直行するのもいい。",
+            "en": "Drop your bags and look for a bowl of miso ramen near the hotel. If you take the evening flight, have dinner before boarding and head straight to bed."
           },
           "travelFrom": {
             "stopId": "cts-airport",
@@ -7512,119 +7691,40 @@
               "en": "Fast services take roughly 33–43 min to JR Sapporo, ¥1,230 unreserved. Allow the wait and final walk."
             }
           }
+        },
+        {
+          "id": "akapla-luzes",
+          "name": {
+            "pt": "Luzes da praça Akapla",
+            "ja": "アカプラのイルミネーション",
+            "en": "Winter lights at Akapla"
+          },
+          "done": false,
+          "minutes": 25,
+          "mapQuery": "札幌市北3条広場 アカプラ",
+          "description": {
+            "pt": "Se chegar cedo, faça uma volta curta pelas fileiras de árvores iluminadas na praça Kita 3-jō. Dá para ver as luzes já na véspera do Festival de Neve.",
+            "ja": "早めに着いたら、北3条広場の並木のイルミネーションをひと回り。雪まつり前夜から楽しめる。",
+            "en": "If you arrive early, take a short evening stroll under the illuminated trees in Kita 3-jō Plaza. The lights are already on the night before the Snow Festival."
+          },
+          "travelFrom": {
+            "stopId": "sapporo-checkin",
+            "mode": "walk",
+            "minutes": 12,
+            "note": {
+              "pt": "Estimativa a partir da saída sul da estação JR Sapporo. Ajuste conforme o hotel.",
+              "ja": "JR札幌駅南口からの目安。宿の場所に合わせて調整しよう。",
+              "en": "Estimate from JR Sapporo’s south exit. Adjust for your hotel location."
+            }
+          },
+          "source": "https://www.sapporo.travel/white-illumination/event/illumination/akapla/",
+          "optional": true
         }
       ],
       "foodIds": [
         "sapporo-miso-ramen"
-      ]
-    },
-    {
-      "id": "sapporo-centro",
-      "type": "day",
-      "city": "sapporo",
-      "number": 27,
-      "date": "2027-02-03",
-      "title": {
-        "pt": "Centro de Sapporo",
-        "ja": "札幌の中心部",
-        "en": "Central Sapporo"
-      },
-      "photo": "sapporo-clock",
-      "stops": [
-        {
-          "id": "red-brick",
-          "name": {
-            "pt": "Antiga sede de governo · Akarenga",
-            "ja": "北海道庁旧本庁舎 赤れんが庁舎",
-            "en": "Former Hokkaido Government Office"
-          },
-          "done": false,
-          "minutes": 65,
-          "mapQuery": "北海道庁旧本庁舎 赤れんが庁舎",
-          "description": {
-            "pt": "Comece pelo prédio de tijolos vermelhos. Veja o exterior e entre só se as exposições do dia interessarem.",
-            "ja": "赤れんが庁舎から。外観を眺めて、展示が気になれば中へ。",
-            "en": "Start at the red-brick building. See the exterior and go in if the exhibitions interest you."
-          },
-          "source": "https://www.hokkaido-redbrick.jp/"
-        },
-        {
-          "id": "clock-tower",
-          "name": {
-            "pt": "Torre do Relógio",
-            "ja": "札幌市時計台",
-            "en": "Sapporo Clock Tower"
-          },
-          "done": false,
-          "minutes": 40,
-          "mapQuery": "札幌市時計台",
-          "description": {
-            "pt": "Faça uma parada pela arquitetura. O museu é um extra curto, útil se estiver nevando.",
-            "ja": "建物を見てひと休み。雪なら短めに中の展示を見てもいい。",
-            "en": "Stop for the architecture. The small museum is a useful extra in snowfall."
-          },
-          "travelFrom": {
-            "stopId": "red-brick",
-            "mode": "walk",
-            "minutes": 14,
-            "note": {
-              "pt": "Use o Chi-Ka-Ho em parte do caminho se as calçadas estiverem escorregadias.",
-              "ja": "歩道が滑りやすければ一部はチ・カ・ホへ。",
-              "en": "Use part of Chi-Ka-Ho if sidewalks are slippery."
-            }
-          },
-          "source": "https://sapporoshi-tokeidai.jp/"
-        },
-        {
-          "id": "odori-warm",
-          "name": {
-            "pt": "Ōdōri e Torre de TV",
-            "ja": "大通とテレビ塔",
-            "en": "Ōdōri and the TV Tower"
-          },
-          "done": false,
-          "minutes": 85,
-          "mapQuery": "さっぽろテレビ塔 大通公園",
-          "description": {
-            "pt": "Veja a torre e o parque, com uma pausa coberta no Odori Bisse. O soft serve de leite é opcional. Reserve o festival para amanhã.",
-            "ja": "テレビ塔と大通公園を見て、暖かい大通ビッセでひと休み。牛乳ソフトは気分で。雪まつりは明日。",
-            "en": "See the TV Tower and park, then warm up at Odori Bisse. Milk soft serve is optional. Save the festival for tomorrow."
-          },
-          "travelFrom": {
-            "stopId": "clock-tower",
-            "mode": "walk",
-            "minutes": 10
-          },
-          "source": "https://www.snowfes.com/news/948.html"
-        },
-        {
-          "id": "sapporo-crab-dinner",
-          "name": {
-            "pt": "Jantar de caranguejo no centro",
-            "ja": "札幌駅近くでかにの夕食",
-            "en": "King crab dinner downtown"
-          },
-          "done": false,
-          "minutes": 95,
-          "mapQuery": "札幌かに本家 札幌駅前本店",
-          "description": {
-            "pt": "Volte pelo Chi-Ka-Ho até perto da estação. Este é o jantar para provar tarabagani; confira preço e mesa no Kani Honke. Lámen de missô fica como alternativa.",
-            "ja": "チ・カ・ホで駅側へ。本タラバを味わう日。かに本家の値段と席を確認して、別案なら味噌ラーメン。",
-            "en": "Take Chi-Ka-Ho back toward the station. This is the evening to try king crab; check price and seating at Kani Honke. Miso ramen is an alternative."
-          },
-          "travelFrom": {
-            "stopId": "odori-warm",
-            "mode": "walk",
-            "minutes": 16
-          },
-          "source": "https://www.kani-honke.co.jp/location_sapporo.html"
-        }
       ],
-      "foodIds": [
-        "tarabagani",
-        "sapporo-miso-ramen",
-        "hokkaido-soft"
-      ]
+      "photo": "sapporo-miso-ramen"
     },
     {
       "id": "sapporo-yukimatsuri",
@@ -7688,9 +7788,9 @@
           "minutes": 100,
           "mapQuery": "さっぽろ雪まつり すすきの会場",
           "description": {
-            "pt": "Vá a Susukino no início da noite para ver as esculturas de gelo e jantar. Confira a iluminação no dia; com vento forte ou piso ruim, descanse e deixe o gelo para amanhã.",
-            "ja": "夕方はすすきので氷像と晩ご飯。点灯は当日の案内を確認し、強風や凍結なら休んで明日に回そう。",
-            "en": "Go to Susukino in the early evening for ice sculptures and dinner. Check lighting times; if wind or ice is too much, rest and see the sculptures tomorrow."
+            "pt": "Veja as esculturas de gelo no começo da noite e siga a pé até o Daruma para jantar jingisukan. Se a fila estiver longa, há lámen de missô e soup curry no bairro. Com vento forte, deixe o gelo para sexta.",
+            "ja": "夕方に氷像を見て、歩いてだるまへ行きジンギスカンを焼こう。行列が長ければ近くで味噌ラーメンかスープカレーに。風が強ければ氷像は金曜に回そう。",
+            "en": "See the ice sculptures in the early evening, then walk to Daruma for jingisukan. If the line is long, try miso ramen or soup curry nearby. Save the ice for Friday if it’s windy."
           },
           "travelFrom": {
             "stopId": "chikaho-break",
@@ -7707,142 +7807,173 @@
       ],
       "foodIds": [
         "hokkaido-soft",
+        "jingisukan",
+        "soup-curry",
         "sapporo-miso-ramen"
       ]
     },
     {
-      "id": "sapporo-folga",
+      "id": "sapporo-centro",
       "type": "day",
       "city": "sapporo",
       "number": 29,
       "date": "2027-02-05",
       "title": {
-        "pt": "Museu da Cerveja e Sapporo Factory",
-        "ja": "ビール博物館とサッポロファクトリー",
-        "en": "Beer Museum and Sapporo Factory"
+        "pt": "Centro de Sapporo e jantar de caranguejo",
+        "ja": "札幌の街歩きと夜のタラバガニ",
+        "en": "Central Sapporo and a king crab dinner"
       },
+      "photo": "sapporo-clock",
       "stops": [
         {
-          "id": "sapporo-factory",
+          "id": "red-brick",
           "name": {
-            "pt": "Sapporo Factory",
-            "ja": "サッポロファクトリー",
-            "en": "Sapporo Factory"
+            "pt": "Antiga sede de governo · Akarenga",
+            "ja": "北海道庁旧本庁舎 赤れんが庁舎",
+            "en": "Former Hokkaido Government Office"
           },
           "done": false,
           "minutes": 65,
-          "mapQuery": "サッポロファクトリー アトリウム",
+          "mapQuery": "北海道庁旧本庁舎 赤れんが庁舎",
           "description": {
-            "pt": "Passe pelos prédios de tijolos e pelo átrio coberto no local da antiga cervejaria. É uma manhã tranquila antes de ir ao museu.",
-            "ja": "醸造所跡のレンガ棟とアトリウムをひと回り。博物館の前にゆっくり。",
-            "en": "See the brick buildings and covered atrium on the former brewery site. Take a slow morning before the museum."
+            "pt": "Comece pelo prédio de tijolos vermelhos. Veja o exterior e entre só se as exposições do dia interessarem.",
+            "ja": "赤れんが庁舎から。外観を眺めて、展示が気になれば中へ。",
+            "en": "Start at the red-brick building. See the exterior and go in if the exhibitions interest you."
           },
-          "source": "https://www.sapporo.travel/spot/facility/sapporo_factory/"
+          "source": "https://www.hokkaido-redbrick.jp/"
         },
         {
-          "id": "beer-museum",
+          "id": "clock-tower",
           "name": {
-            "pt": "Museu da Cerveja de Sapporo",
-            "ja": "サッポロビール博物館",
-            "en": "Sapporo Beer Museum"
+            "pt": "Torre do Relógio",
+            "ja": "札幌市時計台",
+            "en": "Sapporo Clock Tower"
           },
           "done": false,
-          "minutes": 80,
-          "mapQuery": "サッポロビール博物館",
+          "minutes": 40,
+          "mapQuery": "札幌市時計台",
           "description": {
-            "pt": "Veja a exposição sobre a história da cervejaria no prédio de tijolos. A visita livre é gratuita; degustação e tour guiado são à parte.",
-            "ja": "赤レンガの建物で醸造の歴史を見よう。自由見学は無料、試飲やガイドツアーは別。",
-            "en": "See the brewery’s history in the brick building. Self-guided admission is free; tastings and guided tours are separate."
+            "pt": "Faça uma parada pela arquitetura. O museu é um extra curto, útil se estiver nevando.",
+            "ja": "建物を見てひと休み。雪なら短めに中の展示を見てもいい。",
+            "en": "Stop for the architecture. The small museum is a useful extra in snowfall."
           },
           "travelFrom": {
-            "stopId": "sapporo-factory",
+            "stopId": "red-brick",
             "mode": "walk",
-            "minutes": 25,
+            "minutes": 14,
             "note": {
-              "pt": "Conte com calçadas com neve. Se estiverem ruins, confira o ônibus para o Garden Park.",
-              "ja": "雪道の余裕を。歩きにくければガーデンパークへのバスを確認。",
-              "en": "Allow time on snowy sidewalks. If they are difficult, check buses to Garden Park."
+              "pt": "Use o Chi-Ka-Ho em parte do caminho se as calçadas estiverem escorregadias.",
+              "ja": "歩道が滑りやすければ一部はチ・カ・ホへ。",
+              "en": "Use part of Chi-Ka-Ho if sidewalks are slippery."
             }
           },
-          "source": "https://www.sapporobeer.jp/brewery/s_museum/kengaku/"
+          "source": "https://sapporoshi-tokeidai.jp/"
         },
         {
-          "id": "jingisukan-lunch",
+          "id": "odori-warm",
           "name": {
-            "pt": "Jingisukan no Beer Garden",
-            "ja": "ビール園でジンギスカン",
-            "en": "Jingisukan lunch at the Beer Garden"
+            "pt": "Ōdōri e Torre de TV",
+            "ja": "大通とテレビ塔",
+            "en": "Ōdōri and the TV Tower"
           },
           "done": false,
-          "minutes": 80,
-          "mapQuery": "サッポロビール園",
+          "minutes": 85,
+          "mapQuery": "さっぽろテレビ塔 大通公園",
           "description": {
-            "pt": "Almoce cordeiro na chapa num dos restaurantes ao lado do museu. Confira qual salão serve almoço e a possibilidade de mesa.",
-            "ja": "博物館隣で羊肉を焼いて昼ご飯。昼営業の店と席を確認。",
-            "en": "Have grilled lamb at one of the restaurants beside the museum. Check lunch service and seating."
+            "pt": "Almoce perto da Torre de TV e prove o sorvete de leite no Odori Bisse. À tarde, dá para rever as esculturas ou fazer um dos passeios opcionais antes do jantar.",
+            "ja": "テレビ塔の近くでお昼にして、大通ビッセで牛乳ソフトをひとつ。午後は雪像をもう一度見るか、夕食までに寄り道をひとつ選ぼう。",
+            "en": "Have lunch near the TV Tower and try milk soft serve at Odori Bisse. Spend the afternoon revisiting the sculptures or pick one of the optional outings before dinner."
           },
           "travelFrom": {
-            "stopId": "beer-museum",
+            "stopId": "clock-tower",
             "mode": "walk",
-            "minutes": 5
+            "minutes": 10
           },
-          "source": "https://sapporo-bier-garten.jp/shop/"
+          "source": "https://www.snowfes.com/news/948.html"
         },
         {
-          "id": "odori-return",
+          "id": "sapporo-crab-dinner",
           "name": {
-            "pt": "Pausa e fim de tarde no festival",
-            "ja": "休憩と夕方の雪まつり",
-            "en": "A break and late afternoon at the festival"
+            "pt": "Jantar de caranguejo no centro",
+            "ja": "札幌駅近くでかにの夕食",
+            "en": "King crab dinner downtown"
           },
           "done": false,
-          "minutes": 125,
-          "mapQuery": "さっぽろ雪まつり 大通会場",
+          "minutes": 95,
+          "mapQuery": "札幌かに本家 札幌駅前本店",
           "description": {
-            "pt": "Volte ao centro e descanse no hotel ou em um café. Se ainda houver vontade, revisite as esculturas e jante soup curry, sem estender a noite antes de Otaru.",
-            "ja": "中心部へ戻り、宿かカフェでひと休み。元気なら雪像をもう一度見てスープカレー。明日の小樽に備え早めに。",
-            "en": "Return downtown and rest at the hotel or a café. If you feel like it, revisit the sculptures and have soup curry before an early night for Otaru."
+            "pt": "O Kani Honke fica perto da estação de Sapporo. Confira mesa e preço do hon-tarabagani para sexta à noite. Se fizer um passeio à tarde, deixe folga para voltar a Ōdōri antes do jantar.",
+            "ja": "金曜の夜は札幌駅近くのかに本家へ。本タラバの値段と席を確認しよう。午後に遠出するなら、大通に戻る時間も取っておこう。",
+            "en": "Kani Honke is near Sapporo Station. Check Friday dinner availability and the price of hon-tarabagani. If you take an afternoon outing, allow time to get back to Ōdōri before dinner."
           },
           "travelFrom": {
-            "stopId": "jingisukan-lunch",
-            "mode": "bus",
-            "minutes": 35,
+            "stopId": "odori-warm",
+            "mode": "walk",
+            "minutes": 16
+          },
+          "source": "https://www.kani-honke.co.jp/location_sapporo.html"
+        },
+        {
+          "id": "monte-moiwa",
+          "name": {
+            "pt": "Monte Moiwa ao entardecer",
+            "ja": "夕暮れの藻岩山",
+            "en": "Mount Moiwa at dusk"
+          },
+          "done": false,
+          "minutes": 90,
+          "mapQuery": "札幌もいわ山ロープウェイ 山麓駅",
+          "description": {
+            "pt": "Com céu aberto, confira a operação e suba de teleférico e mini funicular para ver Sapporo acender. Separe cerca de três horas desde Ōdōri, com ida e volta. Com nuvens baixas, fique no centro ou escolha o passeio de chocolate.",
+            "ja": "晴れたら運行を確認して、ロープウェイとミニケーブルカーで山頂へ。街に明かりがともる頃がきれい。大通から往復で約3時間。雲が低い日は街歩きか白い恋人パークへ。",
+            "en": "If skies are clear, check operations and ride the ropeway and mini cable car to see the city lights come on. Allow about three hours round trip from Ōdōri. With low cloud, stay downtown or choose the chocolate outing."
+          },
+          "travelFrom": {
+            "stopId": "odori-warm",
+            "mode": "train",
+            "minutes": 50,
             "line": {
-              "pt": "Ônibus até Sapporo + passagem subterrânea",
-              "ja": "札幌駅までバス＋地下通路",
-              "en": "Bus to Sapporo Station and underground walk"
+              "pt": "Bonde de Nishi 4-chōme até Ropeway Iriguchi",
+              "ja": "市電 西4丁目からロープウェイ入口へ",
+              "en": "Streetcar from Nishi 4-chōme to Ropeway Iriguchi"
+            },
+            "note": {
+              "pt": "Do ponto, caminhe cerca de 10 min até a estação do teleférico. Na sexta, o ônibus gratuito começa às 17h17.",
+              "ja": "電停から山麓駅まで徒歩約10分。金曜の無料シャトルは17:17から。",
+              "en": "Walk about 10 minutes from the tram stop to the ropeway base. On Fridays the free shuttle starts at 17:17."
             }
           },
-          "source": "https://www.snowfes.com/"
+          "source": "https://mt-moiwa.jp/access/shuttlebus-tram/",
+          "optional": true
         },
         {
           "id": "shiroi-koibito",
           "name": {
-            "pt": "Alternativa: Shiroi Koibito Park",
-            "ja": "別案：白い恋人パーク",
-            "en": "Alternative: Shiroi Koibito Park"
+            "pt": "Chocolate no Shiroi Koibito Park",
+            "ja": "白い恋人パークでチョコレート",
+            "en": "Chocolate at Shiroi Koibito Park"
           },
           "done": false,
           "minutes": 120,
           "mapQuery": "白い恋人パーク 宮の沢",
           "description": {
-            "pt": "Troque o circuito do museu e da antiga fábrica por Miyanosawa se estiver a fim de uma tarde de chocolate. A loja e parte da área externa são gratuitas.",
-            "ja": "チョコレート気分なら博物館とファクトリーの代わりに宮の沢へ。売店と一部の屋外エリアは無料。",
-            "en": "Swap the museum and factory circuit for Miyanosawa if you want a chocolate-themed afternoon. Shops and parts of the outdoor area are free."
+            "pt": "Se preferir uma tarde de chocolate, siga para Miyanosawa logo depois do almoço. Passe na loja ou visite a área paga de produção dos biscoitos. Confira a última entrada e volte a Ōdōri para jantar.",
+            "ja": "チョコレート気分なら、昼食後すぐ宮の沢へ。ショップをのぞくか、有料エリアでお菓子の製造ラインを見学しよう。最終入館を確認し、夕食前に大通に戻ろう。",
+            "en": "For a chocolate afternoon, head to Miyanosawa straight after lunch. Browse the shop or visit the paid area to see the biscuit production line. Check last entry and return to Ōdōri before dinner."
           },
           "travelFrom": {
-            "stopId": "sapporo-factory",
+            "stopId": "odori-warm",
             "mode": "metro",
-            "minutes": 48,
+            "minutes": 40,
             "line": {
               "pt": "Linha Tōzai até Miyanosawa",
-              "ja": "東西線で宮の沢",
+              "ja": "地下鉄東西線で宮の沢へ",
               "en": "Tōzai Line to Miyanosawa"
             },
             "note": {
-              "pt": "Se fizer a troca, embarque em Bus Center-mae e caminhe desde Miyanosawa.",
-              "ja": "変更するならバスセンター前から乗り、宮の沢から歩こう。",
-              "en": "If swapping, board at Bus Center-mae and walk from Miyanosawa."
+              "pt": "Embarque em Ōdōri e caminhe da estação de Miyanosawa até o parque. Reserve tempo semelhante na volta.",
+              "ja": "大通から宮の沢まで乗り、駅からパークへ徒歩。帰りも同じくらいの時間を。",
+              "en": "Board at Ōdōri and walk from Miyanosawa Station to the park. Allow a similar time for the return."
             }
           },
           "source": "https://www.shiroikoibitopark.jp/facility/",
@@ -7850,11 +7981,14 @@
         }
       ],
       "foodIds": [
-        "jingisukan",
-        "soup-curry",
-        "chocolate-cookie"
+        "tarabagani",
+        "hokkaido-soft",
+        "chocolate-cookie",
+        "sapporo-miso-ramen"
       ],
-      "photo": "sapporo-beer"
+      "aliases": [
+        "sapporo-folga"
+      ]
     },
     {
       "id": "otaru-yukiakari",
@@ -7934,7 +8068,7 @@
             "mode": "walk",
             "minutes": 18
           },
-          "source": "https://www.sapporo.travel/event/event-list/otaru-snow-light-path/"
+          "source": "https://otaru.gr.jp/event/yukiakari2027"
         },
         {
           "id": "otaru-return",
@@ -7989,11 +8123,11 @@
           },
           "minutes": 105,
           "yen": 16000,
-          "url": "https://www.skymark.co.jp/ja/timetabeleandfares/",
+          "url": "https://www.skymark.co.jp/ja/campaign/hokkaido_hajimete/",
           "description": {
-            "pt": "Meta de passagem por pessoa, sem cotação para 7/2. Prefira manhã ou começo da tarde; planeje a JR até CTS com margem para neve.",
-            "ja": "2/7の実売額ではなく航空券の目安。朝から昼過ぎの便を優先し、新千歳までのJRに雪の余裕を。",
-            "en": "Airfare target, not a Feb 7 quote. Prefer morning or early afternoon and allow a snow buffer for the JR ride to CTS."
+            "pt": "Para 7/2, o SKY712 sai de New Chitose às 11h35 e chega a Haneda às 13h20. Dá para chegar a Ueno de tarde. Saia cedo do hotel e confira a JR antes de ir à estação, pois a neve pode atrasar o trem. O valor é uma meta de orçamento.",
+            "ja": "2月7日は新千歳11:35発、羽田13:20着のSKY712なら午後に上野へ。雪による遅れを見込み、JRの運行を確認して早めに宿を出よう。金額は予算の目安。",
+            "en": "On Feb 7, SKY712 leaves New Chitose at 11:35 and reaches Haneda at 13:20, leaving the afternoon for Ueno. Leave the hotel early and check JR services for snow delays. The fare shown is a budget target."
           },
           "priceSource": "https://www.skymark.co.jp/ja/timetabeleandfares/",
           "priceCheckedOn": "2026-11-14",
@@ -8008,13 +8142,13 @@
           },
           "minutes": 110,
           "yen": 12000,
-          "url": "https://www.flypeach.com/en/lm/st/w_schedule",
+          "url": "https://www.flypeach.com/application/files/4817/9245/8562/20261021_W26_20261025-20270327_dom_JP.pdf",
           "description": {
             "pt": "Meta sem bagagem despachada incluída. Compare com Haneda após somar malas e o trem de Narita. Ambas as alternativas deixam duas noites em Tóquio.",
             "ja": "預け荷物なしの予算目安。荷物代と成田からの電車を足して羽田便と比較。どちらでも東京に2泊する。",
             "en": "Budget target without checked bags. Add bags and the Narita train before comparing with Haneda. Either option leaves two nights in Tokyo."
           },
-          "priceSource": "https://www.flypeach.com/en/lm/st/w_schedule",
+          "priceSource": "https://www.flypeach.com/lm/fares/fare_type",
           "priceCheckedOn": "2026-11-14",
           "estimated": true
         }
