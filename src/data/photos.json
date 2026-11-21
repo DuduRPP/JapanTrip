@@ -754,5 +754,17 @@
       "ja": "太宰府天満宮の木々の間に見える心字池と赤い太鼓橋",
       "en": "A red bridge over Shinji Pond among the trees at Dazaifu Tenmangu"
     }
+  },
+  "wakakusa-yamayaki": {
+    "url": "photos/wakakusa-yamayaki.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:090124_wakakusa_yamayaki.jpg",
+    "author": "名古屋太郎",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "alt": {
+      "pt": "Fogos e encosta em chamas no Wakakusa Yamayaki de 2009, vistos do antigo Palácio Heijō em Nara",
+      "ja": "2009年の若草山焼き。平城宮跡から見た花火と燃え上がる山肌",
+      "en": "Fireworks and the burning hillside at the 2009 Wakakusa Yamayaki, seen from the Heijō Palace site in Nara"
+    }
   }
 }

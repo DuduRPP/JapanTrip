@@ -944,9 +944,9 @@
                 "en": "Daruma Shinsekai"
               },
               "description": {
-                "pt": "Para a extensão opcional de 23/1. A matriz pede ao menos uma bebida por pessoa.",
-                "ja": "1/23に新世界まで足を延ばすなら。総本店は一人一杯以上のドリンク注文が必要。",
-                "en": "For the optional Shinsekai extension on Jan 23. The original branch requires at least one drink per person."
+                "pt": "A matriz fica em Shinsekai, perto da torre Tsūtenkaku, e pede ao menos uma bebida por pessoa.",
+                "ja": "通天閣の近くにある新世界総本店。ドリンクは一人一杯以上の注文が必要。",
+                "en": "The original branch is in Shinsekai near Tsūtenkaku Tower. It requires at least one drink per person."
               },
               "addressJa": "大阪府大阪市浪速区恵美須東2-3-9",
               "url": "https://www.kushikatu-daruma.com/location/shinsekai"
@@ -2039,9 +2039,9 @@
       "accent": "#526331",
       "symbol": "torii",
       "description": {
-        "pt": "Bate-volta de Osaka. O Grande Buda e o parque dão o tom; Naramachi só entra se a caminhada ainda estiver gostosa.",
-        "ja": "大阪から日帰り。大仏と公園を中心に、まだ歩きたかったらならまちへ。",
-        "en": "An Osaka day trip for the Great Buddha and the park, with Naramachi if you still feel like walking."
+        "pt": "De Namba, o trem leva ao parque de Nara para um dia entre o Grande Buda e as lanternas do Kasuga Taisha. No sábado, 23 de janeiro, fique até os fogos e a queima das encostas do monte Wakakusa. O jantar é na volta a Osaka.",
+        "ja": "なんばから電車で奈良へ。大仏さまに会い、春日大社の灯籠が並ぶ参道を歩こう。1月23日（土）は夕方も公園に残って、花火と若草山焼きを見てから大阪に戻って晩ご飯。",
+        "en": "Ride out from Namba for the Great Buddha and the lantern-lined paths of Kasuga Taisha. On Saturday, January 23, stay in the park for the fireworks and the burning of the slopes of Mt. Wakakusa, then head back to Osaka for dinner."
       },
       "photo": "nara",
       "stays": [],
@@ -6048,11 +6048,199 @@
       ]
     },
     {
+      "id": "nara-daibutsu",
+      "type": "day",
+      "city": "nara",
+      "base": "osaka",
+      "number": 16,
+      "date": "2027-01-23",
+      "title": {
+        "pt": "Nara e o festival Wakakusa Yamayaki",
+        "ja": "奈良公園と若草山焼き",
+        "en": "Nara and the Wakakusa Yamayaki festival"
+      },
+      "photo": "wakakusa-yamayaki",
+      "stops": [
+        {
+          "id": "kintetsu-nara",
+          "name": {
+            "pt": "Kintetsu-Nara · chegada",
+            "ja": "近鉄奈良駅 到着",
+            "en": "Arrive at Kintetsu Nara"
+          },
+          "done": false,
+          "minutes": 15,
+          "mapQuery": "近鉄奈良駅 行基広場",
+          "description": {
+            "pt": "Pegue o rápido expresso ou o expresso da Kintetsu em Osaka-Namba. Conte 40–50 min e tente chegar a Nara por volta das 10h. Até esse horário, o organizador publica a confirmação do festival conforme o tempo.",
+            "ja": "大阪難波から近鉄の快速急行か急行で約40〜50分。10時ごろの奈良到着が目安。天候による山焼きの開催可否は、当日10時までに公式サイトで発表されるよ。",
+            "en": "Take a Kintetsu rapid express or express from Osaka-Namba. Allow 40–50 minutes and aim to reach Nara around 10 a.m. By then the organizers will have posted their weather decision for the festival."
+          },
+          "source": "https://www.kintetsu.co.jp/foreign/english/"
+        },
+        {
+          "id": "sarusawa",
+          "name": {
+            "pt": "Lago Sarusawa e almoço cedo",
+            "ja": "猿沢池と早めの昼ご飯",
+            "en": "Sarusawa Pond and an early lunch"
+          },
+          "done": false,
+          "minutes": 80,
+          "mapQuery": "猿沢池 奈良",
+          "description": {
+            "pt": "Comece pelo lago, perto de Kōfuku-ji. Nas ruas do entorno dá para provar o mochi de artemísia e almoçar sushi envolto em folha de caqui antes de seguir para o Grande Buda.",
+            "ja": "興福寺のそばの猿沢池をひと回り。近くの商店街でよもぎ餅をつまんで、柿の葉ずしで早めのお昼にしよう。次は大仏殿へ。",
+            "en": "Start at the pond near Kōfuku-ji. Try a mugwort mochi in the nearby shopping streets and have persimmon-leaf sushi for an early lunch before walking to the Great Buddha."
+          },
+          "travelFrom": {
+            "stopId": "kintetsu-nara",
+            "mode": "walk",
+            "minutes": 12
+          }
+        },
+        {
+          "id": "todaiji",
+          "name": {
+            "pt": "Parque de Nara e Tōdai-ji",
+            "ja": "奈良公園・東大寺大仏殿",
+            "en": "Nara Park and Tōdai-ji"
+          },
+          "done": false,
+          "minutes": 115,
+          "addressJa": "奈良県奈良市雑司町406-1",
+          "mapQuery": "東大寺 大仏殿",
+          "description": {
+            "pt": "Caminhe pelo parque até o salão do Grande Buda. Horário de inverno 8h–17h; entrada adulta ¥800. Deixe os cervos se aproximarem e mantenha a comida guardada.",
+            "ja": "公園を抜けて大仏殿へ。冬は8〜17時、大人800円。鹿は追わず、食べ物はしまっておこう。",
+            "en": "Walk through the park to the Great Buddha Hall. Winter hours are 8:00–17:00, adult admission ¥800. Let deer approach on their own and keep other food packed."
+          },
+          "travelFrom": {
+            "stopId": "sarusawa",
+            "mode": "walk",
+            "minutes": 30,
+            "note": {
+              "pt": "Siga pela área do parque e entre pelo Nandaimon.",
+              "ja": "公園方面へ歩き、南大門を通って大仏殿へ。",
+              "en": "Walk toward the park and enter via Nandaimon."
+            }
+          },
+          "source": "https://www.todaiji.or.jp/haikan/"
+        },
+        {
+          "id": "kasuga-taisha",
+          "name": {
+            "pt": "Kasuga Taisha",
+            "ja": "春日大社",
+            "en": "Kasuga Taisha"
+          },
+          "done": false,
+          "minutes": 65,
+          "mapQuery": "春日大社 本社",
+          "description": {
+            "pt": "Siga pela alameda de lanternas até o santuário. Depois, volte pelo caminho das lanternas de pedra e siga para o gramado de Kasugano-enchi, de frente para o monte Wakakusa.",
+            "ja": "灯籠が並ぶ参道から本社へお参りしよう。帰りは石灯籠の道を戻り、若草山を望む春日野園地の芝生へ。",
+            "en": "Follow the lantern-lined approach to the shrine. Retrace the stone lantern path, then head for the lawns of Kasugano-enchi facing Mt. Wakakusa."
+          },
+          "travelFrom": {
+            "stopId": "todaiji",
+            "mode": "walk",
+            "minutes": 25
+          },
+          "source": "https://www.kasugataisha.or.jp/"
+        },
+        {
+          "id": "wakakusa-yamayaki",
+          "name": {
+            "pt": "Wakakusa Yamayaki no gramado de Kasugano-enchi",
+            "ja": "春日野園地で若草山焼き",
+            "en": "Wakakusa Yamayaki from Kasugano-enchi"
+          },
+          "done": false,
+          "minutes": 135,
+          "mapQuery": "奈良公園 春日野園地",
+          "description": {
+            "pt": "Chegue entre 16h30 e 17h para escolher um lugar no gramado gratuito. Os fogos começam às 18h15. Às 18h30 acendem a encosta do monte Wakakusa, e as chamas costumam estar mais fortes até as 19h. Leve uma camada extra para a espera ao ar livre.",
+            "ja": "16時半〜17時を目安に、無料で観覧できる芝生で場所を決めよう。18時15分に花火、18時半に若草山に一斉点火。炎の勢いがいちばん強いのは19時ごろまで。外で待つので上着をもう一枚。",
+            "en": "Aim for 4:30–5 p.m. to find a spot on the free public lawn. Fireworks start at 6:15 p.m. The hillside is lit at 6:30 p.m., and the flames are usually at their strongest until about 7. Bring an extra layer for the wait outdoors."
+          },
+          "travelFrom": {
+            "stopId": "kasuga-taisha",
+            "mode": "walk",
+            "minutes": 20
+          },
+          "source": "https://yamayaki.pref.nara.lg.jp/en/faq/"
+        },
+        {
+          "id": "namba-after-nara",
+          "name": {
+            "pt": "Volta a Osaka e jantar em Namba",
+            "ja": "大阪に戻ってなんばで晩ご飯",
+            "en": "Back to Osaka for dinner in Namba"
+          },
+          "done": false,
+          "minutes": 80,
+          "mapQuery": "大阪難波駅",
+          "description": {
+            "pt": "Depois de ver as chamas, volte a pé para Kintetsu-Nara e pegue o trem para Osaka-Namba. Deixe o jantar perto da hospedagem para ter flexibilidade na saída do festival.",
+            "ja": "山焼きを見たら近鉄奈良駅まで歩き、大阪難波行きの電車へ。帰りは混みやすいので、晩ご飯はなんばの宿の近くで。",
+            "en": "After watching the hillside burn, walk back to Kintetsu Nara and take the train to Osaka-Namba. Plan dinner near the hotel so you can take your time leaving the festival."
+          },
+          "travelFrom": {
+            "stopId": "wakakusa-yamayaki",
+            "mode": "train",
+            "minutes": 100,
+            "line": {
+              "pt": "Kintetsu-Nara → Osaka-Namba",
+              "ja": "近鉄奈良→大阪難波",
+              "en": "Kintetsu Nara → Osaka-Namba"
+            },
+            "note": {
+              "pt": "Estime 25–35 min a pé até a estação e 40–50 min de trem. Reserve folga para a fila na volta.",
+              "ja": "駅まで徒歩約25〜35分、電車で約40〜50分。帰りの行列に備えて時間に余裕を。",
+              "en": "Allow about 25–35 minutes to walk to the station and 40–50 minutes on the train, plus time to queue after the festival."
+            }
+          },
+          "source": "https://narashikanko.or.jp/en/access/"
+        },
+        {
+          "id": "naramachi",
+          "name": {
+            "pt": "Ruas de Naramachi",
+            "ja": "ならまち",
+            "en": "Naramachi lanes"
+          },
+          "done": false,
+          "minutes": 35,
+          "mapQuery": "ならまち 奈良",
+          "description": {
+            "pt": "Se sobrar tempo depois do almoço, dê uma volta pelas casas antigas ao sul do lago e depois siga para o Tōdai-ji. Se o almoço se alongar, vá direto ao templo para chegar cedo ao festival.",
+            "ja": "お昼のあとに余裕があれば、池の南に並ぶ町家を少し歩いてから東大寺へ。お昼が長引いたら大仏殿に直行して、山焼きの場所取りに間に合わせよう。",
+            "en": "If you have time after lunch, take a short walk past the old townhouses south of the pond before heading to Tōdai-ji. If lunch runs long, go straight to the temple so you can get to the festival early."
+          },
+          "travelFrom": {
+            "stopId": "sarusawa",
+            "mode": "walk",
+            "minutes": 12
+          },
+          "optional": true
+        }
+      ],
+      "foodIds": [
+        "kakinoha-zushi",
+        "yomogi-mochi",
+        "kuzu-mochi"
+      ],
+      "extraPhotos": [
+        "nara"
+      ]
+    },
+    {
       "id": "osaka-castelo-ota-road",
       "type": "day",
       "city": "osaka",
-      "number": 16,
-      "date": "2027-01-23",
+      "number": 17,
+      "date": "2027-01-24",
       "title": {
         "pt": "Castelo de Osaka e Umeda",
         "ja": "大阪城と梅田",
@@ -6184,163 +6372,6 @@
       ],
       "extraPhotos": [
         "katsuoji-daruma"
-      ]
-    },
-    {
-      "id": "nara-daibutsu",
-      "type": "day",
-      "city": "nara",
-      "base": "osaka",
-      "number": 17,
-      "date": "2027-01-24",
-      "title": {
-        "pt": "Parque de Nara e seus templos",
-        "ja": "奈良公園と社寺",
-        "en": "Nara Park and its temples"
-      },
-      "photo": "nara",
-      "stops": [
-        {
-          "id": "kintetsu-nara",
-          "name": {
-            "pt": "Kintetsu-Nara · chegada",
-            "ja": "近鉄奈良駅 到着",
-            "en": "Arrive at Kintetsu Nara"
-          },
-          "done": false,
-          "minutes": 15,
-          "mapQuery": "近鉄奈良駅 行基広場",
-          "description": {
-            "pt": "De Osaka-Namba use um rápido expresso ou expresso comum da Kintetsu; cerca de 40–50 min. Não precisa pagar o suplemento do limitado.",
-            "ja": "大阪難波から近鉄の快速急行か急行で約40〜50分。特急券は不要。",
-            "en": "From Osaka-Namba use a Kintetsu rapid express or regular express, about 40–50 min. No limited-express supplement needed."
-          },
-          "source": "https://www.kintetsu.co.jp/foreign/english/"
-        },
-        {
-          "id": "todaiji",
-          "name": {
-            "pt": "Parque de Nara e Tōdai-ji",
-            "ja": "奈良公園・東大寺大仏殿",
-            "en": "Nara Park and Tōdai-ji"
-          },
-          "done": false,
-          "minutes": 115,
-          "addressJa": "奈良県奈良市雑司町406-1",
-          "mapQuery": "東大寺 大仏殿",
-          "description": {
-            "pt": "Caminhe pelo parque até o salão do Grande Buda. Horário de inverno 8h–17h; entrada adulta ¥800. Deixe os cervos se aproximarem e mantenha a comida guardada.",
-            "ja": "公園を抜けて大仏殿へ。冬は8〜17時、大人800円。鹿は追わず、食べ物はしまっておこう。",
-            "en": "Walk through the park to the Great Buddha Hall. Winter hours are 8:00–17:00, adult admission ¥800. Let deer approach on their own and keep other food packed."
-          },
-          "travelFrom": {
-            "stopId": "kintetsu-nara",
-            "mode": "walk",
-            "minutes": 25,
-            "note": {
-              "pt": "Siga pela área do parque e entre pelo Nandaimon.",
-              "ja": "公園方面へ歩き、南大門を通って大仏殿へ。",
-              "en": "Walk toward the park and enter via Nandaimon."
-            }
-          },
-          "source": "https://www.todaiji.or.jp/haikan/"
-        },
-        {
-          "id": "kasuga-taisha",
-          "name": {
-            "pt": "Kasuga Taisha",
-            "ja": "春日大社",
-            "en": "Kasuga Taisha"
-          },
-          "done": false,
-          "minutes": 65,
-          "mapQuery": "春日大社 本社",
-          "description": {
-            "pt": "Vá pela alameda de lanternas até o santuário e continue pelo parque em direção ao centro. Faça um trecho menor se estiver cansado.",
-            "ja": "灯籠の参道からお参りし、公園を抜けて街へ。疲れたら参道を短めに。",
-            "en": "Follow the lantern-lined approach to the shrine, then cross the park toward town. Take a shorter walk if you are tired."
-          },
-          "travelFrom": {
-            "stopId": "todaiji",
-            "mode": "walk",
-            "minutes": 25
-          },
-          "source": "https://www.kasugataisha.or.jp/"
-        },
-        {
-          "id": "sarusawa",
-          "name": {
-            "pt": "Lago Sarusawa e almoço na área central",
-            "ja": "猿沢池と街なかで昼ご飯",
-            "en": "Sarusawa Pond and lunch downtown"
-          },
-          "done": false,
-          "minutes": 100,
-          "mapQuery": "猿沢池 奈良",
-          "description": {
-            "pt": "Volte pelo entorno de Kōfuku-ji para mochi e sushi de folha de caqui. O trem de volta sai de Kintetsu-Nara para Osaka-Namba.",
-            "ja": "興福寺の近くを通って戻り、よもぎ餅や柿の葉すしを。近鉄奈良から大阪難波へ帰ろう。",
-            "en": "Walk back via Kōfuku-ji for mochi and persimmon-leaf sushi. Return from Kintetsu Nara to Osaka-Namba."
-          },
-          "travelFrom": {
-            "stopId": "kasuga-taisha",
-            "mode": "walk",
-            "minutes": 30
-          }
-        },
-        {
-          "id": "namba-after-nara",
-          "name": {
-            "pt": "Volta a Osaka e jantar em Namba",
-            "ja": "大阪に戻ってなんばで晩ご飯",
-            "en": "Back to Osaka for dinner in Namba"
-          },
-          "done": false,
-          "minutes": 80,
-          "mapQuery": "大阪難波駅",
-          "description": {
-            "pt": "Volte de Kintetsu no fim da tarde. Se quiser estender a noite, passe pelo canal e jante perto da hospedagem.",
-            "ja": "夕方の近鉄で大阪へ。夜も少し歩きたければ川沿いを通って、宿の近くで晩ご飯。",
-            "en": "Take Kintetsu back in the late afternoon. If you feel like staying out, walk by the canal and dine near your hotel."
-          },
-          "travelFrom": {
-            "stopId": "sarusawa",
-            "mode": "train",
-            "minutes": 64,
-            "line": {
-              "pt": "Kintetsu-Nara → Osaka-Namba",
-              "ja": "近鉄奈良→大阪難波",
-              "en": "Kintetsu Nara → Osaka-Namba"
-            }
-          }
-        },
-        {
-          "id": "naramachi",
-          "name": {
-            "pt": "Ruas de Naramachi",
-            "ja": "ならまち",
-            "en": "Naramachi lanes"
-          },
-          "done": false,
-          "minutes": 55,
-          "mapQuery": "ならまち 奈良",
-          "description": {
-            "pt": "Se quiser mais uma caminhada, veja as casas antigas ao sul do lago antes de voltar para Osaka.",
-            "ja": "もう少し歩きたければ、池の南の町家を見てから大阪へ。",
-            "en": "If you want another short walk, see the old townhouses south of the pond before returning to Osaka."
-          },
-          "travelFrom": {
-            "stopId": "sarusawa",
-            "mode": "walk",
-            "minutes": 12
-          },
-          "optional": true
-        }
-      ],
-      "foodIds": [
-        "kakinoha-zushi",
-        "yomogi-mochi",
-        "kuzu-mochi"
       ]
     },
     {
